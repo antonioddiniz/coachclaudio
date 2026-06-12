@@ -1533,8 +1533,6 @@ canvas { max-height: 340px; }
   width: 100%;
   box-sizing: border-box;
   padding: 0 12px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .plano-section > div {
   width: 100% !important;
@@ -1553,11 +1551,14 @@ canvas { max-height: 340px; }
 }
 .plano-week-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
 }
 @media (max-width: 700px) {
   .plano-week-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
