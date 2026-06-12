@@ -1942,15 +1942,15 @@ canvas { max-height: 340px; }
   align-items: center;
   gap: 8px;
 }
-.goals-grid { display: flex; flex-direction: column; gap: 11px; }
+.goals-grid { display: flex; flex-direction: column; gap: 14px; }
 .goal-row {
   display: grid;
-  grid-template-columns: 22px 130px 1fr 110px;
+  grid-template-columns: 24px 140px 1fr 160px;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
-.goal-icon { font-size: 1rem; text-align: center; }
-.goal-label { font-size: 0.68rem; color: #aaa; }
+.goal-icon { font-size: 1.1rem; text-align: center; }
+.goal-label { font-size: 0.72rem; color: #aaa; font-weight: 600; }
 .goal-bar-track {
   height: 5px;
   background: #1e2230;
@@ -1966,11 +1966,12 @@ canvas { max-height: 340px; }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 1px;
+  gap: 2px;
+  text-align: right;
 }
-.goal-current { font-size: 0.76rem; font-weight: 700; color: #fff; }
-.goal-target  { font-size: 0.6rem; color: #555; }
-.goal-delta   { font-size: 0.62rem; font-weight: 600; }
+.goal-current { font-size: 0.85rem; font-weight: 800; color: #fff; line-height: 1.2; }
+.goal-target  { font-size: 0.63rem; color: #555; line-height: 1; }
+.goal-delta   { font-size: 0.65rem; font-weight: 600; line-height: 1.1; }
 .goal-delta.positive { color: #22c55e; }
 .goal-delta.negative { color: #f87171; }
 .goals-note { font-size: 0.62rem; color: #444; margin-top: 14px; text-align: center; }
@@ -2328,8 +2329,10 @@ canvas { max-height: 340px; }
   .supp-grid { grid-template-columns: 1fr 1fr; }
 
   /* goals */
-  .goal-row { grid-template-columns: 22px 1fr 90px; }
-  .goal-label { font-size: 0.63rem; }
+  .goal-row { grid-template-columns: 22px 130px 1fr 130px; gap: 10px; }
+  .goals-grid { gap: 10px; }
+  .goal-label { font-size: 0.68rem; }
+  .goal-current { font-size: 0.78rem; }
 
   /* KPIs home */
   .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
@@ -2442,8 +2445,11 @@ canvas { max-height: 340px; }
   .diet-day-row { grid-template-columns: 70px 1fr 1fr; font-size: 0.62rem; }
 
   /* goals */
-  .goal-row { grid-template-columns: 20px 1fr 80px; }
-  .goal-label { font-size: 0.58rem; }
+  .goal-row { grid-template-columns: 20px 100px 1fr 110px; gap: 8px; }
+  .goals-grid { gap: 8px; }
+  .goal-label { font-size: 0.62rem; }
+  .goal-current { font-size: 0.72rem; }
+  .goal-delta { font-size: 0.58rem; }
 
   /* KPIs */
   .kpi-grid { grid-template-columns: 1fr; }
