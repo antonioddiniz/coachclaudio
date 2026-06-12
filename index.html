@@ -1630,27 +1630,41 @@ canvas { max-height: 340px; }
   margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
+    align-items: stretch;
 }
-@media (max-width: 700px) {
+  .volume-summary > div {
+    background: #131821;
+    border: 1px solid #242a3a;
+    border-radius: 12px;
+    padding: 12px 8px;
+    min-width: 0;
+  }
+  @media (max-width: 900px) {
   .volume-summary {
-    grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     gap: 6px;
     padding: 12px;
   }
 }
-@media (max-width: 480px) {
+  @media (max-width: 700px) {
   .volume-summary {
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     gap: 6px;
     padding: 10px;
   }
+    .volume-summary > div {
+      padding: 10px 7px;
+    }
 }
-@media (max-width: 360px) {
+  @media (max-width: 480px) {
   .volume-summary {
     grid-template-columns: repeat(2, 1fr);
     gap: 4px;
     padding: 8px;
   }
+    .volume-summary > div {
+      padding: 9px 6px;
+    }
 }
 .zone-card-s {
   background: #151824;
