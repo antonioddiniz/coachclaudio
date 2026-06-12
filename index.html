@@ -1669,13 +1669,13 @@ canvas { max-height: 340px; }
 }
 .cycle-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
   margin-bottom: 14px;
 }
 .cycle-cell {
-  border-radius: 8px;
-  padding: 8px 4px 7px;
+  border-radius: 12px;
+  padding: 12px 8px 10px;
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -1740,25 +1740,25 @@ canvas { max-height: 340px; }
 }
 .cycle-cell.past { opacity: 0.42; }
 .cycle-cell-num {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-weight: 900;
   color: #fff;
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 .cycle-cell-label {
-  font-size: 0.5rem;
+  font-size: 0.62rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
   color: rgba(255,255,255,0.75);
   display: block;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 .cycle-cell-dates {
-  font-size: 0.45rem;
+  font-size: 0.53rem;
   color: rgba(255,255,255,0.5);
-  margin-top: 3px;
+  margin-top: 4px;
   display: block;
 }
 .cycle-legend {
@@ -2250,11 +2250,10 @@ canvas { max-height: 340px; }
   .diet-day-row { grid-template-columns: 90px 1fr 1fr; }
   .diet-day-carb { display: none; }
 
-  /* cycle - scroll horizontal */
+  /* cycle - 4 per row */
   .cycle-grid {
-    grid-template-columns: repeat(12, minmax(46px, 1fr));
-    overflow-x: auto;
-    padding-bottom: 4px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
   }
 
   /* inbody history scroll */
@@ -2348,11 +2347,12 @@ canvas { max-height: 340px; }
   /* cycle */
   .cycle-wrap { padding: 14px 10px; }
   .cycle-grid {
-    grid-template-columns: repeat(12, minmax(44px, 1fr));
-    overflow-x: auto;
-    padding-bottom: 6px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
   }
-  .cycle-cell { padding: 6px 2px 5px; }
+  .cycle-cell { padding: 10px 6px 8px; }
+  .cycle-cell-num { font-size: 0.75rem; }
+  .cycle-cell-label { font-size: 0.56rem; }
   .cycle-cell-dates { display: none; }
 
   /* modais */
@@ -2463,12 +2463,12 @@ canvas { max-height: 340px; }
   /* cycle */
   .cycle-wrap { padding: 12px 8px; }
   .cycle-grid {
-    grid-template-columns: repeat(12, minmax(40px, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
   }
-  .cycle-cell { padding: 5px 1px 4px; }
-  .cycle-cell-num { font-size: 0.56rem; }
-  .cycle-cell-label { font-size: 0.45rem; }
+  .cycle-cell { padding: 10px 6px 8px; }
+  .cycle-cell-num { font-size: 0.75rem; }
+  .cycle-cell-label { font-size: 0.54rem; }
 
   /* lsc carousel */
   .lsc-slide { padding: 12px 10px 14px; }
