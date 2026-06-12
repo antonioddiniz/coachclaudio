@@ -1,0 +1,1788 @@
+{
+ "schema_version": 1,
+ "updated_at": "2026-06-12",
+ "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
+ "workouts": [
+  {
+   "id": 1,
+   "date": "2026-01-05",
+   "sport": "run",
+   "dist": 3.53,
+   "dur": "29:53",
+   "pace": "8:27",
+   "sec": 507,
+   "note": "3,53km · início do programa"
+  },
+  {
+   "id": 2,
+   "date": "2026-01-09",
+   "sport": "run",
+   "dist": 4.05,
+   "dur": "38:41",
+   "pace": "9:32",
+   "sec": 572,
+   "note": "4,05km"
+  },
+  {
+   "id": 3,
+   "date": "2026-01-16",
+   "sport": "run",
+   "dist": 2.58,
+   "dur": "24:15",
+   "pace": "9:23",
+   "sec": 563,
+   "note": "2,58km"
+  },
+  {
+   "id": 4,
+   "date": "2026-01-23",
+   "sport": "run",
+   "dist": 3.17,
+   "dur": "33:19",
+   "pace": "10:30",
+   "sec": 630,
+   "note": "3,17km"
+  },
+  {
+   "id": 5,
+   "date": "2026-01-24",
+   "sport": "run",
+   "dist": 4.32,
+   "dur": "44:28",
+   "pace": "10:17",
+   "sec": 617,
+   "note": "4,32km"
+  },
+  {
+   "id": 6,
+   "date": "2026-01-27",
+   "sport": "run",
+   "dist": 3.23,
+   "dur": "28:56",
+   "pace": "8:57",
+   "sec": 537,
+   "note": "3,23km"
+  },
+  {
+   "id": 7,
+   "date": "2026-01-28",
+   "sport": "run",
+   "dist": 3.75,
+   "dur": "31:17",
+   "pace": "8:20",
+   "sec": 500,
+   "note": "3,75km"
+  },
+  {
+   "id": 8,
+   "date": "2026-01-29",
+   "sport": "run",
+   "dist": 0.44,
+   "dur": "3:34",
+   "pace": "8:05",
+   "sec": 485,
+   "note": "0,44km · fragmento"
+  },
+  {
+   "id": 9,
+   "date": "2026-02-03",
+   "sport": "run",
+   "dist": 4.11,
+   "dur": "33:49",
+   "pace": "8:13",
+   "sec": 493,
+   "note": "4,11km"
+  },
+  {
+   "id": 10,
+   "date": "2026-02-05",
+   "sport": "run",
+   "dist": 4.92,
+   "dur": "41:14",
+   "pace": "8:22",
+   "sec": 502,
+   "note": "4,92km"
+  },
+  {
+   "id": 11,
+   "date": "2026-02-10",
+   "sport": "run",
+   "dist": 5.04,
+   "dur": "42:59",
+   "pace": "8:31",
+   "sec": 511,
+   "note": "5,04km"
+  },
+  {
+   "id": 12,
+   "date": "2026-02-13",
+   "sport": "run",
+   "dist": 3.59,
+   "dur": "27:32",
+   "pace": "7:40",
+   "sec": 460,
+   "note": "3,59km · 1ª quebra de barreira"
+  },
+  {
+   "id": 13,
+   "date": "2026-02-17",
+   "sport": "run",
+   "dist": 3.74,
+   "dur": "31:20",
+   "pace": "8:22",
+   "sec": 502,
+   "note": "3,74km"
+  },
+  {
+   "id": 14,
+   "date": "2026-02-19",
+   "sport": "run",
+   "dist": 6.38,
+   "dur": "52:11",
+   "pace": "8:10",
+   "sec": 490,
+   "note": "6,38km · longão"
+  },
+  {
+   "id": 15,
+   "date": "2026-02-22",
+   "sport": "run",
+   "dist": 0.93,
+   "dur": "6:44",
+   "pace": "7:12",
+   "sec": 432,
+   "note": "0,93km · saída rápida"
+  },
+  {
+   "id": 16,
+   "date": "2026-02-22",
+   "sport": "run",
+   "dist": 9.66,
+   "dur": "1:26:03",
+   "pace": "8:54",
+   "sec": 534,
+   "note": "9,66km · longão"
+  },
+  {
+   "id": 34,
+   "date": "2026-02-23",
+   "sport": "swim",
+   "dist": 0.825,
+   "dur": "37:19",
+   "sec": 271,
+   "note": "825m · 4:31/100m · 118bpm · início natação"
+  },
+  {
+   "id": 17,
+   "date": "2026-03-01",
+   "sport": "run",
+   "dist": 11.79,
+   "dur": "1:30:02",
+   "pace": "7:38",
+   "sec": 458,
+   "note": "11,79km · longão"
+  },
+  {
+   "id": 35,
+   "date": "2026-03-03",
+   "sport": "swim",
+   "dist": 1,
+   "dur": "40:37",
+   "sec": 243,
+   "note": "4:03/100m · 130bpm · FCmax 153bpm"
+  },
+  {
+   "id": 18,
+   "date": "2026-03-05",
+   "sport": "run",
+   "dist": 4.89,
+   "dur": "34:59",
+   "pace": "7:08",
+   "sec": 428,
+   "note": "4,89km"
+  },
+  {
+   "id": 29,
+   "date": "2026-03-07",
+   "sport": "bike",
+   "dist": 44.64,
+   "dur": "2:16:23",
+   "sec": 183.7,
+   "note": "44,64km · 19,6km/h · 124bpm · 366m↑"
+  },
+  {
+   "id": 19,
+   "date": "2026-03-08",
+   "sport": "run",
+   "dist": 11.79,
+   "dur": "1:30:01",
+   "pace": "7:38",
+   "sec": 458,
+   "note": "11,79km · longão"
+  },
+  {
+   "id": 36,
+   "date": "2026-03-09",
+   "sport": "swim",
+   "dist": 1.25,
+   "dur": "43:27",
+   "sec": 208,
+   "note": "3:28/100m · 120bpm · FCmax 141bpm · 2 semanas seguidas 🔥"
+  },
+  {
+   "id": 20,
+   "date": "2026-03-11",
+   "sport": "run",
+   "dist": 4.69,
+   "dur": "30:03",
+   "pace": "6:24",
+   "sec": 384,
+   "note": "4,69km 🔥 sub-6:30 pela 1ª vez!"
+  },
+  {
+   "id": 21,
+   "date": "2026-03-13",
+   "sport": "run",
+   "dist": 4.26,
+   "dur": "28:25",
+   "pace": "6:40",
+   "sec": 400,
+   "note": "4,26km"
+  },
+  {
+   "id": 30,
+   "date": "2026-03-14",
+   "sport": "bike",
+   "dist": 44.58,
+   "dur": "2:08:25",
+   "sec": 173.1,
+   "watts": 98,
+   "note": "44,58km · 20,8km/h · 98W · 381m↑ · 3ª maior subida"
+  },
+  {
+   "id": 22,
+   "date": "2026-03-15",
+   "sport": "run",
+   "dist": 11.51,
+   "dur": "1:30:03",
+   "pace": "7:50",
+   "sec": 470,
+   "note": "11,51km · longão Z2"
+  },
+  {
+   "id": 23,
+   "date": "2026-03-17",
+   "sport": "run",
+   "dist": 2.85,
+   "dur": "19:54",
+   "pace": "6:58",
+   "sec": 418,
+   "note": "2,85km"
+  },
+  {
+   "id": 37,
+   "date": "2026-03-18",
+   "sport": "swim",
+   "dist": 1.2,
+   "dur": "43:23",
+   "sec": 216,
+   "note": "1.200m · 3:36/100m · 130bpm · 6ppm braçada"
+  },
+  {
+   "id": 24,
+   "date": "2026-03-19",
+   "sport": "run",
+   "dist": 4.75,
+   "dur": "30:03",
+   "pace": "6:30",
+   "sec": 390,
+   "note": "4,75km · Z2 forte"
+  },
+  {
+   "id": 31,
+   "date": "2026-03-21",
+   "sport": "bike",
+   "dist": 90.03,
+   "dur": "4:07:55",
+   "sec": 165.1,
+   "watts": 101,
+   "note": "90,03km · 21,8km/h · 101W · 683m↑ · 2ª pedalada mais longa 🏅"
+  },
+  {
+   "id": 25,
+   "date": "2026-03-22",
+   "sport": "run",
+   "dist": 9.85,
+   "dur": "1:25:00",
+   "pace": "8:38",
+   "sec": 518,
+   "note": "9,85km · longão acumulado"
+  },
+  {
+   "id": 38,
+   "date": "2026-03-23",
+   "sport": "swim",
+   "dist": 1.2,
+   "dur": "43:18",
+   "sec": 216,
+   "note": "1.200m · 3:36/100m · 127bpm · FCmax 150bpm"
+  },
+  {
+   "id": 26,
+   "date": "2026-03-25",
+   "sport": "run",
+   "dist": 4.77,
+   "dur": "30:01",
+   "pace": "6:17",
+   "sec": 377,
+   "note": "4,77km 🏆 PR pace — 6:17/km!"
+  },
+  {
+   "id": 39,
+   "date": "2026-03-27",
+   "sport": "swim",
+   "dist": 0.9,
+   "dur": "44:10",
+   "sec": 294,
+   "note": "900m · 4:54/100m · 125bpm · recuperação Z1"
+  },
+  {
+   "id": 32,
+   "date": "2026-03-28",
+   "sport": "bike",
+   "dist": 44.03,
+   "dur": "2:02:40",
+   "sec": 167.4,
+   "watts": 103,
+   "note": "44,03km · 21,5km/h · 103W · 368m↑ · 3º tempo mais rápido no 40K"
+  },
+  {
+   "id": 27,
+   "date": "2026-03-29",
+   "sport": "run",
+   "dist": 7.67,
+   "dur": "1:00:05",
+   "pace": "7:50",
+   "sec": 470,
+   "note": "7,67km · longão"
+  },
+  {
+   "id": 40,
+   "date": "2026-03-30",
+   "sport": "swim",
+   "dist": 1.2,
+   "dur": "45:10",
+   "sec": 225,
+   "note": "1.200m · 3:45/100m · 125bpm · 7ppm braçada"
+  },
+  {
+   "id": 28,
+   "date": "2026-03-31",
+   "sport": "run",
+   "dist": 2.04,
+   "dur": "12:36",
+   "pace": "6:10",
+   "sec": 370,
+   "note": "2,04km · ritmo de prova 6:10/km"
+  },
+  {
+   "id": 33,
+   "date": "2026-04-01",
+   "sport": "run",
+   "dist": 3.02,
+   "dur": "20:25",
+   "pace": "6:45",
+   "sec": 405,
+   "note": "3,02km · PR de KM 4:17/km 🚀"
+  },
+  {
+   "id": 41,
+   "date": "2026-04-02",
+   "sport": "bike",
+   "dist": 0,
+   "dur": "1:00:06",
+   "kcal": 435,
+   "note": "110bpm · FCmax 130bpm · 435kcal"
+  },
+  {
+   "id": 42,
+   "date": "2026-04-03",
+   "sport": "run",
+   "dist": 21.31,
+   "dur": "2:36:32",
+   "pace": "7:21",
+   "sec": 441,
+   "note": "🏆 PRIMEIRA MEIA MARATONA! PR lifetime · 140bpm · 135m↑"
+  },
+  {
+   "id": 43,
+   "date": "2026-04-04",
+   "sport": "swim",
+   "dist": 1.274,
+   "dur": "55:59",
+   "sec": 263,
+   "note": "4:23/100m · 127bpm · FCmax 146bpm · lago aberto"
+  },
+  {
+   "id": 44,
+   "date": "2026-04-05",
+   "sport": "bike",
+   "dist": 0,
+   "dur": "1:30:03",
+   "kcal": 699,
+   "note": "107bpm · FCmax 129bpm · 699kcal"
+  },
+  {
+   "id": 45,
+   "date": "2026-04-05",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "49:48",
+   "kcal": 269,
+   "note": "104bpm · FCmax 134bpm · 269kcal"
+  },
+  {
+   "id": 46,
+   "date": "2026-04-06",
+   "sport": "swim",
+   "dist": 0.925,
+   "dur": "44:55",
+   "sec": 291,
+   "kcal": 552,
+   "note": "4:51/100m · 108bpm · 6ppm braçada · 552kcal"
+  },
+  {
+   "id": 47,
+   "date": "2026-04-06",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "44:52",
+   "kcal": 275,
+   "note": "101bpm · FCmax 133bpm · 275kcal"
+  },
+  {
+   "id": 48,
+   "date": "2026-04-07",
+   "sport": "run",
+   "dist": 5.02,
+   "dur": "30:39",
+   "pace": "6:06",
+   "sec": 366,
+   "note": "5,02km · 6:06/km · 3º melhor 5km · PR 2 milhas"
+  },
+  {
+   "id": 49,
+   "date": "2026-04-07",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "38:07",
+   "kcal": 198,
+   "note": "83bpm · FCmax 104bpm · 198kcal"
+  },
+  {
+   "id": 50,
+   "date": "2026-04-08",
+   "sport": "swim",
+   "dist": 0.774,
+   "dur": "41:55",
+   "sec": 324,
+   "note": "5:24/100m · 100bpm · FCmax 143bpm · lago aberto"
+  },
+  {
+   "id": 51,
+   "date": "2026-04-09",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "47:12",
+   "kcal": 260,
+   "note": "98bpm · FCmax 133bpm · 260kcal"
+  },
+  {
+   "id": 52,
+   "date": "2026-04-11",
+   "sport": "bike",
+   "dist": 43.57,
+   "dur": "2:00:33",
+   "sec": 165.9,
+   "watts": 109,
+   "note": "21,7 km/h · 109W · 390m↑ · 791kJ · 4 RPs 🏆 · São Sebastião DF"
+  },
+  {
+   "id": 54,
+   "date": "2026-04-12",
+   "sport": "run",
+   "dist": 10.02,
+   "dur": "1:03:50",
+   "pace": "6:22",
+   "sec": 382,
+   "kcal": 1014,
+   "note": "🏆 PRs: 10K 1:03:37 · 5K 28:47 · 2mi 17:55 · 1mi 8:26 · 17m↑ · 1.014kcal · Lago Sul DF"
+  },
+  {
+   "id": 53,
+   "date": "2026-04-13",
+   "sport": "swim",
+   "dist": 0.9,
+   "dur": "33:36",
+   "sec": 223,
+   "kcal": 443,
+   "note": "3:43/100m · 36 voltas × 25m · piscina · ~132bpm · 443kcal"
+  },
+  {
+   "id": 55,
+   "date": "2026-04-14",
+   "sport": "bike",
+   "dist": 0,
+   "dur": "46:56",
+   "note": "🧱 Brick — indoor 4min on/4min off · Z2 62% + Z3 23% · esforço 29"
+  },
+  {
+   "id": 56,
+   "date": "2026-04-14",
+   "sport": "run",
+   "dist": 5.04,
+   "dur": "43:54",
+   "pace": "8:42",
+   "sec": 522,
+   "kcal": 538,
+   "note": "🧱 Brick — Z2 pós-bike · 8:42/km · 62m↑ · 538kcal · RP Subida Mangueira 4:00"
+  },
+  {
+   "id": 58,
+   "date": "2026-04-15",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "57:41",
+   "hr": 93,
+   "note": "Full body com pesos · 93bpm avg · FCmax 124bpm · esforço 8"
+  },
+  {
+   "id": 57,
+   "date": "2026-04-16",
+   "sport": "swim",
+   "dist": 1.15,
+   "dur": "43:03",
+   "sec": 224,
+   "kcal": 548,
+   "note": "1.150m · 3:44/100m · 46 voltas × 25m · piscina · 548kcal · maior distância em piscina 🏅"
+  },
+  {
+   "id": 59,
+   "date": "2026-04-17",
+   "sport": "run",
+   "dist": 5.16,
+   "dur": "29:57",
+   "pace": "5:48",
+   "sec": 348,
+   "kcal": 515,
+   "note": "🥈 2º melhor 5K · 5:48/km avg · km3 5:04 · 141bpm · 515kcal · 43m↑ · 7 dias consecutivos 🔥 · Jardim Botânico DF"
+  },
+  {
+   "id": 60,
+   "date": "2026-04-18",
+   "sport": "run",
+   "dist": 5.65,
+   "dur": "39:58",
+   "pace": "7:04",
+   "sec": 424,
+   "hr": 145,
+   "note": "7:04/km · FC 145bpm · esteira · cadência 158ppm · esforço 58 · \"nem z2 nem forte\""
+  },
+  {
+   "id": 61,
+   "date": "2026-04-18",
+   "sport": "bike",
+   "dist": 26.92,
+   "dur": "1:00:54",
+   "sec": 135.8,
+   "watts": 160,
+   "note": "26,5km/h avg · 160W · 255m↑ · 556kJ · Zwift Big Foot Hills in Watopia · 🥈 Titans Grove Northbound 19:24 · esforço 25"
+  },
+  {
+   "id": 62,
+   "date": "2026-04-19",
+   "sport": "run",
+   "dist": 16,
+   "dur": "1:44:06",
+   "pace": "6:30",
+   "sec": 390,
+   "kcal": 1646,
+   "note": "16,00km · 6:30/km · 🏆 PRs: 15km 1:37:34 · 10km 1:03:00 · 186m↑ · 1.646kcal · Lago Sul DF"
+  },
+  {
+   "id": 63,
+   "date": "2026-04-20",
+   "sport": "bike",
+   "dist": 28.49,
+   "dur": "1:07:42",
+   "sec": 142.3,
+   "watts": 165,
+   "kcal": 640,
+   "blocks": {
+    "done": 4,
+    "total": 6
+   },
+   "note": "25,3km/h · 165W · 338m↑ · 640kcal · Zwift Whole Lotta Lava · 🥈 2ª maior potência 45min · 🏆 PR potência sustentada 30min"
+  },
+  {
+   "id": 64,
+   "date": "2026-04-20",
+   "sport": "run",
+   "dist": 8.3,
+   "dur": "58:00",
+   "pace": "5:29",
+   "sec": 329,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "5×1km LT2 PM · avg 5:29/km · F1:5:45 F2:5:21 F3:5:45 F4:5:22 F5:5:14 · todos os blocos ✅ · 🔥 PR pace threshold · Duplo Threshold completo!"
+  },
+  {
+   "id": 65,
+   "date": "2026-04-21",
+   "sport": "swim",
+   "dist": 1.716,
+   "dur": "53:33",
+   "pace": "3:07",
+   "sec": 187,
+   "hr": 138,
+   "kcal": 849,
+   "note": "1.716m · 3:07/100m · FC 138bpm · 849kcal · 58:47 decorrido · 🏆 primeira travessia do lago Paranoá!"
+  },
+  {
+   "id": 66,
+   "date": "2026-04-21",
+   "sport": "run",
+   "dist": 2.02,
+   "dur": "13:38",
+   "pace": "6:45",
+   "sec": 405,
+   "kcal": 172,
+   "note": "2,02km · 6:45/km · 15m↑ · 172kcal · T1: primeira transição nado→corrida · Lago Sul DF"
+  },
+  {
+   "id": 67,
+   "date": "2026-04-22",
+   "sport": "bike",
+   "dist": 39.4,
+   "dur": "1:20:00",
+   "sec": 121.8,
+   "watts": 161,
+   "blocks": {
+    "done": 6,
+    "total": 6
+   },
+   "note": "161W avg · 39,4km · 29,5km/h · FC avg 124 · max 140bpm · FC ~130 estável nos blocos · pernas limitantes ao final dos 10min · todos os blocos ✅ · sinal: limitante muscular, não cardiovascular · Zwift"
+  },
+  {
+   "id": 68,
+   "date": "2026-04-22",
+   "sport": "run",
+   "dist": 8.7,
+   "dur": "57:37",
+   "pace": "6:37",
+   "sec": 305,
+   "hr": 148,
+   "blocks": {
+    "done": 4,
+    "total": 4
+   },
+   "note": "1km aq. + 4×(1,5km @ ~5:05/km LT2 + 0,4km rec.) + 100m volta · FC 148bpm avg · esforço 85 · esteira · Intervalado 1,5/0,4 · duplo threshold de quarta ✅"
+  },
+  {
+   "id": 69,
+   "date": "2026-04-23",
+   "sport": "swim",
+   "dist": 1.35,
+   "dur": "45:34",
+   "pace": "3:22",
+   "sec": 202,
+   "hr": 127,
+   "kcal": 592,
+   "note": "1.350m · 3:22/100m · FC 127bpm · 592kcal · esforço 41 · piscina · Thursday Morning Pool Swim"
+  },
+  {
+   "id": 70,
+   "date": "2026-04-25",
+   "sport": "bike",
+   "dist": 55.08,
+   "dur": "1:58:47",
+   "sec": 118.8,
+   "watts": 161,
+   "hr": 118,
+   "kcal": 1036,
+   "blocks": {
+    "done": 3,
+    "total": 3
+   },
+   "note": "55,1km · 27,8km/h avg · 161W ponderado · 153W avg · FC 118bpm avg · 143bpm max · 1.036kcal · 413m↑ · esforço 38 · intensidade 81% · Zwift Double Parked in New York · Bike Longo Estruturado · cardio controlado ✅ · pernas pesadas nos blocos LT2"
+  },
+  {
+   "id": 72,
+   "date": "2026-04-26",
+   "sport": "run",
+   "dist": 16.01,
+   "dur": "1:56:37",
+   "pace": "7:17",
+   "sec": 437,
+   "kcal": 1638,
+   "note": "16,01km · 7:17/km · 94m↑ · 1.638kcal · esforço 74 · 21°C · 🏆 PR 15km 1:49:36 · RP 400m entrada 6km 2:42 · RP 1km RSD subindo volta 6:55 · RP Subida Pavilhão Completa 9:11 · Sunday Morning Run · Plano Piloto DF"
+  },
+  {
+   "id": 73,
+   "date": "2026-04-27",
+   "sport": "bike",
+   "dist": 19.3,
+   "dur": "46:29",
+   "sec": 46.5,
+   "watts": 179,
+   "hr": 122,
+   "blocks": {
+    "done": 2,
+    "total": 6
+   },
+   "note": "19,3km · 25,0km/h · 179W ponderado · 166W avg · FC 122bpm avg · 465kJ · 223m↑ · esforço 63 · intensidade 90% · Zwift LT2 AM Duplo Threshold · 2/6 blocos completados · pernas sem força — cadência não sustentada · FTP Zwift detectado: 213W 🔥"
+  },
+  {
+   "id": 74,
+   "date": "2026-04-27",
+   "sport": "run",
+   "dist": 8.01,
+   "dur": "54:24",
+   "pace": "5:25",
+   "sec": 325,
+   "hr": 146,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "8,01km · 6:47/km avg · 5×1km LT2 PM · tiros: 5:24 · 5:31 · 5:27 · 5:20 · 5:25 · FC 146bpm avg · 151→158bpm nos tiros · esforço 72 · esteira · Corrida ao entardecer · Duplo Threshold PM completo ✅"
+  },
+  {
+   "id": 75,
+   "date": "2026-04-28",
+   "sport": "swim",
+   "dist": 1.3,
+   "dur": "49:35",
+   "pace": "3:48",
+   "sec": 228,
+   "hr": 130,
+   "kcal": 567,
+   "note": "1.300m · 3:48/100m · 567kcal · esforço 40 · 52 voltas × 25m · piscina · inclui séries de kick (só perna) · FC ~130bpm avg · Tuesday Morning Pool Swim"
+  },
+  {
+   "id": 76,
+   "date": "2026-04-29",
+   "sport": "bike",
+   "dist": 39.55,
+   "dur": "1:20:53",
+   "sec": 80.9,
+   "watts": 175,
+   "hr": 125,
+   "kcal": 774,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "39,6km · 29,3km/h · 175W ponderado · 167W avg · FC 125bpm avg · 143bpm max · 1:20ET · 774kcal · 178m↑ · esforço 38 · intensidade 88% · Zwift R.G.V. in France · WBike LT2 Duplo Threshold AM · 3× RP segmentos 🏆"
+  },
+  {
+   "id": 77,
+   "date": "2026-04-29",
+   "sport": "run",
+   "dist": 8.51,
+   "dur": "58:19",
+   "pace": "5:28",
+   "sec": 328,
+   "blocks": {
+    "done": 4,
+    "total": 4
+   },
+   "note": "8,51km · 4×LT2 Duplo Threshold PM · pace médio 5:28/km · melhor tiro 5:24/km (V6) · FC 150→152→155→154bpm · recuperações 8:32-8:50/km · 58:19 total · esforço 63 · Quarta PM 🌙"
+  },
+  {
+   "id": 78,
+   "date": "2026-04-30",
+   "sport": "swim",
+   "dist": 1,
+   "dur": "47:11",
+   "pace": "2:43",
+   "sec": 163,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "1.000m · pace puro ~2:43/100m (nado real) · ~325m de kick (13 voltas ≥5:30/100m) · FC 97-143bpm · esforço 33 · recuperação ativa pós duplo threshold de quarta 🏊"
+  },
+  {
+   "id": 79,
+   "date": "2026-05-01",
+   "sport": "bike",
+   "dist": 61.17,
+   "dur": "1:56:34",
+   "sec": 116.6,
+   "watts": 173,
+   "hr": 113,
+   "kcal": 1088,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "61,2km · 31,5km/h · 173W NP · 163W avg · FC 113bpm avg · 143bpm max · 1:56:34 · 1.088kcal · 94m↑ · esforço 28 · intensidade 87% · Zwift Tempus Fugit · Bike Longo Estruturado · 🥈2º Fuego Flats Sprint · pico 431W 🏆"
+  },
+  {
+   "id": 80,
+   "date": "2026-05-02",
+   "sport": "swim",
+   "dist": 0.6,
+   "dur": "18:26",
+   "pace": "3:04",
+   "sec": 184,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "600m águas abertas · pace corrigido 3:04/100m (falso start no 1º100m descartado) · 500m prova ~15:10 · média real 3:02/100m · 73 braçadas/100m · FC fácil · 🏊 Aquatlon com Brenda — natação dando o melhor 🏆"
+  },
+  {
+   "id": 81,
+   "date": "2026-05-02",
+   "sport": "run",
+   "dist": 4.01,
+   "dur": "24:36",
+   "pace": "6:08",
+   "sec": 368,
+   "hr": 141,
+   "kcal": 781,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "4,01km · 6:08/km médio (pace reduzido para acompanhar Brenda) · FC 141bpm avg · 157bpm max · pico 4:27/km · oscilação vertical 9,7cm · contato solo 274ms · passada 1,0m · 781kcal · 🏃 Aquatlon corrida"
+  },
+  {
+   "id": 82,
+   "date": "2026-05-03",
+   "sport": "run",
+   "dist": 12.01,
+   "dur": "1:18:30",
+   "pace": "6:32",
+   "sec": 392,
+   "hr": 129,
+   "kcal": 1185,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "12,01km · 6:32/km · FC 129bpm avg · cadência 156ppm · esforço 44 · 45m↑ · 1.185kcal · Adidas EVO SL · Z2 de lei · Lago Sul · domingo · 🏅10km 1:08:51 · RP OffRoad Asa Delta 6:17"
+  },
+  {
+   "id": 83,
+   "date": "2026-05-04",
+   "sport": "bike",
+   "dist": 36.79,
+   "dur": "1:20:26",
+   "sec": 120.4,
+   "watts": 191,
+   "hr": 123,
+   "kcal": 824,
+   "blocks": {
+    "done": 6,
+    "total": 6
+   },
+   "note": "36,79km · 191W NP · 2,00 W/kg · 179W avg · 210W blocos · 2,19 W/kg nos blocos · FC 123bpm avg · 143bpm max · 27,4km/h · 302m↑ · 824kcal · esforço 35 · cadência 78rpm · intensidade 96% · @95,8kg · Zwift Ocean Lava Cliffside Loop · 🚴 MBike LT2 Duplo Threshold AM · 6/6 blocos a 210W 🏆"
+  },
+  {
+   "id": 84,
+   "date": "2026-05-04",
+   "sport": "run",
+   "dist": 8,
+   "dur": "55:56",
+   "pace": "5:18",
+   "sec": 318,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "8,0km · 55:56 · 5×1000m/400m esteira · tiros: 5:24 → 5:21 → 5:21 → 5:20 → 5:05/km (negativa split!) · FC tiros 145-155bpm · recuperações 7:05-7:14/km · FC rec 131-138bpm · esforço 51 · último tiro 4:58 · 155bpm 🔥 · Adidas EVO SL · PM LT2 Duplo Threshold"
+  },
+  {
+   "id": 85,
+   "date": "2026-05-05",
+   "sport": "swim",
+   "dist": 1.1,
+   "dur": "44:32",
+   "pace": "2:03",
+   "sec": 123,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "1.100m · 44 voltas × 25m · pace crawl ativo 2:03/100m · melhor volta 1:44/100m 🔥 · borboleta avg 2:05/100m (4 voltas) · peito técnica (2 voltas) · estrutura: aquecimento 300m + técnica multiestilos + 200m kick/descanso + sprint final · FC 109-133bpm · terça manhã piscina"
+  },
+  {
+   "id": 86,
+   "date": "2026-05-06",
+   "sport": "bike",
+   "dist": 35.04,
+   "dur": "1:10:37",
+   "sec": 70.6,
+   "watts": 197,
+   "hr": 124,
+   "kcal": 773,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "35,04km · 29,8km/h · 197W NP (2,06 W/kg) · 191W avg · FC 124bpm avg · 143bpm max · 1:10:37 · 773kcal · 270m↑ · esforço 31 · intensidade 99% · cadência 77rpm · @95,8kg · Zwift Figure 8 in Watopia · WBike LT2 Duplo Threshold AM · 5/5 blocos 10min @LT2 🏆 · KOM Hilly 4:45"
+  },
+  {
+   "id": 87,
+   "date": "2026-05-06",
+   "sport": "run",
+   "dist": 8.66,
+   "dur": "53:32",
+   "pace": "5:11",
+   "sec": 311,
+   "blocks": {
+    "done": 3,
+    "total": 4
+   },
+   "note": "8,66km · 53:32 · WRun LT2 PM · 4×1,5km · 3/4 blocos completos · paces 5:18→5:09→5:07→4:57/km · FC 151→155→159→161bpm · rec 7:21–7:25/km · saiu acima do planejado 5:30–5:45/km · 4º bloco cortado em 1km (era 1,5km) · FC max 161bpm · progressão invertida: foi acelerando a cada bloco 🔥"
+  },
+  {
+   "id": 88,
+   "date": "2026-05-07",
+   "sport": "swim",
+   "dist": 1.15,
+   "dur": "46:49",
+   "pace": "2:48",
+   "sec": 168,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "1.150m · 46 voltas × 25m · pace ativo 2:48/100m (mediana) · melhor volta 2:20/100m · FC 126–136bpm ativo · estrutura mista: aq.250m + bloco ativo 150m + drills e pausas + 4×(75m ativo + 25m descanso) + drills 125m + sprint final 125m · quinta manhã piscina"
+  },
+  {
+   "id": 89,
+   "date": "2026-05-09",
+   "sport": "swim",
+   "dist": 2.31,
+   "dur": "1:10:19",
+   "pace": "3:02",
+   "sec": 182,
+   "hr": 123,
+   "kcal": 1124,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "2.310m · 1:10:19 movimentação · 1:18:42 total · pace 3:02/100m · FC 123bpm avg · 170bpm max · 1.124kcal · esforço 53 · 17°C · Lago Sul DF · 🌊 natação em águas abertas · Apple Watch Ultra 2"
+  },
+  {
+   "id": 90,
+   "date": "2026-05-10",
+   "sport": "run",
+   "dist": 19.2,
+   "dur": "1:44:35",
+   "pace": "5:27",
+   "sec": 327,
+   "hr": 159,
+   "kcal": 1662,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "19,20km · 1:44:35 · 5:27/km avg · FC 159bpm avg · RAI 5:25/km · 1.662kcal · esforço 238 · 88m↑ · 20°C · Plano Piloto DF · 🏆 Wings for Life World Run · PR 5km 24:45 · PR 10km 51:10 · PR 15km 1:19:41 · Adidas EVO SL (98,7km) · splits: 4:50→5:08→5:05→4:56→4:51→5:31→5:36→5:07→4:59→5:06→6:24→5:32/km"
+  },
+  {
+   "id": 91,
+   "date": "2026-05-11",
+   "sport": "swim",
+   "dist": 1.1,
+   "dur": "46:23",
+   "pace": "2:44",
+   "sec": 164,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "1.100m · 44 voltas × 25m · pace ativo 2:44/100m (mediana) · melhor volta 2:04/100m · 22 voltas ativas · total 46:23 · recuperação ativa pós Wings for Life · segunda manhã piscina"
+  },
+  {
+   "id": 92,
+   "date": "2026-05-13",
+   "sport": "bike",
+   "dist": 31.14,
+   "dur": "57:07",
+   "sec": 57.1,
+   "watts": 193,
+   "hr": 127,
+   "kcal": 609,
+   "blocks": {
+    "done": 4,
+    "total": 5
+   },
+   "note": "31,14km · 32,7km/h · 193W NP (2,01 W/kg) · 186W avg · FC 127bpm avg · 143bpm max · 57:07 · 609kcal · 47m↑ · esforço 30 · intensidade 97% · cadência 76rpm · Zwift Tempus Fugit in Watopia · WBike LT2 Duplo Threshold AM · 4/5 blocos · pulou último bloco por fadiga acumulada pós Wings for Life · RP Fuego Flats Sprint 47s"
+  },
+  {
+   "id": 93,
+   "date": "2026-05-13",
+   "sport": "run",
+   "dist": 4.76,
+   "dur": "30:46",
+   "pace": "5:32",
+   "sec": 338,
+   "blocks": {
+    "done": 2,
+    "total": 4
+   },
+   "note": "4,76km · 30:46 · 5:32/km bloco 1 · 5:44/km bloco 2 · FC 154bpm pico · ⚠️ abortado após 2/4 blocos · fadiga acumulada: 3º dia consecutivo de threshold (Wings for Life D+3) + WBike AM 4/5 blocos + déficit calórico Mounjaro · voltas: V1 1,26km 7:08/km Z1 · V2 1,40km 5:32/km LT2 154bpm · V3 0,53km 7:24/km rec · V4 1,19km 5:44/km LT2 151bpm · V5 0,38km 8:06/km abort · WRun LT2 Duplo Threshold PM · Plano Piloto DF"
+  },
+  {
+   "id": 94,
+   "date": "2026-05-14",
+   "sport": "swim",
+   "dist": 1.075,
+   "dur": "41:41",
+   "pace": "2:56",
+   "sec": 176,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "1.075m · 43 voltas × 25m · pace ativo 2:56/100m (mediana) · mín 1:24/100m · 30 voltas ativas · 13 pausas · total 41:41 · FC máx 142bpm · recuperação ativa pós duplo threshold de quarta · quinta manhã piscina"
+  },
+  {
+   "id": 95,
+   "date": "2026-05-15",
+   "sport": "run",
+   "dist": 5,
+   "dur": "39:25",
+   "pace": "7:53",
+   "sec": 473,
+   "hr": 119,
+   "kcal": 521,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "5,00km · 39:25 · 7:53/km · FC 119bpm avg · 521kcal · corrida regenerativa Z1 · pós semana Wings for Life · sexta manhã"
+  },
+  {
+   "id": 96,
+   "date": "2026-05-16",
+   "sport": "bike",
+   "dist": 23.46,
+   "dur": "1:00:12",
+   "sec": 60.2,
+   "watts": 147,
+   "hr": 112,
+   "kcal": 493,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "23,46km · 1:00:12 · 23,4km/h · 147W NP · 143W avg · FC 112bpm avg · 136bpm max · 493kcal · 292m↑ · cadência 71rpm · intensidade 74% · Zwift Hilly Route Watopia · Bike Longo Estruturado Z2 · 🥈 2º Hilly Route Banner to Banner 21:54 · sábado manhã"
+  },
+  {
+   "id": 97,
+   "date": "2026-05-17",
+   "sport": "run",
+   "dist": 10.14,
+   "dur": "52:50",
+   "pace": "5:13",
+   "sec": 313,
+   "kcal": 1009,
+   "blocks": {
+    "done": 0,
+    "total": 0
+   },
+   "note": "10,14km · 52:50 (decorrido 55:17) · 5:13/km · FC máx 173bpm · 1.009kcal · 97m↑ · esforço relativo 156 🔥 · 19°C nublado · umidade 79% · 🏅 10K Netshoes Plano Piloto DF · domingo 07:08 · Apple Watch Ultra 2 · Nike Vaporfly 3 · splits: km1 4:36/109bpm → km2 4:39/161bpm → km3-4 5:25-5:33/170-171bpm → km5-6 4:42-4:57/170bpm → km7-8 5:35-5:56/166-167bpm → km9 6:09/163bpm → km10 4:44/173bpm 💪 · positive split clássico: saída rápida demais · PR Strava 10K: 51:59"
+  },
+  {
+   "id": 98,
+   "date": "2026-05-20",
+   "sport": "bike",
+   "dist": 27.54,
+   "dur": "1:00:15",
+   "sec": 60.25,
+   "watts": 179,
+   "hr": 133,
+   "kcal": 577,
+   "blocks": {
+    "done": 3,
+    "total": 5
+   },
+   "note": "27,54km · 1:00:15 · 27,4km/h · 179W NP (1,83 W/kg) · 168W avg · FC 133bpm avg · 155bpm max · 577kcal · 194m↑ · esforço 52 · intensidade 90% · cadência 75rpm · Ocean Lava Cliffside Loop · Zwift · WBike LT2 Duplo Threshold AM · 3/5 blocos · RP Loop 40:29 🏆 · RP Dirty Sorpresa Climb 1:35 🏆"
+  },
+  {
+   "id": 99,
+   "date": "2026-05-20",
+   "sport": "run",
+   "dist": 8.78,
+   "dur": "56:48",
+   "pace": "5:20",
+   "sec": 320,
+   "blocks": {
+    "done": 2,
+    "total": 5
+   },
+   "note": "8,78km · 56:48 · FC 158–162bpm nos tiros · WRun LT2 Duplo Threshold PM · 2/5 blocos completos · tiro1 1,5km@5:15 ✅ · tiro2 1,47km@5:22 ✅ · tiro3 abortado 1,23km@5:18 · tiro4 desistido 0,14km · tiro5 encurtado 1km@5:27 · ⚠️ falha muscular/energética — FC ok, glicogênio baixo · déficit calórico véspera 2.500kcal"
+  },
+  {
+   "id": 100,
+   "date": "2026-05-21",
+   "sport": "swim",
+   "dist": 0.925,
+   "dur": "39:33",
+   "pace": "2:58",
+   "sec": 178,
+   "hr": 136,
+   "note": "925m · 39:33 total · 37 voltas × 25m · pace ativo ~2:58/100m (22 voltas) · pace médio geral 4:16/100m · FC máx 156bpm · FC médio ~136bpm · 🏊 primeira sessão em piscina do ciclo · muitas pausas de descanso entre voltas · volume inicial de adaptação"
+  },
+  {
+   "id": 101,
+   "date": "2026-05-22",
+   "sport": "run",
+   "dist": 8,
+   "dur": "56:31",
+   "pace": "7:04",
+   "sec": 424,
+   "hr": 135,
+   "note": "8,0km · 56:31 · 7:04/km avg · FC 135bpm avg · 141bpm max · 64m↑ · Z2 regenerativa · km1 6:14@127bpm → km8 7:32@141bpm · splits progressivos em subida"
+  },
+  {
+   "id": 102,
+   "date": "2026-05-23",
+   "sport": "bike",
+   "dist": 58.05,
+   "dur": "2:31:28",
+   "sec": 151.5,
+   "watts": 104,
+   "hr": 123,
+   "note": "58,05km · 2:31:28 · 23,0km/h · 104W avg · FC 123bpm avg · 149bpm max · 946kJ · 401m↑ · esforço 55 · 17°C nublado · umidade 90% · São Sebastião DF · Bike Longo Z2 · RP Chegada EVOLUA 1:22 🏆 · RP Subidinha ESAF 3:06 🏆 · RP Posto JK×Morro Asa Delta 17:34 🏆 · sábado manhã"
+  },
+  {
+   "id": 103,
+   "date": "2026-05-24",
+   "sport": "run",
+   "dist": 16.01,
+   "dur": "1:45:11",
+   "pace": "6:34",
+   "sec": 394,
+   "hr": 138,
+   "note": "16,01km · 1:45:11 · 6:34/km avg · FC 138bpm avg · 145bpm max · 63m↑ · esforço 90 · 18°C nublado · umidade 88% · Plano Piloto DF · Run Longo Z2 · Adidas EVO SL (123,1km) · RP Eixão Sul BSB City 11:10 🏆 · best effort 10mi 1:47:25 · best effort 15km 1:39:54 · km1 6:56@116 → km6 5:39@143 → km16 6:39@139 · domingo manhã"
+  },
+  {
+   "id": 104,
+   "date": "2026-05-25",
+   "sport": "bike",
+   "dist": 27.32,
+   "dur": "52:02",
+   "sec": 52,
+   "watts": 188,
+   "blocks": {
+    "done": 4,
+    "total": 6
+   },
+   "note": "27,32km · 52:02 · 31,5km/h · 188W NP (1,92 W/kg) · 174W avg · 232W máx · cadência 69rpm · 543kJ · 42m↑ · esforço 76 · intensidade 94% · Zwift Tempus Fugit · MBike LT2 Duplo Threshold AM · 4/6 blocos · abortou no 5º por queda de qualidade · sem alimentação prévia · sem intra · RP Tempus Fugit 31:26 🏆 · RP Fuego Flats Reverse Sprint 12:40 🏆 · segunda manhã"
+  },
+  {
+   "id": 105,
+   "date": "2026-05-25",
+   "sport": "run",
+   "dist": 7.6,
+   "dur": "49:50",
+   "pace": "5:08",
+   "sec": 308,
+   "hr": 142,
+   "blocks": {
+    "done": 3,
+    "total": 5
+   },
+   "note": "7,60km · 49:50 · 6:35/km avg · 142bpm avg · 161bpm max · WRun LT2 Duplo Threshold PM · 3×1km + 0,71km LT2 @5:03–5:13/km · FC 156→159→161→160bpm · 4/5 blocos (3 completos + 4º abortado) · ritmo 20s/km acima do planejado nos tiros · gás acabou no 4º bloco · segunda tarde"
+  },
+  {
+   "id": 106,
+   "date": "2026-05-26",
+   "sport": "swim",
+   "dist": 1.425,
+   "dur": "49:29",
+   "pace": "2:54",
+   "sec": 174,
+   "note": "1.425m · 49:29 total · 57 voltas × 25m · 43 voltas ativas · pace ativo ~2:54/100m · melhor volta 1:51/100m (lap 37) · FC 148bpm máx · melhora vs sessão anterior (2:58→2:54/100m) · muitas pausas · piscina · terça manhã"
+  },
+  {
+   "id": 107,
+   "date": "2026-05-27",
+   "sport": "bike",
+   "dist": 31.8,
+   "dur": "1:10:10",
+   "sec": 70.2,
+   "watts": 197,
+   "hr": 135,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "31,80km · 1:10:10 · 27,2km/h · 197W NP (2,15 W/kg) · 192W avg · 241W máx · 210–211W nos blocos · FC 135bpm avg · 148bpm max · cadência 68rpm · 807kJ · 391m↑ · esforço 99% · Zwift Whole Lotta Lava · WBike LT2 Duplo Threshold AM · 5/5 blocos ✅ · drift FC 136→142bpm · banana+mel pré · maltodextrina+mel intra · fueling confirmado · RP Volcano KOM 12:55 🏆 · RP Volcano Descent 4:17 🏆 · RP Whole Lotta Lava 26:24 🏆 · quarta manhã"
+  },
+  {
+   "id": 108,
+   "date": "2026-05-27",
+   "sport": "run",
+   "dist": 8.01,
+   "dur": "53:14",
+   "pace": "5:25",
+   "sec": 325,
+   "hr": 145,
+   "blocks": {
+    "done": 3,
+    "total": 4
+   },
+   "note": "8,01km · 53:14 · 6:39/km avg · esteira · WRun LT2 Duplo Threshold PM · 3 blocos LT2 completos + 4º abortado · Volta 1 marcação errada (aquecimento + bloco 1 juntos) · B2: 1,46km @5:23/km FC 158bpm ✅ · B3: 1,50km @5:26/km FC 157bpm ✅ · B4 abort: 0,74km @5:31/km FC 153bpm (qualidade caindo) · FC 145bpm avg · ES 62 · quarta noite"
+  },
+  {
+   "id": 109,
+   "date": "2026-05-29",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "1:07:39",
+   "pace": "6:46",
+   "sec": 406,
+   "hr": 138,
+   "kcal": 860,
+   "note": "10,01km · 1:07:39 · 6:46/km avg · RAI 6:39/km · FC 138bpm avg · 120m↑ · 860kcal · ES 56 · 16°C nublado · umidade 81% · São Sebastião DF · Recuperação Z2 · Nike Vomero Plus (10,0km) · parciais 6:19–7:12/km (ondulado) · dia após duplo threshold quarta · sexta manhã"
+  },
+  {
+   "id": 110,
+   "date": "2026-05-30",
+   "sport": "bike",
+   "dist": 46.63,
+   "dur": "2:02:39",
+   "sec": 122.6,
+   "watts": 110,
+   "kcal": 903,
+   "note": "46,63km · 2:02:39 · 22,8km/h avg · 44,8km/h máx · 110W estimado Strava (sem potenciômetro) · 810kJ · 409m↑ · 903kcal · 16°C nublado · umidade 91% · São Sebastião DF · Bike Longo Z2 · sensação ótima · RP Subida QI23 18:38 🏆 · RP QI23 1º→2º balão 8:06 🏆 · RP Chegada EVOLUA 1:19 🏆 · RP Subida Volta da Matinha 1:59 🏆 · PR 10mi 34:53 🏆 · PR 20K 44:12 🏆 · sábado manhã"
+  },
+  {
+   "id": 111,
+   "date": "2026-05-31",
+   "sport": "run",
+   "dist": 16.01,
+   "dur": "1:47:36",
+   "pace": "6:43",
+   "sec": 403,
+   "hr": 134,
+   "kcal": 1331,
+   "note": "16,01km · 1:47:36 · 6:43/km avg · RAI 6:39/km · FC 134bpm avg · 125m↑ · 1.331kcal · ES 61 · 14°C limpo · umidade 91% · São Sebastião DF · Run Longo Z2 · Nike Vomero Plus (26km) · PR 10mi 1:49:50 🏆 · RP Igreja→Califórnia 6:44 🏆 · RP JB Igreja→Balão ESAF 12:58 🏆 · domingo manhã"
+  },
+  {
+   "id": 112,
+   "date": "2026-06-01",
+   "sport": "bike",
+   "dist": 27.36,
+   "dur": "1:11:03",
+   "sec": 71,
+   "watts": 195,
+   "hr": 130,
+   "kcal": 747,
+   "note": "27,36km · 1:11:03 · 23,1km/h · 195W NP (1,99 W/kg) · 184W avg · cadência 72,8rpm · 784kJ · 444m↑ · 747kcal · FC 130,5bpm avg · 146bpm máx · ES 49 · Zwift London Loop · potência com medidor ✓ · MBike LT2 Duplo Threshold AM · 6×8min @~210W LT2 · rec 2min @~170W · melhor 20min 202W (FTP est. ~192W) · melhor 8min 210W · RP Box Hill KOM 13:39 🏆 · RP Northumberland Ave Climb 1:11 🏆 · RP Fox Hill Descent 3:45 🏆 · segunda manhã"
+  },
+  {
+   "id": 113,
+   "date": "2026-06-01",
+   "sport": "run",
+   "dist": 10,
+   "dur": "1:07:24",
+   "pace": "5:13",
+   "sec": 313,
+   "hr": 149,
+   "blocks": {
+    "done": 6,
+    "total": 6
+   },
+   "note": "10,0km · 1:07:24 · esteira · WRun LT2 Duplo Threshold PM · 6/6 blocos LT2 ✅ · B1: 990m @5:20/km FC 149bpm · B2: 1,01km @5:12/km FC 155bpm ✅ · B3: 1,01km @5:10/km FC 157bpm ✅ · B4: 1,01km @5:10/km FC 159bpm ✅ · B5: 1,01km @5:14/km FC 160bpm ✅ · B6: 985m @5:14/km FC 159bpm ✅ · rec ~390–400m @8:00–10:00/km · FC avg 158bpm (blocos) · segunda noite"
+  },
+  {
+   "id": 114,
+   "date": "2026-06-02",
+   "sport": "swim",
+   "dist": 1.2,
+   "dur": "41:35",
+   "pace": "3:25",
+   "sec": 205,
+   "hr": 138,
+   "kcal": 428,
+   "note": "1.200m · 41:35 · 3:25/100m · FC 138bpm avg · 428kcal · ES 30 · Apple Watch Ultra 2 · piscina · terça noite"
+  },
+  {
+   "id": 118,
+   "date": "2026-06-02",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "40:47",
+   "kcal": 261,
+   "note": "Musculação A — Inferiores + Pliometria · 261kcal · ES 7 · terça manhã"
+  },
+  {
+   "id": 115,
+   "date": "2026-06-03",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "1:06:08",
+   "pace": "6:32",
+   "sec": 392,
+   "hr": 138,
+   "kcal": 838,
+   "note": "10,01km · 1:06:08 · 6:32/km avg · RAI 6:27/km · FC 138bpm avg · 122m↑ · 838kcal · ES 55 · 15°C nublado · umidade 78% · São Sebastião DF · Corrida matinal Z1/Z2 · Nike Vomero Plus (36,0km) · RP Descida Avenida das Paineiras JB III 7:44 🏆 · 2º Climb Mangueiral Balões 9:36 · quarta manhã"
+  },
+  {
+   "id": 119,
+   "date": "2026-06-03",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "49:32",
+   "kcal": 245,
+   "note": "Musculação B — Upper Body · 245kcal · ES 4 · quarta entardecer"
+  },
+  {
+   "id": 116,
+   "date": "2026-06-04",
+   "sport": "bike",
+   "dist": 40.59,
+   "dur": "1:29:05",
+   "sec": 27.3,
+   "watts": 227,
+   "hr": 137,
+   "kcal": 1417,
+   "note": "40,59km · 1:29:05 · 27,3km/h avg · 43,6km/h máx · 227W estimado Strava (sem potenciômetro) · 2,37 W/kg · 1.214kJ · 634m↑ · 1.417kcal · FC 137,7bpm avg · 177bpm máx · ES 86 · 15°C limpo · umidade 82% · Plano Piloto DF · Autódromo · MBike LT2 Duplo Threshold AM · aquecimento + 5×10min @LT2 · rec.2min · 5/5 blocos ✅ · 84 PRs todos ouro (1ª vez no percurso) 🏆 · melhor volta completa Autódromo 9:51 FC 153bpm 🏆 · Inspira Team Volta 9:36 FC 152bpm 🏆 · Subida Reta dos Boxes melhor 1:34 FC 158bpm 🏆 · Sprint Reta Chegada 39s 🏆 · Retão 1:20 🏆 · best 10K 19:22 (30,9km/h) · best 20K 40:36 (29,5km/h) · quinta manhã · feriado"
+  },
+  {
+   "id": 117,
+   "date": "2026-06-04",
+   "sport": "run",
+   "dist": 11,
+   "dur": "1:11:10",
+   "pace": "5:08",
+   "sec": 308,
+   "hr": 148,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "11,0km · 1:11:10 · WRun LT2 Duplo Threshold PM · 5/5 blocos ✅ · progressão de pace bloco a bloco · B1: 1,51km @5:15/km FC 148bpm ✅ · B2: 1,51km @5:09/km FC 153bpm ✅ · B3: 1,50km @5:10/km FC 155bpm ✅ · B4: 1,50km @5:06/km FC 157bpm ✅ · B5: 1,50km @5:00/km FC 158bpm ✅ · rec ~490–500m · pace médio LT2 5:08/km · quinta tarde · feriado · pós bike AM outdoor"
+  },
+  {
+   "id": 120,
+   "date": "2026-06-05",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "38:16",
+   "note": "Musculação — 217kcal · ES 6 · sexta manhã"
+  },
+  {
+   "id": 121,
+   "date": "2026-06-05",
+   "sport": "swim",
+   "dist": 1.3,
+   "dur": "43:13",
+   "pace": "3:17",
+   "sec": 197,
+   "kcal": 479,
+   "note": "1.300m · 43:13 · 3:17/100m · 479kcal · ES 39 · piscina · Friday Evening Pool Swim · sexta noite"
+  },
+  {
+   "id": 122,
+   "date": "2026-06-06",
+   "sport": "bike",
+   "dist": 8.69,
+   "dur": "20:17",
+   "sec": 25.7,
+   "watts": 154,
+   "kcal": 154,
+   "note": "8,69km · 20:17 · Zwift Volcano Flat · INEOS Grenadiers Pre-Race Warm-up · aquecimento pré-FTP test · cadência 93,8rpm · 154kcal · ES 6 · sábado manhã"
+  },
+  {
+   "id": 123,
+   "date": "2026-06-06",
+   "sport": "bike",
+   "dist": 12.65,
+   "dur": "27:27",
+   "sec": 27.6,
+   "watts": 243,
+   "hr": 127,
+   "kcal": 238,
+   "note": "12,65km · 27:27 · Zwift Tempus Fugit · FTP Ramp Test · NOVO FTP: 243W (PR) 🏆 · 2,68 W/kg a 90,8kg · melhor 1min 320W · melhor 5min 279W · melhor 8min 250W · FC 127,8bpm avg · 165bpm máx · cadência 82,9rpm · 238kcal · sábado manhã"
+  },
+  {
+   "id": 124,
+   "date": "2026-06-07",
+   "sport": "run",
+   "dist": 18,
+   "dur": "1:50:00",
+   "pace": "6:07",
+   "sec": 367,
+   "hr": 141,
+   "kcal": 1491,
+   "note": "18,0km · 1:50:00 · 6:07/km avg · FC 141bpm avg · 156bpm máx · 136m↑ · 1.491kcal · ES 123 · Eixão Norte/Sul Brasília · Longão Z2 Semana 7 ✅ · Nike Vomero Plus · 24 PRs ouro 🏆 · melhor 10K 59:34 · melhor 15K 1:31:50 · domingo manhã"
+  },
+  {
+   "id": 125,
+   "date": "2026-06-08",
+   "sport": "bike",
+   "dist": 21.47,
+   "dur": "46:10",
+   "sec": 46.2,
+   "watts": 170,
+   "hr": 124,
+   "kcal": 449,
+   "blocks": {
+    "done": 2,
+    "total": 6
+   },
+   "note": "21,47km · 46:10 · 170W avg · FC 124bpm avg · 147bpm máx · 449kcal · 85m↑ · cadência 67rpm · Zwift Volcano Flat · WBike LT2 Duplo Threshold AM · novo alvo 220–235W (FTP 243W) · B1: 8min @231,7W FC 137bpm ✅ · B2: 8min @226,1W FC 144bpm ✅ · blocos 3–6 abaixo/instáveis na nova faixa — esforço cumulativo alto, ajuste de adaptação ao novo FTP em curso · 14 PRs · segunda manhã"
+  },
+  {
+   "id": 126,
+   "date": "2026-06-08",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "1:05:17",
+   "pace": "4:56",
+   "sec": 296,
+   "hr": 143,
+   "kcal": 1055,
+   "blocks": {
+    "done": 6,
+    "total": 6
+   },
+   "note": "10,01km · 1:05:17 · esteira · WRun LT2 Duplo Threshold PM · 6/6 blocos LT2 ✅ 🔥 · B1: 1,01km @5:04/km FC 148bpm ✅ · B2: 1,01km @4:55/km FC 155bpm ✅ · B3: 1,00km @5:01/km FC 152bpm ✅ · B4: 1,01km @4:56/km FC 156bpm ✅ · B5: 1,01km @4:52/km FC 158bpm ✅ · B6: 1,00km @4:49/km FC 161bpm ✅ · rec ~390–400m @7:34–9:39/km · FC 143bpm avg · 167bpm máx · 1.055kcal · pace médio LT2 4:56/km 🏆 PR pace limiar · segunda noite"
+  },
+  {
+   "id": 127,
+   "date": "2026-06-09",
+   "sport": "swim",
+   "dist": 1.2,
+   "dur": "41:08",
+   "pace": "3:26",
+   "sec": 206,
+   "hr": 104,
+   "kcal": 517,
+   "note": "1.200m · 41:08 · 3:26/100m · FC 104bpm avg · 154bpm máx · 517kcal · piscina · terçã manhã"
+  },
+  {
+   "id": 128,
+   "date": "2026-06-09",
+   "sport": "strength",
+   "dist": 0,
+   "dur": "33:53",
+   "hr": 92,
+   "kcal": 177,
+   "note": "Musculação — 33:53 · FC 92bpm avg · 129bpm máx · 177kcal · ES 4 · terça noite · importado do Strava"
+  },
+  {
+   "id": 129,
+   "date": "2026-06-10",
+   "sport": "run",
+   "dist": 12.01,
+   "dur": "1:18:30",
+   "pace": "6:32",
+   "sec": 309,
+   "hr": 143,
+   "kcal": 1252,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "WRun LT2 5×1,5km ✅ 5/5 — tiros 5:11·5:08·5:06·5:06·5:16 (méd 5:09/km, alvo 5:10) · FC tiros ~155bpm · 12,01km · 1:18:30 · FC 143bpm avg · 162bpm máx · 1.252kcal · RE 84 · quarta noite · Strava"
+  }
+ ],
+ "weight_data": [
+  {
+   "date": "2026-02-06",
+   "kg": 99.9
+  },
+  {
+   "date": "2026-03-13",
+   "kg": 100
+  },
+  {
+   "date": "2026-04-10",
+   "kg": 97.9
+  },
+  {
+   "date": "2026-05-04",
+   "kg": 95.8
+  },
+  {
+   "date": "2026-06-12",
+   "kg": 89.9
+  }
+ ],
+ "quality_manual": [
+  {
+   "date": "2026-04-20",
+   "sport": "run",
+   "done": 5,
+   "planned": 5
+  },
+  {
+   "date": "2026-04-22",
+   "sport": "run",
+   "done": 6,
+   "planned": 6
+  },
+  {
+   "date": "2026-04-27",
+   "sport": "run",
+   "done": 5,
+   "planned": 5
+  },
+  {
+   "date": "2026-04-29",
+   "sport": "run",
+   "done": 4.5,
+   "planned": 6
+  },
+  {
+   "date": "2026-05-04",
+   "sport": "run",
+   "done": 5,
+   "planned": 5
+  },
+  {
+   "date": "2026-05-06",
+   "sport": "run",
+   "done": 5.5,
+   "planned": 6
+  },
+  {
+   "date": "2026-05-13",
+   "sport": "run",
+   "done": 2,
+   "planned": 4
+  },
+  {
+   "date": "2026-05-20",
+   "sport": "run",
+   "done": 3,
+   "planned": 7.5
+  },
+  {
+   "date": "2026-04-22",
+   "sport": "bike",
+   "done": 24,
+   "planned": 24
+  },
+  {
+   "date": "2026-04-27",
+   "sport": "bike",
+   "done": 7,
+   "planned": 24
+  },
+  {
+   "date": "2026-04-29",
+   "sport": "bike",
+   "done": 12,
+   "planned": 24
+  },
+  {
+   "date": "2026-05-04",
+   "sport": "bike",
+   "done": 22,
+   "planned": 24
+  },
+  {
+   "date": "2026-05-06",
+   "sport": "bike",
+   "done": 25,
+   "planned": 25
+  },
+  {
+   "date": "2026-05-13",
+   "sport": "bike",
+   "done": 17,
+   "planned": 21
+  },
+  {
+   "date": "2026-05-20",
+   "sport": "bike",
+   "done": 11,
+   "planned": 18
+  },
+  {
+   "date": "2026-05-25",
+   "sport": "bike",
+   "done": 16.8,
+   "planned": 25.2
+  },
+  {
+   "date": "2026-05-25",
+   "sport": "run",
+   "done": 3.64,
+   "planned": 5
+  },
+  {
+   "date": "2026-05-27",
+   "sport": "bike",
+   "done": 23.4,
+   "planned": 23.4
+  },
+  {
+   "date": "2026-05-27",
+   "sport": "run",
+   "done": 4.5,
+   "planned": 6
+  },
+  {
+   "date": "2026-06-01",
+   "sport": "bike",
+   "done": 21.6,
+   "planned": 21.6
+  },
+  {
+   "date": "2026-06-01",
+   "sport": "run",
+   "done": 6,
+   "planned": 6
+  },
+  {
+   "date": "2026-06-04",
+   "sport": "bike",
+   "done": 22.5,
+   "planned": 25
+  },
+  {
+   "date": "2026-06-04",
+   "sport": "run",
+   "done": 7.5,
+   "planned": 7.5
+  },
+  {
+   "date": "2026-06-08",
+   "sport": "bike",
+   "done": 8.5,
+   "planned": 25.5
+  },
+  {
+   "date": "2026-06-08",
+   "sport": "run",
+   "done": 6,
+   "planned": 6
+  }
+ ],
+ "inbody_exams": [
+  {
+   "date": "2026-02-06",
+   "label": "06/02 (A)",
+   "hora": "09:45",
+   "peso": 99.8,
+   "musculo": 43.3,
+   "gc_pct": 24.3,
+   "gordura_kg": null,
+   "score": null,
+   "tmb": null,
+   "visceral": null,
+   "seg": null
+  },
+  {
+   "date": "2026-02-06",
+   "label": "06/02 (B)",
+   "hora": "09:46",
+   "peso": 100,
+   "musculo": 42.5,
+   "gc_pct": 25.8,
+   "gordura_kg": 25.8,
+   "score": 77,
+   "tmb": 1973,
+   "visceral": 12,
+   "seg": {
+    "braco_e": 4.34,
+    "braco_d": 4.48,
+    "tronco": 33.1,
+    "perna_e": 10.83,
+    "perna_d": 10.86
+   }
+  },
+  {
+   "date": "2026-03-13",
+   "label": "13/03",
+   "hora": "08:35",
+   "peso": 100,
+   "musculo": 44.3,
+   "gc_pct": 22.5,
+   "gordura_kg": 22.5,
+   "score": 84,
+   "tmb": 2043,
+   "visceral": 10,
+   "seg": {
+    "braco_e": 4.6,
+    "braco_d": 4.66,
+    "tronco": 34.1,
+    "perna_e": 11.16,
+    "perna_d": 11.19
+   }
+  },
+  {
+   "date": "2026-04-10",
+   "label": "10/04",
+   "hora": "10:35",
+   "peso": 97.9,
+   "musculo": 44.4,
+   "gc_pct": 20.7,
+   "gordura_kg": 20.3,
+   "score": 87,
+   "tmb": 2046,
+   "visceral": 9,
+   "seg": {
+    "braco_e": 4.48,
+    "braco_d": 4.64,
+    "tronco": 33.7,
+    "perna_e": 11.3,
+    "perna_d": 11.11
+   }
+  },
+  {
+   "date": "2026-05-04",
+   "label": "04/05",
+   "hora": "09:40",
+   "peso": 95.8,
+   "musculo": 43.6,
+   "gc_pct": 20.2,
+   "gordura_kg": 19.4,
+   "score": 86,
+   "tmb": 2021,
+   "visceral": 9,
+   "seg": {
+    "braco_e": 4.36,
+    "braco_d": 4.53,
+    "tronco": 33,
+    "perna_e": 11.26,
+    "perna_d": 11.14
+   }
+  },
+  {
+   "date": "2026-06-12",
+   "label": "12/06",
+   "hora": "08:38",
+   "peso": 89.9,
+   "musculo": 42.9,
+   "gc_pct": 16.6,
+   "gordura_kg": 14.9,
+   "score": 89,
+   "tmb": 1989,
+   "visceral": 6,
+   "seg": {
+    "braco_e": 4.31,
+    "braco_d": 4.43,
+    "tronco": 32.5,
+    "perna_e": 10.97,
+    "perna_d": 11.1
+   }
+  }
+ ]
+}
