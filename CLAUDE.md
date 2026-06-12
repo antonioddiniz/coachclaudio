@@ -16,6 +16,20 @@ servindo a versão certa.
 O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — mudou o
 `data.json`, o app recarrega os dados sem precisar de versão manual.
 
+## Responsividade
+
+O site é **totalmente responsivo** com breakpoints otimizados:
+
+- **≥ 760px**: Layout desktop completo
+- **640-760px**: Tablets pequenos (ajuste de grids)
+- **480-640px**: Celulares (1 coluna para forms, 2 para grids)
+- **< 480px**: Celulares grandes (otimizado)
+- **< 360px**: iPhone SE e similares (ultra-compacto: stack de fields, mini calendar, etc)
+
+Cada breakpoint reduz padding/margin, fonte e complexidade visual conforme necessário.
+Form inputs ganham `font-size: 16px` em mobile para evitar zoom automático.
+Tab bar em overflow-x auto com smooth scroll para navegar entre abas.
+
 ## Schema do data.json (schema_version: 1)
 
 ```json
