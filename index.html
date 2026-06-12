@@ -1319,14 +1319,13 @@ canvas { max-height: 340px; }
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid #1e2230;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0;
-  padding: 0 8px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  padding: 0 16px;
+  overflow-x: visible;
+  overflow-y: visible;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 .tab-bar::-webkit-scrollbar { display: none; }
 
@@ -1350,6 +1349,16 @@ canvas { max-height: 340px; }
 .tab-btn:hover { color: #999; }
 .tab-btn.active { color: #fff; border-bottom-color: #10b981; }
 .tab-btn .tab-icon { font-size: 0.9rem; }
+
+@media (max-width: 760px) {
+  .tab-bar {
+    justify-content: flex-start;
+    padding: 0 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 /* panes */
 .tab-pane {
