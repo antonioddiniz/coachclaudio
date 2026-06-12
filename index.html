@@ -890,6 +890,24 @@ canvas { max-height: 340px; }
   border-radius: 16px;
   padding: 18px;
   margin-bottom: 16px;
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .cal-section {
+    padding: 14px;
+    margin: 0 auto 14px;
+  }
+}
+@media (max-width: 480px) {
+  .cal-section {
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .cal-section {
+    padding: 10px;
+  }
 }
 .cal-nav-row {
   display: flex; align-items: center; gap: 10px;
@@ -921,6 +939,21 @@ canvas { max-height: 340px; }
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 480px) {
+  .cal-grid {
+    grid-template-columns: repeat(7, minmax(45px, 1fr));
+    gap: 3px;
+  }
+}
+@media (max-width: 360px) {
+  .cal-grid {
+    grid-template-columns: repeat(7, minmax(42px, 1fr));
+    gap: 2px;
+  }
 }
 .cal-day {
   background: #161a26;
@@ -1165,12 +1198,14 @@ canvas { max-height: 340px; }
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid #1e2230;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0;
-  padding: 0 12px;
+  padding: 0 8px;
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 .tab-bar::-webkit-scrollbar { display: none; }
 
