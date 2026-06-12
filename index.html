@@ -1619,6 +1619,39 @@ canvas { max-height: 340px; }
 @media (max-width: 360px) {
   .zone-summary { grid-template-columns: 1fr; gap: 6px; }
 }
+.volume-summary {
+  background: #171a23;
+  border: 1px solid #242a3a;
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .volume-summary {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .volume-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .volume-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    padding: 8px;
+  }
+}
 .zone-card-s {
   background: #151824;
   border: 1px solid #1e2230;
@@ -4616,7 +4649,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- VOLUME SUMMARY -->
-    <div style="background:#171a23;border:1px solid #242a3a;border-radius:14px;padding:18px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px;">
+    <div class="volume-summary">
       <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#f43f5e">FTP 243W</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">2,70 W/kg · LT2: 220–235W</div></div>
       <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#4ade80">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Corrida/sem S7–8</div></div>
       <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fbbf24">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Bike/sem S7–8</div></div>
