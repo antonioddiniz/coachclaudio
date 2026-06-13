@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-06-13",
-  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13",
+  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "workouts": [
     {
@@ -1822,11 +1822,28 @@
     { "date": "2026-06-13", "v": 53.7 }
   ],
   "race": {
-    "name": "10K — Brasília",
+    "name": "10K — Corrida POUPEX (etapa Amazônia)",
     "date": "2026-07-25",
+    "start_time": "18:00",
+    "location": "Praça dos Cristais — Setor Militar Urbano, Brasília/DF",
     "distance_km": 10,
     "target_time": "48:59",
     "target_pace": "4:54",
+    "course": {
+      "summary": "Plano e rápido · amplitude ~21 m (1.131–1.152 m) · ganho acumulado ~30–40 m · única subida (+12 m) no km ~1, dentro do trecho técnico de curvas/retornos · reta longa e platô do km 2 ao 8 · circuito ida-e-volta (saldo de elevação ~zero) · largada noturna 18h",
+      "ascent_m": 35,
+      "elevation": [
+        { "km": 0,   "alt": 1140 },
+        { "km": 0.6, "alt": 1145 },
+        { "km": 1.0, "alt": 1152 },
+        { "km": 1.7, "alt": 1135 },
+        { "km": 2.0, "alt": 1136 },
+        { "km": 2.6, "alt": 1137 },
+        { "km": 3.4, "alt": 1139 },
+        { "km": 4.8, "alt": 1131 },
+        { "km": 10,  "alt": 1140 }
+      ]
+    },
     "references": [
       { "date": "2026-05-10", "dist": 5, "time": "24:45", "label": "5K (Wings for Life)" },
       { "date": "2026-05-10", "dist": 10, "time": "51:10", "label": "10K split (Wings for Life)" },

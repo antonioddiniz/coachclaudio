@@ -4671,7 +4671,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <strong>Seg:</strong> 20min fácil + 4 strides &nbsp;·&nbsp;
       <strong>Qua:</strong> 15min fácil + 3 strides &nbsp;·&nbsp;
       <strong>Qui/Sex:</strong> Descanso total &nbsp;·&nbsp;
-      <strong>Sáb 25/07:</strong> 🏁 PROVA — 10min ativação + 4 strides · pace alvo 4:50–5:00/km
+      <strong>Sáb 25/07:</strong> 🏁 PROVA 18h (noturna) · Praça dos Cristais/SMU · 10min ativação + 4 strides · pace alvo 4:50–5:00/km · percurso plano, técnico nos 2 km iniciais
     </div>
 
     <!-- VOLUME SUMMARY -->
@@ -5810,7 +5810,7 @@ const CYCLE_PHASES = [
     focus: [
       '🏃 Seg: 20min fácil + 4 strides · Qua: 15min fácil + 3 strides',
       '😴 Qui/Sex: descanso total · Sáb manhã: 10min ativação + strides',
-      '🏁 Sábado 25/07 — PROVA'
+      '🏁 Sábado 25/07 — PROVA 18h'
     ]
   }
 ];
@@ -6528,6 +6528,31 @@ function buildRaceProjectionCard() {
   const pess    = central * (1 + WINDOW);
   const target  = toSec(R.target_time);
 
+  // mini perfil de altimetria (race.course.elevation)
+  let elevSvg = '';
+  const C = R.course;
+  if (C && Array.isArray(C.elevation) && C.elevation.length > 1) {
+    const ev = C.elevation;
+    const W = 300, H = 46, P = 2;
+    const kmMax = Math.max(...ev.map(p => p.km));
+    const aMin = Math.min(...ev.map(p => p.alt)), aMax = Math.max(...ev.map(p => p.alt));
+    const xx = km => P + (km / kmMax) * (W - 2*P);
+    const yy = a => (H - P) - ((a - aMin) / (aMax - aMin || 1)) * (H - 2*P);
+    const pathD = ev.map((p,i) => (i?'L':'M') + xx(p.km).toFixed(1) + ',' + yy(p.alt).toFixed(1)).join(' ');
+    const areaD = pathD + ` L${xx(kmMax).toFixed(1)},${H} L${xx(0).toFixed(1)},${H} Z`;
+    elevSvg = `<div style="margin:8px 0 2px">
+      <div style="font-size:0.62rem;color:#666;margin-bottom:3px">Altimetria · ${aMin}–${aMax} m · ~${C.ascent_m||'?'} m↑ acumulado</div>
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:46px" preserveAspectRatio="none">
+        <path d="${areaD}" fill="#60a5fa18"/>
+        <path d="${pathD}" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <div style="display:flex;justify-content:space-between;font-size:0.55rem;color:#555">
+        <span>km 0</span><span>subida no km 1</span><span>km ${kmMax}</span>
+      </div>
+    </div>`;
+  }
+  const whenWhere = `${R.start_time ? '🕕 '+R.start_time+' · ' : ''}${R.location || ''}`;
+
   // veredicto sobre a meta
   let vColor, vText;
   if (target >= central)      { vColor='#22c55e'; vText='Meta dentro da projeção central'; }
@@ -6553,6 +6578,7 @@ function buildRaceProjectionCard() {
           <span class="hr-rest-unit">projeção central · ${paceFmt(central)}</span>
         </div>
         <div class="hr-rest-date">${raceDay.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'short'})} · faltam ${days} dias (${weeks.toFixed(1)} sem)</div>
+        ${whenWhere ? `<div class="hr-rest-date" style="color:#60a5fa">${whenWhere}</div>` : ''}
       </div>
       <div><div class="hr-rest-badge" style="color:${vColor};background:${vColor}22">${vText}</div></div>
     </div>
@@ -6570,6 +6596,7 @@ function buildRaceProjectionCard() {
     <div style="display:flex;justify-content:space-between;font-size:0.6rem;color:#666;margin-bottom:10px">
       <span>${fmt(optim)} (otimista)</span><span style="color:#60a5fa">▲ central ${fmt(central)}</span><span>${fmt(pess)} (cauteloso)</span>
     </div>
+    ${elevSvg}
     <table style="width:100%;border-collapse:collapse;font-size:0.66rem;margin-top:4px">
       <tr style="color:#555;border-bottom:1px solid #2a2a2a">
         <td style="padding:3px 8px 5px 0">referência</td>
@@ -6577,7 +6604,7 @@ function buildRaceProjectionCard() {
         <td style="padding:3px 0 5px 8px;text-align:right">10K-eq</td></tr>
       ${refRows}
     </table>
-    <div class="hr-rest-alert-note">Modelo Riegel (expoente ${RIEGEL}) + ganho de ${(GAIN_WK*100).toFixed(1)}%/semana até a prova. As referências são de mai/jun; provas e limiar convergem para ~${fmt(shape)}, então sub-49 depende de manter a evolução do limiar e da perna aguentar o ritmo.</div>
+    <div class="hr-rest-alert-note">Modelo Riegel (expoente ${RIEGEL}) + ganho de ${(GAIN_WK*100).toFixed(1)}%/semana até a prova. As referências são de mai/jun; provas e limiar convergem para ~${fmt(shape)}, então sub-49 depende de manter a evolução do limiar e da perna aguentar o ritmo.${C && C.summary ? ` <span style="color:#777">Percurso: ${C.summary}.</span>` : ''}</div>
   </div>`;
 }
 
@@ -7726,16 +7753,16 @@ const WORKOUT_DETAILS = {
   },
   mn_prova_dia: {
     title: '🏁 PROVA — 25/07/2026', sport: 'run', color: '#f43f5e',
-    subtitle: 'Sábado · DIA DA PROVA',
-    pills: ['aquecimento 10min', '4 strides', 'PROVA', 'pace alvo 4:50–5:00/km'],
-    objetivo: 'Dia da prova. Tudo que foi construído em 14 semanas se manifesta aqui.',
+    subtitle: 'Sábado · 18h (noturna) · Praça dos Cristais/SMU',
+    pills: ['largada 18h', 'aquecimento 10min', '4 strides', 'pace alvo 4:50–5:00/km'],
+    objetivo: 'Dia da prova. Largada noturna às 18h na Praça dos Cristais (SMU). Percurso plano e rápido — o desafio está nos 2 km iniciais (curvas/retornos + a única subidinha) e na pacing.',
     programa: [
-      { tipo: 'run', nome: 'Aquecimento — 10min antes da largada', detalhe: 'Trote fácil 7:00/km + 4 strides progressivos. Chegar aquecido na largada.', zona: 'ativação' },
-      { tipo: 'run', nome: 'Largada — km 1', detalhe: 'Sair conservador: 5:00–5:05/km mesmo que pareça lento. Evitar o erro de setembro.', zona: 'corrida' },
-      { tipo: 'run', nome: 'km 2–7 — ritmo alvo', detalhe: 'Pace alvo: 4:50–5:00/km · FC 160–168bpm · sem variar mais de 5s/km', zona: 'corrida' },
-      { tipo: 'run', nome: 'km 8–10 — entrega', detalhe: 'Se estiver bem → acelere gradualmente. Se FC >170bpm → segure. Km 10: tudo.', zona: 'corrida' },
+      { tipo: 'run', nome: 'Aquecimento — 10min antes da largada', detalhe: 'Trote fácil 7:00/km + 4 strides progressivos. Chegar aquecido na largada das 18h.', zona: 'ativação' },
+      { tipo: 'run', nome: 'km 1–2 — trecho técnico', detalhe: 'Curvas/retornos + subidinha (+12m). Sair conservador 5:00–5:05/km por ESFORÇO, não por pace. Não chase tempo aqui — foi o erro do Netshoes (saída a 4:36).', zona: 'corrida' },
+      { tipo: 'run', nome: 'km 2–8 — reta/platô: ritmo alvo', detalhe: 'Terreno liso e reta longa. Crave 4:50–5:00/km · FC 160–168bpm · sem variar mais de 5s/km. É aqui que se faz o tempo.', zona: 'corrida' },
+      { tipo: 'run', nome: 'km 8–10 — entrega', detalhe: 'Terreno volta a favor. Se estiver bem → acelere gradualmente. Se FC >170bpm → segure. Km 10: tudo.', zona: 'corrida' },
     ],
-    notas: ['Café da manhã 2–2,5h antes: carboidrato + proteína leve. Banana + mel 40min antes.', 'Hidratação nos postos — não pule nenhum.', '🏆 14 semanas de trabalho. Execute o plano.'],
+    notas: ['Prova às 18h: almoço reforçado ~3–4h antes (carbo + proteína leve) e lanche leve (banana + mel) ~40min antes. Nada pesado à tarde.', 'Atenção ao calor do dia/hidratação ao longo da tarde; postos de água no percurso — não pule nenhum.', 'Tênis de placa (Vaporfly) — você treina sem placa, então o ritmo de prova virá mais fácil que nos treinos.', '🏆 14 semanas de trabalho. Execute o plano.'],
   },
   mn_run_z1_sex: {
     title: 'Run Z1 Regenerativo — Sexta AM', sport: 'run', color: '#10b981',

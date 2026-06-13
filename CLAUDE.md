@@ -47,8 +47,13 @@ O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — m
    { "date": "2026-06-13", "v": 53.7 }
  ],
  "race": {                             // prova-alvo + referências p/ projeção (card na aba Plano)
-   "name": "10K — Brasília", "date": "2026-07-25", "distance_km": 10,
-   "target_time": "48:59", "target_pace": "4:54",
+   "name": "10K — Corrida POUPEX", "date": "2026-07-25",
+   "start_time": "18:00", "location": "Praça dos Cristais — SMU, Brasília/DF",
+   "distance_km": 10, "target_time": "48:59", "target_pace": "4:54",
+   "course": {                         // resumo + altimetria (mini gráfico no card)
+     "summary": "plano, técnico nos 2 km iniciais ...", "ascent_m": 35,
+     "elevation": [ { "km": 0, "alt": 1140 }, { "km": 1.0, "alt": 1152 } ]
+   },
    "references": [                     // esforços usados na projeção Riegel
      { "date": "2026-05-10", "dist": 5, "time": "24:45", "label": "5K (Wings for Life)" }
    ]
