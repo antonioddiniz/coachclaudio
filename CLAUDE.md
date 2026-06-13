@@ -16,20 +16,6 @@ servindo a versão certa.
 O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — mudou o
 `data.json`, o app recarrega os dados sem precisar de versão manual.
 
-## Responsividade
-
-O site é **totalmente responsivo** com breakpoints otimizados:
-
-- **≥ 760px**: Layout desktop completo
-- **640-760px**: Tablets pequenos (ajuste de grids)
-- **480-640px**: Celulares (1 coluna para forms, 2 para grids)
-- **< 480px**: Celulares grandes (otimizado)
-- **< 360px**: iPhone SE e similares (ultra-compacto: stack de fields, mini calendar, etc)
-
-Cada breakpoint reduz padding/margin, fonte e complexidade visual conforme necessário.
-Form inputs ganham `font-size: 16px` em mobile para evitar zoom automático.
-Tab bar em overflow-x auto com smooth scroll para navegar entre abas.
-
 ## Schema do data.json (schema_version: 1)
 
 ```json
@@ -55,7 +41,18 @@ Tab bar em overflow-x auto com smooth scroll para navegar entre abas.
      "score": 89, "tmb": 1989, "visceral": 6,
      "seg": { "braco_e": 4.31, "braco_d": 4.43, "tronco": 32.5,
               "perna_e": 10.97, "perna_d": 11.10 } }
- ]
+ ],
+ "vo2_goal": 55,                       // meta de VO2máx (fallback no HTML = 55)
+ "vo2max": [                           // leituras do Apple Watch (migrado do index.html)
+   { "date": "2026-06-13", "v": 53.7 }
+ ],
+ "race": {                             // prova-alvo + referências p/ projeção (card na aba Plano)
+   "name": "10K — Brasília", "date": "2026-07-25", "distance_km": 10,
+   "target_time": "48:59", "target_pace": "4:54",
+   "references": [                     // esforços usados na projeção Riegel
+     { "date": "2026-05-10", "dist": 5, "time": "24:45", "label": "5K (Wings for Life)" }
+   ]
+ }
 }
 ```
 
@@ -66,6 +63,11 @@ Regras dos dados:
   Peso de balança pode ir na `note` de um workout ou ser usado em análise, mas não aqui.
 - `updated_at` deve ser atualizado em todo commit que mexa em dados.
 - Não remover exames/treinos antigos — o histórico é o ativo.
+- VO2máx agora vem do `data.json` (`vo2max`/`vo2_goal`), não mais hardcoded no HTML.
+  Nova leitura → adicionar `{date,v}` em `vo2max`. O `index.html` ainda guarda um
+  fallback embutido (para abrir via `file://`).
+- Projeção da prova: ajustar a prova-alvo em `race` (data, meta, `references`). O card
+  recalcula sozinho (Riegel + ganho/semana). Adicionar novos PRs em `references` melhora a estimativa.
 
 ## Fluxos de atualização
 

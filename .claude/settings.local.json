@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('data.json'\\)\\); print\\(max\\(w['id'] for w in d['workouts']\\)\\)\")",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

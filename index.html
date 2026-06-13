@@ -4561,6 +4561,9 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- goals 14w -->
   <div style="max-width:900px;margin:0 auto 20px" id="goals-12w-section"></div>
 
+  <!-- projeção da prova -->
+  <div style="max-width:900px;margin:0 auto 20px" id="race-projection-section"></div>
+
   <!-- zone summary -->
   <div class="plano-section">
 
@@ -5635,6 +5638,7 @@ document.addEventListener('DOMContentLoaded', () => {
   buildLastSessionCard();
   buildCycleTimeline();
   buildGoalsCard();
+  buildRaceProjectionCard();
   buildHRRestCard();
   buildVO2MaxCard();
   buildVO2EvolucaoChart();
@@ -6021,7 +6025,7 @@ function buildHRRestCard() {
 }
 
 // ── VO2 MÁX ───────────────────────────────────────────────
-const VO2_MAX_DATA = [
+const VO2_MAX_DATA = (EXT && Array.isArray(EXT.vo2max) && EXT.vo2max.length) ? EXT.vo2max : [
   {date:'2025-11-27', v:35.1}, {date:'2025-11-29', v:34.3}, {date:'2025-11-30', v:34.3},
   {date:'2025-12-01', v:34.3}, {date:'2025-12-02', v:34.7}, {date:'2025-12-21', v:35.0},
   {date:'2025-12-25', v:34.9}, {date:'2025-12-29', v:35.9},
@@ -6043,7 +6047,7 @@ const VO2_MAX_DATA = [
   {date:'2026-06-08', v:53.0},
   {date:'2026-06-13', v:53.7},
 ];
-const VO2_GOAL_AMATEUR = 55; // meta atualizada — Wings for Life ultrapassou meta anterior de 52
+const VO2_GOAL_AMATEUR = (EXT && EXT.vo2_goal) || 55; // meta — vinda do data.json (fallback 55)
 
 function buildVO2MaxCard() {
   const el = document.getElementById('vo2-max-wrap');
@@ -6458,6 +6462,123 @@ function buildVO2EvolucaoChart() {
     },
     plugins: [vo2EmojiPlugin]
   });
+}
+
+// ── PROJEÇÃO DA PROVA ─────────────────────────────────────
+// Estima o tempo de 10K na data da prova a partir de performances de
+// referência (data.json > race), usando a fórmula de Riegel para trazer
+// cada esforço a um equivalente de 10K, e projeta ganho até o dia da prova.
+const RACE_FALLBACK = {
+  name: '10K — Brasília', date: '2026-07-25', distance_km: 10,
+  target_time: '48:59', target_pace: '4:54',
+  references: [
+    { date:'2026-05-10', dist:5,  time:'24:45',   label:'5K (Wings for Life)' },
+    { date:'2026-05-10', dist:10, time:'51:10',   label:'10K split (Wings for Life)' },
+    { date:'2026-05-10', dist:15, time:'1:19:41', label:'15K (Wings for Life)' },
+    { date:'2026-05-17', dist:10, time:'52:08',   label:'10K prova (Netshoes, norm.)' },
+    { date:'2026-06-08', dist:1,  time:'4:56',    label:'pace limiar atual (6x1km)' }
+  ]
+};
+function buildRaceProjectionCard() {
+  const el = document.getElementById('race-projection-section');
+  if (!el) return;
+  const R = (EXT && EXT.race) || RACE_FALLBACK;
+  if (!R || !Array.isArray(R.references) || !R.references.length) return;
+
+  const RIEGEL = 1.06;          // expoente clássico de Riegel
+  const THR_FACTOR = 1.045;     // reps de limiar c/ recuperação -> 10K contínuo de prova
+  const GAIN_WK = 0.005;        // ganho assumido por semana até a prova (0,5%)
+  const GAIN_CAP = 0.05;        // teto de ganho (5%)
+  const WINDOW = 0.018;         // ±1,8% para a janela de projeção
+
+  const toSec = t => { const p = String(t).split(':').map(Number);
+    return p.length === 3 ? p[0]*3600 + p[1]*60 + p[2] : p[0]*60 + p[1]; };
+  const fmt = s => { s = Math.round(s); const m = Math.floor(s/60); return m + ':' + String(s%60).padStart(2,'0'); };
+  const paceFmt = s => fmt(s/ (R.distance_km||10)) + '/km';
+
+  // equivalentes de 10K
+  const D = R.distance_km || 10;
+  const raceEq = [], rows = [];
+  let thrEq = null;
+  R.references.forEach(r => {
+    const t = toSec(r.time);
+    if (r.dist >= 3) {
+      const eq = t * Math.pow(D / r.dist, RIEGEL);
+      raceEq.push(eq);
+      rows.push({ label:r.label, date:r.date, raw:fmt(t)+(r.dist!==D?` (${r.dist}K)`:''), eq:fmt(eq) });
+    } else {
+      thrEq = t * 10 * THR_FACTOR; // pace de 1km -> 10K contínuo
+      rows.push({ label:r.label, date:r.date, raw:fmt(t)+'/km', eq:fmt(thrEq) });
+    }
+  });
+  const raceMean = raceEq.reduce((a,b)=>a+b,0) / raceEq.length;
+  const raceMin  = Math.min(...raceEq);
+  // forma atual: média entre provas recentes e âncora de limiar (sinal mais novo)
+  const shape = thrEq ? (raceMean + thrEq) / 2 : raceMean;
+
+  // semanas até a prova
+  const today = new Date(); today.setHours(0,0,0,0);
+  const raceDay = new Date(R.date + 'T00:00:00');
+  const days = Math.max(0, Math.round((raceDay - today) / 86400000));
+  const weeks = days / 7;
+  const gain = Math.min(weeks * GAIN_WK, GAIN_CAP);
+
+  const central = shape * (1 - gain);
+  const optim   = central * (1 - WINDOW);
+  const pess    = central * (1 + WINDOW);
+  const target  = toSec(R.target_time);
+
+  // veredicto sobre a meta
+  let vColor, vText;
+  if (target >= central)      { vColor='#22c55e'; vText='Meta dentro da projeção central'; }
+  else if (target >= optim)   { vColor='#f59e0b'; vText='Meta agressiva — só no melhor cenário'; }
+  else                        { vColor='#f87171'; vText='Meta acima da janela projetada hoje'; }
+
+  // posição da meta na barra optim..pess (invertida: menor tempo = melhor = esquerda)
+  const range = pess - optim;
+  const pin = Math.max(0, Math.min(100, ((target - optim) / range) * 100));
+  const cen = Math.max(0, Math.min(100, ((central - optim) / range) * 100));
+
+  const refRows = rows.map(r =>
+    `<tr><td style="padding:3px 8px 3px 0;color:#bbb">${r.label}</td>
+         <td style="padding:3px 8px;color:#777;text-align:right">${r.raw}</td>
+         <td style="padding:3px 0 3px 8px;color:#fff;text-align:right;font-weight:700">${r.eq}</td></tr>`).join('');
+
+  el.innerHTML = `<div class="hr-rest-wrap">
+    <div class="hr-rest-top">
+      <div class="hr-rest-left">
+        <div class="hr-rest-title">🏁 Projeção da Prova — ${R.name}</div>
+        <div class="hr-rest-main">
+          <span class="hr-rest-bpm" style="color:#60a5fa">${fmt(central)}</span>
+          <span class="hr-rest-unit">projeção central · ${paceFmt(central)}</span>
+        </div>
+        <div class="hr-rest-date">${raceDay.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'short'})} · faltam ${days} dias (${weeks.toFixed(1)} sem)</div>
+      </div>
+      <div><div class="hr-rest-badge" style="color:${vColor};background:${vColor}22">${vText}</div></div>
+    </div>
+    <div class="hr-rest-stats">
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val">${fmt(shape)}</div>forma atual (10K-eq)</div>
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#22c55e">${fmt(optim)}</div>cenário otimista</div>
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#f87171">${fmt(pess)}</div>cenário cauteloso</div>
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#a78bfa">${R.target_time}</div>meta (${R.target_pace}/km)</div>
+    </div>
+    <div style="position:relative;height:30px;margin:10px 2px 4px">
+      <div style="position:absolute;top:13px;left:0;right:0;height:5px;border-radius:3px;background:linear-gradient(90deg,#22c55e,#f59e0b,#f87171)"></div>
+      <div title="projeção central" style="position:absolute;top:7px;left:${cen}%;transform:translateX(-50%);width:3px;height:17px;background:#60a5fa;border-radius:2px"></div>
+      <div title="meta" style="position:absolute;top:2px;left:${pin}%;transform:translateX(-50%);font-size:0.7rem;color:#a78bfa">🎯</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.6rem;color:#666;margin-bottom:10px">
+      <span>${fmt(optim)} (otimista)</span><span style="color:#60a5fa">▲ central ${fmt(central)}</span><span>${fmt(pess)} (cauteloso)</span>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:0.66rem;margin-top:4px">
+      <tr style="color:#555;border-bottom:1px solid #2a2a2a">
+        <td style="padding:3px 8px 5px 0">referência</td>
+        <td style="padding:3px 8px 5px;text-align:right">tempo</td>
+        <td style="padding:3px 0 5px 8px;text-align:right">10K-eq</td></tr>
+      ${refRows}
+    </table>
+    <div class="hr-rest-alert-note">Modelo Riegel (expoente ${RIEGEL}) + ganho de ${(GAIN_WK*100).toFixed(1)}%/semana até a prova. As referências são de mai/jun; provas e limiar convergem para ~${fmt(shape)}, então sub-49 depende de manter a evolução do limiar e da perna aguentar o ritmo.</div>
+  </div>`;
 }
 
 // ── METAS 12 SEMANAS ──────────────────────────────────────
