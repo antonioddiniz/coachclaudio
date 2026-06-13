@@ -9862,7 +9862,7 @@ function buildEFChart() {
   if (!canvas) return;
 
   const EASY = /z1|z2|regenerat|long[ãa]o|longo|recupera|matinal/i;
-  const HARD = /lt2|limiar|threshold|prova|vo2|teste/i;
+  const HARD = /lt2|limiar|threshold|prova|teste|vo2(?!max[\s:]*\d)/i;
   const pts = workouts
     .filter(w => w.sport === 'run' && w.hr && (w.sec != null || w.pace))
     .filter(w => EASY.test(w.note || '') && !HARD.test(w.note || ''))
