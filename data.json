@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-13",
+  "updated_at": "2026-06-14",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "workouts": [
@@ -1512,6 +1512,18 @@
       "hr": 143,
       "kcal": 938,
       "note": "11,01km · longão Z2 + 8 hill repeats no final · 6:16/km médio · FC 143 avg / 163 máx · +109m elevação · 🏆 PR Gold segmento Climb Mangueiral Balões (1,15km @7:56/km, +28m, FC 142) · subiu com FC controlada (142bpm = esforço Z2 na subida) · base aeróbica sólida confirmada pelo baixo desacoplamento · 8 tiros em subida no trecho final (pace individual a detalhar via print de laps) · VO2max 53,7 (novo PR, +0,7 vs 08/06) · manhã"
+    },
+    {
+      "id": 131,
+      "date": "2026-06-14",
+      "sport": "run",
+      "dist": 20.01,
+      "dur": "2:00:27",
+      "pace": "6:01",
+      "sec": 361,
+      "hr": 147,
+      "kcal": 1639,
+      "note": "20,01km · 2:00:27 · longão Z2 (domingo) · 6:01/km médio · FC 147 avg / 165 máx · +117m elevação · 1.639kcal · RE 187 · EF 1,13 — pace 6:01 com FC 147bpm abaixo do teto <150 do plano: eficiência aeróbica alta, baixo desacoplamento · acima do prescrito (18km @6:15–6:30/km) em volume (+2km) e ritmo, mas FC manteve na faixa Z2 · melhor 10k interno 56:10 · 76 PRs de segmento · tarde · Strava"
     }
   ],
   "weight_data": [
