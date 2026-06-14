@@ -76,11 +76,43 @@ Regras dos dados:
 
 ## Fluxos de atualização
 
-**Registrar treino** (pedidos tipo "registra a corrida de hoje: ..."):
-1. Editar `data.json`: adicionar o objeto em `workouts` (e em `quality_manual` se for
+**Registrar treino** (pedidos tipo "registra a corrida de hoje: ..." / "puxa o treino"):
+1. Puxar a sessão do Strava (MCP) e extrair: distância, tempo, pace/W, FC média/máx,
+   elevação, kcal, relative effort, melhores esforços, segmentos/PRs e, em sessões de
+   qualidade, os laps/blocos (pace + FC por bloco).
+2. **Entregar a análise profunda** (ver seção "Análise profunda de treino" abaixo)
+   ANTES de fechar — é o entregável principal, não o registro.
+3. Editar `data.json`: adicionar o objeto em `workouts` (e em `quality_manual` se for
    sessão de qualidade com km planejado), atualizar `updated_at`.
-2. Validar JSON: `python3 -m json.tool data.json > /dev/null`.
-3. Commit: `treino: <sport> <data> — <resumo curto>` e push.
+4. Validar JSON: `python3 -m json.tool data.json > /dev/null`.
+5. Commit: `treino: <sport> <data> — <resumo curto>` e push.
+
+## Análise profunda de treino
+
+Sempre que o Antonio mandar puxar/registrar um treino, entregar uma análise completa —
+não só os números crus. A análise deve cobrir:
+
+- **Vs. plano da semana**: qual slot do Método Norueguês a sessão corresponde (LT2 AM/PM,
+  longão Z1–Z2, regenerativo, bike longo etc.) e se bateu volume, pace e zona-alvo
+  prescritos. Apontar desvios (mais rápido/lento, mais/menos km) e se foram positivos.
+- **Eficiência aeróbica (EF)**: velocidade (m/min) ÷ FC média. Comparar com sessões
+  semelhantes anteriores — subindo = mesmo esforço, mais rápido (a métrica do volume fácil).
+- **Desacoplamento (Pa:HR / Pw:HR drift)**: comparar 1ª vs 2ª metade. <5% = base sólida;
+  >5% sob calor/déficit = atenção à recuperação.
+- **Distribuição de zonas e FC**: tempo em cada zona, FC média/máx vs zonas (FCmáx 183).
+  Sinalizar se um treino "fácil" subiu para gray zone.
+- **Sessão de qualidade (LT2/VO2)**: bloco a bloco — pace e FC de cada tiro vs alvo,
+  quantos completou (done/total), tendência ao longo dos blocos (estável vs derretendo),
+  e se houve PR de pace de limiar.
+- **Carga e contexto**: relative effort, volume acumulado da semana, encadeamento com os
+  treinos vizinhos (recuperação suficiente?), e o contexto de déficit/Mounjaro quando
+  relevante (fueling, recuperação rebaixada).
+- **Progressão vs prova**: o que o treino sinaliza para a meta da `race` (projeção Riegel,
+  pace de prova) e para os objetivos do ciclo.
+- **Recado acionável**: 1–3 conclusões práticas — o que manter, o que ajustar no próximo
+  treino semelhante, e qualquer bandeira de alerta (FC derivando, sinais de overreaching).
+
+Tom: técnico, direto, honesto. Elogiar o que foi bem, mas apontar riscos sem suavizar.
 
 **Novo exame InBody**: adicionar em `inbody_exams` (com `seg` completo) E em
 `weight_data`. Os gráficos e cards do perfil se atualizam sozinhos.

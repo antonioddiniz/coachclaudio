@@ -4610,7 +4610,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- SEMANA TIPO -->
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:12px;">📅 Semana Tipo — Semanas 7–12 (Build)</div>
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">📅 Semana Tipo — Build (referência)</div>
+    <div style="background:#07263a;border:1px solid #0e3a50;border-radius:10px;padding:9px 12px;font-size:0.66rem;color:#7dd3fc;line-height:1.6;margin-bottom:12px;">✈️ <strong>Semana 9 (15–21/jun)</strong> é semana de viagem — estrutura adaptada (55km corrida · 2 qualidades · força sup+inf). O plano dia a dia atualizado de cada semana está no calendário acima e na aba Plano.</div>
     <div class="plano-week-grid">
 
       <div class="plano-day">
@@ -5740,7 +5741,7 @@ const PLANNED_WEEKLY = [
   { week: '2026-05-25', runVol: 42, bikeVol: 49, swimVol: 0, runQual:  7.5, bikeQual: 25.2 },
   { week: '2026-06-01', runVol: 49, bikeVol: 49, swimVol: 0, runQual: 13.5, bikeQual: 43.2 },
   { week: '2026-06-08', runVol: 49, bikeVol: 49, swimVol: 0, runQual: 13.5, bikeQual: 43.2 },
-  { week: '2026-06-15', runVol: 53, bikeVol: 49, swimVol: 0, runQual: 17.0, bikeQual: 43.2 },
+  { week: '2026-06-15', runVol: 55, bikeVol: 45, swimVol: 0, runQual: 11.0, bikeQual: 12.0 },
   { week: '2026-06-22', runVol: 53, bikeVol: 49, swimVol: 0, runQual: 17.0, bikeQual: 43.2 },
   { week: '2026-06-29', runVol: 33, bikeVol: 30, swimVol: 0, runQual:  8.5, bikeQual: 22.0 },
   { week: '2026-07-06', runVol: 45, bikeVol: 45, swimVol: 0, runQual: 14.5, bikeQual: 43.2 },
@@ -5770,25 +5771,58 @@ const CYCLE_PHASES = [
     ]
   },
   {
-    weeks: [7,8,9,10], label: 'Consolidar Volume', short: 'CONSOL',
+    weeks: [7,8], label: 'Consolidar Volume', short: 'CONSOL',
     color: '#6366f1', bg: '#141230',
     icon: '🔒',
     desc: 'Consolidar o novo volume. Adaptação mitocondrial ocorre durante a consolidação.',
     focus: [
       '⚡ Bike: 6×10min @193–210W em ambos os dias',
       '🏃 Run: 6×1km (seg) · 5×1,5km (qua)',
-      '📊 Drift test na sem 9: 20min @195W — delta FC < 5bpm = adaptado'
+      '📊 Longão Z2 fácil de verdade (FC<150) — a base barata do ciclo'
     ]
   },
   {
-    weeks: [11,12], label: 'VO2max Consolidado', short: '+VO2',
+    weeks: [9], label: 'Viagem / Manutenção', short: 'VIAGEM',
+    color: '#0ea5e9', bg: '#07263a',
+    icon: '✈️',
+    desc: 'Semana de viagem: estrutura adaptada, só 1 LT2 de corrida + 1 LT2 de bike. Funciona como deload parcial de intensidade.',
+    focus: [
+      '🏃 55km de corrida — ~11km qualidade + ~44km fáceis (80/20)',
+      '🎯 2 qualidades: Run LT2 (ter) + Bike LT2 (qui) · resto fácil de verdade',
+      '💪 Força sup (seg) + inf (sex) · 2 longos no fds'
+    ]
+  },
+  {
+    weeks: [10], label: 'Rebuild + Específico', short: '+ESPEC',
+    color: '#6366f1', bg: '#141230',
+    icon: '📈',
+    desc: 'Volta ao duplo threshold cheio e entra o 1º toque de ritmo de prova.',
+    focus: [
+      '⚡ Duplo threshold (seg + qua) · bike 220–235W',
+      '🏃 Qua: LT2 + 2×1km @4:54/km (pace 10k)',
+      '🏃 Longão 18km Z2 fácil e abastecido'
+    ]
+  },
+  {
+    weeks: [11], label: 'Deload', short: 'DELOAD',
+    color: '#10b981', bg: '#0b2618',
+    icon: '📉',
+    desc: 'Volume −35% para recuperar antes do pico específico. Intensidade leve.',
+    focus: [
+      '🏃 Run reduzido (~33km) · 1 LT2 curto',
+      '🏃 Longão reduzido 14km',
+      '😴 Recuperar para a semana mais específica do ciclo'
+    ]
+  },
+  {
+    weeks: [12], label: 'Pico Específico', short: '+PROVA',
     color: '#f43f5e', bg: '#2d0714',
     icon: '🚀',
-    desc: 'LT2 + VO2max em sequência. Semanas de maior qualidade do ciclo.',
+    desc: 'A semana mais específica de prova. Ritmo de 10k é a sessão-chave.',
     focus: [
-      '⚡ Bike: 6×8min LT2 AM · Run: LT2 + 2×VO2max PM',
-      '🏃 Seg: 6×1km LT2 + 2×500m VO2 · Qua: 5×1,5km LT2 + 2×1km VO2',
-      '📊 Critério: ≥5/6 blocos LT2 + VO2max completados'
+      '🏃 Qua: 5–6×1km @4:54/km (pace 10k) · rec.90s — sessão-chave',
+      '⚡ Seg duplo threshold mantém o motor',
+      '🏃 Longão 16km · última semana forte antes do taper'
     ]
   },
   {
@@ -6878,42 +6912,88 @@ const PLAN_PHASES = [
     },
   },
   {
-    from: '2026-06-15', to: '2026-06-28', // Semanas 9–10 (Consolidar Volume + VO2max)
+    from: '2026-06-15', to: '2026-06-21', // Semana 9 — VIAGEM (estrutura adaptada · 55km corrida · 2 qualidades)
+    overrides: {
+      1: [ // Segunda — só força superior (noite)
+        { sport: 'strength', key: 'mn_viagem_seg',     label: '💪 Força superior (noite)',  detail: 'Supino · Remada · Desen. · Pallof · ~38min · único treino do dia (viagem)', zone: 'força',  color: '#a78bfa' },
+      ],
+      2: [ // Terça — 2 corridas
+        { sport: 'run',  key: 'mn_viagem_ter_am',  label: '🏃 Run LT2 — AM',            detail: '6×1km @5:05–5:15/km · rec.400m · ~11km · QUALIDADE', zone: 'LT2',      color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_viagem_ter_pm',  label: '🏃 Run fácil Z2 — PM',       detail: '~8km @6:30/km · FC<140 · volume fácil de verdade',   zone: 'Z2',       color: '#10b981' },
+      ],
+      3: [ // Quarta — regenerativo (viajando)
+        { sport: 'run',  key: 'mn_viagem_qua',     label: '🏃 Regenerativo Z1',         detail: '~9km @6:30–7:00/km · FC<145 · único treino (viagem)', zone: 'Z1',     color: '#10b981' },
+      ],
+      4: [ // Quinta — bike + corrida (já em casa)
+        { sport: 'bike', key: 'mn_viagem_qui_bike',label: '⚡ Bike LT2',                 detail: '5×10min @LT2 (220–235W) · rec.2min · QUALIDADE',     zone: 'LT2',      color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_viagem_qui_run', label: '🏃 Run fácil Z2',            detail: '~9km @6:30/km · perna vem da bike → fácil',          zone: 'Z2',       color: '#10b981' },
+      ],
+      5: [ // Sexta — natação + força inferior
+        { sport: 'swim', key: 'mn_viagem_sex_swim',label: '🏊 Natação Z1/LT1',          detail: '~1.200m · técnica + recuperação ativa',              zone: 'Z1/LT1',   color: '#06b6d4' },
+        { sport: 'strength', key: 'mn_viagem_sex_forca', label: '💪 Força inferior',    detail: 'Agach./afundo · RDL · Nordic · ~40min · moderada, sem plio pesada', zone: 'força', color: '#a78bfa' },
+      ],
+      6: [ // Sábado — natação + bike longo
+        { sport: 'swim', key: 'mn_viagem_sab_swim',label: '🏊 Natação',                 detail: '~1.200–1.500m · Z1/Z2 leve',                         zone: 'Z1/Z2',    color: '#06b6d4' },
+        { sport: 'bike', key: 'mn_viagem_sab_bike',label: '🚴 Bike Longo Z2',           detail: '40–50km · FC<150 · base aeróbica',                   zone: 'Z2',       color: '#f59e0b' },
+      ],
+      0: [ // Domingo — longão (keystone)
+        { sport: 'run',  key: 'mn_viagem_dom',     label: '🏃 Longão Z2',               detail: '~18km @6:30/km · FC 135–142 · FÁCIL e abastecido (carbo + 30–60g/h)', zone: 'Z2', color: '#10b981' },
+      ],
+    },
+  },
+  {
+    from: '2026-06-22', to: '2026-06-28', // Semana 10 — Rebuild duplo threshold + 1º toque de ritmo de prova
     overrides: {
       1: [ // Segunda
-        { sport: 'bike', key: 'mn_dbl_seg_am',     label: '⚡ Bike LT2 — AM',           detail: '6×8min @LT2 · rec.2min · ~55min',                 zone: 'DUPLO LIMIAR', color: '#f43f5e' },
-        { sport: 'run',  key: 'mn_dbl_seg_pm_910', label: '🏃 Run LT2+VO2 — PM',        detail: '6×1km @5:10–5:15 + 2×500m @4:45/km · 17h',       zone: 'LT2+VO2',      color: '#f43f5e' },
+        { sport: 'bike', key: 'mn_dbl_seg_am',     label: '⚡ Bike LT2 — AM',           detail: '6×8min @LT2 (220–235W) · rec.2min · ~55min',      zone: 'DUPLO LIMIAR', color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_dbl_seg_pm_10',  label: '🏃 Run LT2 — PM',            detail: '6×1km @5:05–5:10/km · rec.400m · 17h',           zone: 'DUPLO LIMIAR', color: '#f43f5e' },
       ],
       3: [ // Quarta
-        { sport: 'bike', key: 'mn_dbl_qua_am',     label: '⚡ Bike LT2 — AM',           detail: '5×10min @LT2 · rec.2min · ~60min',                zone: 'DUPLO LIMIAR', color: '#f43f5e' },
-        { sport: 'run',  key: 'mn_dbl_qua_pm_910', label: '🏃 Run LT2+VO2 — PM',        detail: '5×1,5km @5:10 + 2×1km @4:50/km · 17h',           zone: 'LT2+VO2',      color: '#f43f5e' },
+        { sport: 'bike', key: 'mn_dbl_qua_am',     label: '⚡ Bike LT2 — AM',           detail: '5×10min @LT2 (220–235W) · rec.2min · ~60min',     zone: 'DUPLO LIMIAR', color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_dbl_qua_pm_10',  label: '🏃 Run LT2 + ritmo prova — PM', detail: '4×1,5km @5:05 + 2×1km @4:54/km (pace 10k) · 17h', zone: 'LT2+PROVA', color: '#f43f5e' },
       ],
       5: [ // Sexta
         { sport: 'run',  key: 'mn_run_z1_78',      label: '🏃 Run Z1 — AM Regenerativo', detail: '10km @6:30–7:00/km · FC<145bpm · ~65min',        zone: 'Z1',           color: '#10b981' },
       ],
       0: [ // Domingo
-        { sport: 'run',  key: 'mn_run_longa_78',   label: '🏃 Corrida Z1–Z2 Longa',     detail: '14–16km @6:15–6:30/km · FC<150bpm',               zone: 'Z1/Z2',        color: '#10b981' },
+        { sport: 'run',  key: 'mn_run_longa_10',   label: '🏃 Corrida Z1–Z2 Longa',     detail: '18km @6:15–6:30/km · FC<150bpm · fácil e abastecido', zone: 'Z1/Z2',     color: '#10b981' },
         { sport: 'strength', key: 'mn_musc_d',     label: '💪 Musc. D — Mobilidade',    detail: 'Hip flexor · Excêntrica · Foam roller · 20min',    zone: 'mobil.',       color: '#a78bfa' },
       ],
     },
   },
   {
-    from: '2026-06-29', to: '2026-07-12', // Semanas 11–12 (VO2max Consolidado)
+    from: '2026-06-29', to: '2026-07-05', // Semana 11 — DELOAD (volume −35%, intensidade leve)
     overrides: {
       1: [ // Segunda
-        { sport: 'bike', key: 'mn_dbl_seg_am',      label: '⚡ Bike LT2 — AM',           detail: '6×8min @LT2 · rec.2min · ~55min',                 zone: 'DUPLO LIMIAR', color: '#f43f5e' },
-        { sport: 'run',  key: 'mn_dbl_seg_pm_910',  label: '🏃 Run LT2+VO2 — PM',        detail: '6×1km @5:10–5:15 + 2×500m @4:45/km · 17h',       zone: 'LT2+VO2',      color: '#f43f5e' },
+        { sport: 'bike', key: 'mn_dl_seg_am',      label: '⚡ Bike LT2 — AM (reduzido)', detail: '4×8min @LT2 (220–235W) · rec.2min · ~40min',     zone: 'LT2',          color: '#6366f1' },
+        { sport: 'run',  key: 'mn_dl_seg_pm',      label: '🏃 Run LT2 — PM (reduzido)', detail: '4×1km @5:05–5:10/km · rec.400m · 17h',           zone: 'LT2',          color: '#6366f1' },
       ],
       3: [ // Quarta
-        { sport: 'bike', key: 'mn_dbl_qua_am',      label: '⚡ Bike LT2 — AM',           detail: '5×10min @LT2 · rec.2min · ~60min',                zone: 'DUPLO LIMIAR', color: '#f43f5e' },
-        { sport: 'run',  key: 'mn_dbl_qua_pm_910',  label: '🏃 Run LT2+VO2 — PM',        detail: '5×1,5km @5:10 + 2×1km @4:50/km · 17h',           zone: 'LT2+VO2',      color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_dl_qua',         label: '🏃 Run Z2 fácil',            detail: '8km @6:30/km · FC<140 · deload',                  zone: 'Z2',           color: '#10b981' },
       ],
       5: [ // Sexta
-        { sport: 'run',  key: 'mn_run_z1_78',       label: '🏃 Run Z1 — AM Regenerativo', detail: '10km @6:30–7:00/km · FC<145bpm · ~65min',        zone: 'Z1',           color: '#10b981' },
+        { sport: 'run',  key: 'mn_dl_sex',         label: '🏃 Run Z1 Regenerativo',     detail: '6–8km @6:45–7:00/km · FC<140',                    zone: 'Z1',           color: '#10b981' },
       ],
       0: [ // Domingo
-        { sport: 'run',  key: 'mn_run_longa_78',    label: '🏃 Corrida Z1–Z2 Longa',     detail: '18km @6:15–6:30/km · FC<150bpm',                  zone: 'Z1/Z2',        color: '#10b981' },
-        { sport: 'strength', key: 'mn_musc_d',      label: '💪 Musc. D — Mobilidade',    detail: 'Hip flexor · Excêntrica · Foam roller · 20min',    zone: 'mobil.',       color: '#a78bfa' },
+        { sport: 'run',  key: 'mn_dl_dom',         label: '🏃 Longão reduzido Z2',      detail: '14km @6:15–6:30/km · FC<150 · deload',            zone: 'Z1/Z2',        color: '#10b981' },
+      ],
+    },
+  },
+  {
+    from: '2026-07-06', to: '2026-07-12', // Semana 12 — PICO ESPECÍFICO DE PROVA
+    overrides: {
+      1: [ // Segunda
+        { sport: 'bike', key: 'mn_pk_seg_am',      label: '⚡ Bike LT2 — AM',           detail: '6×8min @LT2 (220–235W) · rec.2min',               zone: 'DUPLO LIMIAR', color: '#f43f5e' },
+        { sport: 'run',  key: 'mn_pk_seg_pm',      label: '🏃 Run LT2 — PM',            detail: '5×1km @5:05/km · rec.400m · 17h',                 zone: 'DUPLO LIMIAR', color: '#f43f5e' },
+      ],
+      3: [ // Quarta — sessão-chave de prova
+        { sport: 'run',  key: 'mn_pk_qua',         label: '🏃 Sessão de PROVA — PM',    detail: '5–6×1km @4:54/km (pace 10k) · rec.90s · OU 2×3km @4:56 · sessão-chave do ciclo', zone: 'PROVA', color: '#f43f5e' },
+      ],
+      5: [ // Sexta
+        { sport: 'run',  key: 'mn_pk_sex',         label: '🏃 Run Z1 Regenerativo',     detail: '8–10km @6:30–7:00/km · FC<145',                   zone: 'Z1',           color: '#10b981' },
+      ],
+      0: [ // Domingo
+        { sport: 'run',  key: 'mn_pk_dom',         label: '🏃 Longão Z2',               detail: '16km @6:15–6:30/km · FC<150 · fácil e abastecido', zone: 'Z1/Z2',        color: '#10b981' },
       ],
     },
   },
