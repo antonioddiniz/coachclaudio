@@ -8,10 +8,30 @@ Site estático no GitHub Pages, com **dados separados do código**:
 - `data.json`  — dados (treinos, peso, InBody, overrides de qualidade). Muda toda semana.
 - `CLAUDE.md`  — este arquivo.
 
-`index.html` carrega `data.json` via XHR síncrono no boot. Se falhar (ex: aberto via
-`file://`), usa o fallback embutido no próprio HTML. Quando os dados externos carregam,
-um selo "⛁ dados: YYYY-MM-DD" aparece no header — é como conferir se o site está
-servindo a versão certa.
+`index.html` carrega `data.json` via XHR síncrono no boot. Quando os dados externos
+carregam, um selo "⛁ dados: YYYY-MM-DD" aparece no header — é como conferir se o site
+está servindo a versão certa.
+
+**Princípio: fonte única da verdade.** Cada dado mora só no `data.json`; o `index.html`
+só renderiza e deriva (entries/sessions/gráficos) em runtime. Migração em andamento para
+tirar do HTML tudo que é dado:
+- ✅ `config` (FTP, FCmáx, zonas, baselines, metas, cycle_start) — no banco.
+- ✅ `hr_rest` (FC repouso) — no banco.
+- ✅ `workouts` — **sem fallback embutido**; `data.json` é a única fonte (abrir via
+  `file://` não mostra treinos — usar o site publicado ou um servidor local).
+- ✅ `plan` — todo o plano no banco: `weekly_plan` (molde por dia-da-semana),
+  `plan_phases` (overrides por faixa de data), `cal_overrides` (plano DIA A DIA — a
+  fonte de edição preferida), `cycle_phases` (fases 1–14), `planned_weekly` (volume),
+  `workout_details` (conteúdo dos modais). Sem fallback embutido (só `{}`/`[]`).
+- 🔄 cards da aba Plano: os valores de config/prova (FTP, W/kg, faixa LT2, data e pace
+  da prova) já renderizam do banco via `renderPlanoCards()` (IDs `pc-*`). Textos
+  descritivos (grade "Semana Tipo", pliometria, volumes S7–8) seguem estáticos como
+  referência — mudam raramente.
+
+Config e hr_rest ainda têm um fallback mínimo embutido (segurança); workouts e plan não.
+
+Precedência do plano em runtime: `cal_overrides[data]` → `plan_phases` (faixa) →
+`weekly_plan[dow]`. Editar um dia = editar `plan.cal_overrides` no `data.json`.
 
 O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — mudou o
 `data.json`, o app recarrega os dados sem precisar de versão manual.
@@ -22,7 +42,18 @@ O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — m
 {
  "schema_version": 1,
  "updated_at": "YYYY-MM-DD",          // atualizar a CADA mudança de dados
- "workouts": [                         // fonte única de treinos realizados
+ "config": {                           // config do atleta — fonte única (evita FTP repetido)
+   "cycle_start": "2026-04-20", "ftp": 243, "ftp_ref": "Ramp Test 06/06/2026",
+   "fcmax": 183,
+   "baseline":      { "run": 360, "bike": 1.0, "swim": 120 },  // run/swim=sec, bike=W/kg
+   "goal_target":   { "run": 300, "bike": 3.0, "swim": 110 },
+   "goal_baseline": { "run": 540, "bike": 1.0, "swim": 330 }
+ },
+ "hr_rest": {                          // FC repouso (migrado do index.html)
+   "alert": 60,
+   "data": [ { "date": "2026-06-07", "bpm": 54 } ]
+ },
+ "workouts": [                         // fonte única de treinos realizados (sem fallback no HTML)
    { "id": 129, "date": "2026-06-10", "sport": "run|bike|swim|strength",
      "dist": 12.0, "dur": "1:18:30", "pace": "5:09", "sec": 309,
      "hr": 150, "kcal": 900,           // opcionais
@@ -117,8 +148,10 @@ Tom: técnico, direto, honesto. Elogiar o que foi bem, mas apontar riscos sem su
 **Novo exame InBody**: adicionar em `inbody_exams` (com `seg` completo) E em
 `weight_data`. Os gráficos e cards do perfil se atualizam sozinhos.
 
-**Mudança de plano/visual**: editar `index.html` (estrutura `mn_*`, WORKOUT_DETAILS,
-CAL_OVERRIDES seguem no HTML por enquanto). Commit: `plano: ...` ou `ui: ...`.
+**Mudança de plano**: editar `plan` no `data.json` — dia a dia em `plan.cal_overrides`
+(`"YYYY-MM-DD": [ {sport,key,label,detail,zone,color}, ... ]`); detalhe do modal em
+`plan.workout_details[key]`. Validar JSON. Commit `plano: ...`. (Só mudança visual/lógica
+de fato mexe no `index.html` → commit `ui: ...`.)
 
 **Publicar**: `git add -A && git commit -m "<msg>" && git push origin main`.
 Push direto na main é permitido e esperado (repo pessoal). GitHub Pages republica ~1min.
