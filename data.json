@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-14",
+  "updated_at": "2026-06-16",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1533,6 +1533,19 @@
       "hr": 147,
       "kcal": 1639,
       "note": "20,01km · 2:00:27 · longão (domingo) · 6:07/km médio (mov) · FC 147 avg / 165 máx · +117m · 1.639kcal · RE 187 · EF 1,11 · ⚠️ rodado majoritariamente em Z3: 76% do tempo em 137–155bpm, só 5% em Z2 real (119–137) — mais moderado que o Z1–Z2 prescrito · desacoplamento 6,8% (1ª metade 5:47/km @FC150 → 2ª 6:29/km @FC143): fade na 2ª metade, típico de longo sob déficit/sub-fueling · volume e ritmo acima do plano (18km @6:15–6:30) · melhor 10k interno 56:10 · 76 PRs de segmento · tarde · Strava"
+    },
+    {
+      "id": 132,
+      "date": "2026-06-16",
+      "sport": "run",
+      "dist": 9.78,
+      "dur": "53:18",
+      "pace": "5:27",
+      "sec": 327,
+      "hr": 158,
+      "kcal": 833,
+      "blocks": {"done": 6, "total": 6},
+      "note": "9,78km · 53:18 · LT2 AM (semana viagem) · 6×1km @ 4:19·4:42·(4:33 só ~360m)·4:44·4:50·4:56 (méd ~4:42/km) — 6 tiros completados, 1 saiu curto (~360m) por erro de config no relógio, NÃO fadiga · FC 152→166 (Z4 limiar, máx 170 pontual) · rec ~400m @6:00–6:50 · sinal positivo: limiar mais rápido que o alvo 5:05–5:15 → recalibrar LT2 p/ ~4:50–5:00 · leve drift FC↑/pace↓ no fim = topo do limiar · melhor 1k 4:16 · melhor 5k 25:13 · RE 120 · 25 PRs · terça manhã · Strava"
     }
   ],
   "weight_data": [
@@ -1707,7 +1720,8 @@
       "sport": "run",
       "done": 6,
       "planned": 6
-    }
+    },
+    { "date": "2026-06-16", "sport": "run", "done": 5.4, "planned": 6 }
   ],
   "inbody_exams": [
     {
