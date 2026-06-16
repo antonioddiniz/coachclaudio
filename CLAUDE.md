@@ -95,6 +95,9 @@ O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — m
 Regras dos dados:
 - `id` de workout: sempre `max(id) + 1`. Nunca reaproveitar.
 - `sec` é o pace em segundos (run/swim: por km/100m; bike: usa watts na note + sec equivalente).
+  **Sessão de qualidade (tiros): `sec` = média do pace dos TIROS, não da sessão inteira** —
+  é `sec` que alimenta o gráfico "Evolução de Pace". `dist`/`dur` seguem o total da sessão.
+  (Ex: 6×1km a 4:42 numa corrida de 53min → `sec:282`, `dist`/`dur` da sessão toda.)
 - Peso (`weight_data`) só entra com exame de bioimpedância — NUNCA com balança comum.
   Peso de balança pode ir na `note` de um workout ou ser usado em análise, mas não aqui.
 - `updated_at` deve ser atualizado em todo commit que mexa em dados.
