@@ -1546,6 +1546,18 @@
       "kcal": 833,
       "blocks": {"done": 6, "total": 6},
       "note": "9,78km · 53:18 · LT2 AM (semana viagem) · 6×1km @ 4:19·4:42·(4:33 só ~360m)·4:44·4:50·4:56 (méd ~4:42/km) — 6 tiros completados, 1 saiu curto (~360m) por erro de config no relógio, NÃO fadiga · FC 152→166 (Z4 limiar, máx 170 pontual) · rec ~400m @6:00–6:50 · sinal positivo: limiar mais rápido que o alvo 5:05–5:15 → recalibrar LT2 p/ ~4:50–5:00 · leve drift FC↑/pace↓ no fim = topo do limiar · melhor 1k 4:16 · melhor 5k 25:13 · RE 120 · 25 PRs · terça manhã · Strava"
+    },
+    {
+      "id": 133,
+      "date": "2026-06-16",
+      "sport": "run",
+      "dist": 8.01,
+      "dur": "52:11",
+      "pace": "6:31",
+      "sec": 391,
+      "hr": 138,
+      "kcal": 642,
+      "note": "8,01km · 52:11 · regenerativo/Z2 PM (semana viagem) · 6:31/km · FC 138 avg / 145 máx — Z2 de verdade, disciplina certa depois do treino forte da manhã · +46m · 642kcal · RE 44 · terça tarde · Strava"
     }
   ],
   "weight_data": [

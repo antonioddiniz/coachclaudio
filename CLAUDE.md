@@ -98,6 +98,12 @@ Regras dos dados:
   **Sessão de qualidade (tiros): `sec` = média do pace dos TIROS, não da sessão inteira** —
   é `sec` que alimenta o gráfico "Evolução de Pace". `dist`/`dur` seguem o total da sessão.
   (Ex: 6×1km a 4:42 numa corrida de 53min → `sec:282`, `dist`/`dur` da sessão toda.)
+- **Cuidado com as PALAVRAS da `note`**: o gráfico "Eficiência Aeróbica" (`buildEFChart`)
+  classifica corrida fácil vs. forte pelo texto da nota — inclui se bate
+  `z1|z2|regenerativo|longão|longo|recupera|matinal` E NÃO bate
+  `lt2|limiar|threshold|prova|teste|vo2`. Numa corrida fácil (Z2), NÃO use termos HARD na
+  nota (ex: "depois do limiar" exclui o treino do gráfico por engano). Use o `sec` da
+  sessão nas fáceis (sem tiros) — é ele que vira o EF.
 - Peso (`weight_data`) só entra com exame de bioimpedância — NUNCA com balança comum.
   Peso de balança pode ir na `note` de um workout ou ser usado em análise, mas não aqui.
 - `updated_at` deve ser atualizado em todo commit que mexa em dados.
