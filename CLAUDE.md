@@ -60,6 +60,15 @@ O cache (localStorage) invalida sozinho via hash do conteúdo dos workouts — m
      "blocks": {"done": 5, "total": 5}, // opcional (sessões de qualidade)
      "note": "texto livre · separado por ·" }
  ],
+ "plan": {                             // TODO o plano (migrado do index.html) — fonte única
+   "weekly_plan":    { "1": [ {"sport":"","key":"","label":"","detail":"","zone":"","color":""} ] },  // molde por dow (0=Dom … 6=Sáb)
+   "plan_phases":    [ { "from":"YYYY-MM-DD", "to":"YYYY-MM-DD", "overrides": { "1": [ /*slots*/ ] } } ],
+   "cal_overrides":  { "YYYY-MM-DD": [ {"sport":"","key":"","label":"","detail":"","zone":"","color":""} ] },  // plano DIA A DIA — EDITAR AQUI
+   "cycle_phases":   [ { "weeks":[1,2], "label":"", "short":"", "color":"", "bg":"", "icon":"", "desc":"", "focus":[] } ],
+   "planned_weekly": [ { "week":"YYYY-MM-DD", "runVol":0, "bikeVol":0, "swimVol":0, "runQual":0, "bikeQual":0 } ],
+   "workout_details":{ "<key>": { "title":"", "subtitle":"", "sport":"", "color":"",
+       "pills":[], "objetivo":"", "programa":[ {"tipo":"run|swim|str","nome":"","detalhe":"","zona":""} ], "notas":[] } }
+ },
  "weight_data": [                      // SÓ com bioimpedância (regra do atleta)
    { "date": "2026-06-12", "kg": 89.9 }
  ],
