@@ -2194,12 +2194,12 @@
       ],
       "2026-06-17": [
         {
-          "sport": "run",
-          "key": "mn_run_z1_78",
-          "label": "🏃 Regenerativo Z1",
-          "detail": "~9km @6:30–7:00/km · FC<145 · único treino (viagem)",
-          "zone": "Z1",
-          "color": "#10b981"
+          "sport": "rest",
+          "key": "mn_descanso",
+          "label": "😴 Descanso — run redistribuído",
+          "detail": "Regenerativo de hoje não realizado; os ~9km foram redistribuídos em Qui/Sex/Dom para manter o volume da semana",
+          "zone": "descanso",
+          "color": "#475569"
         }
       ],
       "2026-06-18": [
@@ -2215,12 +2215,20 @@
           "sport": "run",
           "key": "c_s9_qui_run",
           "label": "🏃 Run fácil Z2",
-          "detail": "~9km @6:30/km · perna vem da bike → fácil",
+          "detail": "~12km @6:30/km · perna vem da bike → fácil · +3km (compensa regen de qua)",
           "zone": "Z2",
           "color": "#10b981"
         }
       ],
       "2026-06-19": [
+        {
+          "sport": "run",
+          "key": "mn_run_z1_78",
+          "label": "🏃 Run fácil Z2 (extra)",
+          "detail": "~4km @6:30–7:00/km · FC<140 · recupera parte do regen de qua",
+          "zone": "Z2",
+          "color": "#10b981"
+        },
         {
           "sport": "swim",
           "key": "mn_swim_qui",
@@ -2261,7 +2269,7 @@
           "sport": "run",
           "key": "mn_run_longa_78",
           "label": "🏃 Longão Z2",
-          "detail": "~18km @6:30/km · FC 135–142 · FÁCIL e abastecido (carbo + 30–60g/h)",
+          "detail": "~20km @6:15–6:30/km · FC 135–142 · FÁCIL e abastecido (carbo + 30–60g/h) · +2km (compensa regen)",
           "zone": "Z2",
           "color": "#10b981"
         }
