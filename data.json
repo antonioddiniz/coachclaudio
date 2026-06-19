@@ -2227,7 +2227,7 @@
           "sport": "run",
           "key": "c_s9_qui_run",
           "label": "🏃 Run fácil Z2",
-          "detail": "~12km @6:30/km · perna vem da bike → fácil · +3km (compensa regen de qua)",
+          "detail": "10km feito (Z2, 6:16/km · FC136) · 2km abaixo do plano, redistribuídos no fim de semana",
           "zone": "Z2",
           "color": "#10b981"
         }
@@ -2235,9 +2235,9 @@
       "2026-06-19": [
         {
           "sport": "run",
-          "key": "mn_run_z1_78",
-          "label": "🏃 Run fácil Z2 (extra)",
-          "detail": "~4km @6:30–7:00/km · FC<140 · recupera parte do regen de qua",
+          "key": "c_s9_sex_run",
+          "label": "🏃 Run fácil Z2",
+          "detail": "~9km @6:30/km · FC<140 · fácil · parte dos 55km da semana",
           "zone": "Z2",
           "color": "#10b981"
         },
@@ -2260,6 +2260,14 @@
       ],
       "2026-06-20": [
         {
+          "sport": "run",
+          "key": "c_s9_sab_run",
+          "label": "🏃 Run fácil Z2 (shakeout)",
+          "detail": "~5km @6:30–7:00/km · FC<140 · solto, em horário separado do bike",
+          "zone": "Z2",
+          "color": "#10b981"
+        },
+        {
           "sport": "swim",
           "key": "mn_swim_ter",
           "label": "🏊 Natação",
@@ -2281,7 +2289,7 @@
           "sport": "run",
           "key": "mn_run_longa_78",
           "label": "🏃 Longão Z2",
-          "detail": "~20km @6:15–6:30/km · FC 135–142 · FÁCIL e abastecido (carbo + 30–60g/h) · +2km (compensa regen)",
+          "detail": "~14km @6:15–6:30/km · FC 135–142 · FÁCIL e abastecido · encurtado p/ espalhar o volume e poupar a sola",
           "zone": "Z2",
           "color": "#10b981"
         }
