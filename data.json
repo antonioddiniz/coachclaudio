@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-16",
+  "updated_at": "2026-06-18",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1558,6 +1558,18 @@
       "hr": 138,
       "kcal": 642,
       "note": "8,01km · 52:11 · regenerativo/Z2 PM (semana viagem) · 6:31/km · FC 138 avg / 145 máx — Z2 de verdade, disciplina certa depois do treino forte da manhã · +46m · 642kcal · RE 44 · terça tarde · Strava"
+    },
+    {
+      "id": 134,
+      "date": "2026-06-18",
+      "sport": "run",
+      "dist": 10.01,
+      "dur": "1:02:48",
+      "pace": "6:16",
+      "sec": 376,
+      "hr": 136,
+      "kcal": 850,
+      "note": "10,01km · 1:02:48 · Z2 fácil (semana viagem) · 6:16/km · FC 136 avg / 146 máx — Z2 bem controlado, disciplina certa · +123m elevação · EF alta (~1,17: pace 6:16 a FC 136) · 850kcal · RE 42 · quinta noite · Strava"
     }
   ],
   "weight_data": [
