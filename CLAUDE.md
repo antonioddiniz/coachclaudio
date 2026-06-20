@@ -163,6 +163,29 @@ não só os números crus. A análise deve cobrir:
 
 Tom: técnico, direto, honesto. Elogiar o que foi bem, mas apontar riscos sem suavizar.
 
+### Análise comparativa (obrigatória — sempre com número do banco)
+
+Nada de "EF bom" ou "um dos melhores" no genérico. Toda comparação puxa os `workouts[]`
+do `data.json` e quantifica. Padrão mínimo:
+
+- **Ranking + tendência do EF** (corridas fáceis): posição da sessão entre todas as
+  similares (`rank/total`), ganho vs ~30 dias atrás (%), e a inclinação (EF/mês). EF =
+  `60000/sec/hr`.
+- **Pace na MESMA faixa de FC** (o comparativo que controla o esforço — o mais honesto):
+  listar o pace das fáceis numa janela estreita de FC (ex: 128–135bpm) ao longo das
+  semanas. "No mesmo batimento, X s/km mais rápido que há N semanas" é o sinal real de
+  ganho aeróbico (separa fitness de dia frio/terreno).
+- **Esta sessão vs média das 5 similares anteriores**: EF, FC e pace (delta explícito).
+- **Volume semanal** (km/semana) com o **% de variação sinalizado** — saltos >~10% são
+  bandeira de carga (cruzar com dores/FC repouso).
+- **Sessão de qualidade (LT2/tiros)**: pace médio dos tiros vs as últimas sessões de LT2,
+  FC nos tiros ao longo das semanas (subindo no mesmo pace = fadiga acumulando), e
+  % de blocos completados (`done/total`) na série.
+
+Sempre dar a **ressalva honesta**: EF/pace de um treino isolado variam com FC do dia,
+calor e terreno — olhar a tendência, não o ponto. Se o EF subiu porque a FC caiu (dia
+leve), dizer isso; o ganho real é o da comparação por faixa de FC.
+
 **Novo exame InBody**: adicionar em `inbody_exams` (com `seg` completo) E em
 `weight_data`. Os gráficos e cards do perfil se atualizam sozinhos.
 
