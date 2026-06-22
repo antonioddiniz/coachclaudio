@@ -2785,7 +2785,7 @@
           "sport": "run",
           "key": "c_s14_seg",
           "label": "🏃 Ativação leve",
-          "detail": "20min fácil @6:45/km + 4×80m strides",
+          "detail": "~3km @6:45/km + 4×80m strides",
           "zone": "ATIVAÇÃO",
           "color": "#fbbf24"
         }
@@ -2805,7 +2805,7 @@
           "sport": "run",
           "key": "c_s14_qua",
           "label": "🏃 Ativação curta",
-          "detail": "15min fácil @7:00/km + 3×80m strides",
+          "detail": "~2km @7:00/km + 3×80m strides",
           "zone": "ATIVAÇÃO",
           "color": "#fbbf24"
         }
@@ -3309,7 +3309,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "12–15min Z1 + 3–4 strides",
+            "detalhe": "~2–2,5km Z1 + 3–4 strides",
             "zona": "Z1"
           },
           {
@@ -3321,7 +3321,7 @@
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3393,7 +3393,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "15min Z1 + strides",
+            "detalhe": "~2,5km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3405,13 +3405,13 @@
           {
             "tipo": "run",
             "nome": "2× 500m @4:45",
-            "detalhe": "rec. 90s · FC >168 · controlado-forte",
+            "detalhe": "rec. ~200m trote · FC >168 · controlado-forte",
             "zona": "VO2"
           },
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3436,7 +3436,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "15min Z1 + strides",
+            "detalhe": "~2,5km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3448,13 +3448,13 @@
           {
             "tipo": "run",
             "nome": "2× 1km @4:45–4:50",
-            "detalhe": "rec. 90s · FC >168 · controlado-forte",
+            "detalhe": "rec. ~200m trote · FC >168 · controlado-forte",
             "zona": "VO2"
           },
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3479,7 +3479,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "15min Z1 + strides",
+            "detalhe": "~2,5km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3491,13 +3491,13 @@
           {
             "tipo": "run",
             "nome": "2× 500m @4:45",
-            "detalhe": "rec. 90s · FC >168 · controlado-forte",
+            "detalhe": "rec. ~200m trote · FC >168 · controlado-forte",
             "zona": "VO2"
           },
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3523,7 +3523,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "15min Z1 + strides",
+            "detalhe": "~2,5km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3535,13 +3535,13 @@
           {
             "tipo": "run",
             "nome": "2× 1km @4:45–4:50",
-            "detalhe": "rec. 90s · FC >168 · controlado-forte",
+            "detalhe": "rec. ~200m trote · FC >168 · controlado-forte",
             "zona": "VO2"
           },
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3590,7 +3590,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "15min Z1 + strides",
+            "detalhe": "~2,5km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3602,7 +3602,7 @@
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3626,19 +3626,19 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "20min Z1 + 4 strides",
+            "detalhe": "~3,5km Z1 + 4 strides",
             "zona": "Z1"
           },
           {
             "tipo": "run",
             "nome": "5–6 × 1km @4:54/km",
-            "detalhe": "rec. 90s trote · FC 168–175 · OU 2×3km @4:56",
+            "detalhe": "rec. ~250m trote · FC 168–175 · OU 2×3km @4:56",
             "zona": "PROVA"
           },
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3686,7 +3686,7 @@
           {
             "tipo": "run",
             "nome": "Aquecimento",
-            "detalhe": "12min Z1 + strides",
+            "detalhe": "~2km Z1 + strides",
             "zona": "Z1"
           },
           {
@@ -3698,7 +3698,7 @@
           {
             "tipo": "run",
             "nome": "Solta",
-            "detalhe": "8–10min Z1",
+            "detalhe": "~1,5km Z1",
             "zona": "Z1"
           }
         ],
@@ -3794,7 +3794,7 @@
         "programa": [
           {
             "tipo": "run",
-            "nome": "20min fácil @6:45/km",
+            "nome": "~3km @6:45/km",
             "detalhe": "Z1",
             "zona": "Z1"
           },
@@ -3823,7 +3823,7 @@
         "programa": [
           {
             "tipo": "run",
-            "nome": "15min fácil @7:00/km",
+            "nome": "~2km @7:00/km",
             "detalhe": "Z1",
             "zona": "Z1"
           },

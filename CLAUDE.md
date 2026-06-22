@@ -113,6 +113,10 @@ Regras dos dados:
   `lt2|limiar|threshold|prova|teste|vo2`. Numa corrida fácil (Z2), NÃO use termos HARD na
   nota (ex: "depois do limiar" exclui o treino do gráfico por engano). Use o `sec` da
   sessão nas fáceis (sem tiros) — é ele que vira o EF.
+- **Corrida SEMPRE em distância, nunca em tempo** (preferência do atleta): aquecimento,
+  solta e recuperações em km/m, não em min/s — tanto nos modais (`plan.workout_details`)
+  quanto nos `detail` do plano. Ex: aquecimento "~2,5km Z1", rec. "~200m", não "15min"/
+  "90s". (Bike/natação podem seguir em tempo.)
 - Peso (`weight_data`) só entra com exame de bioimpedância — NUNCA com balança comum.
   Peso de balança pode ir na `note` de um workout ou ser usado em análise, mas não aqui.
 - `updated_at` deve ser atualizado em todo commit que mexa em dados.
