@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-19",
+  "updated_at": "2026-06-22",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1582,6 +1582,39 @@
       "hr": 131,
       "kcal": 967,
       "note": "10,01km · 1:01:24 · Z2 fácil (semana viagem) · 6:08/km · FC 131 avg / 148 máx — Z2 muito bem controlado, cadência 78 · +114m · EF ~1,24 (melhor da série, pace 6:08 a 131bpm) · 967kcal · RE 56 · sexta noite · Strava"
+    },
+    {
+      "id": 136,
+      "date": "2026-06-20",
+      "sport": "strength",
+      "dist": 0,
+      "dur": "49:10",
+      "kcal": 310,
+      "note": "Musculação — 49:10 · 310kcal · RE 8 · sábado almoço · importado do Strava"
+    },
+    {
+      "id": 137,
+      "date": "2026-06-21",
+      "sport": "run",
+      "dist": 21.12,
+      "dur": "2:13:10",
+      "pace": "6:18",
+      "sec": 378,
+      "hr": 141,
+      "kcal": 1773,
+      "note": "21,12km · 2:13:10 · longão (meia em 2:14:27) · 6:18/km · FC 141 avg / 154 máx · desacoplamento 5,1% (melhor que 6,8% de 14/06) · 1ª metade 6:15 / 2ª 6:36 (FC estável 141, pace caiu) · +127m · 1.773kcal · RE 154 · 38 PRs · domingo · Strava · ⚠️ 21km vs 14km planejado — bem acima do combinado, com o pé sensível"
+    },
+    {
+      "id": 138,
+      "date": "2026-06-22",
+      "sport": "bike",
+      "dist": 17.18,
+      "dur": "40:58",
+      "sec": 41,
+      "watts": 167,
+      "hr": 120,
+      "kcal": 392,
+      "note": "17,18km · 40:58 · Zwift MBike · blocos ~193–200W (abaixo do alvo 220–235) · ficou fácil/recuperação pós-longão · 167W avg · FC 120 avg / 139 máx · cadência 68 · 392kcal · RE 17 · segunda manhã · Strava"
     }
   ],
   "weight_data": [
