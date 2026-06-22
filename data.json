@@ -2213,7 +2213,7 @@
               "sport": "run",
               "key": "mn_run_z1_78",
               "label": "🏃 Run Z1 — AM Regenerativo",
-              "detail": "10km @6:30–7:00/km · FC<145bpm · ~65min",
+              "detail": "12km @6:30–7:00/km · FC<145bpm · ~78min",
               "zone": "Z1",
               "color": "#10b981"
             }
@@ -2360,6 +2360,14 @@
       ],
       "2026-06-23": [
         {
+          "sport": "run",
+          "key": "mn_run_z1_78",
+          "label": "🏃 Run fácil Z2 (volume)",
+          "detail": "~5km @6:30–7:00/km · FC<140 · easy add p/ volume da semana",
+          "zone": "Z2",
+          "color": "#10b981"
+        },
+        {
           "sport": "swim",
           "key": "mn_swim_ter",
           "label": "🏊 Natação LT1/LT2",
@@ -2477,6 +2485,14 @@
         }
       ],
       "2026-06-30": [
+        {
+          "sport": "run",
+          "key": "mn_run_z1_78",
+          "label": "🏃 Run fácil Z2 (volume)",
+          "detail": "~5km @6:30–7:00/km · FC<140 · easy add p/ volume da semana",
+          "zone": "Z2",
+          "color": "#10b981"
+        },
         {
           "sport": "swim",
           "key": "mn_swim_ter",
@@ -3253,7 +3269,7 @@
       },
       {
         "week": "2026-06-22",
-        "runVol": 53,
+        "runVol": 60,
         "bikeVol": 49,
         "swimVol": 0,
         "runQual": 17,
@@ -3261,7 +3277,7 @@
       },
       {
         "week": "2026-06-29",
-        "runVol": 58,
+        "runVol": 62,
         "bikeVol": 49,
         "swimVol": 0,
         "runQual": 18,
