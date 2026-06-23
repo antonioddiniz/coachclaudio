@@ -5991,10 +5991,10 @@ const VO2_MONTHLY_HIST = [
   { month: 'Mar/26', v: 44.6, proj: 41.1 },  // 🔥 Método Norueguês ultrapassa o normal aqui
   { month: 'Abr/26', v: 49.5, proj: 42.4 },  // +7.1 acima do que um treino normal entregaria
   { month: 'Mai/26', v: 52.6, proj: 43.5 },  // 🏆 Wings for Life 19,2km · PR 10km 51:10 · meta 52 superada!
+  { month: 'Jun/26', v: 54.6, proj: 44.4 },  // VO2 real subindo no bloco norueguês (54,6) · LT2 recalibrado ~4:52
 ];
 // Projeção Método Norueguês vs treino normal (platô natural ~46-47)
 const VO2_MONTHLY_PROJ = [
-  { month: 'Jun/26', v: 54.0, proj_sem: 44.4, note: 'Adaptação LT2' },
   { month: 'Jul/26', v: 56.0, proj_sem: 45.1, note: 'Peso ~92kg' },
   { month: 'Ago/26', v: 58.0, proj_sem: 45.7, note: 'Peso ~90kg' },
   { month: 'Set/26', v: 60.0, proj_sem: 46.2, note: 'Ciclo 2 consolidado' },
@@ -6080,7 +6080,7 @@ function buildVO2EvolucaoChart() {
   const milestones = [
     { v: 35,   label: 'Início',       month: 'Nov/25', reached: true  },
     { v: 45,   label: 'Base sólida',  month: 'Mar/26', reached: true  },
-    { v: 51.5, label: 'Atual',        month: 'Mai/26', current: true  },
+    { v: 54.6, label: 'Atual',        month: 'Jun/26', current: true  },
     { v: 52,   label: 'Amador Ironman',month:'Mai/26', reached: true  },
     { v: 60,   label: 'Atleta forte', month: 'Set/26', future: true   },
     { v: 63.5, label: 'Meta 12 meses',month:'Nov/26',  future: true   },
