@@ -4598,7 +4598,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="zone-card-s" style="border-top:2px solid #f59e0b">
         <div class="zone-card-s-name" style="color:#fbbf24">LT2 — Limiar</div>
         <div class="zone-card-s-hr">FC 155–165 bpm</div>
-        <div class="zone-card-s-pace" id="pc-lt2-pace">Corrida 5:00–5:15/km · Bike 220–235W (FTP 243W)</div>
+        <div class="zone-card-s-pace" id="pc-lt2-pace">Corrida 4:50–5:00/km · Bike 220–235W (FTP 243W)</div>
         <div class="zone-card-s-pct" style="color:#f59e0b">~30% do volume</div>
       </div>
       <div class="zone-card-s" style="border-top:2px solid #ef4444">
@@ -4617,7 +4617,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="plano-day">
         <div class="plano-day-name" style="color:#f43f5e">⚡ SEG</div>
         <div class="plano-session dbl"><div class="plano-sess-title">🚴 Bike LT2 — AM</div><div class="plano-sess-detail">6×8min @195–210W · rec.2min · ~55min</div><div class="plano-sess-time">04:55</div></div>
-        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run LT2 — PM</div><div class="plano-sess-detail">S7–8: 6×1km @5:10 · S10/S12: 6×1km @5:05–5:10 (duplo threshold puro)</div><div class="plano-sess-time">17:00 · ~55min</div></div>
+        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run LT2 — PM</div><div class="plano-sess-detail">S7–8: 6×1km @5:10 · S10/S12: 6×1km @4:50–5:00 (duplo threshold puro)</div><div class="plano-sess-time">17:00 · ~55min</div></div>
       </div>
 
       <div class="plano-day">
@@ -4661,7 +4661,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- TAPER -->
     <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#06b6d4;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper (13–19 jul)</div>
     <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#67e8f9;line-height:1.8;margin-bottom:12px;">
-      <strong>Seg:</strong> Bike 4×8min LT2 + Run 4×1km @5:05–5:10/km &nbsp;·&nbsp;
+      <strong>Seg:</strong> Bike 4×8min LT2 + Run 4×1km @4:50–5:00/km &nbsp;·&nbsp;
       <strong>Qua:</strong> Bike 3×10min LT2 + Run 5km Z1 + strides &nbsp;·&nbsp;
       <strong>Sex:</strong> Descanso &nbsp;·&nbsp;
       <strong>Dom:</strong> 12km Z1 @6:30–7:00/km · Volume −30% · Intensidade mantida
@@ -4688,7 +4688,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div style="background:#0a0f0a;border:1px solid #1e3a1e;border-radius:12px;padding:16px 18px;font-size:0.71rem;color:#888;line-height:1.8;max-width:900px;margin:0 auto;">
       <div style="margin-bottom:6px"><strong style="color:#f43f5e">⚡ Regra #1 — Intervalo mínimo:</strong> mínimo 12h entre bike AM e run PM. Não comprimir nunca.</div>
       <div style="margin-bottom:6px"><strong style="color:#fbbf24">🍌 Regra #2 — Fueling:</strong> banana + mel 40min antes dos blocos LT2. Maltodextrina intra. Comprovado em treino.</div>
-      <div style="margin-bottom:6px"><strong style="color:#4ade80">🎯 Regra #3 — Pace LT2:</strong> corrida 5:00–5:15/km · FC 155–165bpm. Bike <strong style="color:#fbbf24">220–235W · FTP 243W</strong> (2,70 W/kg · Ramp Test 06/06 · peso 89,9kg em 12/06).</div>
+      <div style="margin-bottom:6px"><strong style="color:#4ade80">🎯 Regra #3 — Pace LT2:</strong> corrida 4:50–5:00/km · FC 155–165bpm. Bike <strong style="color:#fbbf24">220–235W · FTP 243W</strong> (2,70 W/kg · Ramp Test 06/06 · peso 89,9kg em 12/06).</div>
       <div style="margin-bottom:6px"><strong style="color:#06b6d4">🏊 Regra #4 — Natação:</strong> pace Strava de esteira/piscina pode divergir do display. Usar display do relógio/esteira como referência.</div>
       <div style="margin-bottom:6px"><strong style="color:#a78bfa">💪 Regra #5 — Pliometria:</strong> SEMPRE antes da força, com sistema nervoso fresco. Joelho: aterrissagem alinhada, parar se colapsar em valgo.</div>
       <div><strong style="color:#f87171">🦵 Regra #6 — LCA/Menisco:</strong> Nordic curl é obrigatório. Isquiotibial forte substitui função do LCA. Dor articular no joelho → parar pliometria.</div>
@@ -5541,7 +5541,7 @@ function renderPlanoCards(){
     const set = (id,t)=>{ const e=document.getElementById(id); if(e) e.textContent=t; };
     set('pc-ftp','FTP '+ftp+'W');
     set('pc-ftp-sub', wkg+' W/kg · LT2: '+lt2lo+'–'+lt2hi+'W');
-    set('pc-lt2-pace','Corrida 5:00–5:15/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
+    set('pc-lt2-pace','Corrida 4:50–5:00/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
     const race=(EXT&&EXT.race)||{};
     if(race.date){
       const mo=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];

@@ -1615,6 +1615,19 @@
       "hr": 120,
       "kcal": 392,
       "note": "17,18km · 40:58 · Zwift MBike · blocos ~193–200W (abaixo do alvo 220–235) · ficou fácil/recuperação pós-longão · 167W avg · FC 120 avg / 139 máx · cadência 68 · 392kcal · RE 17 · segunda manhã · Strava"
+    },
+    {
+      "id": 139,
+      "date": "2026-06-22",
+      "sport": "run",
+      "dist": 12.01,
+      "dur": "1:21:40",
+      "pace": "4:52",
+      "sec": 292,
+      "hr": 155,
+      "kcal": 1289,
+      "blocks": {"done": 7, "total": 7},
+      "note": "12,01km · 1:21:40 · esteira · LT2 + VO2 (Sem 10 PM) · 5×1km @ 4:55·4:51·4:51·4:52·(5:08) — os 4 limpos méd 4:52/km · FC 142→155 estável + 2×500m VO2 @ 4:41·4:37 (FC 156–157) · rec ~500m · FC tiros ~155 / sessão 139 avg · 1.289kcal · série COMPLETA (5×1km como planejado; card marcava 6) · pace LT2 recalibrado ~4:52 (vs 5:05–5:10 antigo) · 5º km 5:08 por PARADA p/ amarrar o short (não fadiga — FC seguiu 155) · segunda noite · esteira (prints)"
     }
   ],
   "weight_data": [
@@ -1790,7 +1803,8 @@
       "done": 6,
       "planned": 6
     },
-    { "date": "2026-06-16", "sport": "run", "done": 5.4, "planned": 6 }
+    { "date": "2026-06-16", "sport": "run", "done": 5.4, "planned": 6 },
+    { "date": "2026-06-22", "sport": "run", "done": 6, "planned": 6 }
   ],
   "inbody_exams": [
     {
@@ -2353,7 +2367,7 @@
           "sport": "run",
           "key": "c_s10_seg_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "6×1km @5:05–5:10 + 2×500m @4:45/km (VO2) · 17h",
+          "detail": "6×1km @4:50–5:00 + 2×500m @4:45/km (VO2) · 17h",
           "zone": "LT2+VO2",
           "color": "#ef4444"
         }
@@ -2397,7 +2411,7 @@
           "sport": "run",
           "key": "c_s10_qua_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "4×1,5km @5:05 + 2×1km @4:45–4:50/km (VO2) · 17h",
+          "detail": "4×1,5km @4:50–5:00 + 2×1km @4:45–4:50/km (VO2) · 17h",
           "zone": "LT2+VO2",
           "color": "#ef4444"
         }
@@ -2479,7 +2493,7 @@
           "sport": "run",
           "key": "c_s11_seg_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "6×1km @5:05–5:10 + 2×500m @4:45/km (VO2) · 17h",
+          "detail": "6×1km @4:50–5:00 + 2×500m @4:45/km (VO2) · 17h",
           "zone": "LT2+VO2",
           "color": "#ef4444"
         }
@@ -2523,7 +2537,7 @@
           "sport": "run",
           "key": "c_s11_qua_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "5×1,5km @5:05 + 2×1km @4:45–4:50/km (VO2) · 17h",
+          "detail": "5×1,5km @4:50–5:00 + 2×1km @4:45–4:50/km (VO2) · 17h",
           "zone": "LT2+VO2",
           "color": "#ef4444"
         }
@@ -2597,7 +2611,7 @@
           "sport": "run",
           "key": "c_s12_seg_pm",
           "label": "🏃 Run LT2 — PM",
-          "detail": "5×1km @5:05/km · rec.400m · 17h",
+          "detail": "5×1km @4:50–5:00/km · rec.400m · 17h",
           "zone": "DUPLO LIMIAR",
           "color": "#f43f5e"
         }
@@ -2699,7 +2713,7 @@
           "sport": "run",
           "key": "c_s13_seg_pm",
           "label": "🏃 Run LT2 — PM (reduzido)",
-          "detail": "4×1km @5:05–5:10/km · rec.400m · 17h",
+          "detail": "4×1km @4:50–5:00/km · rec.400m · 17h",
           "zone": "TAPER",
           "color": "#06b6d4"
         }
@@ -3398,7 +3412,7 @@
           },
           {
             "tipo": "run",
-            "nome": "6× 1km @5:05–5:10/km",
+            "nome": "6× 1km @4:50–5:00/km",
             "detalhe": "rec. 400m · FC 155–165",
             "zona": "LT2"
           },
@@ -3441,7 +3455,7 @@
           },
           {
             "tipo": "run",
-            "nome": "4×1,5km @5:05/km",
+            "nome": "4×1,5km @4:50–5:00/km",
             "detalhe": "rec. 400m · FC 155–165",
             "zona": "LT2"
           },
@@ -3484,7 +3498,7 @@
           },
           {
             "tipo": "run",
-            "nome": "6× 1km @5:05–5:10/km",
+            "nome": "6× 1km @4:50–5:00/km",
             "detalhe": "rec. 400m · FC 155–165",
             "zona": "LT2"
           },
@@ -3528,7 +3542,7 @@
           },
           {
             "tipo": "run",
-            "nome": "5×1,5km @5:05/km",
+            "nome": "5×1,5km @4:50–5:00/km",
             "detalhe": "rec. 400m · FC 155–165",
             "zona": "LT2"
           },
@@ -3583,7 +3597,7 @@
         "pills": [
           "LT2",
           "5×1km",
-          "5:05"
+          "4:50–5:00"
         ],
         "objetivo": "Manter o limiar leve na semana mais específica. A sessão-chave é quarta (ritmo de prova).",
         "programa": [
@@ -3595,7 +3609,7 @@
           },
           {
             "tipo": "run",
-            "nome": "5 × 1km @5:05/km",
+            "nome": "5 × 1km @4:50–5:00/km",
             "detalhe": "rec. 400m · FC 155–165",
             "zona": "LT2"
           },
@@ -3691,7 +3705,7 @@
           },
           {
             "tipo": "run",
-            "nome": "4 × 1km @5:05–5:10/km",
+            "nome": "4 × 1km @4:50–5:00/km",
             "detalhe": "rec. 400m",
             "zona": "LT2"
           },
@@ -5231,7 +5245,7 @@
         "subtitle": "Segunda · 17h · Threshold + tiros neuromusculares finais",
         "pills": [
           "17:00",
-          "6×1km @LT2 5:05–5:10",
+          "6×1km @LT2 4:50–5:00",
           "+ 2×500m @VO2",
           "~60min"
         ],
