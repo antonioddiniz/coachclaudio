@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-22",
+  "updated_at": "2026-06-24",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1628,6 +1628,19 @@
       "kcal": 1289,
       "blocks": {"done": 7, "total": 7},
       "note": "12,01km · 1:21:40 · esteira · LT2 + VO2 (Sem 10 PM) · 5×1km @ 4:55·4:51·4:51·4:52·(5:08) — os 4 limpos méd 4:52/km · FC 142→155 estável + 2×500m VO2 @ 4:41·4:37 (FC 156–157) · rec ~500m · FC tiros ~155 / sessão 139 avg · 1.289kcal · série COMPLETA (5×1km como planejado; card marcava 6) · pace LT2 recalibrado ~4:52 (vs 5:05–5:10 antigo) · 5º km 5:08 por PARADA p/ amarrar o short (não fadiga — FC seguiu 155) · segunda noite · esteira (prints)"
+    },
+    {
+      "id": 140,
+      "date": "2026-06-24",
+      "sport": "run",
+      "dist": 14.01,
+      "dur": "1:16:32",
+      "pace": "4:47",
+      "sec": 287,
+      "hr": 161,
+      "kcal": 1192,
+      "blocks": {"done": 6, "total": 6},
+      "note": "14,01km · 1:16:32 · LT2 + VO2 em SUBIDA (Sem 10 Qua · rua) · 4×1,5km @ 4:33·4:43·4:51·5:01 (méd 4:47/km · grade +0,6–1%!) FC 158·168·161·158 + 2×1km VO2 @ 4:38·4:20 (FC 164·146, trechos plano/descida) · rec ~510m na descida · +176m elevação · FC sessão 151 / máx 178 · RE 131 · GAP: 4:47 em subida ≈ ~4:38 no plano (esforço de limiar mais forte do que o pace sugere) · ⚠️ bloco 2 subiu a FC 168 (máx 178 = VO2, não LT2): em subida controla pela FC, não pelo pace · melhor 10k interno 52:04 · 7 PRs · quarta manhã · Strava"
     }
   ],
   "weight_data": [
@@ -1804,7 +1817,8 @@
       "planned": 6
     },
     { "date": "2026-06-16", "sport": "run", "done": 5.4, "planned": 6 },
-    { "date": "2026-06-22", "sport": "run", "done": 6, "planned": 6 }
+    { "date": "2026-06-22", "sport": "run", "done": 6, "planned": 6 },
+    { "date": "2026-06-24", "sport": "run", "done": 8, "planned": 8 }
   ],
   "inbody_exams": [
     {
