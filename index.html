@@ -2869,7 +2869,7 @@ canvas { max-height: 340px; }
     </div>
     <canvas id="volumeChart" height="200"></canvas>
     <div class="pace-hint" style="margin-top:10px;">
-      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (20/04) · 14 semanas · Prova 26/07
+      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (20/04) · 14 semanas · Prova 19/07
     </div>
   </div>
 </div>
@@ -4659,7 +4659,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- TAPER -->
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#06b6d4;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper (13–19 jul)</div>
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#06b6d4;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper + Prova (13–19 jul)</div>
     <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#67e8f9;line-height:1.8;margin-bottom:12px;">
       <strong>Seg:</strong> Bike 4×8min LT2 + Run 4×1km @4:50–5:00/km &nbsp;·&nbsp;
       <strong>Qua:</strong> Bike 3×10min LT2 + Run 5km Z1 + strides &nbsp;·&nbsp;
@@ -4667,12 +4667,12 @@ document.addEventListener('DOMContentLoaded', () => {
       <strong>Dom:</strong> 12km Z1 @6:30–7:00/km · Volume −30% · Intensidade mantida
     </div>
 
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#fbbf24;margin-bottom:10px;">🏁 Semana 14 — Prova (20–26 jul)</div>
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#fbbf24;margin-bottom:10px;">🏁 Semana 14 — Recuperação (20–26 jul)</div>
     <div style="background:#1a1200;border:1px solid #3a2800;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#fbbf24;line-height:1.8;margin-bottom:18px;">
       <strong>Seg:</strong> 20min fácil + 4 strides &nbsp;·&nbsp;
       <strong>Qua:</strong> 15min fácil + 3 strides &nbsp;·&nbsp;
       <strong>Qui/Sex:</strong> Descanso total &nbsp;·&nbsp;
-      <strong>Dom 26/07:</strong> 🏁 PROVA — Circuito Caixa Seguridade · Brasília (horário/local a confirmar) · ativação + 4 strides · pace alvo 4:54/km (sub-49) · de Vaporfly 3
+      <strong>Dom 19/07:</strong> 🏁 PROVA — BSB Half Marathon · Brasília · 06:30 (manhã) · ativação + 4 strides · pace alvo 4:54/km (sub-49) · de Vaporfly 3
     </div>
 
     <!-- VOLUME SUMMARY -->
@@ -4862,7 +4862,7 @@ const phaseBandsPlugin = {
       }
     });
     // 🏁 dia da prova
-    const rx = pix('2026-07-26');
+    const rx = pix('2026-07-19');
     if (rx != null && rx >= area.left && rx <= area.right) {
       g.strokeStyle = '#f1f3f799';
       g.setLineDash([5, 4]); g.lineWidth = 1.2;
@@ -6286,7 +6286,7 @@ function buildVO2EvolucaoChart() {
 // referência (data.json > race), usando a fórmula de Riegel para trazer
 // cada esforço a um equivalente de 10K, e projeta ganho até o dia da prova.
 const RACE_FALLBACK = {
-  name: '10K — Brasília', date: '2026-07-26', distance_km: 10,
+  name: '10K — Brasília', date: '2026-07-19', distance_km: 10,
   target_time: '48:59', target_pace: '4:54',
   references: [
     { date:'2026-05-10', dist:5,  time:'24:45',   label:'5K (Wings for Life)' },
