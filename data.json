@@ -2862,21 +2862,21 @@
       "2026-07-25": [
         {
           "sport": "run",
-          "key": "mn_prova_dia",
-          "label": "🏁 PROVA — 25/07/2026",
-          "detail": "10km · 18h · Praça dos Cristais · 10min ativação + 4 strides · pace alvo 4:54/km (sub-49)",
-          "zone": "PROVA",
-          "color": "#f43f5e"
+          "key": "c_prerace",
+          "label": "🏃 Pré-prova — ativação leve",
+          "detail": "~2km Z1 + 4 strides · solta as pernas na véspera",
+          "zone": "ATIVAÇÃO",
+          "color": "#fbbf24"
         }
       ],
       "2026-07-26": [
         {
-          "sport": "rest",
-          "key": "mn_descanso",
-          "label": "😴 Recuperação pós-prova",
-          "detail": "Descanso ou caminhada leve · comemorar 🎉",
-          "zone": "descanso",
-          "color": "#475569"
+          "sport": "run",
+          "key": "mn_prova_dia",
+          "label": "🏁 PROVA — 26/07/2026",
+          "detail": "10km · Circuito Caixa Seguridade · Brasília · ativação + 4 strides · pace alvo 4:54/km (sub-49) · Vaporfly 3",
+          "zone": "PROVA",
+          "color": "#f43f5e"
         }
       ],
       "2026-05-18": [
@@ -3215,11 +3215,11 @@
         "color": "#fbbf24",
         "bg": "#1a1200",
         "icon": "🏁",
-        "desc": "Ativação + descanso. Prova no sábado 25/07.",
+        "desc": "Ativação + descanso. Prova no sábado 26/07.",
         "focus": [
           "🏃 Seg: 20min fácil + 4 strides · Qua: 15min fácil + 3 strides",
           "😴 Qui/Sex: descanso total · Sáb manhã: 10min ativação + strides",
-          "🏁 Sábado 25/07 — PROVA 18h"
+          "🏁 Sábado 26/07 — PROVA 18h"
         ]
       }
     ],
@@ -5656,7 +5656,7 @@
         ]
       },
       "mn_prova_dia": {
-        "title": "🏁 PROVA — 25/07/2026",
+        "title": "🏁 PROVA — 26/07/2026",
         "sport": "run",
         "color": "#f43f5e",
         "subtitle": "Sábado · 18h (noturna) · Praça dos Cristais/SMU",
@@ -5828,15 +5828,15 @@
     }
   },
   "race": {
-    "name": "10K — Corrida POUPEX (etapa Amazônia)",
-    "date": "2026-07-25",
-    "start_time": "18:00",
-    "location": "Praça dos Cristais — Setor Militar Urbano, Brasília/DF",
+    "name": "10K — Circuito Caixa Seguridade",
+    "date": "2026-07-26",
+    "start_time": "a confirmar",
+    "location": "Brasília/DF — local a confirmar",
     "distance_km": 10,
     "target_time": "48:59",
     "target_pace": "4:54",
     "course": {
-      "summary": "Plano e rápido · amplitude ~21 m (1.131–1.152 m) · ganho acumulado ~30–40 m · única subida (+12 m) no km ~1, dentro do trecho técnico de curvas/retornos · reta longa e platô do km 2 ao 8 · circuito ida-e-volta (saldo de elevação ~zero) · largada noturna 18h",
+      "summary": "Plano e rápido · amplitude ~21 m (1.131–1.152 m) · ganho acumulado ~30–40 m · única subida (+12 m) no km ~1, dentro do trecho técnico de curvas/retornos · reta longa e platô do km 2 ao 8 · circuito ida-e-volta (saldo de elevação ~zero) · ⚠️ percurso/horário a confirmar (evento mudou p/ Circuito Caixa)",
       "ascent_m": 35,
       "elevation": [
         { "km": 0,   "alt": 1140 },
