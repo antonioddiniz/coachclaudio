@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-24",
+  "updated_at": "2026-06-26",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1641,6 +1641,18 @@
       "kcal": 1192,
       "blocks": {"done": 6, "total": 6},
       "note": "14,01km · 1:16:32 · LT2 + VO2 em SUBIDA (Sem 10 Qua · rua) · 4×1,5km @ 4:33·4:43·4:51·5:01 (méd 4:47/km · grade +0,6–1%!) FC 158·168·161·158 + 2×1km VO2 @ 4:38·4:20 (FC 164·146, trechos plano/descida) · rec ~510m na descida · +176m elevação · FC sessão 151 / máx 178 · RE 131 · GAP: 4:47 em subida ≈ ~4:38 no plano (esforço de limiar mais forte do que o pace sugere) · ⚠️ bloco 2 subiu a FC 168 (máx 178 = VO2, não LT2): em subida controla pela FC, não pelo pace · melhor 10k interno 52:04 · 7 PRs · quarta manhã · Strava"
+    },
+    {
+      "id": 141,
+      "date": "2026-06-26",
+      "sport": "run",
+      "dist": 12.01,
+      "dur": "1:14:13",
+      "pace": "6:11",
+      "sec": 371,
+      "hr": 138,
+      "kcal": 981,
+      "note": "12,01km · 1:14:13 · regenerativo Z1/Z2 (Sem 10) · 6:11/km · FC 138 avg / 149 máx — controlado · +122m · EF ~1,18 · 981kcal · RE 57 · sexta manhã · Strava"
     }
   ],
   "weight_data": [
@@ -1953,7 +1965,8 @@
     { "date": "2026-06-08", "v": 53.0 },
     { "date": "2026-06-13", "v": 53.7 },
     { "date": "2026-06-18", "v": 54.0 },
-    { "date": "2026-06-22", "v": 54.6 }
+    { "date": "2026-06-22", "v": 54.6 },
+    { "date": "2026-06-26", "v": 55.3 }
   ],
   "hr_rest": {
     "alert": 60,

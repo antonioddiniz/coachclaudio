@@ -5863,6 +5863,7 @@ const VO2_MAX_DATA = (EXT && Array.isArray(EXT.vo2max) && EXT.vo2max.length) ? E
   {date:'2026-06-13', v:53.7},
   {date:'2026-06-18', v:54.0},
   {date:'2026-06-22', v:54.6},
+  {date:'2026-06-26', v:55.3},
 ];
 const VO2_GOAL_AMATEUR = (EXT && EXT.vo2_goal) || 55; // meta — vinda do data.json (fallback 55)
 
@@ -5991,7 +5992,7 @@ const VO2_MONTHLY_HIST = [
   { month: 'Mar/26', v: 44.6, proj: 41.1 },  // 🔥 Método Norueguês ultrapassa o normal aqui
   { month: 'Abr/26', v: 49.5, proj: 42.4 },  // +7.1 acima do que um treino normal entregaria
   { month: 'Mai/26', v: 52.6, proj: 43.5 },  // 🏆 Wings for Life 19,2km · PR 10km 51:10 · meta 52 superada!
-  { month: 'Jun/26', v: 54.6, proj: 44.4 },  // VO2 real subindo no bloco norueguês (54,6) · LT2 recalibrado ~4:52
+  { month: 'Jun/26', v: 55.3, proj: 44.4 },  // VO2 real subindo no bloco norueguês (54,6) · LT2 recalibrado ~4:52
 ];
 // Projeção Método Norueguês vs treino normal (platô natural ~46-47)
 const VO2_MONTHLY_PROJ = [
@@ -6080,7 +6081,7 @@ function buildVO2EvolucaoChart() {
   const milestones = [
     { v: 35,   label: 'Início',       month: 'Nov/25', reached: true  },
     { v: 45,   label: 'Base sólida',  month: 'Mar/26', reached: true  },
-    { v: 54.6, label: 'Atual',        month: 'Jun/26', current: true  },
+    { v: 55.3, label: 'Atual',        month: 'Jun/26', current: true  },
     { v: 52,   label: 'Amador Ironman',month:'Mai/26', reached: true  },
     { v: 60,   label: 'Atleta forte', month: 'Set/26', future: true   },
     { v: 63.5, label: 'Meta 12 meses',month:'Nov/26',  future: true   },
