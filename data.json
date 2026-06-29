@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-26",
+  "updated_at": "2026-06-28",
   "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
   "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
   "config": {
@@ -1653,6 +1653,39 @@
       "hr": 138,
       "kcal": 981,
       "note": "12,01km · 1:14:13 · regenerativo Z1/Z2 (Sem 10) · 6:11/km · FC 138 avg / 149 máx — controlado · +122m · EF ~1,18 · 981kcal · RE 57 · sexta manhã · Strava"
+    },
+    {
+      "id": 142,
+      "date": "2026-06-27",
+      "sport": "run",
+      "dist": 4.01,
+      "dur": "24:34",
+      "pace": "6:08",
+      "sec": 368,
+      "hr": 139,
+      "kcal": 358,
+      "note": "4,01km · 24:34 · corrida fácil Z2 + 5 strides (~150–200m) (Sem 10 · sáb extra) · 6:08/km · FC 139 avg / 161 máx (strides) · 358kcal · RE 27 · sábado tarde · Strava"
+    },
+    {
+      "id": 143,
+      "date": "2026-06-27",
+      "sport": "strength",
+      "dist": 0,
+      "dur": "18:45",
+      "kcal": 93,
+      "note": "Musculação — 18:45 · 93kcal · RE 3 · sábado tarde · curta · importado do Strava"
+    },
+    {
+      "id": 144,
+      "date": "2026-06-28",
+      "sport": "run",
+      "dist": 18.01,
+      "dur": "1:47:29",
+      "pace": "5:58",
+      "sec": 358,
+      "hr": 141,
+      "kcal": 1444,
+      "note": "18,01km · 1:47:29 · longão Z1–Z2 (Sem 10) · 5:58/km · FC 141 avg / 153 máx · desacoplamento 2,5% — MELHOR da série (14/06 6,8% · 21/06 5,1% · 28/06 2,5%) · 2ª metade (6:01) até mais rápida que a 1ª (6:07) = negative split · +129m · 1.444kcal · RE 110 · domingo · Strava"
     }
   ],
   "weight_data": [
@@ -1966,7 +1999,8 @@
     { "date": "2026-06-13", "v": 53.7 },
     { "date": "2026-06-18", "v": 54.0 },
     { "date": "2026-06-22", "v": 54.6 },
-    { "date": "2026-06-26", "v": 55.3 }
+    { "date": "2026-06-26", "v": 55.3 },
+    { "date": "2026-06-29", "v": 55.5 }
   ],
   "hr_rest": {
     "alert": 60,
@@ -2510,10 +2544,20 @@
       ],
       "2026-06-29": [
         {
+          "sport": "rest",
+          "key": "mn_descanso",
+          "label": "😴 OFF — day off",
+          "detail": "Folga (decisão do atleta) · qualidade de hoje movida p/ terça",
+          "zone": "descanso",
+          "color": "#475569"
+        }
+      ],
+      "2026-06-30": [
+        {
           "sport": "bike",
           "key": "mn_dbl_seg_am",
           "label": "⚡ Bike LT2 — AM",
-          "detail": "6×8min @LT2 (220–235W) · rec.2min · ~55min",
+          "detail": "6×8min @LT2 (220–235W) · rec.2min",
           "zone": "DUPLO LIMIAR",
           "color": "#f43f5e"
         },
@@ -2521,43 +2565,43 @@
           "sport": "run",
           "key": "c_s11_seg_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "6×1km @4:50–5:00 + 2×500m @4:45/km (VO2) · 17h",
+          "detail": "6×1km @4:50–5:00 + 2×500m @4:45 (VO2)",
           "zone": "LT2+VO2",
           "color": "#ef4444"
-        }
-      ],
-      "2026-06-30": [
-        {
-          "sport": "run",
-          "key": "mn_run_z1_78",
-          "label": "🏃 Run fácil Z2 (volume)",
-          "detail": "~5km @6:30–7:00/km · FC<140 · easy add p/ volume da semana",
-          "zone": "Z2",
-          "color": "#10b981"
-        },
-        {
-          "sport": "swim",
-          "key": "mn_swim_ter",
-          "label": "🏊 Natação LT1/LT2",
-          "detail": "4×200m LT1 + 6×50m LT2 + técnica · ~1.500m",
-          "zone": "LT1/LT2",
-          "color": "#06b6d4"
         },
         {
           "sport": "strength",
           "key": "mn_musc_b",
           "label": "💪 Força superior",
-          "detail": "Supino · Remada · Desen. · Pallof · ~38min",
+          "detail": "Upper · ~38min · poupa perna",
           "zone": "força",
           "color": "#a78bfa"
         }
       ],
       "2026-07-01": [
         {
+          "sport": "run",
+          "key": "mn_run_z1_78",
+          "label": "🏃 Run fácil Z2 (recuperação)",
+          "detail": "~6km @6:30/km · FC<140",
+          "zone": "Z2",
+          "color": "#10b981"
+        },
+        {
+          "sport": "swim",
+          "key": "mn_swim_ter",
+          "label": "🏊 Natação Z1/LT1",
+          "detail": "~1.200m técnica",
+          "zone": "Z1/LT1",
+          "color": "#06b6d4"
+        }
+      ],
+      "2026-07-02": [
+        {
           "sport": "bike",
           "key": "mn_dbl_qua_am",
           "label": "⚡ Bike LT2 — AM",
-          "detail": "5×10min @LT2 (220–235W) · rec.2min · ~60min",
+          "detail": "5×10min @LT2 (220–235W) · rec.2min",
           "zone": "DUPLO LIMIAR",
           "color": "#f43f5e"
         },
@@ -2565,37 +2609,27 @@
           "sport": "run",
           "key": "c_s11_qua_pm",
           "label": "🏃 Run LT2 + VO2 — PM",
-          "detail": "5×1,5km @4:50–5:00 + 2×1km @4:45–4:50/km (VO2) · 17h",
+          "detail": "5×1,5km @4:50–5:00 + 2×1km @4:45–4:50 (VO2)",
           "zone": "LT2+VO2",
           "color": "#ef4444"
-        }
-      ],
-      "2026-07-02": [
-        {
-          "sport": "swim",
-          "key": "mn_swim_qui",
-          "label": "🏊 Natação Recuperação",
-          "detail": "8×50m LT1 + 400m técnica · ~1.000m",
-          "zone": "Z1/LT1",
-          "color": "#06b6d4"
-        },
-        {
-          "sport": "strength",
-          "key": "mn_musc_a",
-          "label": "💪 Força A — Plio + Inferiores",
-          "detail": "Plio + Agach. · Leg press · Stiff · Nordic · ~45min",
-          "zone": "plio+força",
-          "color": "#a78bfa"
         }
       ],
       "2026-07-03": [
         {
           "sport": "run",
           "key": "mn_run_z1_78",
-          "label": "🏃 Run Z1 Regenerativo",
-          "detail": "12km @6:30–7:00/km · FC<145bpm · ~80min",
+          "label": "🏃 Regenerativo Z1",
+          "detail": "~10km @6:30–7:00/km · FC<145",
           "zone": "Z1",
           "color": "#10b981"
+        },
+        {
+          "sport": "swim",
+          "key": "mn_swim_qui",
+          "label": "🏊 Natação leve",
+          "detail": "~1.000m solto",
+          "zone": "Z1",
+          "color": "#06b6d4"
         }
       ],
       "2026-07-04": [
@@ -2603,15 +2637,15 @@
           "sport": "bike",
           "key": "mn_bike_longo",
           "label": "🚴 Bike Longo Estruturado",
-          "detail": "30min Z2 · 3×15min LT2 · 30min Z2 · ~2h15",
+          "detail": "30min Z2 · 3×15min LT2 · 30min Z2",
           "zone": "LT2",
           "color": "#f59e0b"
         },
         {
           "sport": "strength",
           "key": "mn_musc_c",
-          "label": "💪 Força C — Plio leve + Força",
-          "detail": "Plio leve + RDL · Afundo · Hip thrust · Nordic · ~38min",
+          "label": "💪 Força C — Plio leve",
+          "detail": "Plio leve + força · ~38min",
           "zone": "plio+força",
           "color": "#a78bfa"
         }
