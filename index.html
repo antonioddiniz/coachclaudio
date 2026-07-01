@@ -3955,7 +3955,7 @@ function renderDiary() {
   // gordura perdida por dia (média dos dias com comida)
   const dayFatLostG      = avgDeficit > 0 ? Math.round(avgDeficit / KCAL_PER_KG_FAT * 1000) : 0;
   // projeção fim do ciclo: dias restantes × déficit médio por dia
-  const cycleEnd = new Date(CYCLE_START); cycleEnd.setDate(cycleEnd.getDate() + 83);
+  const cycleEnd = new Date(CYCLE_START); cycleEnd.setDate(cycleEnd.getDate() + CYCLE_WEEKS*7 - 1);
   const today2 = new Date(); today2.setHours(0,0,0,0);
   const daysLeft = Math.max(0, Math.round((cycleEnd - today2) / 86400000));
   const projFatKg = avgDeficit > 0
@@ -4133,7 +4133,7 @@ function renderDiary() {
     }
     // gerar labels: do primeiro ponto de peso até fim do ciclo
     const chartStartW = new Date(weightPoints[0].date+'T12:00:00');
-    const cycleEndW   = new Date(CYCLE_START); cycleEndW.setDate(cycleEndW.getDate()+83); cycleEndW.setHours(12,0,0,0);
+    const cycleEndW   = new Date(CYCLE_START); cycleEndW.setDate(cycleEndW.getDate() + CYCLE_WEEKS*7 - 1); cycleEndW.setHours(12,0,0,0);
     const today0 = new Date(); today0.setHours(12,0,0,0);
     const allDaysW = [];
     for (let d = new Date(chartStartW); d <= cycleEndW; d.setDate(d.getDate()+1))
@@ -5024,7 +5024,7 @@ function localStr(d) {
 
 // Datas futuras até fim do ciclo (14 semanas = 98 dias a partir de CYCLE_START)
 function buildFutureDates(histDates) {
-  const cycleEnd = new Date(CYCLE_START); cycleEnd.setDate(cycleEnd.getDate() + 97);
+  const cycleEnd = PLAN_END;
   const endStr   = localStr(cycleEnd);
   const todayStr = localStr(new Date());
   if (todayStr >= endStr) return [];
@@ -5528,8 +5528,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ══════════════════════════════════════════════════════════
 
-// ── CICLO 12 SEMANAS ──────────────────────────────────
-const CYCLE_START = new Date(((CFG.cycle_start) || '2026-04-20') + 'T00:00:00');
+// ── CICLOS (multi-ciclo: ativo por data + seletor na aba Plano) ──
+const CYCLES = (() => {
+  const arr = [{
+    start: (CFG.cycle_start) || '2026-04-20', weeks: 14,
+    phases: (EXT && EXT.plan && EXT.plan.cycle_phases) || [],
+    race: (EXT && EXT.race) || null
+  }];
+  const nc = EXT && EXT.next_cycle;
+  if (nc && nc.cycle_start) arr.push({
+    start: nc.cycle_start, weeks: nc.weeks || 18,
+    phases: nc.cycle_phases || [],
+    race: (EXT && EXT.race_next) || null
+  });
+  arr.forEach((c, i) => {
+    const r = c.race || {};
+    const d = r.date ? r.date.slice(8,10) + '/' + r.date.slice(5,7) : '';
+    const km = r.distance_km ? (r.distance_km >= 21 ? (r.distance_km >= 42 ? '42K' : 'Meia') : Math.round(r.distance_km) + 'K') : 'Ciclo ' + (i+1);
+    c.label = km + (d ? ' · ' + d : '');
+  });
+  return arr;
+})();
+function cycleStartOf(i) { return new Date(CYCLES[i].start + 'T00:00:00'); }
+const ACTIVE_CYCLE_IDX = (() => { const t = new Date(); let idx = 0; CYCLES.forEach((c, i) => { if (t >= cycleStartOf(i)) idx = i; }); return idx; })();
+let VIEW_CYCLE_IDX = ACTIVE_CYCLE_IDX;
+const CYCLE_START = cycleStartOf(ACTIVE_CYCLE_IDX);
+const CYCLE_WEEKS = CYCLES[ACTIVE_CYCLE_IDX].weeks;
+const PLAN_END = (() => { const c = CYCLES[CYCLES.length-1]; const e = new Date(c.start + 'T00:00:00'); e.setDate(e.getDate() + c.weeks*7 - 1); return e; })();
+function switchCycle(i) { VIEW_CYCLE_IDX = i; buildCycleTimeline(); }
 
 // Cards da aba Plano derivados do banco (config/race) — evita drift de FTP/pace
 function renderPlanoCards(){
@@ -5542,7 +5568,7 @@ function renderPlanoCards(){
     set('pc-ftp','FTP '+ftp+'W');
     set('pc-ftp-sub', wkg+' W/kg · LT2: '+lt2lo+'–'+lt2hi+'W');
     set('pc-lt2-pace','Corrida 4:50–5:00/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
-    const race=(EXT&&EXT.race)||{};
+    const race=(CYCLES[ACTIVE_CYCLE_IDX].race)||(EXT&&EXT.race)||{};
     if(race.date){
       const mo=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
       const p=race.date.split('-').map(Number);
@@ -5628,14 +5654,14 @@ function buildQualityData() {
 // runVol/bikeVol/swimVol = km totais planejados · runQual/bikeQual = km de qualidade (LT2)
 const PLANNED_WEEKLY = (EXT && EXT.plan && EXT.plan.planned_weekly) || [];
 
-const CYCLE_PHASES = (EXT && EXT.plan && EXT.plan.cycle_phases) || [];
+const CYCLE_PHASES = CYCLES[ACTIVE_CYCLE_IDX].phases;
 
 function getCycleWeek() {
   const now = new Date();
   const diff = now - CYCLE_START;
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   if (days < 0) return 1;
-  return Math.min(Math.floor(days / 7) + 1, 14);
+  return Math.min(Math.floor(days / 7) + 1, CYCLE_WEEKS);
 }
 
 function getPhaseForWeek(w) {
@@ -6301,7 +6327,7 @@ const RACE_FALLBACK = {
 function buildRaceProjectionCard() {
   const el = document.getElementById('race-projection-section');
   if (!el) return;
-  const R = (EXT && EXT.race) || RACE_FALLBACK;
+  const R = (CYCLES[ACTIVE_CYCLE_IDX].race) || (EXT && EXT.race) || RACE_FALLBACK;
   if (!R || !Array.isArray(R.references) || !R.references.length) return;
 
   const RIEGEL = 1.06;          // expoente clássico de Riegel
@@ -6433,7 +6459,7 @@ function buildGoalsCard() {
   if (!el) return;
 
   const CYCLE_END = new Date(CYCLE_START);
-  CYCLE_END.setDate(CYCLE_END.getDate() + 97); // 14 semanas = 98 dias (race 25/jul)
+  CYCLE_END.setDate(CYCLE_END.getDate() + CYCLE_WEEKS*7 - 1);
 
   // Define goals: baseline = valor no início do ciclo, target = meta final
   const GOALS = [
@@ -6522,35 +6548,46 @@ function buildGoalsCard() {
     </div>`;
   }).join('');
 
-  const totalDays = 98; // 14 semanas
+  const totalDays = CYCLE_WEEKS * 7;
+  const _rAct = CYCLES[ACTIVE_CYCLE_IDX].race || {};
+  const _rDt = _rAct.date ? _rAct.date.slice(8,10) + '/' + _rAct.date.slice(5,7) : '';
   const elapsed = Math.max(0, Math.floor((new Date() - CYCLE_START) / 86400000));
   const timePct = Math.min(100, Math.round(elapsed / totalDays * 100));
   const daysLeft = Math.max(0, totalDays - elapsed);
 
   el.innerHTML = `<div class="goals-wrap">
-    <div class="goals-header">🎯 Metas 14 Semanas — Prova 25/jul · ${daysLeft} dias restantes</div>
+    <div class="goals-header">🎯 Metas ${CYCLE_WEEKS} Semanas — Prova ${_rDt} · ${daysLeft} dias restantes</div>
     <div class="goals-grid">${rows}</div>
-    <div class="goals-note">⏱ ${elapsed} de 98 dias decorridos (${timePct}% do tempo) · FTP 243W · 2,68 W/kg · barra mostra progresso vs baseline de início de ciclo</div>
+    <div class="goals-note">⏱ ${elapsed} de ${totalDays} dias decorridos (${timePct}% do tempo) · FTP 243W · 2,68 W/kg · barra mostra progresso vs baseline de início de ciclo</div>
   </div>`;
 }
 
 function buildCycleTimeline() {
+  const V = CYCLES[VIEW_CYCLE_IDX];
+  const vStart = cycleStartOf(VIEW_CYCLE_IDX);
+  const vWeeks = V.weeks;
+  const vRace = V.race || {};
+  const getPhV = w => (V.phases || []).find(p => p.weeks.includes(w));
+  const fmtD = x => x ? x.slice(8,10) + '/' + x.slice(5,7) : '';
+  const vDays = Math.floor((new Date() - vStart) / 86400000);
+  const viewWeek = vDays < 0 ? 0 : Math.min(Math.floor(vDays / 7) + 1, vWeeks);
+  const vWeekDates = wn => { const a = new Date(vStart); a.setDate(a.getDate() + (wn-1)*7); const b = new Date(a); b.setDate(b.getDate()+6); const f = d => String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0'); return f(a)+'–'+f(b); };
   const currentWeek = getCycleWeek();
   const phase = getPhaseForWeek(currentWeek);
 
-  // ── 14-week grid ────────────────────────────────────────
-  const cells = Array.from({length: 14}, (_, i) => {
+  // ── week grid (ciclo em visualização) ───────────────────
+  const cells = Array.from({length: vWeeks}, (_, i) => {
     const w = i + 1;
-    const ph = getPhaseForWeek(w);
-    const isCurrent = w === currentWeek;
-    const isPast = w < currentWeek;
-    const dates = getWeekDates(w);
-    const narr = (typeof WEEK_NARRATIVES !== 'undefined' && WEEK_NARRATIVES[w]) || {};
+    const ph = getPhV(w) || {bg:'#1f2937', color:'#94a3b8', short:'', icon:''};
+    const isCurrent = w === viewWeek;
+    const isPast = w < viewWeek;
+    const dates = vWeekDates(w);
+    const narr = (VIEW_CYCLE_IDX === 0 && typeof WEEK_NARRATIVES !== 'undefined' && WEEK_NARRATIVES[w]) || {};
     const wEmoji = narr.emoji || '';
     // Headline curta: primeiras 3 palavras
     const wHint = narr.headline ? narr.headline.replace(/[🔬💥🏁📉⛰️🏔️🚀🔥⚙️📈🌱🦅🏅🔋]/g,'').trim().split(' ').slice(0,4).join(' ') : '';
     return `<div class="cycle-cell${isCurrent ? ' current' : ''}${isPast ? ' past' : ''}"
-      style="background:${ph.bg}" onclick="showWeekSummary(${w})" title="${narr.headline||'Semana '+w}">
+      style="background:${ph.bg}" onclick="showWeekSummary(${w}, ${VIEW_CYCLE_IDX})" title="${narr.headline||'Semana '+w}">
       <span class="cycle-cell-num" style="color:${isCurrent ? '#fff' : ph.color}">${isCurrent ? '▶' : 'S'+w}</span>
       ${wEmoji ? `<span style="font-size:0.85rem;display:block;margin:2px 0">${wEmoji}</span>` : ''}
       <span class="cycle-cell-label" style="color:${ph.color}">${ph.short}</span>
@@ -6560,26 +6597,35 @@ function buildCycleTimeline() {
   }).join('');
 
   const seenLabels = new Set();
-  const legend = CYCLE_PHASES.filter(p => { if(seenLabels.has(p.label)) return false; seenLabels.add(p.label); return true; })
+  const legend = (V.phases || []).filter(p => { if(seenLabels.has(p.label)) return false; seenLabels.add(p.label); return true; })
     .map(p => `<div class="cycle-leg-item"><div class="cycle-leg-dot" style="background:${p.color}"></div><span>${p.icon} ${p.label}</span></div>`).join('');
 
-  const focusItems = phase ? phase.focus.map(f => `<div class="cycle-current-focus">→ ${f}</div>`).join('') : '';
+  const vPhase = viewWeek > 0 ? getPhV(viewWeek) : null;
+  const focusItems = vPhase && vPhase.focus ? vPhase.focus.map(f => `<div class="cycle-current-focus">→ ${f}</div>`).join('') : '';
 
-  const currentBox = phase ? `
-    <div class="cycle-current-box" style="background:${phase.bg};border:1px solid ${phase.color}40;margin-top:12px">
-      <div class="cycle-current-icon">${phase.icon}</div>
+  const currentBox = vPhase ? `
+    <div class="cycle-current-box" style="background:${vPhase.bg};border:1px solid ${vPhase.color}40;margin-top:12px">
+      <div class="cycle-current-icon">${vPhase.icon}</div>
       <div style="flex:1">
-        <div class="cycle-current-phase" style="color:${phase.color}">Semana ${currentWeek} de 14 — ${phase.label}</div>
-        <div class="cycle-current-desc">${phase.desc}</div>
+        <div class="cycle-current-phase" style="color:${vPhase.color}">Semana ${viewWeek} de ${vWeeks} — ${vPhase.label}</div>
+        <div class="cycle-current-desc">${vPhase.desc}</div>
         ${focusItems}
       </div>
-    </div>` : '';
+    </div>` : (viewWeek === 0 ? `
+    <div class="cycle-current-box" style="background:#1f293780;border:1px solid #33415560;margin-top:12px">
+      <div class="cycle-current-icon">⏳</div>
+      <div style="flex:1">
+        <div class="cycle-current-phase" style="color:#94a3b8">Ciclo começa em ${fmtD(V.start)}</div>
+        <div class="cycle-current-desc">${vRace.name ? vRace.name + ' · ' + fmtD(vRace.date) + (vRace.target_time ? ' · meta ' + vRace.target_time : '') : ''}</div>
+      </div>
+    </div>` : '');
 
   const planoHTML = `<div class="cycle-wrap" id="cycle-timeline">
     <div class="cycle-header">
-      <span class="cycle-title">📅 Ciclo de 14 Semanas — Método Norueguês · Prova 25/jul</span>
-      ${phase ? `<span class="cycle-week-badge" style="background:${phase.bg};color:${phase.color};border:1px solid ${phase.color}50">S${currentWeek}/14</span>` : ''}
+      <span class="cycle-title">📅 Ciclo de ${vWeeks} Semanas — Método Norueguês · Prova ${fmtD(vRace.date)}</span>
+      ${vPhase ? `<span class="cycle-week-badge" style="background:${vPhase.bg};color:${vPhase.color};border:1px solid ${vPhase.color}50">S${viewWeek}/${vWeeks}</span>` : `<span class="cycle-week-badge" style="background:#1f2937;color:#94a3b8;border:1px solid #334155">começa ${fmtD(V.start)}</span>`}
     </div>
+    ${CYCLES.length > 1 ? `<div style="display:flex;gap:6px;margin:0 0 12px">${CYCLES.map((c,i)=>`<button onclick="switchCycle(${i})" style="flex:1;padding:7px 10px;border-radius:8px;font-weight:800;font-size:0.72rem;letter-spacing:0.3px;cursor:pointer;border:1px solid ${i===VIEW_CYCLE_IDX?'#f43f5e':'#333'};background:${i===VIEW_CYCLE_IDX?'#f43f5e22':'transparent'};color:${i===VIEW_CYCLE_IDX?'#f43f5e':'#888'}">${c.label}${i===ACTIVE_CYCLE_IDX?' · atual':''}</button>`).join('')}</div>` : ''}
     <div class="cycle-grid">${cells}</div>
     <div class="cycle-legend">${legend}</div>
     ${currentBox}
@@ -6594,17 +6640,19 @@ function buildCycleTimeline() {
   }
 
   // ── Home banner ─────────────────────────────────────────
-  const pct = Math.round((currentWeek / 14) * 100);
+  const pct = Math.round((currentWeek / CYCLE_WEEKS) * 100);
+  const aRace = CYCLES[ACTIVE_CYCLE_IDX].race || {};
+  const aRaceD = aRace.date ? aRace.date.slice(8,10) + '/' + aRace.date.slice(5,7) : '';
   const homeBanner = phase ? `<div class="week-banner" id="home-week-banner" style="background:${phase.bg};border:1px solid ${phase.color}30">
     <div class="week-banner-left">
       <div class="week-banner-num" style="color:${phase.color};font-size:1.8rem">${phase.icon}</div>
       <div class="week-banner-info">
-        <div class="week-banner-phase" style="color:${phase.color}">Semana ${currentWeek} de 14 &nbsp;·&nbsp; ${phase.label}</div>
+        <div class="week-banner-phase" style="color:${phase.color}">Semana ${currentWeek} de ${CYCLE_WEEKS} &nbsp;·&nbsp; ${phase.label}</div>
         <div class="week-banner-dates">${getWeekDates(currentWeek)} &nbsp;·&nbsp; ${phase.desc.split('.')[0]}.</div>
       </div>
     </div>
     <div class="week-banner-right">
-      <div class="week-banner-progress-label">Ciclo 14 semanas · Prova 25/jul</div>
+      <div class="week-banner-progress-label">Ciclo ${CYCLE_WEEKS} semanas · Prova ${aRaceD}</div>
       <div class="week-banner-bar-wrap"><div class="week-banner-bar" style="width:${pct}%;background:${phase.color}"></div></div>
       <div class="week-banner-pct">${pct}% concluído</div>
     </div>
@@ -7922,7 +7970,7 @@ function buildReport() {
 
   const currentWeek = getCycleWeek();
   const phase       = getPhaseForWeek(currentWeek);
-  const cycleEnd    = new Date(CYCLE_START); cycleEnd.setDate(cycleEnd.getDate()+83);
+  const cycleEnd    = new Date(CYCLE_START); cycleEnd.setDate(cycleEnd.getDate() + CYCLE_WEEKS*7 - 1);
   const daysLeft    = Math.max(0, Math.ceil((cycleEnd - today)/86400000));
   const cyclePct    = Math.min(100, Math.round((today - CYCLE_START)/(cycleEnd - CYCLE_START)*100));
 
@@ -8010,7 +8058,7 @@ function buildReport() {
         </div>
         <div style="text-align:right">
           <div style="font-size:0.58rem;color:#333;text-transform:uppercase;letter-spacing:2px;margin-bottom:4px">Ciclo · Método Norueguês</div>
-          <div style="font-size:1.4rem;font-weight:900;color:${phase?.color||'#fff'};line-height:1">S${currentWeek} <span style="font-size:0.8rem;opacity:.6">/ 12</span></div>
+          <div style="font-size:1.4rem;font-weight:900;color:${phase?.color||'#fff'};line-height:1">S${currentWeek} <span style="font-size:0.8rem;opacity:.6">/ ${CYCLE_WEEKS}</span></div>
           <div style="font-size:0.65rem;color:#444;margin-top:4px">${phase?.label||''} · ${daysLeft}d restantes</div>
         </div>
       </div>
@@ -8590,13 +8638,15 @@ function ensureWeekModal() {
   document.body.appendChild(el);
 }
 
-function showWeekSummary(weekNum) {
+function showWeekSummary(weekNum, ci) {
   ensureWeekModal();
   const allSessions = (typeof sessions !== 'undefined' ? sessions : []);
+  const _ci = (typeof ci === 'number') ? ci : ACTIVE_CYCLE_IDX;
+  const _base = cycleStartOf(_ci);
 
   // Datas da semana (segunda a domingo)
-  const ws = new Date(CYCLE_START);
-  ws.setDate(CYCLE_START.getDate() + (weekNum - 1) * 7);
+  const ws = new Date(_base);
+  ws.setDate(_base.getDate() + (weekNum - 1) * 7);
   const csDow = ws.getDay();
   ws.setDate(ws.getDate() - (csDow === 0 ? 6 : csDow - 1));
   ws.setHours(0,0,0,0);
@@ -8604,8 +8654,8 @@ function showWeekSummary(weekNum) {
   function ls(d) { return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
   const wsStr = ls(ws), weStr = ls(we);
 
-  const ph = getPhaseForWeek(weekNum);
-  const currentWeek = getCycleWeek();
+  const ph = (CYCLES[_ci].phases || []).find(p => p.weeks.includes(weekNum));
+  const currentWeek = _ci === ACTIVE_CYCLE_IDX ? getCycleWeek() : (_ci > ACTIVE_CYCLE_IDX ? 0 : 99);
   const isFuture = weekNum > currentWeek;
   const isCurrent = weekNum === currentWeek;
 
@@ -8644,7 +8694,7 @@ function showWeekSummary(weekNum) {
   const ftpVal = ftpSess ? (ftpSess.note.match(/FTP[:\s]+(\d+)W/)||[])[1] : null;
 
   // Narrativa
-  const narr = WEEK_NARRATIVES[weekNum] || {};
+  const narr = (_ci === 0 ? WEEK_NARRATIVES[weekNum] : null) || {};
   const gradeColor = {'A+':'#22c55e','A':'#4ade80','B+':'#86efac','B':'#bbf7d0','C+':'#fbbf24','C':'#fde68a','—':'#555'}[narr.grade]||'#555';
 
   // Ícone por esporte
