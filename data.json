@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-02",
+ "updated_at": "2026-07-05",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -1719,6 +1719,30 @@
    "hr": 144,
    "kcal": 493,
    "note": "6,01km · 39:18 · retomada gripado 🤒 · 6:32/km · FC 144 avg / 156 máx · +68m · esforço 54 · FC ~6–10bpm acima do normal p/ esse pace — corpo ainda lutando"
+  },
+  {
+   "id": 146,
+   "date": "2026-07-04",
+   "sport": "run",
+   "dist": 6.01,
+   "dur": "35:46",
+   "pace": "5:57",
+   "sec": 357,
+   "hr": 140,
+   "kcal": 495,
+   "note": "6,01km · 35:46 · fácil Z2 — volta pós-gripe (voltando) · 5:57/km · FC 140 avg / 160 máx · recuperação OK: mesma rota de terça, 35s/km mais rápido a FC MENOR (era 6:32@144 → 5:57@140) = FC-pace normalizou · EF ~1,20 · +70m · RE 42 · sábado manhã · Strava"
+  },
+  {
+   "id": 147,
+   "date": "2026-07-05",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "55:17",
+   "pace": "5:31",
+   "sec": 331,
+   "hr": 157,
+   "kcal": 819,
+   "note": "10,01km · 55:17 · 'sem estrutura' — rodado moderado-FORTE com estímulos de prova (Sem 11 · 1º forte pós-gripe) · 5:31/km médio · FC 157 avg / 167 máx · melhor 1k 4:30 · melhor 5k 25:46 · 5 PRs · +97m · RE 120 · ⚠️ saiu bem mais forte que o combinado (era fácil + toques): FC 157 por 55min é tempo cheio · 5:31@157 sugere FC ainda um tiquinho alta (rescaldo da gripe) · +1km trote depois · domingo · Strava"
   }
  ],
  "weight_data": [
