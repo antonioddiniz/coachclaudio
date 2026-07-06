@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-05",
+ "updated_at": "2026-07-02",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -8988,5 +8988,23 @@
     "label": "pace limiar atual (6x1km)"
    }
   ]
- }
+ },
+ "health_log": [
+  {
+   "date": "2026-07-02",
+   "area": "quadril D/E (informar lado)",
+   "tipo": "dor articular (linha coxofemoral) + glúteo",
+   "desc": "Dor antiga no glúteo agora também na frente; sensação na articulação bacia-fêmur. Pior frio/parado, melhora correndo (padrão tendíneo, mas localização articular = investigar). Contexto: volume subiu 32→60km/sem em 6 semanas (+87%), plio 4×/sem, déficit calórico c/ Mounjaro.",
+   "conduta": "Sem plio na retomada · isometria quadril/glúteo · aquecimento longo · avaliação médica se não regredir até ~19/07 ou se dor noturna/salto positivo",
+   "status": "ativo"
+  },
+  {
+   "date": "2026-07-02",
+   "area": "tendão de aquiles",
+   "tipo": "incômodo tendíneo",
+   "desc": "Incômodo no aquiles, simultâneo ao quadril — 2º tendão reclamando = bandeira de carga sistêmica/recuperação em déficit.",
+   "conduta": "Teste rigidez matinal · força lenta pesada de panturrilha (sem saltos) · evitar subidas fortes na volta · monitorar",
+   "status": "ativo"
+  }
+ ]
 }
