@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-02",
+ "updated_at": "2026-07-08",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -1743,6 +1743,30 @@
    "hr": 157,
    "kcal": 819,
    "note": "10,01km · 55:17 · 'sem estrutura' — rodado moderado-FORTE com estímulos de prova (Sem 11 · 1º forte pós-gripe) · 5:31/km médio · FC 157 avg / 167 máx · melhor 1k 4:30 · melhor 5k 25:46 · 5 PRs · +97m · RE 120 · ⚠️ saiu bem mais forte que o combinado (era fácil + toques): FC 157 por 55min é tempo cheio · 5:31@157 sugere FC ainda um tiquinho alta (rescaldo da gripe) · +1km trote depois · domingo · Strava"
+  },
+  {
+   "id": 146,
+   "date": "2026-07-04",
+   "sport": "run",
+   "dist": 6.01,
+   "dur": "35:46",
+   "pace": "5:57",
+   "sec": 357,
+   "hr": 140,
+   "kcal": 495,
+   "note": "6,01km · 35:46 · volta pós-gripe dia 2 · 5:57/km · FC 140 avg / 160 máx · +70m · esforço 42"
+  },
+  {
+   "id": 147,
+   "date": "2026-07-05",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "55:17",
+   "pace": "5:31",
+   "sec": 331,
+   "hr": 158,
+   "kcal": 819,
+   "note": "10,01km · 55:17 · forte sem estrutura em convalescença ⚠️ · 5:31/km · FC 157 avg / 167 máx · +97m · esforço 120 · surges (1k 4:30, 400m 4:08/km) · 5 PRs de segmento (um em descida, 330W) · +1km solta depois — gastou ficha à toa no 3º dia de volta"
   }
  ],
  "weight_data": [
@@ -2995,140 +3019,100 @@
    ],
    "2026-07-08": [
     {
-     "sport": "run",
-     "key": "c_s12_prova",
-     "label": "🏃 Sessão de PROVA",
-     "detail": "5–6×1km @4:54/km (pace 10k) · rec.90s · OU 2×3km @4:56 · sessão-chave do ciclo",
-     "zone": "PROVA",
-     "color": "#ef4444"
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — retomada",
+     "detail": "45–60min Z2 · FC<130 · sem impacto — poupa quadril/aquiles · se FC derivar +10bpm, encurta",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-07-09": [
     {
-     "sport": "swim",
-     "key": "mn_swim_qui",
-     "label": "🏊 Natação Recuperação",
-     "detail": "~1.000m",
-     "zone": "Z1/LT1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "mn_musc_a",
-     "label": "💪 Força A",
-     "detail": "Plio + inferiores · ~45min",
-     "zone": "plio+força",
-     "color": "#a78bfa"
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "7–8km · FC<140 · PLANO, sem descida forte · aquec 10min caminhada/trote · monitorar aquiles no dia seguinte",
+     "zone": "Z2",
+     "color": "#10b981"
     }
    ],
    "2026-07-10": [
     {
-     "sport": "run",
-     "key": "mn_run_z1_78",
-     "label": "🏃 Run Z1 Regenerativo",
-     "detail": "8–10km @6:30–7:00/km · FC<145",
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.200m Z1 · opcional: força upper leve · zero perna",
      "zone": "Z1",
-     "color": "#10b981"
+     "color": "#06b6d4"
     }
    ],
    "2026-07-11": [
     {
-     "sport": "bike",
-     "key": "mn_bike_longo",
-     "label": "🚴 Bike Longo",
-     "detail": "~2h Z2 · FC<150",
-     "zone": "LT2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "mn_musc_c",
-     "label": "💪 Força C",
-     "detail": "Plio leve + força · ~38min",
-     "zone": "plio+força",
-     "color": "#a78bfa"
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "8km · FC<140 · + 4 strides ~100m SUAVES no plano se quadril/aquiles ok",
+     "zone": "Z2",
+     "color": "#10b981"
     }
    ],
    "2026-07-12": [
     {
      "sport": "run",
-     "key": "c_s12_dom",
-     "label": "🏃 Longão Z2",
-     "detail": "16km @6:15–6:30/km · FC<150 · fácil e abastecido",
-     "zone": "Z1/Z2",
+     "key": "hm_longao",
+     "label": "🏃 Longão curto",
+     "detail": "12–14km Z1–Z2 · FC<147 · última sessão de volume antes da prova · terreno plano",
+     "zone": "Z2",
      "color": "#10b981"
     }
    ],
    "2026-07-13": [
     {
-     "sport": "bike",
-     "key": "mn_dbl_seg_am",
-     "label": "⚡ Bike LT2 — AM (reduzido)",
-     "detail": "4×8min @LT2 (220–235W) · rec.2min · ~40min",
-     "zone": "TAPER",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "run",
-     "key": "c_s13_seg_pm",
-     "label": "🏃 Run LT2 — PM (reduzido)",
-     "detail": "4×1km @4:50–5:00/km · rec.400m · 17h",
-     "zone": "TAPER",
-     "color": "#06b6d4"
+     "sport": "rest",
+     "key": "mn_descanso",
+     "label": "😴 Descanso total",
+     "detail": "Folga cheia antes do teste de terça",
+     "zone": "descanso",
+     "color": "#475569"
     }
    ],
    "2026-07-14": [
     {
-     "sport": "swim",
-     "key": "mn_swim_ter",
-     "label": "🏊 Natação leve",
-     "detail": "~1.000m · Z1 técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "mn_musc_b",
-     "label": "💪 Força reduzida",
-     "detail": "Upper leve · ~25min",
-     "zone": "força",
-     "color": "#a78bfa"
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🎯 Qualidade única — GO/NO-GO",
+     "detail": "4×1km @4:55–5:05 · FC ≤157 · rec 200m trote · DEFINE A META: suave = 48:59 · pesado = ~50min controlado",
+     "zone": "sub-LT2",
+     "color": "#f43f5e"
     }
    ],
    "2026-07-15": [
     {
      "sport": "bike",
-     "key": "mn_dbl_qua_am",
-     "label": "⚡ Bike LT2 — AM (reduzido)",
-     "detail": "3×10min @LT2 · rec.2min · ~40min",
-     "zone": "TAPER",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "run",
-     "key": "c_s13_qua_pm",
-     "label": "🏃 Run Z1 + Strides — PM",
-     "detail": "5km fácil + 4×80m strides · 17h",
-     "zone": "TAPER",
-     "color": "#06b6d4"
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 leve",
+     "detail": "40min Z2 ou natação · soltar as pernas",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-07-16": [
     {
-     "sport": "swim",
-     "key": "mn_swim_qui",
-     "label": "🏊 Natação muito leve (opcional)",
-     "detail": "~800m · solto",
-     "zone": "Z1",
-     "color": "#06b6d4"
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil + strides",
+     "detail": "6km Z2 · FC<140 · + 4 strides ~100m",
+     "zone": "Z2",
+     "color": "#10b981"
     }
    ],
    "2026-07-17": [
     {
      "sport": "rest",
      "key": "mn_descanso",
-     "label": "😴 Descanso",
-     "detail": "Recuperação ativa — caminhada leve até 20min",
+     "label": "😴 Descanso total",
+     "detail": "Hidratar · carbo normal · dormir cedo",
      "zone": "descanso",
      "color": "#475569"
     }
@@ -3136,11 +3120,11 @@
    "2026-07-18": [
     {
      "sport": "run",
-     "key": "c_prerace",
-     "label": "🏃 Pré-prova — shakeout",
-     "detail": "~2,5km Z1 + 4 strides · solta as pernas na véspera",
-     "zone": "ATIVAÇÃO",
-     "color": "#fbbf24"
+     "key": "hm_run_facil",
+     "label": "🏃 Ativação véspera",
+     "detail": "3km trote + 3 strides · de manhã · separar tênis/número da prova",
+     "zone": "Z1",
+     "color": "#10b981"
     }
    ],
    "2026-07-19": [
