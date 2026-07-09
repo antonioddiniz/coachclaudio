@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-08",
+ "updated_at": "2026-07-09",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -1743,6 +1743,18 @@
    "hr": 158,
    "kcal": 819,
    "note": "10,01km · 55:17 · forte sem estrutura em convalescença ⚠️ · 5:31/km · FC 157 avg / 167 máx · +97m · esforço 120 · surges (1k 4:30, 400m 4:08/km) · 5 PRs de segmento (um em descida, 330W) · +1km solta depois — gastou ficha à toa no 3º dia de volta"
+  },
+  {
+   "id": 148,
+   "date": "2026-07-09",
+   "sport": "bike",
+   "dist": 29.82,
+   "dur": "1:03:41",
+   "sec": 64,
+   "watts": 159,
+   "hr": 127,
+   "kcal": 579,
+   "note": "29,82km · 1:03:41 · Zwift bike fácil Z2 (volta pós-gripe) · 159W avg (~65% FTP 243) · FC 127 avg / 148 máx — HR normal pro esforço = recuperação completa · cadência 75 · 579kcal · RE 28 · quinta noite · Strava"
   }
  ],
  "weight_data": [
@@ -3036,11 +3048,11 @@
    "2026-07-12": [
     {
      "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão curto",
-     "detail": "12–14km Z1–Z2 · FC<147 · última sessão de volume antes da prova · terreno plano",
-     "zone": "Z2",
-     "color": "#10b981"
+     "key": "c_s12_prova",
+     "label": "🏃 SESSÃO DE PROVA (domingo)",
+     "detail": "aquece ~2,5km + 5×1km @4:54 (ritmo de prova) rec. ~200m + solta ~1,5km · Vaporfly 3 · o termômetro do sub-49 · FC alvo ~160–165 · ABORTA os tiros se a FC vier alta (rescaldo da gripe)",
+     "zone": "PROVA",
+     "color": "#f43f5e"
     }
    ],
    "2026-07-13": [
@@ -3056,11 +3068,11 @@
    "2026-07-14": [
     {
      "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🎯 Qualidade única — GO/NO-GO",
-     "detail": "4×1km @4:55–5:05 · FC ≤157 · rec 200m trote · DEFINE A META: suave = 48:59 · pesado = ~50min controlado",
-     "zone": "sub-LT2",
-     "color": "#f43f5e"
+     "key": "c_taper_easy",
+     "label": "🏃 Fácil + strides",
+     "detail": "6km Z2 · FC<140 · + 4 strides ~100m · (qualidade movida p/ domingo 12/07)",
+     "zone": "Z2",
+     "color": "#10b981"
     }
    ],
    "2026-07-15": [
