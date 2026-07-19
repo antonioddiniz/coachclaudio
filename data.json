@@ -3521,14 +3521,6 @@
    ],
    "2026-07-27": [
     {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Rodagem fácil — AM",
-     "detail": "~4km Z1 a 6:05–6:25 · FC<138 · soltar do fim de semana",
-     "zone": "Z1",
-     "color": "#10b981"
-    },
-    {
      "sport": "swim",
      "key": "hm_swim_leve",
      "label": "🏊 Natação leve (opcional)",
@@ -3596,7 +3588,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "10km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3624,7 +3616,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "16km Z1–Z2 · FC<147",
+     "detail": "18km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3638,14 +3630,6 @@
     }
    ],
    "2026-08-03": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Rodagem fácil — AM",
-     "detail": "~6km Z1 a 6:00–6:20 · FC<138 · recuperação ativa do longão",
-     "zone": "Z1",
-     "color": "#10b981"
-    },
     {
      "sport": "swim",
      "key": "hm_swim_leve",
@@ -3714,7 +3698,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "11km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3742,7 +3726,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km Z1–Z2 · FC<147",
+     "detail": "21km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3756,14 +3740,6 @@
     }
    ],
    "2026-08-10": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Rodagem fácil — AM",
-     "detail": "~9km Z1–Z2 a 5:55–6:15 · FC<140 · rodagem de volume",
-     "zone": "Z1",
-     "color": "#10b981"
-    },
     {
      "sport": "swim",
      "key": "hm_swim_leve",
@@ -3840,7 +3816,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "12km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3868,7 +3844,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "20km Z1–Z2 · FC<147",
+     "detail": "24km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3882,14 +3858,6 @@
     }
    ],
    "2026-08-17": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Rodagem fácil — AM",
-     "detail": "~8km Z1–Z2 a 5:55–6:15 · FC<140 · rodagem de volume",
-     "zone": "Z1",
-     "color": "#10b981"
-    },
     {
      "sport": "swim",
      "key": "hm_swim_leve",
@@ -3966,7 +3934,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "12km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3994,7 +3962,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "22km Z1–Z2 · FC<147",
+     "detail": "26km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4076,7 +4044,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "6km Z1 · corrida mais lenta da semana",
+     "detail": "11km Z1 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4096,7 +4064,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "16km Z1–Z2 · FC<147",
+     "detail": "21km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4186,7 +4154,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "13km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4214,7 +4182,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "22km Z1–Z2 · FC<147",
+     "detail": "27km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4304,7 +4272,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4332,7 +4300,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "24km c/ 3×2km @4:53 (HMP) no meio · resto FC<147",
+     "detail": "28km c/ 3×2km @4:53 (HMP) no meio · resto FC<147",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4516,7 +4484,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "6km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4536,7 +4504,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km Z1–Z2 · FC<147",
+     "detail": "24km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4626,7 +4594,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4654,7 +4622,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z1–Z2 · FC<147",
+     "detail": "28km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4744,7 +4712,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4772,7 +4740,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "26km c/ 3×3km @4:42* (HMP)",
+     "detail": "28km c/ 3×3km @4:42* (HMP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4862,7 +4830,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4972,7 +4940,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "6km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4992,7 +4960,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km Z1–Z2 · FC<147",
+     "detail": "24km Z1–Z2 · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5082,7 +5050,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5110,7 +5078,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "24km Z2 · FC<147 · sem blocos",
+     "detail": "26km Z2 · FC<147 · sem blocos",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5200,7 +5168,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5310,7 +5278,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "6km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5404,7 +5372,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "4km trote leve (opcional) · corrida mais lenta da semana",
+     "detail": "10km trote leve (opcional) · corrida mais lenta da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5907,7 +5875,7 @@
    },
    {
     "week": "2026-08-10",
-    "runVol": 58,
+    "runVol": 57,
     "bikeVol": 50,
     "swimVol": 0,
     "runQual": 11,
@@ -5939,7 +5907,7 @@
    },
    {
     "week": "2026-09-07",
-    "runVol": 70,
+    "runVol": 69,
     "bikeVol": 50,
     "swimVol": 0,
     "runQual": 22,
@@ -5947,7 +5915,7 @@
    },
    {
     "week": "2026-09-14",
-    "runVol": 65,
+    "runVol": 40,
     "bikeVol": 20,
     "swimVol": 0,
     "runQual": 14,
@@ -5963,7 +5931,7 @@
    },
    {
     "week": "2026-09-28",
-    "runVol": 72,
+    "runVol": 70,
     "bikeVol": 55,
     "swimVol": 0,
     "runQual": 20,
@@ -5971,7 +5939,7 @@
    },
    {
     "week": "2026-10-05",
-    "runVol": 74,
+    "runVol": 68,
     "bikeVol": 55,
     "swimVol": 0,
     "runQual": 27,
@@ -5979,7 +5947,7 @@
    },
    {
     "week": "2026-10-12",
-    "runVol": 72,
+    "runVol": 70,
     "bikeVol": 55,
     "swimVol": 0,
     "runQual": 28,
@@ -5987,7 +5955,7 @@
    },
    {
     "week": "2026-10-19",
-    "runVol": 55,
+    "runVol": 52,
     "bikeVol": 35,
     "swimVol": 0,
     "runQual": 4.5,
@@ -5995,7 +5963,7 @@
    },
    {
     "week": "2026-10-26",
-    "runVol": 68,
+    "runVol": 66,
     "bikeVol": 50,
     "swimVol": 0,
     "runQual": 20,
@@ -6003,7 +5971,7 @@
    },
    {
     "week": "2026-11-02",
-    "runVol": 58,
+    "runVol": 52,
     "bikeVol": 45,
     "swimVol": 0,
     "runQual": 15,
@@ -6011,7 +5979,7 @@
    },
    {
     "week": "2026-11-09",
-    "runVol": 45,
+    "runVol": 40,
     "bikeVol": 25,
     "swimVol": 0,
     "runQual": 7,
@@ -6019,7 +5987,7 @@
    },
    {
     "week": "2026-11-16",
-    "runVol": 46,
+    "runVol": 43,
     "bikeVol": 5,
     "swimVol": 0,
     "runQual": 24,
