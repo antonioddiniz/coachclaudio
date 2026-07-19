@@ -2869,7 +2869,7 @@ canvas { max-height: 340px; }
     </div>
     <canvas id="volumeChart" height="200"></canvas>
     <div class="pace-hint" style="margin-top:10px;">
-      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (20/04) · 14 semanas · Prova 19/07
+      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (20/07) · 18 semanas · Prova 22/11
     </div>
   </div>
 </div>
@@ -4570,7 +4570,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- CICLO + PROVA -->
     <div style="background:linear-gradient(135deg,#0d1a0f,#0d1520);border:1px solid #1e3a1e;border-radius:14px;padding:16px 20px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
       <div>
-        <div style="font-size:0.62rem;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Ciclo Atual — 14 Semanas</div>
+        <div style="font-size:0.62rem;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Ciclo Atual — <span id="pc-cycle-weeks">18</span> Semanas</div>
         <div style="font-size:0.95rem;font-weight:800;color:#4ade80">20 abr → 19 jul 2026</div>
         <div style="font-size:0.65rem;color:#555;margin-top:3px">S1–8 Build · S9 Viagem · S10 Rebuild · S11 Build · S12 Pico · S13 Taper · S14 Prova</div>
       </div>
@@ -5530,16 +5530,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ── CICLOS (multi-ciclo: ativo por data + seletor na aba Plano) ──
 const CYCLES = (() => {
-  const arr = [{
-    start: (CFG.cycle_start) || '2026-04-20', weeks: 14,
+  const arr = [];
+  // ciclo anterior (histórico) — só aparece se houver prova/fases arquivadas
+  const cp = (CFG.cycle_prev) || null;
+  const prevPhases = (EXT && EXT.plan && EXT.plan.cycle_phases_prev) || [];
+  if (cp && cp.start) arr.push({
+    start: cp.start, weeks: cp.weeks || 14,
+    phases: prevPhases,
+    race: (EXT && EXT.race_prev) || null
+  });
+  // ciclo atual — tudo do banco (config.cycle_start / config.cycle_weeks / race)
+  arr.push({
+    start: (CFG.cycle_start) || '2026-07-20', weeks: (CFG.cycle_weeks) || 18,
     phases: (EXT && EXT.plan && EXT.plan.cycle_phases) || [],
     race: (EXT && EXT.race) || null
-  }];
-  const nc = EXT && EXT.next_cycle;
-  if (nc && nc.cycle_start) arr.push({
-    start: nc.cycle_start, weeks: nc.weeks || 18,
-    phases: nc.cycle_phases || [],
-    race: (EXT && EXT.race_next) || null
   });
   arr.forEach((c, i) => {
     const r = c.race || {};
@@ -5567,7 +5571,11 @@ function renderPlanoCards(){
     const set = (id,t)=>{ const e=document.getElementById(id); if(e) e.textContent=t; };
     set('pc-ftp','FTP '+ftp+'W');
     set('pc-ftp-sub', wkg+' W/kg · LT2: '+lt2lo+'–'+lt2hi+'W');
-    set('pc-lt2-pace','Corrida 4:50–5:00/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
+    const PA = (CFG.pace_anchors) || {};
+    const hoje = PA.hoje || {};
+    const lt2run = hoje.lt2 ? (hoje.sub_lt2 ? hoje.lt2+'–'+hoje.sub_lt2 : hoje.lt2) : '4:37–4:43';
+    set('pc-lt2-pace','Corrida '+lt2run+'/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
+    set('pc-cycle-weeks', String((CFG.cycle_weeks)||CYCLE_WEEKS||18));
     const race=(CYCLES[ACTIVE_CYCLE_IDX].race)||(EXT&&EXT.race)||{};
     if(race.date){
       const mo=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];

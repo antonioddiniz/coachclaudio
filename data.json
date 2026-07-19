@@ -1,10 +1,10 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-14",
+ "updated_at": "2026-07-19",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
-  "cycle_start": "2026-04-20",
+  "cycle_start": "2026-07-20",
   "ftp": 243,
   "ftp_ref": "Ramp Test 06/06/2026",
   "fcmax": 183,
@@ -22,6 +22,33 @@
    "run": 540,
    "bike": 1.0,
    "swim": 330
+  },
+  "pace_anchors": {
+   "ref": "10K 19/07/2026 — 43:50 no relógio, ~45:00 equivalente plano (GAP)",
+   "hoje": {
+    "k10": "4:30",
+    "lt2": "4:37",
+    "sub_lt2": "4:43",
+    "hmp": "4:42",
+    "z2": "5:30–5:45"
+   },
+   "alvo_22_11": {
+    "k10": "4:16",
+    "lt2": "4:23",
+    "sub_lt2": "4:29",
+    "hmp": "4:30",
+    "z2": "5:15–5:30"
+   },
+   "checkpoints": [
+    "Sem 9 · 19/09 · 10k-teste (recalibra sem 10–18)",
+    "Sem 13 · 17/10 · longão 28km c/ 8km @HMP",
+    "Sem 16 · 07/11 · ensaio 20km c/ 5km @RP (define o pace final)"
+   ]
+  },
+  "cycle_weeks": 18,
+  "cycle_prev": {
+   "start": "2026-04-20",
+   "weeks": 14
   }
  },
  "workouts": [
@@ -1778,7 +1805,10 @@
    "sec": 285,
    "hr": 170,
    "kcal": 860,
-   "blocks": {"done": 6, "total": 6},
+   "blocks": {
+    "done": 6,
+    "total": 6
+   },
    "note": "9,54km · 49:04 · SESSÃO DE PROVA/'Chave' (Sem 12 · domingo · abastecido · Vaporfly 3) · 6×1km @ 4:31·4:40·4:46·4:52·4:52·4:49 (méd 4:45/km — MAIS RÁPIDO que o alvo 4:54!) · rec ~200m · FC tiros 168–173 (máx 178) — ALTA: rodou em VO2, não no controlado 160–165 · melhor 1k 4:31 · melhor 5k interno 24:28 · +12m (plano) · RE 147 · 8 PRs Gold · ⚠️ 1º tiro 4:31 = saída quente (o vício de sempre) · GO: fitness forte, sub-49 confirmado · +1km aquece + 0,5km solta · domingo · Strava"
   },
   {
@@ -1801,6 +1831,40 @@
    "hr": 141,
    "kcal": 613,
    "note": "7,61km · 44:46 · fácil Z2 + ~8 strides (taper · terça) · ~6:03/km (parte fácil) · FC 137 (corpo) / 141 avg / 164 máx (strides) — FC NORMAL, recuperação 100% (jejum era 6:33@140 → agora 6:03@137) · +76m · RE 43 · terça manhã · Strava"
+  },
+  {
+   "id": 153,
+   "date": "2026-07-15",
+   "sport": "bike",
+   "dist": 28.75,
+   "dur": "1:00:17",
+   "sec": 60,
+   "kcal": 546,
+   "note": "28,75km · 1:00:17 · Zwift Z2 leve (taper · quarta noite) · aeróbico solto sem impacto · 546kcal · RE 13 · Strava"
+  },
+  {
+   "id": 154,
+   "date": "2026-07-16",
+   "sport": "run",
+   "dist": 6.39,
+   "dur": "35:19",
+   "pace": "5:42",
+   "sec": 342,
+   "hr": 143,
+   "kcal": 580,
+   "note": "6,39km · 35:19 · fácil Z2 + ~7 strides (taper · quinta) · ~5:42/km (parte fácil) · FC 143 (corpo) / 146 avg / 169 máx (strides) · pernas frescas · cadência 82 · +55m · RE 51 · 2 PRs · quinta manhã · Strava"
+  },
+  {
+   "id": 155,
+   "date": "2026-07-19",
+   "sport": "run",
+   "dist": 10.02,
+   "dur": "43:46",
+   "pace": "4:22",
+   "sec": 262,
+   "hr": 168,
+   "kcal": 887,
+   "note": "10,02km · 43:46 · 🏆 PROVA 10K — BSB Half Marathon · PR 43:50 (Strava) · 4:22/km · FC 168 avg / 177 máx · 330W · cadência 83 · percurso em descida líquida (+27m) · GAP plano ~4:30/km · 14 PRs · 5K PR 21:02 · 1K PR 3:55 · splits 4:01-4:10-4:13-4:08-4:33-4:34-4:31-4:41-4:25-4:39 · meta era 47:30, bateu por 3:40 · Vaporfly 3"
   }
  ],
  "weight_data": [
@@ -1994,8 +2058,13 @@
    "done": 8,
    "planned": 8
   },
-   { "date": "2026-07-12", "sport": "run", "done": 6, "planned": 6 }
-  ],
+  {
+   "date": "2026-07-12",
+   "sport": "run",
+   "done": 6,
+   "planned": 6
+  }
+ ],
  "inbody_exams": [
   {
    "date": "2026-02-06",
@@ -3465,7 +3534,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×1km @4:52 · rec ~200m trote · FC ≤159 · ~9km total",
+     "detail": "4×1km @4:43 · rec ~200m trote · FC ≤159 · ~9km total",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3575,7 +3644,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×1km @4:52 · rec ~200m trote · ~10km total",
+     "detail": "5×1km @4:42 · rec ~200m trote · ~10km total",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3685,7 +3754,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×1km @4:52 · rec ~200m trote",
+     "detail": "5×1km @4:42 · rec ~200m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3721,7 +3790,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×2km @4:52 · rec ~300m trote · ~11km",
+     "detail": "3×2km @4:42 · rec ~300m trote · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3803,7 +3872,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1km @4:52 · rec ~200m trote",
+     "detail": "6×1km @4:41 · rec ~200m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3839,7 +3908,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "4×2km @4:52 · rec ~300m trote · ~13km",
+     "detail": "4×2km @4:41 · rec ~300m trote · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3921,7 +3990,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1,5km @4:52 · descarga · manter toque, cortar volume",
+     "detail": "3×1,5km @4:41 · descarga · manter toque, cortar volume",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4023,7 +4092,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1,5km @4:50 · rec ~200m trote · ~13km",
+     "detail": "6×1,5km @4:39 · rec ~200m trote · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4059,7 +4128,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:50 · rec ~400m trote · ~13km",
+     "detail": "3×3km @4:39 · rec ~400m trote · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4141,7 +4210,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×2km @4:50 · rec ~300m trote · ~14km",
+     "detail": "5×2km @4:38 · rec ~300m trote · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4177,7 +4246,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:50 · rec ~400m trote",
+     "detail": "3×3km @4:38 · rec ~400m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4215,7 +4284,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "24km c/ 3×2km @5:05 (HMP) no meio · resto FC<147",
+     "detail": "24km c/ 3×2km @4:53 (HMP) no meio · resto FC<147",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4259,7 +4328,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×1km @4:48 · afiar p/ teste · curto",
+     "detail": "4×1km @4:36 · afiar p/ teste · curto",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4361,7 +4430,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×1km @4:45* · pace recalibrado pós-teste",
+     "detail": "4×1km @4:32* · pace recalibrado pós-teste",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4463,7 +4532,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×2,5km @4:45* · rec ~400m trote · ~14km",
+     "detail": "4×2,5km @4:32* · rec ~400m trote · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4499,7 +4568,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×5km @4:58* (HMP) · rec ~600m trote · ~14km",
+     "detail": "2×5km @4:45* (HMP) · rec ~600m trote · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4581,7 +4650,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1,5km @4:43* · rec ~200m trote",
+     "detail": "6×1,5km @4:29* · rec ~200m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4617,7 +4686,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:43* · rec ~400m trote",
+     "detail": "3×3km @4:29* · rec ~400m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4655,7 +4724,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "26km c/ 3×3km @4:56* (HMP)",
+     "detail": "26km c/ 3×3km @4:42* (HMP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4699,7 +4768,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×2km @4:42* · rec ~300m trote",
+     "detail": "5×2km @4:28* · rec ~300m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4735,7 +4804,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×5km @4:54* (HMP) · rec ~600m trote",
+     "detail": "2×5km @4:40* (HMP) · rec ~600m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4773,7 +4842,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "28km c/ 8km @4:54* (HMP) no final",
+     "detail": "28km c/ 8km @4:40* (HMP) no final",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4817,7 +4886,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1,5km @4:42* · descarga",
+     "detail": "3×1,5km @4:28* · descarga",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4919,7 +4988,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1km @4:40* + 4×400m VO2 forte · rec 400m",
+     "detail": "6×1km @4:25* + 4×400m VO2 forte · rec 400m",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4955,7 +5024,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×6km @4:52* (HMP) · rec ~600m trote · ~16km",
+     "detail": "2×6km @4:37* (HMP) · rec ~600m trote · ~16km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5037,7 +5106,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×2km @4:50* (RP) · rec ~300m trote",
+     "detail": "3×2km @4:32* (RP-) · rec ~300m trote",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5073,7 +5142,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "4×1km @4:45* + strides",
+     "detail": "4×1km @4:26* + strides",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5111,7 +5180,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "20km c/ 5km @4:50* (RP)",
+     "detail": "20km c/ 5km @4:30* (RP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -5155,7 +5224,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "2×2km @4:50* (RP) · afiar",
+     "detail": "2×2km @4:30* (RP) · afiar",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5213,7 +5282,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "14km c/ 3km @4:50* (RP)",
+     "detail": "14km c/ 3km @4:30* (RP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -5249,7 +5318,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1km @4:50* (RP) · soltar",
+     "detail": "3×1km @4:30* (RP) · soltar",
      "zone": "RP",
      "color": "#f43f5e"
     }
@@ -5307,7 +5376,7 @@
      "sport": "run",
      "key": "hm_prova_meia",
      "label": "🏁 PROVA — Meia Monumental · 05:00",
-     "detail": "21,1km @4:50* · alvo ~1:42 · negative split: 10k @4:55 → desce · Vaporfly",
+     "detail": "21,1km @4:30* · alvo ~1:35 · negative split: 10k @4:33 → desce · Vaporfly",
      "zone": "PROVA",
      "color": "#f43f5e"
     }
@@ -5316,38 +5385,65 @@
   "cycle_phases": [
    {
     "weeks": [
-     1,
-     2,
-     3,
-     4
+     1
     ],
-    "label": "Consolidação",
-    "short": "CONSOL",
-    "color": "#3b82f6",
-    "bg": "#0d1f3c",
-    "icon": "🔒",
-    "desc": "Absorver o padrão sem alterar carga. Mesmos watts, mesmo pace, mesma estrutura.",
+    "label": "Recuperação",
+    "short": "RECUP",
+    "color": "#64748b",
+    "bg": "#64748b20",
+    "icon": "😴",
+    "desc": "Recuperação pós-10K de 19/07. Só fácil, por sensação.",
     "focus": [
-     "⚡ Bike: 6×8min + 5×10min @193–210W",
-     "🏃 Run: 5×1km + 4×1,5km @5:15–5:25/km",
-     "🎯 Completar os 4 treinos de threshold sem sacrificar o último bloco"
+     "descanso",
+     "trotes leves"
     ]
    },
    {
     "weeks": [
-     5,
+     2
+    ],
+    "label": "Retomada",
+    "short": "RETOM",
+    "color": "#10b981",
+    "bg": "#10b98120",
+    "icon": "🌱",
+    "desc": "Reconstruir rotina. 1ª qualidade leve volta na terça.",
+    "focus": [
+     "rotina",
+     "4×1km @4:52"
+    ]
+   },
+   {
+    "weeks": [
+     3,
+     4,
+     5
+    ],
+    "label": "Base",
+    "short": "BASE",
+    "color": "#22c55e",
+    "bg": "#22c55e20",
+    "icon": "🧱",
+    "desc": "Volume sobe 52→62km. Doubles ter/qui assentam. Sub-limiar controlado, FC ≤159.",
+    "focus": [
+     "volume",
+     "2 qualidades/sem",
+     "longão até 22km"
+    ]
+   },
+   {
+    "weeks": [
      6
     ],
-    "label": "+Volume",
-    "short": "+VOL",
-    "color": "#10b981",
-    "bg": "#0b2618",
-    "icon": "📈",
-    "desc": "Adicionar 1–2 blocos por sessão. Watts e pace inalterados.",
+    "label": "Descarga",
+    "short": "DELOAD",
+    "color": "#94a3b8",
+    "bg": "#94a3b820",
+    "icon": "🔄",
+    "desc": "−25% volume. Recalibrar por sensação e FC repouso.",
     "focus": [
-     "⚡ Bike seg: 6×8min → 6×10min @193–210W",
-     "⚡ Bike qua: 5×10min → 6×10min @193–210W",
-     "🏃 Run seg: 5×1km → 6×1km · Run qua: 4×1,5km → 5×1,5km"
+     "recuperar",
+     "recalibrar"
     ]
    },
    {
@@ -5355,112 +5451,150 @@
      7,
      8
     ],
-    "label": "Consolidar Volume",
-    "short": "CONSOL",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "🔒",
-    "desc": "Consolidar o novo volume. Adaptação mitocondrial ocorre durante a consolidação.",
+    "label": "Base+",
+    "short": "BASE+",
+    "color": "#84cc16",
+    "bg": "#84cc1620",
+    "icon": "📈",
+    "desc": "66→70km. Tiros longos (3×3km) e o HMP entra no longão da sem 8.",
     "focus": [
-     "⚡ Bike: 6×10min @193–210W em ambos os dias",
-     "🏃 Run: 6×1km (seg) · 5×1,5km (qua)",
-     "📊 Longão Z2 fácil de verdade (FC<150) — a base barata do ciclo"
+     "tiros longos",
+     "HMP entra"
     ]
    },
    {
     "weeks": [
      9
     ],
-    "label": "Viagem / Manutenção",
-    "short": "VIAGEM",
-    "color": "#0ea5e9",
-    "bg": "#07263a",
-    "icon": "✈️",
-    "desc": "Semana de viagem: estrutura adaptada, só 1 LT2 de corrida + 1 LT2 de bike. Funciona como deload parcial de intensidade.",
+    "label": "Build + 10k-TESTE",
+    "short": "TESTE",
+    "color": "#f59e0b",
+    "bg": "#f59e0b20",
+    "icon": "🎯",
+    "desc": "Sáb 19/09: 10k-teste recalibra todos os paces das sem 10–18.",
     "focus": [
-     "🏃 55km de corrida — ~11km qualidade + ~44km fáceis (80/20)",
-     "🎯 2 qualidades: Run LT2 (ter) + Bike LT2 (qui) · resto fácil de verdade",
-     "💪 Força sup (seg) + inf (sex) · 2 longos no fds"
+     "checkpoint",
+     "≤43:30 = projeção agressiva"
     ]
    },
    {
     "weeks": [
      10
     ],
-    "label": "Rebuild + Específico",
-    "short": "+ESPEC",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "📈",
-    "desc": "Volta ao duplo threshold cheio e entra o 1º toque de ritmo de prova.",
+    "label": "Descarga",
+    "short": "DELOAD",
+    "color": "#94a3b8",
+    "bg": "#94a3b820",
+    "icon": "🔄",
+    "desc": "Absorver o teste. Paces novos entram na sem 11.",
     "focus": [
-     "⚡ Duplo threshold (seg + qua) · bike 220–235W",
-     "🏃 Qua: LT2 + 2×1km @4:45–4:50/km (VO2máx)",
-     "🏃 Longão 18km Z2 fácil e abastecido"
+     "recuperar"
     ]
    },
    {
     "weeks": [
-     11
-    ],
-    "label": "Build + VO2",
-    "short": "+VO2",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "📈",
-    "desc": "2ª semana de carga cheia — a viagem (sem 9) já serviu de unload, sem deload aqui. Duplo threshold + VO2.",
-    "focus": [
-     "⚡ Duplo threshold (seg + qua) · VO2 nos dois dias",
-     "🏃 Seg: +2×500m @4:45 · Qua: +2×1km @4:45–4:50",
-     "🏃 Longão 20km Z2 fácil · volume sobe vs sem 10"
-    ]
-   },
-   {
-    "weeks": [
+     11,
      12
     ],
-    "label": "Pico Específico",
-    "short": "+PROVA",
-    "color": "#f43f5e",
-    "bg": "#2d0714",
-    "icon": "🚀",
-    "desc": "A semana mais específica de prova. Ritmo de 10k é a sessão-chave.",
+    "label": "Build (pico)",
+    "short": "BUILD",
+    "color": "#f59e0b",
+    "bg": "#f59e0b20",
+    "icon": "⚡",
+    "desc": "Pico de volume 72–74km. HMP nos tiros de quinta e no longão.",
     "focus": [
-     "🏃 Qua: 5–6×1km @4:54/km (pace 10k) · rec.90s — sessão-chave",
-     "⚡ Seg duplo threshold mantém o motor",
-     "🏃 Longão 16km · última semana forte antes do taper"
+     "pico de volume",
+     "HMP 2×5km"
     ]
    },
    {
     "weeks": [
      13
     ],
-    "label": "Taper + Prova",
-    "short": "TAPER",
-    "color": "#06b6d4",
-    "bg": "#051820",
-    "icon": "📉",
-    "desc": "Afunilamento e PROVA no domingo 19/07 (06:30). Volume baixo, intensidade só em toques.",
+    "label": "Específico",
+    "short": "ESPEC",
+    "color": "#f43f5e",
+    "bg": "#f43f5e20",
+    "icon": "🎯",
+    "desc": "Longão de 28km c/ 8km @HMP no final — a sessão-rainha do ciclo.",
     "focus": [
-     "🏃 Seg: Run LT2 curto · Qua: Z1 + strides",
-     "😴 Qui/Sex descanso · Sáb: shakeout ~2,5km + strides",
-     "🏁 Domingo 19/07 06:30 — PROVA 10k BSB (Vaporfly 3)"
+     "28km c/ HMP",
+     "durabilidade"
     ]
    },
    {
     "weeks": [
      14
     ],
-    "label": "Recuperação",
-    "short": "RECUP",
-    "color": "#fbbf24",
-    "bg": "#1a1200",
-    "icon": "🏁",
-    "desc": "Recuperação pós-prova: trotes leves, natação e bike solto.",
+    "label": "Descarga",
+    "short": "DELOAD",
+    "color": "#94a3b8",
+    "bg": "#94a3b820",
+    "icon": "🔄",
+    "desc": "Última descarga cheia antes do bloco final.",
     "focus": [
-     "😴 Descanso/caminhada nos primeiros dias",
-     "🏊 Natação leve · 🚴 bike solto",
-     "🏃 Volta gradual à corrida fácil no fim da semana"
+     "recuperar",
+     "recalibrar"
+    ]
+   },
+   {
+    "weeks": [
+     15
+    ],
+    "label": "Específico (HMP pesado)",
+    "short": "ESPEC+",
+    "color": "#f43f5e",
+    "bg": "#f43f5e20",
+    "icon": "🔥",
+    "desc": "2×6km @HMP + 1º toque de VO2 (4×400m). Semana mais dura do ciclo.",
+    "focus": [
+     "HMP pesado",
+     "VO2 entra"
+    ]
+   },
+   {
+    "weeks": [
+     16
+    ],
+    "label": "Sharpen",
+    "short": "SHARP",
+    "color": "#a855f7",
+    "bg": "#a855f720",
+    "icon": "🔪",
+    "desc": "Afiar ritmo de prova. Ensaio: 20km c/ 5km @RP define o pace final.",
+    "focus": [
+     "RP 4:50*",
+     "go/no-go do pace"
+    ]
+   },
+   {
+    "weeks": [
+     17
+    ],
+    "label": "Taper",
+    "short": "TAPER",
+    "color": "#38bdf8",
+    "bg": "#38bdf820",
+    "icon": "📉",
+    "desc": "−35% volume, intensidade curta @RP. Bike só Z2.",
+    "focus": [
+     "afiar",
+     "descansar"
+    ]
+   },
+   {
+    "weeks": [
+     18
+    ],
+    "label": "Taper + PROVA",
+    "short": "PROVA",
+    "color": "#f43f5e",
+    "bg": "#f43f5e20",
+    "icon": "🏁",
+    "desc": "Trotes + strides. Sáb descanso absoluto. DOM 22/11 05:00 — Meia Monumental.",
+    "focus": [
+     "21,1km @4:50*",
+     "~1:42"
     ]
    }
   ],
@@ -5563,7 +5697,7 @@
    },
    {
     "week": "2026-07-20",
-    "runVol": 35,
+    "runVol": 13,
     "bikeVol": 30,
     "swimVol": 0,
     "runQual": 0,
@@ -7736,10 +7870,10 @@
     "pills": [
      "manhã",
      "10km",
-     "6:30–7:00/km",
+     "6:21–7:00/km",
      "FC<145bpm"
     ],
-    "objetivo": "Recuperação ativa de 10km — fluxo sanguíneo, não fadiga. FC <145bpm é a única métrica que importa. Referência real: quarta 03/jun → 10,01km a 6:32/km · FC 138bpm · RAI 6:27/km · 2 RPs. Ondulado é aceitável — São Sebastião é o percurso natural.",
+    "objetivo": "Recuperação ativa de 10km — fluxo sanguíneo, não fadiga. FC <145bpm é a única métrica que importa. Referência real: quarta 03/jun → 10,01km a 6:32/km · FC 138bpm · RAI 6:18/km · 2 RPs. Ondulado é aceitável — São Sebastião é o percurso natural.",
     "programa": [
      {
       "tipo": "run",
@@ -7749,7 +7883,7 @@
      },
      {
       "tipo": "run",
-      "nome": "8km @ 6:30–7:00/km",
+      "nome": "8km @ 6:21–7:00/km",
       "detalhe": "FC <145bpm constante\nSe FC passar de 145bpm → reduza para 7:15/km ou mais devagar\nPercurso: São Sebastião DF · ondulado é ok · Nike Vomero Plus",
       "zona": "Z1"
      },
@@ -8356,7 +8490,7 @@
      {
       "tipo": "run",
       "nome": "Rodagem",
-      "detalhe": "ver km do dia · 6:20–6:40/km · FC<140",
+      "detalhe": "ver km do dia · 6:07–6:40/km · FC<140",
       "zona": "Z2"
      },
      {
@@ -8598,7 +8732,7 @@
      "10km forte",
      "recalibra tudo"
     ],
-    "objetivo": "O juiz do ciclo: ≤43:30 confirma projeções agressivas · 44–46 mantém RP 4:50–4:58 · >46 seguramos a mão.",
+    "objetivo": "O juiz do ciclo: ≤42:30 libera RP 4:24 (meia ~1:33) · 43:00–44:00 confirma RP 4:30 (meia 1:35) · 44–45:30 mantém RP 4:36 · >46 seguramos a mão.",
     "programa": [
      {
       "tipo": "run",
@@ -8620,8 +8754,9 @@
      }
     ],
     "notas": [
-     "Todos os paces * das sem 10–18 são recalibrados com este resultado",
-     "Descansado (sexta off)"
+     "Todos os paces marcados com * das sem 10–18 são recalibrados com este resultado",
+     "Descansado (sexta off) · Vaporfly · plano e de manhã",
+     "Referência: 45:00 equivalente-plano em 19/07/2026"
     ]
    },
    "hm_prova_meia": {
@@ -8631,10 +8766,10 @@
     "color": "#f43f5e",
     "pills": [
      "21,1km",
-     "RP 4:50*",
+     "RP 4:34*",
      "~1:42"
     ],
-    "objetivo": "Negative split: 10k @~4:55 controlado → descer p/ 4:50 → últimos 5k pelo que sobrar. FC é o juiz nos primeiros 10k.",
+    "objetivo": "Meia Monumental 22/11 · alvo 1:35:00 (4:30/km) · largada 05:00 · Eixo Monumental plano e rápido.",
     "programa": [
      {
       "tipo": "run",
@@ -8645,7 +8780,7 @@
      {
       "tipo": "run",
       "nome": "PROVA",
-      "detalhe": "21,1km @4:50* · não passar de FC 165 nos primeiros 10k",
+      "detalhe": "21,1km @4:34* · não passar de FC 165 nos primeiros 10k",
       "zona": "PROVA"
      }
     ],
@@ -8655,9 +8790,240 @@
      "Pace final definido no ensaio da sem 16 e ajustado pelo 10k-teste"
     ]
    }
-  }
+  },
+  "cycle_phases_prev": [
+   {
+    "weeks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "label": "Consolidação",
+    "short": "CONSOL",
+    "color": "#3b82f6",
+    "bg": "#0d1f3c",
+    "icon": "🔒",
+    "desc": "Absorver o padrão sem alterar carga. Mesmos watts, mesmo pace, mesma estrutura.",
+    "focus": [
+     "⚡ Bike: 6×8min + 5×10min @193–210W",
+     "🏃 Run: 5×1km + 4×1,5km @5:15–5:25/km",
+     "🎯 Completar os 4 treinos de threshold sem sacrificar o último bloco"
+    ]
+   },
+   {
+    "weeks": [
+     5,
+     6
+    ],
+    "label": "+Volume",
+    "short": "+VOL",
+    "color": "#10b981",
+    "bg": "#0b2618",
+    "icon": "📈",
+    "desc": "Adicionar 1–2 blocos por sessão. Watts e pace inalterados.",
+    "focus": [
+     "⚡ Bike seg: 6×8min → 6×10min @193–210W",
+     "⚡ Bike qua: 5×10min → 6×10min @193–210W",
+     "🏃 Run seg: 5×1km → 6×1km · Run qua: 4×1,5km → 5×1,5km"
+    ]
+   },
+   {
+    "weeks": [
+     7,
+     8
+    ],
+    "label": "Consolidar Volume",
+    "short": "CONSOL",
+    "color": "#6366f1",
+    "bg": "#141230",
+    "icon": "🔒",
+    "desc": "Consolidar o novo volume. Adaptação mitocondrial ocorre durante a consolidação.",
+    "focus": [
+     "⚡ Bike: 6×10min @193–210W em ambos os dias",
+     "🏃 Run: 6×1km (seg) · 5×1,5km (qua)",
+     "📊 Longão Z2 fácil de verdade (FC<150) — a base barata do ciclo"
+    ]
+   },
+   {
+    "weeks": [
+     9
+    ],
+    "label": "Viagem / Manutenção",
+    "short": "VIAGEM",
+    "color": "#0ea5e9",
+    "bg": "#07263a",
+    "icon": "✈️",
+    "desc": "Semana de viagem: estrutura adaptada, só 1 LT2 de corrida + 1 LT2 de bike. Funciona como deload parcial de intensidade.",
+    "focus": [
+     "🏃 55km de corrida — ~11km qualidade + ~44km fáceis (80/20)",
+     "🎯 2 qualidades: Run LT2 (ter) + Bike LT2 (qui) · resto fácil de verdade",
+     "💪 Força sup (seg) + inf (sex) · 2 longos no fds"
+    ]
+   },
+   {
+    "weeks": [
+     10
+    ],
+    "label": "Rebuild + Específico",
+    "short": "+ESPEC",
+    "color": "#6366f1",
+    "bg": "#141230",
+    "icon": "📈",
+    "desc": "Volta ao duplo threshold cheio e entra o 1º toque de ritmo de prova.",
+    "focus": [
+     "⚡ Duplo threshold (seg + qua) · bike 220–235W",
+     "🏃 Qua: LT2 + 2×1km @4:45–4:50/km (VO2máx)",
+     "🏃 Longão 18km Z2 fácil e abastecido"
+    ]
+   },
+   {
+    "weeks": [
+     11
+    ],
+    "label": "Build + VO2",
+    "short": "+VO2",
+    "color": "#6366f1",
+    "bg": "#141230",
+    "icon": "📈",
+    "desc": "2ª semana de carga cheia — a viagem (sem 9) já serviu de unload, sem deload aqui. Duplo threshold + VO2.",
+    "focus": [
+     "⚡ Duplo threshold (seg + qua) · VO2 nos dois dias",
+     "🏃 Seg: +2×500m @4:45 · Qua: +2×1km @4:45–4:50",
+     "🏃 Longão 20km Z2 fácil · volume sobe vs sem 10"
+    ]
+   },
+   {
+    "weeks": [
+     12
+    ],
+    "label": "Pico Específico",
+    "short": "+PROVA",
+    "color": "#f43f5e",
+    "bg": "#2d0714",
+    "icon": "🚀",
+    "desc": "A semana mais específica de prova. Ritmo de 10k é a sessão-chave.",
+    "focus": [
+     "🏃 Qua: 5–6×1km @4:54/km (pace 10k) · rec.90s — sessão-chave",
+     "⚡ Seg duplo threshold mantém o motor",
+     "🏃 Longão 16km · última semana forte antes do taper"
+    ]
+   },
+   {
+    "weeks": [
+     13
+    ],
+    "label": "Taper + Prova",
+    "short": "TAPER",
+    "color": "#06b6d4",
+    "bg": "#051820",
+    "icon": "📉",
+    "desc": "Afunilamento e PROVA no domingo 19/07 (06:30). Volume baixo, intensidade só em toques.",
+    "focus": [
+     "🏃 Seg: Run LT2 curto · Qua: Z1 + strides",
+     "😴 Qui/Sex descanso · Sáb: shakeout ~2,5km + strides",
+     "🏁 Domingo 19/07 06:30 — PROVA 10k BSB (Vaporfly 3)"
+    ]
+   },
+   {
+    "weeks": [
+     14
+    ],
+    "label": "Recuperação",
+    "short": "RECUP",
+    "color": "#fbbf24",
+    "bg": "#1a1200",
+    "icon": "🏁",
+    "desc": "Recuperação pós-prova: trotes leves, natação e bike solto.",
+    "focus": [
+     "😴 Descanso/caminhada nos primeiros dias",
+     "🏊 Natação leve · 🚴 bike solto",
+     "🏃 Volta gradual à corrida fácil no fim da semana"
+    ]
+   }
+  ]
  },
  "race": {
+  "name": "Meia — Maratona Monumental de Brasília",
+  "date": "2026-11-22",
+  "start_time": "05:00",
+  "location": "Eixo Monumental, Brasília/DF",
+  "distance_km": 21.1,
+  "target_time": "1:35:00",
+  "target_pace": "4:30",
+  "course": {
+   "summary": "Plano, técnico e rápido, pelos cartões-postais do Eixo Monumental · largada 5h (clima ideal) · altitude ~1.130–1.160m",
+   "ascent_m": 60,
+   "elevation": []
+  },
+  "references": [
+   {
+    "date": "2026-05-10",
+    "dist": 5,
+    "time": "24:45",
+    "label": "5K (Wings for Life)"
+   },
+   {
+    "date": "2026-05-10",
+    "dist": 10,
+    "time": "51:10",
+    "label": "10K split (Wings for Life)"
+   },
+   {
+    "date": "2026-05-10",
+    "dist": 15,
+    "time": "1:19:41",
+    "label": "15K (Wings for Life)"
+   },
+   {
+    "date": "2026-05-17",
+    "dist": 10,
+    "time": "52:08",
+    "label": "10K prova (Netshoes, norm.)"
+   },
+   {
+    "date": "2026-06-08",
+    "dist": 1,
+    "time": "4:56",
+    "label": "pace limiar atual (6x1km)"
+   },
+   {
+    "date": "2026-07-19",
+    "dist": 10,
+    "time": "43:50",
+    "label": "10K PR — BSB Half Marathon (descida líquida)"
+   },
+   {
+    "date": "2026-07-19",
+    "dist": 5,
+    "time": "21:02",
+    "label": "5K PR (split da prova)"
+   }
+  ]
+ },
+ "next_cycle": {
+  "activated_on": "2026-07-19",
+  "note": "Ciclo da Meia ativado. UI: conferir 14→18 semanas no index.html."
+ },
+ "health_log": [
+  {
+   "date": "2026-07-02",
+   "area": "quadril D/E (informar lado)",
+   "tipo": "dor articular (linha coxofemoral) + glúteo",
+   "desc": "Dor antiga no glúteo agora também na frente; sensação na articulação bacia-fêmur. Pior frio/parado, melhora correndo (padrão tendíneo, mas localização articular = investigar). Contexto: volume subiu 32→60km/sem em 6 semanas (+87%), plio 4×/sem, déficit calórico c/ Mounjaro.",
+   "conduta": "Sem plio na retomada · isometria quadril/glúteo · aquecimento longo · avaliação médica se não regredir até ~19/07 ou se dor noturna/salto positivo",
+   "status": "ativo"
+  },
+  {
+   "date": "2026-07-02",
+   "area": "tendão de aquiles",
+   "tipo": "incômodo tendíneo",
+   "desc": "Incômodo no aquiles, simultâneo ao quadril — 2º tendão reclamando = bandeira de carga sistêmica/recuperação em déficit.",
+   "conduta": "Teste rigidez matinal · força lenta pesada de panturrilha (sem saltos) · evitar subidas fortes na volta · monitorar",
+   "status": "ativo"
+  }
+ ],
+ "race_prev": {
   "name": "10K — BSB Half Marathon (Experience)",
   "date": "2026-07-19",
   "start_time": "06:30",
@@ -8737,293 +9103,19 @@
     "dist": 1,
     "time": "4:56",
     "label": "pace limiar atual (6x1km)"
-   }
-  ]
- },
- "next_cycle": {
-  "activate_on": "2026-07-20",
-  "note": "Em 20/07: config.cycle_start=2026-07-20 · plan.cycle_phases=next_cycle.cycle_phases · race=race_next · ui: 14→18 semanas no index.html",
-  "cycle_start": "2026-07-20",
-  "weeks": 18,
-  "cycle_phases": [
-   {
-    "weeks": [
-     1
-    ],
-    "label": "Recuperação",
-    "short": "RECUP",
-    "color": "#64748b",
-    "bg": "#64748b20",
-    "icon": "😴",
-    "desc": "Recuperação pós-10K de 19/07. Só fácil, por sensação.",
-    "focus": [
-     "descanso",
-     "trotes leves"
-    ]
    },
    {
-    "weeks": [
-     2
-    ],
-    "label": "Retomada",
-    "short": "RETOM",
-    "color": "#10b981",
-    "bg": "#10b98120",
-    "icon": "🌱",
-    "desc": "Reconstruir rotina. 1ª qualidade leve volta na terça.",
-    "focus": [
-     "rotina",
-     "4×1km @4:52"
-    ]
+    "date": "2026-07-19",
+    "dist": 10,
+    "time": "43:50",
+    "label": "10K PR — BSB Half Marathon (descida líquida)"
    },
    {
-    "weeks": [
-     3,
-     4,
-     5
-    ],
-    "label": "Base",
-    "short": "BASE",
-    "color": "#22c55e",
-    "bg": "#22c55e20",
-    "icon": "🧱",
-    "desc": "Volume sobe 52→62km. Doubles ter/qui assentam. Sub-limiar controlado, FC ≤159.",
-    "focus": [
-     "volume",
-     "2 qualidades/sem",
-     "longão até 22km"
-    ]
-   },
-   {
-    "weeks": [
-     6
-    ],
-    "label": "Descarga",
-    "short": "DELOAD",
-    "color": "#94a3b8",
-    "bg": "#94a3b820",
-    "icon": "🔄",
-    "desc": "−25% volume. Recalibrar por sensação e FC repouso.",
-    "focus": [
-     "recuperar",
-     "recalibrar"
-    ]
-   },
-   {
-    "weeks": [
-     7,
-     8
-    ],
-    "label": "Base+",
-    "short": "BASE+",
-    "color": "#84cc16",
-    "bg": "#84cc1620",
-    "icon": "📈",
-    "desc": "66→70km. Tiros longos (3×3km) e o HMP entra no longão da sem 8.",
-    "focus": [
-     "tiros longos",
-     "HMP entra"
-    ]
-   },
-   {
-    "weeks": [
-     9
-    ],
-    "label": "Build + 10k-TESTE",
-    "short": "TESTE",
-    "color": "#f59e0b",
-    "bg": "#f59e0b20",
-    "icon": "🎯",
-    "desc": "Sáb 19/09: 10k-teste recalibra todos os paces das sem 10–18.",
-    "focus": [
-     "checkpoint",
-     "≤43:30 = projeção agressiva"
-    ]
-   },
-   {
-    "weeks": [
-     10
-    ],
-    "label": "Descarga",
-    "short": "DELOAD",
-    "color": "#94a3b8",
-    "bg": "#94a3b820",
-    "icon": "🔄",
-    "desc": "Absorver o teste. Paces novos entram na sem 11.",
-    "focus": [
-     "recuperar"
-    ]
-   },
-   {
-    "weeks": [
-     11,
-     12
-    ],
-    "label": "Build (pico)",
-    "short": "BUILD",
-    "color": "#f59e0b",
-    "bg": "#f59e0b20",
-    "icon": "⚡",
-    "desc": "Pico de volume 72–74km. HMP nos tiros de quinta e no longão.",
-    "focus": [
-     "pico de volume",
-     "HMP 2×5km"
-    ]
-   },
-   {
-    "weeks": [
-     13
-    ],
-    "label": "Específico",
-    "short": "ESPEC",
-    "color": "#f43f5e",
-    "bg": "#f43f5e20",
-    "icon": "🎯",
-    "desc": "Longão de 28km c/ 8km @HMP no final — a sessão-rainha do ciclo.",
-    "focus": [
-     "28km c/ HMP",
-     "durabilidade"
-    ]
-   },
-   {
-    "weeks": [
-     14
-    ],
-    "label": "Descarga",
-    "short": "DELOAD",
-    "color": "#94a3b8",
-    "bg": "#94a3b820",
-    "icon": "🔄",
-    "desc": "Última descarga cheia antes do bloco final.",
-    "focus": [
-     "recuperar",
-     "recalibrar"
-    ]
-   },
-   {
-    "weeks": [
-     15
-    ],
-    "label": "Específico (HMP pesado)",
-    "short": "ESPEC+",
-    "color": "#f43f5e",
-    "bg": "#f43f5e20",
-    "icon": "🔥",
-    "desc": "2×6km @HMP + 1º toque de VO2 (4×400m). Semana mais dura do ciclo.",
-    "focus": [
-     "HMP pesado",
-     "VO2 entra"
-    ]
-   },
-   {
-    "weeks": [
-     16
-    ],
-    "label": "Sharpen",
-    "short": "SHARP",
-    "color": "#a855f7",
-    "bg": "#a855f720",
-    "icon": "🔪",
-    "desc": "Afiar ritmo de prova. Ensaio: 20km c/ 5km @RP define o pace final.",
-    "focus": [
-     "RP 4:50*",
-     "go/no-go do pace"
-    ]
-   },
-   {
-    "weeks": [
-     17
-    ],
-    "label": "Taper",
-    "short": "TAPER",
-    "color": "#38bdf8",
-    "bg": "#38bdf820",
-    "icon": "📉",
-    "desc": "−35% volume, intensidade curta @RP. Bike só Z2.",
-    "focus": [
-     "afiar",
-     "descansar"
-    ]
-   },
-   {
-    "weeks": [
-     18
-    ],
-    "label": "Taper + PROVA",
-    "short": "PROVA",
-    "color": "#f43f5e",
-    "bg": "#f43f5e20",
-    "icon": "🏁",
-    "desc": "Trotes + strides. Sáb descanso absoluto. DOM 22/11 05:00 — Meia Monumental.",
-    "focus": [
-     "21,1km @4:50*",
-     "~1:42"
-    ]
-   }
-  ]
- },
- "race_next": {
-  "name": "Meia — Maratona Monumental de Brasília",
-  "date": "2026-11-22",
-  "start_time": "05:00",
-  "location": "Eixo Monumental, Brasília/DF",
-  "distance_km": 21.1,
-  "target_time": "1:42:00",
-  "target_pace": "4:50",
-  "course": {
-   "summary": "Plano, técnico e rápido, pelos cartões-postais do Eixo Monumental · largada 5h (clima ideal) · altitude ~1.130–1.160m",
-   "ascent_m": 60,
-   "elevation": []
-  },
-  "references": [
-   {
-    "date": "2026-05-10",
+    "date": "2026-07-19",
     "dist": 5,
-    "time": "24:45",
-    "label": "5K (Wings for Life)"
-   },
-   {
-    "date": "2026-05-10",
-    "dist": 10,
-    "time": "51:10",
-    "label": "10K split (Wings for Life)"
-   },
-   {
-    "date": "2026-05-10",
-    "dist": 15,
-    "time": "1:19:41",
-    "label": "15K (Wings for Life)"
-   },
-   {
-    "date": "2026-05-17",
-    "dist": 10,
-    "time": "52:08",
-    "label": "10K prova (Netshoes, norm.)"
-   },
-   {
-    "date": "2026-06-08",
-    "dist": 1,
-    "time": "4:56",
-    "label": "pace limiar atual (6x1km)"
+    "time": "21:02",
+    "label": "5K PR (split da prova)"
    }
   ]
- },
- "health_log": [
-  {
-   "date": "2026-07-02",
-   "area": "quadril D/E (informar lado)",
-   "tipo": "dor articular (linha coxofemoral) + glúteo",
-   "desc": "Dor antiga no glúteo agora também na frente; sensação na articulação bacia-fêmur. Pior frio/parado, melhora correndo (padrão tendíneo, mas localização articular = investigar). Contexto: volume subiu 32→60km/sem em 6 semanas (+87%), plio 4×/sem, déficit calórico c/ Mounjaro.",
-   "conduta": "Sem plio na retomada · isometria quadril/glúteo · aquecimento longo · avaliação médica se não regredir até ~19/07 ou se dor noturna/salto positivo",
-   "status": "ativo"
-  },
-  {
-   "date": "2026-07-02",
-   "area": "tendão de aquiles",
-   "tipo": "incômodo tendíneo",
-   "desc": "Incômodo no aquiles, simultâneo ao quadril — 2º tendão reclamando = bandeira de carga sistêmica/recuperação em déficit.",
-   "conduta": "Teste rigidez matinal · força lenta pesada de panturrilha (sem saltos) · evitar subidas fortes na volta · monitorar",
-   "status": "ativo"
-  }
- ]
+ }
 }

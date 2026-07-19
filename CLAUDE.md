@@ -127,6 +127,27 @@ Regras dos dados:
 - Projeção da prova: ajustar a prova-alvo em `race` (data, meta, `references`). O card
   recalcula sozinho (Riegel + ganho/semana). Adicionar novos PRs em `references` melhora a estimativa.
 
+## Ciclos (multi-ciclo) e paces evolutivos
+
+O `index.html` monta o seletor de ciclos (`CYCLES`) **inteiramente do banco**:
+
+- **Ciclo atual** = `config.cycle_start` + `config.cycle_weeks` + `plan.cycle_phases` + `race`.
+- **Ciclo anterior (histórico)** = `config.cycle_prev {start,weeks}` + `plan.cycle_phases_prev` + `race_prev`.
+
+**Virar de ciclo** (quando a prova-alvo acontece): arquivar o que sai e promover o que entra —
+`race` → `race_prev`, `plan.cycle_phases` → `plan.cycle_phases_prev`,
+`config.{cycle_start,cycle_weeks}` → `config.cycle_prev`; então gravar a prova nova em `race` e
+as fases novas em `plan.cycle_phases`. Nada disso é hardcoded no HTML.
+
+**`config.pace_anchors`** é a fonte única dos paces de corrida — `hoje` (forma atual medida) e
+`alvo_<data>` (projeção para a prova), mais os `checkpoints` de recalibragem. O card `pc-lt2-pace`
+da aba Plano lê daqui.
+
+Regra de calibragem: **todo pace prescrito no plano deriva do 10K equivalente-plano (GAP) mais
+recente, nunca do tempo de relógio de uma prova em descida.** A partir do 10K: LT2 ≈ +7 s/km,
+sub-LT2 ≈ +13 s/km, HMP ≈ +12 s/km. Paces marcados com `*` no `detail` são os que o próximo
+checkpoint recalibra — ao registrar um teste/prova, reescrever os `*` das semanas seguintes.
+
 ## Fluxos de atualização
 
 **Registrar treino** (pedidos tipo "registra a corrida de hoje: ..." / "puxa o treino"):
