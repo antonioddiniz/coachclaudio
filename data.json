@@ -24,26 +24,35 @@
    "swim": 330
   },
   "pace_anchors": {
-   "ref": "10K 19/07/2026 — 43:50 no relógio, ~45:00 equivalente plano (GAP)",
+   "ref": "10K 19/07/2026 — 43:50 no relógio, ~45:00 equivalente plano (GAP) · ~85–86kg",
    "hoje": {
-    "k10": "4:30",
-    "lt2": "4:37",
-    "sub_lt2": "4:43",
-    "hmp": "4:42",
-    "z2": "5:30–5:45"
+    "k10": "4:30 (13,3 km/h)",
+    "lt2": "4:37 (13,0 km/h)",
+    "sub_lt2": "4:43 (12,7 km/h)",
+    "hmp": "4:42 (12,8 km/h)",
+    "z2": "5:50–6:15 (9,6–10,3 km/h)"
    },
    "alvo_22_11": {
-    "k10": "4:16",
-    "lt2": "4:23",
-    "sub_lt2": "4:29",
-    "hmp": "4:30",
-    "z2": "5:15–5:30"
+    "k10": "4:04 (14,8 km/h)",
+    "lt2": "4:11 (14,3 km/h)",
+    "sub_lt2": "4:17 (14,0 km/h)",
+    "hmp": "4:15 (14,1 km/h)",
+    "z2": "5:30–5:50 (10,3–10,9 km/h)"
    },
+   "meta": "Meia 1:29:59 (4:15/km) · exige 10K plano ~40:38",
+   "peso_alvo": "82 kg até 22/11 (de ~85,5)",
    "checkpoints": [
-    "Sem 9 · 19/09 · 10k-teste (recalibra sem 10–18)",
-    "Sem 13 · 17/10 · longão 28km c/ 8km @HMP",
-    "Sem 16 · 07/11 · ensaio 20km c/ 5km @RP (define o pace final)"
-   ]
+    "Sem 9 · 19/09 · 10k-teste — ≤42:30 mantém 1:30 · 43:00–44:00 → 1:32–1:33 · >44:30 → 1:35",
+    "Sem 13 · 18/10 · longão 28km c/ 10km @4:18 — o teste de verdade",
+    "Sem 16 · 08/11 · 20km c/ 8km @4:15 — define o pace do dia"
+   ],
+   "vo2_sessoes": [
+    "Sem 7 · 6×800m",
+    "Sem 10 · 6×800m",
+    "Sem 13 · 5×1000m",
+    "Sem 15 · 4×400m"
+   ],
+   "nota_esteira": "Velocidade de esteira em km/h = 3600 ÷ pace em segundos. Sempre exibida junto do pace."
   },
   "cycle_weeks": 18,
   "cycle_prev": {
@@ -3266,7 +3275,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Trote regenerativo",
-     "detail": "~5km Z1 a 6:10–6:30 · FC<135 · SEM strides · aborta se o quadríceps doer",
+     "detail": "~5km Z1 a 6:10–6:30 (9,2–9,7 km/h) · FC<135 · SEM strides · aborta se o quadríceps doer",
      "zone": "Z1",
      "color": "#10b981"
     }
@@ -3304,7 +3313,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Rodado fácil",
-     "detail": "~8km Z1–Z2 a 6:00–6:20 · FC<140 · volta à rotina · sem strides",
+     "detail": "~8km Z1–Z2 a 6:00–6:20 (9,5–10,0 km/h) · FC<140 · volta à rotina · sem strides",
      "zone": "Z1",
      "color": "#10b981"
     }
@@ -3550,7 +3559,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:43 · rec ~200m trote · solta ~1,5km · FC ≤157 · ~9km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1km @4:38 (12,9 km/h) · rec ~200m trote · solta ~1,5km · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3578,7 +3587,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 + 5 strides ~150m",
+     "detail": "8km fácil Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140 + 5 strides ~150m",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3588,7 +3597,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "10km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "10km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3616,7 +3625,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km Z1–Z2 · FC<147",
+     "detail": "18km Z1–Z2 a 5:50–6:10 (9,7–10,3 km/h) · FC<147",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3660,7 +3669,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1km @4:42 · rec ~200m trote · solta ~1,5km · FC ≤157 · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:36 (13,0 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3688,7 +3697,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "10km fácil Z2 · FC<140",
+     "detail": "10km fácil Z2 a 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3698,7 +3707,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "11km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "11km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3726,7 +3735,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "21km Z1–Z2 · FC<147",
+     "detail": "21km Z1–Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<147 · desacoplamento <5%",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3770,7 +3779,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1km @4:42 · rec ~200m trote · solta ~1,5km · FC ≤157 · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1,5km @4:34 (13,1 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3806,7 +3815,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×2km @4:42 · rec ~300m trote · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:34 (13,1 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3816,7 +3825,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "12km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3844,7 +3853,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "24km Z1–Z2 · FC<147",
+     "detail": "24km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60min",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -3888,7 +3897,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:41 · rec ~200m trote · solta ~1,5km · FC ≤157 · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:32 (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3924,7 +3933,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "4×2km @4:41 · rec ~300m trote · ~13km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×2km @4:32 (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -3934,7 +3943,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "12km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -3962,7 +3971,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z1–Z2 · FC<147",
+     "detail": "26km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60 e 100min",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4006,7 +4015,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1,5km @4:41 · descarga · manter toque, cortar volume",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:32 (13,2 km/h) · descarga · manter toque, cortar volume · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4034,7 +4043,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2",
+     "detail": "8km fácil Z2 · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4044,7 +4053,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "11km Z1 · corrida mais lenta da semana",
+     "detail": "11km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4107,8 +4116,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1,5km @4:39 · rec ~200m trote · ~13km",
+     "label": "🏃 Run VO2 + Sub-LT2 — PM",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:05 · 14,7 km/h) · rec 400m trote · + 4×1km @4:30 (13,3 km/h) · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4144,7 +4153,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:39 · rec ~400m trote · ~13km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:30 (13,3 km/h) · rec ~400m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4154,7 +4163,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "13km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "13km Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4226,7 +4235,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×2km @4:38 · rec ~300m trote · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×2km @4:28 (13,4 km/h) · rec ~300m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4262,7 +4271,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:38 · rec ~400m trote",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:28 (13,4 km/h) · rec ~400m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4272,7 +4281,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4300,7 +4309,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "28km c/ 3×2km @4:53 (HMP) no meio · resto FC<147",
+     "detail": "28km c/ 3×2km @4:30 (13,3 km/h) (HMP) no meio · resto FC<147",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4344,7 +4353,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×1km @4:36 · afiar p/ teste · curto",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:26 (13,5 km/h) · afiar para o teste · curto · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4372,7 +4381,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "6km fácil + 4 strides",
+     "detail": "6km fácil Z2 + 4 strides",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4445,8 +4454,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×1km @4:32* · pace recalibrado pós-teste",
+     "label": "🏃 Run VO2 + Sub-LT2 — PM",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:02 · 14,9 km/h) · rec 400m trote · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4474,7 +4483,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×2km @4:26* (13,5 km/h) · rec ~400m trote · solta ~1,5km · ~8km",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4484,7 +4493,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4548,7 +4557,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "4×2,5km @4:32* · rec ~400m trote · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×2,5km @4:24* (13,6 km/h) · rec ~400m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4584,7 +4593,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×5km @4:45* (HMP) · rec ~600m trote · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×5km @4:22* (13,7 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4594,7 +4603,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4622,7 +4631,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "28km Z1–Z2 · FC<147",
+     "detail": "28km c/ 6km @4:22* (13,7 km/h) (HMP) no final",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4666,7 +4675,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1,5km @4:29* · rec ~200m trote",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1,5km @4:22* (13,7 km/h) · rec ~200m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4702,7 +4711,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "3×3km @4:29* · rec ~400m trote",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:22* (13,7 km/h) · rec ~400m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4712,7 +4721,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4740,7 +4749,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "28km c/ 3×3km @4:42* (HMP)",
+     "detail": "28km c/ 3×3km @4:20* (13,8 km/h) (HMP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4783,8 +4792,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "5×2km @4:28* · rec ~300m trote",
+     "label": "🏃 Run VO2 + Sub-LT2 — PM",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 5×1000m forte (~3:58 · 15,1 km/h) · rec 400m · + 2×2km @4:20* (13,8 km/h) · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4820,7 +4829,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×5km @4:40* (HMP) · rec ~600m trote",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×5km @4:18* (14,0 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4830,7 +4839,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4858,7 +4867,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "28km c/ 8km @4:40* (HMP) no final",
+     "detail": "28km c/ 10km @4:18* (14,0 km/h) (HMP) no final · SESSÃO-RAINHA",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -4902,7 +4911,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1,5km @4:28* · descarga",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:20* (13,8 km/h) · descarga · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4930,7 +4939,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2",
+     "detail": "8km fácil Z2 · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4940,7 +4949,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5003,8 +5012,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "6×1km @4:25* + 4×400m VO2 forte · rec 400m",
+     "label": "🏃 Run VO2 + Sub-LT2 — PM",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:17* (14,0 km/h) + 4×400m VO2 forte · rec 400m · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5040,7 +5049,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "2×6km @4:37* (HMP) · rec ~600m trote · ~16km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×6km @4:15* (14,1 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~16km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5050,7 +5059,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5078,7 +5087,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z2 · FC<147 · sem blocos",
+     "detail": "26km c/ 8km @4:15* (14,1 km/h) (HMP)",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5122,7 +5131,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×2km @4:32* (RP-) · rec ~300m trote",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:17* (14,0 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5158,7 +5167,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "4×1km @4:26* + strides",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:10* (14,4 km/h) + strides · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5168,7 +5177,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 · FC<140 · corrida mais lenta da semana",
+     "detail": "14km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5196,7 +5205,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "20km c/ 5km @4:30* (RP)",
+     "detail": "20km c/ 8km @4:15* (14,1 km/h) (RP) · ensaio final",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -5240,7 +5249,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "2×2km @4:30* (RP) · afiar",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×2km @4:15* (14,1 km/h) (RP) · solta ~1,5km · afiar · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5278,7 +5287,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z1 · corrida mais lenta da semana",
+     "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5298,7 +5307,7 @@
      "sport": "run",
      "key": "hm_longao_hmp",
      "label": "🏃 Longão c/ HMP",
-     "detail": "14km c/ 3km @4:30* (RP)",
+     "detail": "14km c/ 3km @4:15* (14,1 km/h) (RP)",
      "zone": "HMP",
      "color": "#f43f5e"
     },
@@ -5334,7 +5343,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "3×1km @4:30* (RP) · soltar",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1km @4:15* (14,1 km/h) (RP) · solta ~1,5km · ~7km",
      "zone": "RP",
      "color": "#f43f5e"
     }
@@ -5372,7 +5381,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "10km trote leve (opcional) · corrida mais lenta da semana",
+     "detail": "10km trote leve (opcional)",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5392,7 +5401,7 @@
      "sport": "run",
      "key": "hm_prova_meia",
      "label": "🏁 PROVA — Meia Monumental · 05:00",
-     "detail": "21,1km @4:30* · alvo ~1:35 · negative split: 10k @4:33 → desce · Vaporfly",
+     "detail": "21,1km @4:15* (14,1 km/h) · alvo 1:29:59 · negative split: 10k @4:18 (14,0 km/h) → desce · Vaporfly",
      "zone": "PROVA",
      "color": "#f43f5e"
     }
@@ -5402,7 +5411,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km fácil Z2 a 5:55–6:10 · FC<140 + 5 strides ~150m no final",
+     "detail": "8km fácil Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140 + 5 strides ~150m no final",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5412,7 +5421,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 a 6:00–6:15 · FC<140 · a corrida mais LENTA da semana",
+     "detail": "8km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140 · a corrida mais LENTA da semana",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5476,7 +5485,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:42 · rec ~300m trote · solta ~1,5km · FC ≤159 · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:42 (12,8 km/h) · rec ~300m trote · solta ~1,5km · FC ≤159 · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5486,7 +5495,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "20km Z1–Z2 a 5:45–6:05 · FC<147 · gel aos 60min",
+     "detail": "20km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60min",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5512,7 +5521,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×2km @4:41 · rec ~300m trote · solta ~1,5km · FC ≤159 · ~13km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×2km @4:41 (12,8 km/h) · rec ~300m trote · solta ~1,5km · FC ≤159 · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5522,7 +5531,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "22km Z1–Z2 a 5:45–6:05 · FC<147 · gel aos 60 e 100min · o longão mais longo do bloco",
+     "detail": "22km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60 e 100min · o longão mais longo do bloco",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5923,7 +5932,7 @@
    },
    {
     "week": "2026-09-21",
-    "runVol": 52,
+    "runVol": 53,
     "bikeVol": 35,
     "swimVol": 0,
     "runQual": 4,
@@ -7071,7 +7080,7 @@
     "pills": [
      "17:00",
      "6×1km @LT2",
-     "5:15–5:20/km",
+     "5:15–5:20 (11,2–11,4 km/h)/km",
      "~50min"
     ],
     "objetivo": "Sessão das semanas 5–6. Ver mn_dbl_seg_pm_78 para semanas 7–8 e mn_dbl_seg_pm_910 para semanas 9–10.",
@@ -7084,7 +7093,7 @@
      },
      {
       "tipo": "run",
-      "nome": "6 × 1km @ 5:15–5:20/km",
+      "nome": "6 × 1km @ 5:15–5:20 (11,2–11,4 km/h)/km",
       "detalhe": "FC 158–165bpm · rec 400m",
       "zona": "LT2"
      },
@@ -7096,7 +7105,7 @@
      }
     ],
     "notas": [
-     "Sessão das semanas 5–6. Pace atual está em 5:00–5:10/km (semanas 7+)."
+     "Sessão das semanas 5–6. Pace atual está em 5:00–5:10 (11,6–12,0 km/h)/km (semanas 7+)."
     ]
    },
    "mn_swim_ter": {
@@ -7302,10 +7311,10 @@
     "pills": [
      "17:00",
      "5×1,5km @LT2",
-     "5:15–5:20/km",
+     "5:15–5:20 (11,2–11,4 km/h)/km",
      "~55min"
     ],
-    "objetivo": "Sessão das semanas 5–6. Para semanas 7–8 usar mn_dbl_qua_pm_78 (5×1,5km @5:10). Para semanas 9–10 usar mn_dbl_qua_pm_910.",
+    "objetivo": "Sessão das semanas 5–6. Para semanas 7–8 usar mn_dbl_qua_pm_78 (5×1,5km @5:10 (11,6 km/h)). Para semanas 9–10 usar mn_dbl_qua_pm_910.",
     "programa": [
      {
       "tipo": "run",
@@ -7315,7 +7324,7 @@
      },
      {
       "tipo": "run",
-      "nome": "5 × 1,5km @ 5:15–5:20/km",
+      "nome": "5 × 1,5km @ 5:15–5:20 (11,2–11,4 km/h)/km",
       "detalhe": "FC 155–165bpm · rec 500m",
       "zona": "LT2"
      },
@@ -7327,7 +7336,7 @@
      }
     ],
     "notas": [
-     "Sessão legada das semanas 5–6. Pace atual (sem. 7+) já está em 5:00–5:10/km."
+     "Sessão legada das semanas 5–6. Pace atual (sem. 7+) já está em 5:00–5:10 (11,6–12,0 km/h)/km."
     ]
    },
    "mn_swim_qui": {
@@ -7597,7 +7606,7 @@
     "pills": [
      "07:00",
      "18km",
-     "6:15–6:30/km",
+     "6:15–6:30 (9,2–9,6 km/h)/km",
      "FC <150bpm"
     ],
     "objetivo": "Longão de 18km — base aeróbica, resistência muscular e adaptação de tendões. FC <150bpm é a regra. Sem threshold, sem esforço percebido alto. Deve parecer confortavelmente fácil durante toda a duração.",
@@ -7605,25 +7614,25 @@
      {
       "tipo": "run",
       "nome": "Km 1–2 — aquecimento natural",
-      "detalhe": ">7:00/km · FC subindo gradualmente para 130–140bpm",
+      "detalhe": ">7:00 (8,6 km/h)/km · FC subindo gradualmente para 130–140bpm",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "16km @ 6:15–6:30/km",
+      "nome": "16km @ 6:15–6:30 (9,2–9,6 km/h)/km",
       "detalhe": "FC <150bpm constante · Se FC subir → reduza o pace imediatamente\nNutrição: gel ou banana + água após 60min\nPercurso: São Sebastião DF — ondulado, sombra, referências de segmento",
       "zona": "Z1/Z2"
      },
      {
       "tipo": "run",
       "nome": "Km final — volta fria",
-      "detalhe": "Último 1km >7:00/km · caminhe 5min ao parar · alongamento leve de 5min",
+      "detalhe": "Último 1km >7:00 (8,6 km/h)/km · caminhe 5min ao parar · alongamento leve de 5min",
       "zona": "Z1"
      }
     ],
     "notas": [
-     "🏃 Referência real: domingo 31/mai → 16,01km · 6:43/km · FC 134bpm · PR 10mi 1:49:50.",
-     "FC é o único guia. Se precisar ir a 7:00/km para manter FC <150bpm → vai a 7:00/km sem hesitar.",
+     "🏃 Referência real: domingo 31/mai → 16,01km · 6:43 (8,9 km/h)/km · FC 134bpm · PR 10mi 1:49:50.",
+     "FC é o único guia. Se precisar ir a 7:00 (8,6 km/h)/km para manter FC <150bpm → vai a 7:00 (8,6 km/h)/km sem hesitar.",
      "Joelho sem LCA: monitore enrijecimento. Sem dor durante → ok. Dor durante → pare.",
      "Musc. D após o longão — 20min de mobilidade para encerrar a semana."
     ]
@@ -7696,21 +7705,21 @@
     "pills": [
      "17:00",
      "6×1km @LT2",
-     "5:15–5:20/km",
+     "5:15–5:20 (11,2–11,4 km/h)/km",
      "~50min"
     ],
-    "objetivo": "Acumulação de volume em LT2 com pace atualizado pós-prova 10K. 6 repetições vs 5 anteriores — a progressão vem do volume, não da velocidade. Pace alvo: 5:15–5:20/km (FC ~162–168bpm).",
+    "objetivo": "Acumulação de volume em LT2 com pace atualizado pós-prova 10K. 6 repetições vs 5 anteriores — a progressão vem do volume, não da velocidade. Pace alvo: 5:15–5:20 (11,2–11,4 km/h)/km (FC ~162–168bpm).",
     "programa": [
      {
       "tipo": "run",
       "nome": "Aquecimento — 10min",
-      "detalhe": "1km caminhada (7:30–8:00/km) · depois 1km Z1 a >7:00/km, FC<120bpm\n💡 Opcional: 4 × 80m de strides progressivos (75–85% do pace alvo) para ativar as fibras rápidas antes dos blocos",
+      "detalhe": "1km caminhada (7:30–8:00/km) · depois 1km Z1 a >7:00 (8,6 km/h)/km, FC<120bpm\n💡 Opcional: 4 × 80m de strides progressivos (75–85% do pace alvo) para ativar as fibras rápidas antes dos blocos",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "6 × 1km @ 5:15–5:20/km",
-      "detalhe": "FC alvo: 162–168bpm · Recuperação entre blocos: 400m @ 7:00–7:30/km\nVolume de qualidade: 6km · Volume total c/ recuperações: ~8,4km\n⚡ Km 1: sair em 5:20–5:25 — não abra no limite logo de entrada",
+      "nome": "6 × 1km @ 5:15–5:20 (11,2–11,4 km/h)/km",
+      "detalhe": "FC alvo: 162–168bpm · Recuperação entre blocos: 400m @ 7:00–7:30 (8,0–8,6 km/h)/km\nVolume de qualidade: 6km · Volume total c/ recuperações: ~8,4km\n⚡ Km 1: sair em 5:20–5:25 (11,1–11,2 km/h) — não abra no limite logo de entrada",
       "zona": "LT2"
      },
      {
@@ -7723,7 +7732,7 @@
     "notas": [
      "⚠️ Mínimo 12h após bike AM (04:55 → mínimo 17:00). Não antecipar.",
      "🚨 Abort: FC acima de 172bpm no km 1 → converta em Z1 de 30min sem culpa. Fadiga acumulada é real.",
-     "🌡️ Calor acima de 28°C: adicione 5–8s/km ao pace alvo (5:23–5:28). FC é o guia, não o relógio.",
+     "🌡️ Calor acima de 28°C: adicione 5–8s/km ao pace alvo (5:23–5:28 (11,0–11,1 km/h)). FC é o guia, não o relógio.",
      "💧 Beba 500ml de água 45min antes. Se >35min de sessão, leve garrafinha.",
      "👟 Tênis de treino (não os Vaporfly) — preserve o carbono para provas."
     ]
@@ -7736,7 +7745,7 @@
     "pills": [
      "17:00",
      "5×1,5km @LT2",
-     "5:15–5:20/km",
+     "5:15–5:20 (11,2–11,4 km/h)/km",
      "~55min"
     ],
     "objetivo": "4ª sessão de threshold — consolidar o volume com blocos mais longos (1,5km vs 1km). O corpo já está adaptado à semana. É normal sair 3–5s/km mais lento que segunda — isso é correto e esperado.",
@@ -7744,13 +7753,13 @@
      {
       "tipo": "run",
       "nome": "Aquecimento — 10min",
-      "detalhe": "1km caminhada + 1km Z1 (>7:00/km, FC<120bpm)\n⚠️ Não pule o aquecimento pós-bike matinal — o corpo precisa recalibrar para o impacto da corrida",
+      "detalhe": "1km caminhada + 1km Z1 (>7:00 (8,6 km/h)/km, FC<120bpm)\n⚠️ Não pule o aquecimento pós-bike matinal — o corpo precisa recalibrar para o impacto da corrida",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "5 × 1,5km @ 5:15–5:20/km",
-      "detalhe": "FC alvo: 162–170bpm · Recuperação: 600m @ 7:00–7:30/km (~4:12)\nVolume de qualidade: 7,5km · Volume total: ~11,7km\n📊 Foco: manter pace consistente — variação máxima de 8s/km entre blocos",
+      "nome": "5 × 1,5km @ 5:15–5:20 (11,2–11,4 km/h)/km",
+      "detalhe": "FC alvo: 162–170bpm · Recuperação: 600m @ 7:00–7:30 (8,0–8,6 km/h)/km (~4:12 · 14,3 km/h)\nVolume de qualidade: 7,5km · Volume total: ~11,7km\n📊 Foco: manter pace consistente — variação máxima de 8s/km entre blocos",
       "zona": "LT2"
      },
      {
@@ -7776,7 +7785,7 @@
     "pills": [
      "06:00",
      "8km",
-     "6:45–7:15/km",
+     "6:45–7:15 (8,3–8,9 km/h)/km",
      "FC<140bpm"
     ],
     "objetivo": "Recuperação ativa pós-duplo threshold de quarta. Não é treino — é regeneração em movimento. O objetivo é aumentar o fluxo sanguíneo nos membros inferiores sem criar nova fadiga. FC deve permanecer abaixo de 140bpm o tempo todo.",
@@ -7784,12 +7793,12 @@
      {
       "tipo": "run",
       "nome": "Primeiros 2km — aquecimento natural",
-      "detalhe": ">7:15/km · FC <120bpm · ritmo de \"passeio com intenção\" · não olhe o cronômetro",
+      "detalhe": ">7:15 (8,3 km/h)/km · FC <120bpm · ritmo de \"passeio com intenção\" · não olhe o cronômetro",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "6km @ 6:45–7:15/km",
+      "nome": "6km @ 6:45–7:15 (8,3–8,9 km/h)/km",
       "detalhe": "FC <140bpm — se ultrapassar: reduza pace imediatamente\nPercurso plano ou levemente ondulado. Evite subidas íngremes que disparam a FC.\n💡 Ideal: Parque da Cidade DF, Eixão, ou equivalente plano",
       "zona": "Z1"
      },
@@ -7801,7 +7810,7 @@
      }
     ],
     "notas": [
-     "🎯 A regra de ouro: se sentir que precisa forçar para manter 6:45/km → vai mais devagar. Não existe pace mínimo hoje.",
+     "🎯 A regra de ouro: se sentir que precisa forçar para manter 6:45 (8,9 km/h)/km → vai mais devagar. Não existe pace mínimo hoje.",
      "🚨 Pernas pesadas / dor muscular remanescente de quarta: reduza para 5km ou substitua por 20min de caminhada.",
      "💧 Hidrate bem ao longo da sexta — prepare o corpo para o bike longo de sábado.",
      "🕕 Prefira fazer cedo (06:00) para ter o resto do dia de descanso antes do sábado.",
@@ -7816,7 +7825,7 @@
     "pills": [
      "07:00",
      "12–14km",
-     "6:15–6:45/km",
+     "6:15–6:45 (8,9–9,6 km/h)/km",
      "FC<150bpm"
     ],
     "objetivo": "Longão aeróbico semanal — base de volume de corrida. Deve parecer \"confortavelmente fácil\" durante toda a duração. A FC é o guia principal: máximo 150bpm. Se subir, desacelere.",
@@ -7824,19 +7833,19 @@
      {
       "tipo": "run",
       "nome": "Aquecimento natural — km 1–2",
-      "detalhe": ">7:00/km nos primeiros 2km. Deixe o corpo entrar no ritmo sem forçar. FC deve chegar a 130–140bpm progressivamente.",
+      "detalhe": ">7:00 (8,6 km/h)/km nos primeiros 2km. Deixe o corpo entrar no ritmo sem forçar. FC deve chegar a 130–140bpm progressivamente.",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "10–12km @ 6:15–6:45/km",
+      "nome": "10–12km @ 6:15–6:45 (8,9–9,6 km/h)/km",
       "detalhe": "FC <150bpm · Ritmo conversacional — você deve conseguir falar frases completas\nSem. 5: 12km total · Sem. 6: 14km total\nNutrição: gel ou banana após 50min se sentir necessidade",
       "zona": "Z1/Z2"
      },
      {
       "tipo": "run",
       "nome": "Volta fria — km final",
-      "detalhe": "Último 1km: >7:00/km, desacelerando progressivamente. Caminhe 3–5min ao parar.",
+      "detalhe": "Último 1km: >7:00 (8,6 km/h)/km, desacelerando progressivamente. Caminhe 3–5min ao parar.",
       "zona": "Z1"
      }
     ],
@@ -7864,19 +7873,19 @@
      {
       "tipo": "run",
       "nome": "Aquecimento — 10min",
-      "detalhe": "1km caminhada + 1km Z1 (>7:00/km)\n2 × 80m progressivos a 85–90% do pace LT2 · 60s walk entre cada",
+      "detalhe": "1km caminhada + 1km Z1 (>7:00 (8,6 km/h)/km)\n2 × 80m progressivos a 85–90% do pace LT2 · 60s walk entre cada",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "6 × 1km @ 5:10–5:15/km",
-      "detalhe": "FC alvo: 155–165bpm · Recuperação: 400m @ 7:00/km (~2:50)\nVolume de qualidade: 6km\n⚡ Controle: km 1 em 5:15–5:18, não abra no máximo logo de início\n🍌 Banana + mel 40min antes",
+      "nome": "6 × 1km @ 5:10–5:15 (11,4–11,6 km/h)/km",
+      "detalhe": "FC alvo: 155–165bpm · Recuperação: 400m @ 7:00 (8,6 km/h)/km (~2:50)\nVolume de qualidade: 6km\n⚡ Controle: km 1 em 5:15–5:18 (11,3–11,4 km/h), não abra no máximo logo de início\n🍌 Banana + mel 40min antes",
       "zona": "LT2"
      },
      {
       "tipo": "run",
       "nome": "Volta fria",
-      "detalhe": "1km trote leve (>7:30/km) até FC<115bpm. Caminhe 3min ao parar.",
+      "detalhe": "1km trote leve (>7:30 (8,0 km/h)/km) até FC<115bpm. Caminhe 3min ao parar.",
       "zona": "Z1"
      }
     ],
@@ -7903,13 +7912,13 @@
      {
       "tipo": "run",
       "nome": "Aquecimento — 10min",
-      "detalhe": "1km caminhada + 1km Z1 (>7:00/km)\n2 × 80m progressivos · 60s walk entre cada",
+      "detalhe": "1km caminhada + 1km Z1 (>7:00 (8,6 km/h)/km)\n2 × 80m progressivos · 60s walk entre cada",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "5 × 1,5km @ 5:10–5:15/km",
-      "detalhe": "FC alvo: 155–165bpm · Recuperação: 500m @ 7:00/km (~3:30)\nVolume de qualidade: 7,5km · Volume total: ~11km\nExpectativa: blocos 4–5 com pace 3–5s mais lento que blocos 1–2 — isso é normal",
+      "nome": "5 × 1,5km @ 5:10–5:15 (11,4–11,6 km/h)/km",
+      "detalhe": "FC alvo: 155–165bpm · Recuperação: 500m @ 7:00 (8,6 km/h)/km (~3:30 · 17,1 km/h)\nVolume de qualidade: 7,5km · Volume total: ~11km\nExpectativa: blocos 4–5 com pace 3–5s mais lento que blocos 1–2 — isso é normal",
       "zona": "LT2"
      },
      {
@@ -7923,7 +7932,7 @@
      "🎯 Critério para VO2max: completar ≥4/5 blocos nas semanas 7 E 8. Se não atingir, semanas 9–10 continuam como LT2 puro.",
      "🍽️ Pré-treino: banana + mel 40min antes. Pós-treino: proteína + carboidrato em até 30min.",
      "⏱️ Mínimo 12h após bike AM.",
-     "🚨 Abort rule: FC >172bpm no bloco 2 → reduza pace para 5:20+/km. Não force."
+     "🚨 Abort rule: FC >172bpm no bloco 2 → reduza pace para 5:20 (11,2 km/h)+/km. Não force."
     ]
    },
    "mn_dbl_seg_pm_910": {
@@ -7933,7 +7942,7 @@
     "subtitle": "Segunda · 17h · Threshold + tiros neuromusculares finais",
     "pills": [
      "17:00",
-     "6×1km @LT2 4:50–5:00",
+     "6×1km @LT2 4:50–5:00 (12,0–12,4 km/h)",
      "+ 2×500m @VO2",
      "~60min"
     ],
@@ -7942,18 +7951,18 @@
      {
       "tipo": "run",
       "nome": "Aquecimento — 10–12min",
-      "detalhe": "1km caminhada + 1km Z1 (>7:00/km)\n4 × 80m progressivos: 75% → 85% → 90% → 95% do pace LT2 · 60s walk entre cada\n💡 Strides preparam o sistema neuromuscular para os tiros finais",
+      "detalhe": "1km caminhada + 1km Z1 (>7:00 (8,6 km/h)/km)\n4 × 80m progressivos: 75% → 85% → 90% → 95% do pace LT2 · 60s walk entre cada\n💡 Strides preparam o sistema neuromuscular para os tiros finais",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "6 × 1km @ 5:05–5:10/km — RECALIBRADO",
-      "detalhe": "CRITÉRIO DUPLO: FC ≤165bpm E pernas em \"difícil controlado\"\nSegunda = dia de reserva (relato: \"caberiam mais blocos\") — tocar 5:00–5:05 só em dia de perna leve\nRecuperação: 400m @ 7:00/km · Volume de qualidade: 6km\n🚫 Proibido negative split abaixo de 4:55/km nos blocos de LT2 — a velocidade tem casa nos tiros abaixo",
+      "nome": "6 × 1km @ 5:05–5:10 (11,6–11,8 km/h)/km — RECALIBRADO",
+      "detalhe": "CRITÉRIO DUPLO: FC ≤165bpm E pernas em \"difícil controlado\"\nSegunda = dia de reserva (relato: \"caberiam mais blocos\") — tocar 5:00–5:05 (11,8–12,0 km/h) só em dia de perna leve\nRecuperação: 400m @ 7:00 (8,6 km/h)/km · Volume de qualidade: 6km\n🚫 Proibido negative split abaixo de 4:55 (12,2 km/h)/km nos blocos de LT2 — a velocidade tem casa nos tiros abaixo",
       "zona": "LT2"
      },
      {
       "tipo": "run",
-      "nome": "2 × 500m @ 4:45/km — VO2max",
+      "nome": "2 × 500m @ 4:45 (12,6 km/h)/km — VO2max",
       "detalhe": "Recuperação entre os 2 tiros: 400m caminhada (3–4min)\nFC esperada: 168–175bpm · Duração: ~2:22 por tiro\n🔥 Não sprint total — esforço sustentado \"difícil mas controlado\"",
       "zona": "VO2max"
      },
@@ -7978,7 +7987,7 @@
     "subtitle": "Quarta · 17h · Threshold + VO2max · sessão de maior qualidade",
     "pills": [
      "17:00",
-     "5×1,5km @LT2 5:10–5:15",
+     "5×1,5km @LT2 5:10–5:15 (11,4–11,6 km/h)",
      "+ 2×1km @VO2",
      "~70min"
     ],
@@ -7987,19 +7996,19 @@
      {
       "tipo": "run",
       "nome": "Aquecimento — 12min",
-      "detalhe": "1km caminhada + 1km Z1 (>7:00/km)\n4 × 80m progressivos · 60s walk entre cada\n🔑 Aquecimento completo é especialmente importante nesta sessão",
+      "detalhe": "1km caminhada + 1km Z1 (>7:00 (8,6 km/h)/km)\n4 × 80m progressivos · 60s walk entre cada\n🔑 Aquecimento completo é especialmente importante nesta sessão",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "5 × 1,5km @ 5:10–5:15/km — DIA FATIGADO",
-      "detalhe": "Quarta = dia de carga acumulada (duplo seg + bike AM) — relato: \"fico no meu limite\"\nAlvo deliberadamente mais lento que segunda: mesma fisiologia, reserva diferente\nCRITÉRIO DUPLO: FC ≤165bpm E pernas em \"difícil controlado\" · regra do último bloco: caberiam +2\nRecuperação: 500m @ 7:00/km (~3:30) · Volume de qualidade: 7,5km\n✅ Plio movida para quinta: perna deve chegar mais leve aqui — hipótese a testar na semana 9\nExpectativa: blocos 4–5 com fade de 3–5s — normal",
+      "nome": "5 × 1,5km @ 5:10–5:15 (11,4–11,6 km/h)/km — DIA FATIGADO",
+      "detalhe": "Quarta = dia de carga acumulada (duplo seg + bike AM) — relato: \"fico no meu limite\"\nAlvo deliberadamente mais lento que segunda: mesma fisiologia, reserva diferente\nCRITÉRIO DUPLO: FC ≤165bpm E pernas em \"difícil controlado\" · regra do último bloco: caberiam +2\nRecuperação: 500m @ 7:00 (8,6 km/h)/km (~3:30 · 17,1 km/h) · Volume de qualidade: 7,5km\n✅ Plio movida para quinta: perna deve chegar mais leve aqui — hipótese a testar na semana 9\nExpectativa: blocos 4–5 com fade de 3–5s — normal",
       "zona": "LT2"
      },
      {
       "tipo": "run",
-      "nome": "2 × 1km @ 4:50/km — VO2max",
-      "detalhe": "Recuperação: 600m caminhada (4–5min)\nFC esperada: 170–175bpm · Duração: ~4:50 por km\n🔥 1km a 4:50 é esforço alto mas sustentável — não é sprint",
+      "nome": "2 × 1km @ 4:50 (12,4 km/h)/km — VO2max",
+      "detalhe": "Recuperação: 600m caminhada (4–5min)\nFC esperada: 170–175bpm · Duração: ~4:50 (12,4 km/h) por km\n🔥 1km a 4:50 (12,4 km/h) é esforço alto mas sustentável — não é sprint",
       "zona": "VO2max"
      },
      {
@@ -8024,21 +8033,21 @@
     "pills": [
      "manhã",
      "10km",
-     "6:21–7:00/km",
+     "6:21–7:00 (8,6–9,4 km/h)/km",
      "FC<145bpm"
     ],
-    "objetivo": "Recuperação ativa de 10km — fluxo sanguíneo, não fadiga. FC <145bpm é a única métrica que importa. Referência real: quarta 03/jun → 10,01km a 6:32/km · FC 138bpm · RAI 6:18/km · 2 RPs. Ondulado é aceitável — São Sebastião é o percurso natural.",
+    "objetivo": "Recuperação ativa de 10km — fluxo sanguíneo, não fadiga. FC <145bpm é a única métrica que importa. Referência real: quarta 03/jun → 10,01km a 6:32 (9,2 km/h)/km · FC 138bpm · RAI 6:18 (9,5 km/h)/km · 2 RPs. Ondulado é aceitável — São Sebastião é o percurso natural.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Km 1–2 — aquecimento natural",
-      "detalhe": ">7:00/km · FC subindo gradualmente · deixe o corpo acordar",
+      "detalhe": ">7:00 (8,6 km/h)/km · FC subindo gradualmente · deixe o corpo acordar",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "8km @ 6:21–7:00/km",
-      "detalhe": "FC <145bpm constante\nSe FC passar de 145bpm → reduza para 7:15/km ou mais devagar\nPercurso: São Sebastião DF · ondulado é ok · Nike Vomero Plus",
+      "nome": "8km @ 6:21–7:00 (8,6–9,4 km/h)/km",
+      "detalhe": "FC <145bpm constante\nSe FC passar de 145bpm → reduza para 7:15 (8,3 km/h)/km ou mais devagar\nPercurso: São Sebastião DF · ondulado é ok · Nike Vomero Plus",
       "zona": "Z1"
      },
      {
@@ -8049,7 +8058,7 @@
      }
     ],
     "notas": [
-     "🏃 Referência real: 6:32/km com FC 138bpm em São Sebastião (quarta 03/jun). Esse é o nível certo.",
+     "🏃 Referência real: 6:32 (9,2 km/h)/km com FC 138bpm em São Sebastião (quarta 03/jun). Esse é o nível certo.",
      "🎯 Mantra: \"devagar de verdade\". Nenhum segmento rápido, nenhum sprint de subida.",
      "🦵 Joelho com LCA: monitore enrijecimento. Se aumentar pós-corrida → encurte para 7km na próxima.",
      "💧 Sexta = maximizar hidratação para o bike longo de sábado.",
@@ -8140,27 +8149,27 @@
     "pills": [
      "07:00",
      "18km",
-     "6:15–6:30/km",
+     "6:15–6:30 (9,2–9,6 km/h)/km",
      "FC<150bpm"
     ],
-    "objetivo": "Longão mais longo do ciclo. 18km semanas 7 e 8 — consolidação de volume aeróbico. Pace ligeiramente mais rápido que semanas 5–6 (6:15–6:30 vs 6:15–6:45), mas ainda confortável. FC <150bpm permanece o guia.",
+    "objetivo": "Longão mais longo do ciclo. 18km semanas 7 e 8 — consolidação de volume aeróbico. Pace ligeiramente mais rápido que semanas 5–6 (6:15–6:30 (9,2–9,6 km/h) vs 6:15–6:45 (8,9–9,6 km/h)), mas ainda confortável. FC <150bpm permanece o guia.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Aquecimento natural — km 1–2",
-      "detalhe": ">7:00/km nos primeiros 2km. FC subindo gradualmente para 130–140bpm.",
+      "detalhe": ">7:00 (8,6 km/h)/km nos primeiros 2km. FC subindo gradualmente para 130–140bpm.",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "16km @ 6:15–6:30/km",
+      "nome": "16km @ 6:15–6:30 (9,2–9,6 km/h)/km",
       "detalhe": "FC <150bpm · Ritmo conversacional\nNutrição: gel ou banana + água após 55–60min de corrida\n18km total semanas 7 e 8",
       "zona": "Z1/Z2"
      },
      {
       "tipo": "run",
       "nome": "Volta fria — km final",
-      "detalhe": "Último 1km: >7:00/km, desacelerando. Caminhe 5min ao parar. Alongamento leve de 5min (panturrilha, isquiotibial, quadril).",
+      "detalhe": "Último 1km: >7:00 (8,6 km/h)/km, desacelerando. Caminhe 5min ao parar. Alongamento leve de 5min (panturrilha, isquiotibial, quadril).",
       "zona": "Z1"
      }
     ],
@@ -8381,7 +8390,7 @@
     "pills": [
      "06:00",
      "8km",
-     "6:45–7:15/km",
+     "6:45–7:15 (8,3–8,9 km/h)/km",
      "FC<140bpm"
     ],
     "objetivo": "Recuperação ativa. FC deve permanecer abaixo de 140bpm o tempo todo. Prepare o corpo para o bike longo de sábado.",
@@ -8389,12 +8398,12 @@
      {
       "tipo": "run",
       "nome": "Primeiros 2km — aquecimento natural",
-      "detalhe": ">7:15/km · FC<115bpm",
+      "detalhe": ">7:15 (8,3 km/h)/km · FC<115bpm",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "6km @ 6:45–7:15/km",
+      "nome": "6km @ 6:45–7:15 (8,3–8,9 km/h)/km",
       "detalhe": "FC <140bpm · percurso plano · ritmo de conversa fácil",
       "zona": "Z1"
      },
@@ -8406,7 +8415,7 @@
      }
     ],
     "notas": [
-     "🎯 Regra única: se precisar forçar para manter 6:45/km → vai mais devagar. Não existe ritmo mínimo.",
+     "🎯 Regra única: se precisar forçar para manter 6:45 (8,9 km/h)/km → vai mais devagar. Não existe ritmo mínimo.",
      "🚨 Pernas pesadas de quarta: reduza para 5km ou caminhada de 20min.",
      "💧 Sexta: maximizar hidratação para o bike de sábado."
     ]
@@ -8541,17 +8550,16 @@
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
-     "sub-LT2",
-     "FC ≤157",
-     "rec ~200m",
-     "4:41–4:43"
+     "sub-LT2 / VO2",
+     "FC ≤158",
+     "4:38 (12,9 km/h) → 4:15 (14,1 km/h)"
     ],
     "objetivo": "Tiros de 1km ABAIXO do limiar (2,0–3,0 mmol). A regra norueguesa: terminar sentindo que faria mais 2 tiros. Se acabou destruído, foi rápido demais.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Aquecimento",
-      "detalhe": "~2,5km Z1 (6:10–6:30) + 3 strides ~100m",
+      "detalhe": "~2,5km Z1 (6:10–6:30 (9,2–9,7 km/h)) + 3 strides ~100m",
       "zona": "Z1"
      },
      {
@@ -8568,7 +8576,7 @@
      }
     ],
     "notas": [
-     "FC ≤157 (86% da máx) em TODOS os tiros — pace é teto, FC é o chefe",
+     "FC ≤158 nos curtos / ≤161 nos longos · pace é teto, FC é o chefe",
      "⚠️ SEU VÍCIO: o 1º tiro NÃO pode ser o mais rápido. Se o 1º sair >3s abaixo do alvo, segura no 2º",
      "Alvo de consistência: do 1º ao último dentro de 3s de variação",
      "FC subindo semana a semana no MESMO pace = fadiga acumulando · avisar",
@@ -8603,17 +8611,16 @@
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
-     "sub-LT2",
-     "FC ≤159",
-     "rec ~300m",
-     "tiros de 2km"
+     "sub-LT2 / HMP",
+     "FC ≤161",
+     "4:34 (13,1 km/h) → 4:15 (14,1 km/h)"
     ],
     "objetivo": "Tiros de 2km — mesma intensidade da terça, mas blocos maiores. É aqui que a resistência de limiar (o que sustenta uma meia) se constrói.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Aquecimento",
-      "detalhe": "~2,5km Z1 (6:10–6:30) + 3 strides ~100m",
+      "detalhe": "~2,5km Z1 (6:10–6:30 (9,2–9,7 km/h)) + 3 strides ~100m",
       "zona": "Z1"
      },
      {
@@ -8630,7 +8637,7 @@
      }
     ],
     "notas": [
-     "FC ≤159 (87%) — 2 batimentos a mais que a terça, porque o bloco é o dobro",
+     "FC ≤158 nos curtos / ≤161 nos longos · pace é teto, FC é o chefe",
      "Se o último tiro cair >5s do primeiro, era 1 tiro a mais do que aguentava",
      "Bike AM de quinta é OPCIONAL e Z2 puro — se estiver cansado, corta a bike, nunca o run",
      "Última sessão dura antes do fim de semana de volume"
@@ -8644,14 +8651,14 @@
     "pills": [
      "Z2",
      "FC<140",
-     "5:55–6:20"
+     "5:55–6:20 (9,5–10,1 km/h)"
     ],
     "objetivo": "Recuperar e acumular volume aeróbico barato. Se essa virar meio-forte, o longão e os doubles pagam a conta.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Rodagem",
-      "detalhe": "ver km do dia · 5:55–6:20 · FC<140 · conversa possível",
+      "detalhe": "ver km do dia · 5:55–6:20 (9,5–10,1 km/h) · FC<140 · conversa possível",
       "zona": "Z2"
      },
      {
@@ -8675,18 +8682,19 @@
     "pills": [
      "Z1–Z2",
      "FC<147",
-     "5:45–6:10"
+     "5:45–6:10 (9,7–10,4 km/h)"
     ],
     "objetivo": "Durabilidade aeróbica. Norueguês clássico: o longão é SEMPRE fácil — a qualidade mora na terça e na quinta. Correr o longão forte é o erro nº1 do amador.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Longão",
-      "detalhe": "ver km do dia · 5:45–6:10 · FC<147 · começar no lento e estabilizar",
+      "detalhe": "ver km do dia · 5:45–6:10 (9,7–10,4 km/h) · FC<147 · começar no lento e estabilizar",
       "zona": "Z2"
      }
     ],
     "notas": [
+     "A partir da sem. 8 o longão ganha blocos em ritmo de meia — é o treino que decide a meta",
      "Desacoplamento alvo <5% (1ª metade vs 2ª metade) — acima disso, o pace estava alto",
      "Fueling: gel a cada ~40min acima de 18km. Em déficit com Mounjaro isso NÃO é opcional",
      "Hidratar bem — Brasília seca, largada cedo",
@@ -8989,7 +8997,7 @@
      "10km forte",
      "recalibra tudo"
     ],
-    "objetivo": "O juiz do ciclo: ≤42:30 libera RP 4:24 (meia ~1:33) · 43:00–44:00 confirma RP 4:30 (meia 1:35) · 44–45:30 mantém RP 4:36 · >46 seguramos a mão.",
+    "objetivo": "O portão do ciclo. Meta 1:29:59 exige 10K plano ~40:38. Leitura do dia: ≤42:30 mantém sub-1:30 de pé · 43:00–44:00 recalibra para 1:32–1:33 · 44:00–44:30 vai para 1:34 · >44:30 volta para 1:35. Não é fracasso — é calibragem.",
     "programa": [
      {
       "tipo": "run",
@@ -9011,40 +9019,53 @@
      }
     ],
     "notas": [
-     "Todos os paces marcados com * das sem 10–18 são recalibrados com este resultado",
-     "Descansado (sexta off) · Vaporfly · plano e de manhã",
-     "Referência: 45:00 equivalente-plano em 19/07/2026"
+     "Todos os paces com * das sem 10–18 são reescritos com este resultado",
+     "Sexta off · plano · de manhã · Vaporfly",
+     "Referência: 45:00 equivalente-plano em 19/07/2026",
+     "Largar CONTIDO: primeiro km nunca o mais rápido"
     ]
    },
    "hm_prova_meia": {
-    "title": "PROVA — Meia Maratona Monumental de Brasília",
-    "subtitle": "Domingo 22/11 · largada 05:00",
+    "title": "PROVA — Meia Monumental",
+    "subtitle": "Domingo 22/11 · 05:00 · Eixo Monumental",
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
-     "21,1km",
-     "RP 4:34*",
-     "~1:42"
+     "21,1 km",
+     "4:15 (14,1 km/h)/km",
+     "alvo 1:29:59"
     ],
-    "objetivo": "Meia Monumental 22/11 · alvo 1:35:00 (4:30/km) · largada 05:00 · Eixo Monumental plano e rápido.",
+    "objetivo": "Meta 1:29:59 (4:15 (14,1 km/h)/km). Percurso plano e rápido, largada às 5h com clima ideal.",
     "programa": [
      {
       "tipo": "run",
       "nome": "Aquecimento",
-      "detalhe": "~1,5km trote + 4 strides · 04:15",
+      "detalhe": "~2km trote + 3 strides · terminar ~15min antes",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "PROVA",
-      "detalhe": "21,1km @4:34* · não passar de FC 165 nos primeiros 10k",
-      "zona": "PROVA"
+      "nome": "km 1–5",
+      "detalhe": "4:18 (14,0 km/h) · CONTIDO. Tem que parecer fácil demais",
+      "zona": "RP-"
+     },
+     {
+      "tipo": "run",
+      "nome": "km 6–15",
+      "detalhe": "4:15 (14,1 km/h) · firme e constante · o trecho que decide",
+      "zona": "RP"
+     },
+     {
+      "tipo": "run",
+      "nome": "km 16–21,1",
+      "detalhe": "4:15 (14,1 km/h) ou mais rápido · o que sobrar",
+      "zona": "RP+"
      }
     ],
     "notas": [
-     "Sáb véspera: descanso absoluto + carbo",
-     "Acordar ~03:15 · café 03:30",
-     "Pace final definido no ensaio da sem 16 e ajustado pelo 10k-teste"
+     "Gel no km 7 e no km 14, com água",
+     "⚠️ Largar a 4:05 (14,7 km/h) custa os últimos 5 km — o vício conhecido",
+     "Meta oficial de trabalho: 1:33. 1:30 é o teto esticado"
     ]
    }
   },
@@ -9206,8 +9227,8 @@
   "start_time": "05:00",
   "location": "Eixo Monumental, Brasília/DF",
   "distance_km": 21.1,
-  "target_time": "1:35:00",
-  "target_pace": "4:30",
+  "target_time": "1:29:59",
+  "target_pace": "4:15 (14,1 km/h)",
   "course": {
    "summary": "Plano, técnico e rápido, pelos cartões-postais do Eixo Monumental · largada 5h (clima ideal) · altitude ~1.130–1.160m",
    "ascent_m": 60,

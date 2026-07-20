@@ -5573,8 +5573,14 @@ function renderPlanoCards(){
     set('pc-ftp-sub', wkg+' W/kg · LT2: '+lt2lo+'–'+lt2hi+'W');
     const PA = (CFG.pace_anchors) || {};
     const hoje = PA.hoje || {};
-    const lt2run = hoje.lt2 ? (hoje.sub_lt2 ? hoje.lt2+'–'+hoje.sub_lt2 : hoje.lt2) : '4:37–4:43';
-    set('pc-lt2-pace','Corrida '+lt2run+'/km · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
+    // os anchors já vêm com a velocidade anotada ("4:37 (13,0 km/h)") — separar pace de km/h
+    const bare = p => String(p||'').replace(/\s*\([^)]*km\/h\)/g,'').trim();
+    const secOf = p => { const m=bare(p).match(/(\d+):(\d\d)/); return m ? (+m[1])*60 + (+m[2]) : 0; };
+    const kmhOf = p => { const s=secOf(p); return s ? (3600/s).toFixed(1).replace('.',',') : ''; };
+    const pLt2 = bare(hoje.lt2) || '4:37', pSub = bare(hoje.sub_lt2) || '4:43';
+    const lt2run = pSub && pSub!==pLt2 ? pLt2+'–'+pSub : pLt2;
+    const vRange = (kmhOf(hoje.sub_lt2)||kmhOf('4:43')) + '–' + (kmhOf(hoje.lt2)||kmhOf('4:37'));
+    set('pc-lt2-pace','Corrida '+lt2run+'/km ('+vRange+' km/h) · Bike '+lt2lo+'–'+lt2hi+'W (FTP '+ftp+'W)');
     set('pc-cycle-weeks', String((CFG.cycle_weeks)||CYCLE_WEEKS||18));
     const race=(CYCLES[ACTIVE_CYCLE_IDX].race)||(EXT&&EXT.race)||{};
     if(race.date){

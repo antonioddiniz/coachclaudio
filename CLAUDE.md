@@ -113,6 +113,11 @@ Regras dos dados:
   `lt2|limiar|threshold|prova|teste|vo2`. Numa corrida fácil (Z2), NÃO use termos HARD na
   nota (ex: "depois do limiar" exclui o treino do gráfico por engano). Use o `sec` da
   sessão nas fáceis (sem tiros) — é ele que vira o EF.
+- **Todo pace vem acompanhado da velocidade de esteira em km/h** (preferência do atleta):
+  formato `4:15 (14,1 km/h)`; faixas em ordem crescente de velocidade,
+  `5:50–6:10 (9,7–10,3 km/h)`. Conta: `km/h = 3600 ÷ pace_em_segundos`. Vale para
+  `plan.cal_overrides`, `plan.workout_details`, `config.pace_anchors`, `race.target_pace`,
+  para o chat e para qualquer PDF/documento gerado.
 - **Corrida SEMPRE em distância, nunca em tempo** (preferência do atleta): aquecimento,
   solta e recuperações em km/m, não em min/s — tanto nos modais (`plan.workout_details`)
   quanto nos `detail` do plano. Ex: aquecimento "~2,5km Z1", rec. "~200m", não "15min"/
