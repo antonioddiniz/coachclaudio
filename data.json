@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-19",
+ "updated_at": "2026-07-24",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -1874,6 +1874,42 @@
    "hr": 168,
    "kcal": 887,
    "note": "10,02km · 43:46 · 🏆 PROVA 10K — BSB Half Marathon · PR 43:50 (Strava) · 4:22/km · FC 168 avg / 177 máx · 330W · cadência 83 · percurso em descida líquida (+27m) · GAP plano ~4:30/km · 14 PRs · 5K PR 21:02 · 1K PR 3:55 · splits 4:01-4:10-4:13-4:08-4:33-4:34-4:31-4:41-4:25-4:39 · meta era 47:30, bateu por 3:40 · Vaporfly 3"
+  },
+  {
+   "id": 156,
+   "date": "2026-07-22",
+   "sport": "run",
+   "dist": 4.05,
+   "dur": "28:51",
+   "pace": "7:08",
+   "sec": 428,
+   "hr": 124,
+   "kcal": 308,
+   "note": "4,05km \u00b7 28:51 \u00b7 trote regenerativo p\u00f3s-prova (Sem 1 \u00b7 quarta) \u00b7 7:08/km (8,4 km/h) \u00b7 FC 124 avg / 143 m\u00e1x \u00b7 muito f\u00e1cil \u00b7 quadr\u00edceps ainda recuperando da descida \u00b7 +36m \u00b7 Strava"
+  },
+  {
+   "id": 157,
+   "date": "2026-07-23",
+   "sport": "swim",
+   "dist": 1.325,
+   "dur": "43:46",
+   "pace": "3:18",
+   "sec": 198,
+   "hr": 0,
+   "kcal": 491,
+   "note": "1.325m \u00b7 43:46 \u00b7 nata\u00e7\u00e3o Z1 recupera\u00e7\u00e3o (Sem 1 \u00b7 quinta) \u00b7 ~3:18/100m \u00b7 recupera\u00e7\u00e3o ativa sem impacto \u00b7 Strava"
+  },
+  {
+   "id": 158,
+   "date": "2026-07-24",
+   "sport": "run",
+   "dist": 7.75,
+   "dur": "47:40",
+   "pace": "6:09",
+   "sec": 369,
+   "hr": 148,
+   "kcal": 627,
+   "note": "7,75km \u00b7 47:40 \u00b7 rodado f\u00e1cil Z2 (Sem 1 \u00b7 volta \u00e0 rotina) \u00b7 6:09/km (9,8 km/h) \u00b7 FC 148 avg / 160 m\u00e1x \u00b7 percurso com +91m (subiu Mangueiral) \u00b7 EF bruto 1,10 (terreno) \u00b7 5K melhor 30:34 \u00b7 2 PRs \u00b7 Strava"
   }
  ],
  "weight_data": [
@@ -9230,8 +9266,14 @@
   "target_time": "1:29:59",
   "target_pace": "4:15 (14,1 km/h)",
   "course": {
-   "summary": "Plano, técnico e rápido, pelos cartões-postais do Eixo Monumental · largada 5h (clima ideal) · altitude ~1.130–1.160m",
-   "ascent_m": 60,
+   "summary": "⚠️ ALTIMETRIA A CONFIRMAR. O organizador anuncia \"percurso plano, altimetria mínima\" — mas é material de marketing. Largada/chegada no Museu da República (ponta baixa da Esplanada), e o Eixo Monumental tem desnível real: no 10K de 19/07, no mesmo eixo, foram ~93m de queda líquida com rampas de até -2,9%. Se a prova sai da Esplanada e volta, a SUBIDA cai na volta. Relato do atleta: \"bem agressiva na volta\".",
+   "ascent_m": null,
+   "ascent_status": "não verificado — PDF oficial é imagem, sem dados de altimetria",
+   "ref_medida": "10K BSB Half 19/07/2026 (mesmo eixo): -93m líquidos em 10km, rampas -2,3 a -2,9%",
+   "fontes": [
+    "https://maratonamonumentalbsb.com.br/percursos/",
+    "https://maratonamonumentalbsb.com.br/wp-content/uploads/2026/05/Percurso-21km-MaratonaMonumental2026.pdf"
+   ],
    "elevation": []
   },
   "references": [
@@ -9277,7 +9319,8 @@
     "time": "21:02",
     "label": "5K PR (split da prova)"
    }
-  ]
+  ],
+  "start_finish": "Museu da República — Esplanada dos Ministérios"
  },
  "next_cycle": {
   "activated_on": "2026-07-19",
