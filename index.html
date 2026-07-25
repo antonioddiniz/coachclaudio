@@ -4564,6 +4564,19 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- projeção da prova -->
   <div style="max-width:900px;margin:0 auto 20px" id="race-projection-section"></div>
 
+  <!-- TABELA COMPLETA DO CICLO (semanas × dias) -->
+  <div style="margin:0 auto 22px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+      <div>
+        <div style="font-size:0.62rem;color:#666;text-transform:uppercase;letter-spacing:1px">Ciclo completo</div>
+        <div style="font-size:0.95rem;font-weight:800;color:#60a5fa">Tabela — semanas × dias</div>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap" id="ct-filtros"></div>
+    </div>
+    <div id="ciclo-tabela-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"></div>
+    <div id="ciclo-tabela-ref" style="margin-top:12px"></div>
+  </div>
+
   <!-- zone summary -->
   <div class="plano-section">
 
@@ -5521,6 +5534,7 @@ document.addEventListener('DOMContentLoaded', () => {
   buildSegChart();
   applyExternalProfile();
   renderPlanoCards();
+  renderCicloTabela();
   buildQualityChart();
   buildVolumeChart();
   buildPRCard();
@@ -5590,6 +5604,142 @@ function renderPlanoCards(){
     }
     if(race.target_pace) set('pc-race-target','10km · pace alvo '+race.target_pace+'/km');
   }catch(e){ console.warn('renderPlanoCards', e); }
+}
+
+// ── TABELA COMPLETA DO CICLO (semanas × dias) ──────────────
+const CT_SPORT = {
+  run:      { nome:'CORRIDA',  cor:'#60a5fa' },
+  bike:     { nome:'BIKE',     cor:'#fbbf24' },
+  swim:     { nome:'NATAÇÃO',  cor:'#22d3ee' },
+  strength: { nome:'FORÇA',    cor:'#a78bfa' },
+  rest:     { nome:'DESCANSO', cor:'#64748b' }
+};
+const CT_FASE = {
+  RECUP:'#334155', RETOM:'#14532d', BASE:'#14532d', 'BASE+':'#166534', DELOAD:'#78350f',
+  TESTE:'#1e3a8a', BUILD:'#1e3a8a', ESPEC:'#1e3a8a', RAINHA:'#4c1d95', SHARP:'#4c1d95',
+  TAPER:'#78350f', PROVA:'#881337'
+};
+const CT_REF = [
+  ['A','Força A — Perna · TERÇA, pós-corrida',
+   'Sem 2–4 (adaptação): agach. goblet 3×12 · leg press 3×15 · RDL 3×12 · afundo caminhando 3×10/perna · panturrilha excêntrica 3×15 · RPE 6<br>'+
+   'Sem 5–9 (força máx I): agach. livre 4×6 · terra trap bar 4×6 · búlgaro 3×8/perna · panturrilha carregada 4×10 · RPE 7–8 · rec 2–3min<br>'+
+   'Sem 10–13 (força máx II): agach. 4×4 · terra trap bar 4×4 · búlgaro 3×6/perna · panturrilha 4×8 · RPE 8 · rec 3min<br>'+
+   'Sem 14–16 (potência): agach. 3×3 rápido · jump squat 4×4 · depth jump caixa 30cm 4×4 · panturrilha 3×8<br>'+
+   'Sem 17–18 (manutenção): agach. 2×4 · salto caixa 3×3 · panturrilha 2×10'],
+  ['B','Força B — Unilateral e tendão · SEXTA, pós-corrida',
+   'Sem 2–4: elevação pélvica 3×12 · SL-RDL 3×10/perna · step-up 3×10/perna · panturrilha sentado 3×15 · glúteo médio 3×15<br>'+
+   'Sem 5–9: elevação pélvica 4×8 · SL-RDL 3×8/perna · step-up carregado 3×8/perna · panturrilha sentado 4×12 · glúteo médio 3×15<br>'+
+   'Sem 10–13: elevação pélvica 4×6 · SL-RDL 3×6/perna · agach. unilateral 3×6 · panturrilha sentado 4×10<br>'+
+   'Sem 14–16 (reativo): pogo hops 4×15 · bounding 4×20m · SL hop 3×6/perna · panturrilha excêntrica 3×12<br>'+
+   'Sem 17–18: pogo hops 3×12 · panturrilha 2×12'],
+  ['S','Superior · SEGUNDA',
+   'Supino · remada curvada · desenvolvimento · barra fixa/puxada · face pull 3×15 (todas as fases). Séries seguem a fase: 3×10 (adaptação) → 4×6 (força máx I) → 4×5 (força máx II) → 3×6 (potência) → 2×8 (taper). Zero perna.'],
+  ['C','Core + mobilidade · QUARTA (sem carga de perna)',
+   'Prancha 3×45s · prancha lateral 3×30s/lado · Pallof press 3×12/lado · dead bug 3×10 · bird dog 3×10 · ~25min'],
+  ['M','Mobilidade · DOMINGO pós-longão',
+   'Bolinha na fáscia plantar 2min/pé · panturrilha excêntrica 2×15 · flexor de quadril 2×45s/lado · 90/90 · foam roller quadríceps, ITB e glúteo · ~20min']
+];
+let CT_FILTRO = 'todos';
+
+function ctEnxuga(s){
+  let l = String(s.label||'').replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu,'').replace(/\s+/g,' ').trim().replace(/^[—·\s]+|[—·\s]+$/g,'');
+  let d = String(s.detail||'');
+  if (s.sport === 'strength') {
+    if (/Força A/i.test(l))   return [ 'Força A — Perna',      'ver ref. A (fase da semana)' ];
+    if (/Força B/i.test(l))   return [ 'Força B — Unilateral', 'ver ref. B (fase da semana)' ];
+    if (/Superior/i.test(l))  return [ 'Superior',             'ver ref. S' ];
+    if (/Core/i.test(l))      return [ 'Core + mobilidade',    'ver ref. C' ];
+    if (/Mobil/i.test(l))     return [ 'Mobilidade',           'ver ref. M' ];
+  }
+  d = d.replace(/ · dia sem corrida| · recuperação ativa pós-longão| · a corrida mais LENTA da semana/g,'');
+  return [l, d];
+}
+
+function renderCicloTabela(){
+  const wrap = document.getElementById('ciclo-tabela-wrap');
+  if (!wrap) return;
+  try{
+    const start = new Date((CFG.cycle_start||'2026-07-20') + 'T00:00:00');
+    const nW    = (CFG.cycle_weeks) || 18;
+    const fases = (EXT && EXT.plan && EXT.plan.cycle_phases) || [];
+    const fasePorSem = {};
+    fases.forEach(f => (f.weeks||[]).forEach(w => fasePorSem[w] = f));
+    const plan = {};
+    ((EXT && EXT.plan && EXT.plan.planned_weekly) || []).forEach(p => plan[p.week] = p);
+    const DIAS = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
+
+    let h = '<table style="border-collapse:collapse;width:100%;min-width:1180px;font-size:0.58rem">';
+    h += '<thead><tr>';
+    ['Sem','Fase','km'].concat(DIAS).forEach((t,i) => {
+      h += `<th style="background:#101a2e;color:#93c5fd;font-weight:800;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.5px;padding:6px 4px;border:1px solid #1e293b;text-align:center;white-space:nowrap">${t}</th>`;
+    });
+    h += '</tr></thead><tbody>';
+
+    for (let w = 1; w <= nW; w++){
+      const ini = new Date(start); ini.setDate(start.getDate() + (w-1)*7);
+      const ymd = dateToYMD(ini);
+      const f   = fasePorSem[w] || {};
+      const bg  = CT_FASE[f.short] || '#1e293b';
+      const km  = (plan[ymd] || {}).runVol;
+      h += `<tr style="background:${bg}22">`;
+      h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle;white-space:nowrap">`
+         + `<div style="font-weight:800;color:#e2e8f0;font-size:0.72rem">${w}</div>`
+         + `<div style="color:#64748b;font-size:0.5rem">${fmtDay(ini)}</div></td>`;
+      h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle">`
+         + `<span style="background:${bg};color:#e2e8f0;font-weight:800;font-size:0.5rem;padding:2px 5px;border-radius:5px;white-space:nowrap">${f.icon||''} ${f.short||''}</span></td>`;
+      h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle;font-weight:800;color:#e2e8f0;font-size:0.7rem">${km!=null?km:'—'}</td>`;
+
+      for (let i = 0; i < 7; i++){
+        const d = new Date(ini); d.setDate(ini.getDate() + i);
+        let slots = CAL_OVERRIDES[dateToYMD(d)] || [];
+        if (CT_FILTRO !== 'todos') slots = slots.filter(s => s.sport === CT_FILTRO);
+        let cel = '';
+        if (!slots.length){
+          cel = '<span style="color:#475569">—</span>';
+        } else {
+          cel = slots.map(s => {
+            const sp = CT_SPORT[s.sport] || { nome:'', cor:'#94a3b8' };
+            const [l,dd] = ctEnxuga(s);
+            return `<div style="margin-bottom:3px;line-height:1.35">`
+                 + `<span style="color:${sp.cor};font-weight:800;font-size:0.5rem">${sp.nome}</span>`
+                 + `<span style="color:#e2e8f0;font-weight:700"> · ${l}</span>`
+                 + `<div style="color:#94a3b8">${dd}</div></div>`;
+          }).join('');
+        }
+        h += `<td style="border:1px solid #1e293b;padding:4px 5px;vertical-align:top;min-width:150px">${cel}</td>`;
+      }
+      h += '</tr>';
+    }
+    h += '</tbody></table>';
+    wrap.innerHTML = h;
+
+    const fl = document.getElementById('ct-filtros');
+    if (fl && !fl.dataset.ready){
+      fl.dataset.ready = '1';
+      const opts = [['todos','Tudo','#94a3b8'],['run','Corrida','#60a5fa'],['bike','Bike','#fbbf24'],
+                    ['swim','Natação','#22d3ee'],['strength','Força','#a78bfa']];
+      fl.innerHTML = opts.map(([k,n,c]) =>
+        `<button onclick="ctFiltrar('${k}')" id="ct-b-${k}" style="background:${k===CT_FILTRO?c+'33':'transparent'};border:1px solid ${k===CT_FILTRO?c:'#334155'};color:${k===CT_FILTRO?c:'#94a3b8'};font-size:0.6rem;font-weight:700;padding:4px 10px;border-radius:6px;cursor:pointer">${n}</button>`
+      ).join('');
+    }
+
+    const ref = document.getElementById('ciclo-tabela-ref');
+    if (ref) ref.innerHTML =
+      '<div style="background:#12101f;border:1px solid #2e2a45;border-radius:10px;padding:12px 14px">'
+      + '<div style="font-size:0.6rem;font-weight:800;color:#a78bfa;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">Referência da musculação — as sessões de força seguem a fase da semana</div>'
+      + CT_REF.map(([k,t,b]) =>
+          `<div style="margin-bottom:7px;font-size:0.6rem;line-height:1.5">`
+        + `<span style="color:#a78bfa;font-weight:800">ref. ${k}</span> <span style="color:#e2e8f0;font-weight:700">${t}</span>`
+        + `<div style="color:#94a3b8;font-size:0.57rem">${b}</div></div>`).join('')
+      + '</div>';
+  }catch(e){ console.warn('renderCicloTabela', e); wrap.innerHTML = '<div style="color:#64748b;font-size:0.7rem">tabela indisponível</div>'; }
+}
+
+function ctFiltrar(k){
+  CT_FILTRO = k;
+  const fl = document.getElementById('ct-filtros');
+  if (fl) fl.dataset.ready = '';
+  renderCicloTabela();
 }
 
 // ── VOLUME DE QUALIDADE (km no limiar LT2) ────────────
