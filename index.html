@@ -5619,38 +5619,12 @@ const CT_FASE = {
   TESTE:'#1e3a8a', BUILD:'#1e3a8a', ESPEC:'#1e3a8a', RAINHA:'#4c1d95', SHARP:'#4c1d95',
   TAPER:'#78350f', PROVA:'#881337'
 };
-const CT_REF = [
-  ['A','Força A — Perna · TERÇA, pós-corrida',
-   'Sem 2–4 (adaptação): agach. goblet 3×12 · leg press 3×15 · RDL 3×12 · afundo caminhando 3×10/perna · panturrilha excêntrica 3×15 · RPE 6<br>'+
-   'Sem 5–9 (força máx I): agach. livre 4×6 · terra trap bar 4×6 · búlgaro 3×8/perna · panturrilha carregada 4×10 · RPE 7–8 · rec 2–3min<br>'+
-   'Sem 10–13 (força máx II): agach. 4×4 · terra trap bar 4×4 · búlgaro 3×6/perna · panturrilha 4×8 · RPE 8 · rec 3min<br>'+
-   'Sem 14–16 (potência): agach. 3×3 rápido · jump squat 4×4 · depth jump caixa 30cm 4×4 · panturrilha 3×8<br>'+
-   'Sem 17–18 (manutenção): agach. 2×4 · salto caixa 3×3 · panturrilha 2×10'],
-  ['B','Força B — Unilateral e tendão · SEXTA, pós-corrida',
-   'Sem 2–4: elevação pélvica 3×12 · SL-RDL 3×10/perna · step-up 3×10/perna · panturrilha sentado 3×15 · glúteo médio 3×15<br>'+
-   'Sem 5–9: elevação pélvica 4×8 · SL-RDL 3×8/perna · step-up carregado 3×8/perna · panturrilha sentado 4×12 · glúteo médio 3×15<br>'+
-   'Sem 10–13: elevação pélvica 4×6 · SL-RDL 3×6/perna · agach. unilateral 3×6 · panturrilha sentado 4×10<br>'+
-   'Sem 14–16 (reativo): pogo hops 4×15 · bounding 4×20m · SL hop 3×6/perna · panturrilha excêntrica 3×12<br>'+
-   'Sem 17–18: pogo hops 3×12 · panturrilha 2×12'],
-  ['S','Superior · SEGUNDA',
-   'Supino · remada curvada · desenvolvimento · barra fixa/puxada · face pull 3×15 (todas as fases). Séries seguem a fase: 3×10 (adaptação) → 4×6 (força máx I) → 4×5 (força máx II) → 3×6 (potência) → 2×8 (taper). Zero perna.'],
-  ['C','Core + mobilidade · QUARTA (sem carga de perna)',
-   'Prancha 3×45s · prancha lateral 3×30s/lado · Pallof press 3×12/lado · dead bug 3×10 · bird dog 3×10 · ~25min'],
-  ['M','Mobilidade · DOMINGO pós-longão',
-   'Bolinha na fáscia plantar 2min/pé · panturrilha excêntrica 2×15 · flexor de quadril 2×45s/lado · 90/90 · foam roller quadríceps, ITB e glúteo · ~20min']
-];
 let CT_FILTRO = 'todos';
 
 function ctEnxuga(s){
   let l = String(s.label||'').replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu,'').replace(/\s+/g,' ').trim().replace(/^[—·\s]+|[—·\s]+$/g,'');
   let d = String(s.detail||'');
-  if (s.sport === 'strength') {
-    if (/Força A/i.test(l))   return [ 'Força A — Perna',      'ver ref. A (fase da semana)' ];
-    if (/Força B/i.test(l))   return [ 'Força B — Unilateral', 'ver ref. B (fase da semana)' ];
-    if (/Superior/i.test(l))  return [ 'Superior',             'ver ref. S' ];
-    if (/Core/i.test(l))      return [ 'Core + mobilidade',    'ver ref. C' ];
-    if (/Mobil/i.test(l))     return [ 'Mobilidade',           'ver ref. M' ];
-  }
+  if (s.sport === 'strength') l = l.replace(/ — p[óo]s-corrida.*/,'');
   d = d.replace(/ · dia sem corrida| · recuperação ativa pós-longão| · a corrida mais LENTA da semana/g,'');
   return [l, d];
 }
@@ -5724,13 +5698,23 @@ function renderCicloTabela(){
     }
 
     const ref = document.getElementById('ciclo-tabela-ref');
+    const ftp = (CFG.ftp) || 246;
+    const bz  = (CFG.bike_zonas) || {};
     if (ref) ref.innerHTML =
       '<div style="background:#12101f;border:1px solid #2e2a45;border-radius:10px;padding:12px 14px">'
-      + '<div style="font-size:0.6rem;font-weight:800;color:#a78bfa;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">Referência da musculação — as sessões de força seguem a fase da semana</div>'
-      + CT_REF.map(([k,t,b]) =>
-          `<div style="margin-bottom:7px;font-size:0.6rem;line-height:1.5">`
-        + `<span style="color:#a78bfa;font-weight:800">ref. ${k}</span> <span style="color:#e2e8f0;font-weight:700">${t}</span>`
-        + `<div style="color:#94a3b8;font-size:0.57rem">${b}</div></div>`).join('')
+      + '<div style="font-size:0.6rem;font-weight:800;color:#a78bfa;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">Fases da musculação</div>'
+      + '<div style="color:#94a3b8;font-size:0.58rem;line-height:1.6;margin-bottom:10px">'
+      + '<b style="color:#e2e8f0">Sem 2–4</b> adaptação anatômica (3×12–15 · RPE 6) &nbsp;·&nbsp; '
+      + '<b style="color:#e2e8f0">Sem 5–9</b> força máxima I (4×6 · RPE 7–8) &nbsp;·&nbsp; '
+      + '<b style="color:#e2e8f0">Sem 10–13</b> força máxima II (4×4 · RPE 8) &nbsp;·&nbsp; '
+      + '<b style="color:#e2e8f0">Sem 14–16</b> potência/reativo (3×3 + plio) &nbsp;·&nbsp; '
+      + '<b style="color:#e2e8f0">Sem 17–18</b> manutenção (2×4 leve)</div>'
+      + '<div style="color:#94a3b8;font-size:0.58rem;line-height:1.6">'
+      + '⚠️ <b style="color:#e2e8f0">Nunca até a falha.</b> RPE 6 = 4 repetições na reserva · RPE 7 = 3 · RPE 8 = 2. '
+      + 'Perna só na <b style="color:#e2e8f0">terça</b> (pós-corrida forte) e na <b style="color:#e2e8f0">sexta</b> (pós-corrida fácil) — nunca na quarta nem no sábado.</div>'
+      + '<div style="border-top:1px solid #2e2a45;margin-top:10px;padding-top:9px;color:#94a3b8;font-size:0.58rem;line-height:1.6">'
+      + `🚴 <b style="color:#fbbf24">Bike — FTP ${ftp}W</b>. Blocos do plano em <b style="color:#e2e8f0">${bz.lt2_sub||'195–213W'}</b>. `
+      + (bz.nota||'') + '</div>'
       + '</div>';
   }catch(e){ console.warn('renderCicloTabela', e); wrap.innerHTML = '<div style="color:#64748b;font-size:0.7rem">tabela indisponível</div>'; }
 }
