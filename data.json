@@ -65,31 +65,36 @@
     "semanas": "2–4",
     "fase": "Adaptação anatômica",
     "formato": "3×12–15 · RPE 6",
-    "foco": "tolerância do tecido, amplitude, sem plio"
+    "plio": "Sem 2–3 preparação de tornozelo · ~45 contatos",
+    "foco": "tolerância do tecido"
    },
    {
     "semanas": "5–9",
     "fase": "Força máxima I",
-    "formato": "4×6 · RPE 7–8 · rec 2–3min",
-    "foco": "economia de corrida (ganho neural)"
+    "formato": "4×6 · RPE 7–8",
+    "plio": "Sem 4–8 introdução · caixa baixa · ~90 contatos",
+    "foco": "economia de corrida"
    },
    {
     "semanas": "10–13",
     "fase": "Força máxima II",
-    "formato": "4×4 · RPE 8 · rec 3min",
-    "foco": "pico de força — carga máxima, volume mínimo"
+    "formato": "4×4 · RPE 8",
+    "plio": "Sem 9–13 desenvolvimento · bounding · ~115 contatos",
+    "foco": "pico de força"
    },
    {
     "semanas": "14–16",
     "fase": "Potência / reativo",
-    "formato": "3×3 rápido + pliometria",
+    "formato": "3×3 rápido",
+    "plio": "Sem 14–16 reativo · depth jump · ~120 contatos",
     "foco": "converter força em elasticidade"
    },
    {
     "semanas": "17–18",
     "fase": "Manutenção",
     "formato": "2×4 leve",
-    "foco": "manter o padrão neural sem fadiga"
+    "plio": "mínima · ~40 contatos",
+    "foco": "padrão neural sem fadiga"
    }
   ],
   "bike_zonas": {
@@ -1959,7 +1964,7 @@
    "sec": 397,
    "hr": 131,
    "kcal": 779,
-   "note": "10,01km \u00b7 1:06:10 \u00b7 rodagem Z1 acompanhando a Brenda (Sem 1 \u00b7 domingo) \u00b7 6:37/km (9,1 km/h) \u00b7 FC 131 avg / 146 m\u00e1x \u00b7 Parque da Cidade \u00b7 +58m \u00b7 RE 26 \u00b7 companhia, n\u00e3o est\u00edmulo \u00b7 EF 1,15 \u00b7 Strava"
+   "note": "10,01km · 1:06:10 · rodagem Z1 acompanhando a Brenda (Sem 1 · domingo) · 6:37/km (9,1 km/h) · FC 131 avg / 146 máx · Parque da Cidade · +58m · RE 26 · companhia, não estímulo · EF 1,15 · Strava"
   }
  ],
  "weight_data": [
@@ -3653,7 +3658,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6 · ~40min",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3697,9 +3702,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Preparação de tornozelo",
+     "detail": "Pogo hops 3×15 · Corda 3×30s · Saltito no lugar 3×20 · ~45 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3771,7 +3784,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6 · ~40min",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3815,9 +3828,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Preparação de tornozelo",
+     "detail": "Pogo hops 3×15 · Corda 3×30s · Saltito no lugar 3×20 · ~45 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3889,7 +3910,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6 · ~40min",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3941,9 +3962,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Introdução",
+     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4015,7 +4044,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Levantamento terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4067,9 +4096,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Introdução",
+     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4185,9 +4222,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Introdução",
+     "detail": "Salto na caixa baixa (20–30cm) 2×5 · SL hop no lugar 2×6/perna · Pogo hops 2×15 · ~45 contatos · DESCARGA",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — leve",
-     "detail": "Pogo hops 3×12 · 4 strides · Panturrilha 2×12 · ~15min · descarga",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4259,7 +4304,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Levantamento terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4311,9 +4356,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Introdução",
+     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4385,7 +4438,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Levantamento terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4437,9 +4490,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Introdução",
+     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4552,6 +4613,22 @@
      "detail": "Folga total · véspera do 10k-teste",
      "zone": "descanso",
      "color": "#475569"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Desenvolvimento",
+     "detail": "Salto na caixa 2×5 · Bounding 2×20m · SL hop lateral 2×6/perna · ~55 contatos · DESCARGA",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
+     "zone": "força",
+     "color": "#a78bfa"
     }
    ],
    "2026-09-19": [
@@ -4621,7 +4698,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4665,9 +4742,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Desenvolvimento",
+     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral controlado 3×6 · Panturrilha sentado 4×10 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4739,7 +4824,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4791,9 +4876,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Desenvolvimento",
+     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral controlado 3×6 · Panturrilha sentado 4×10 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4865,7 +4958,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha · ~45min",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4917,9 +5010,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Desenvolvimento",
+     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — pós-corrida",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral controlado 3×6 · Panturrilha sentado 4×10 · ~35min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5043,9 +5144,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Desenvolvimento",
+     "detail": "Salto na caixa 2×5 · Bounding 2×20m · SL hop lateral 2×6/perna · ~55 contatos · DESCARGA",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral + tendão — leve",
-     "detail": "Pogo hops 3×12 · 4 strides · Panturrilha 2×12 · ~15min · descarga",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 3×10 · Glúteo médio 3×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5117,7 +5226,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Salto agachado 4×4 · Depth jump caixa baixa 4×4 · Panturrilha 3×8 · rec 3min · ~35min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5161,9 +5270,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Reativo (pico)",
+     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Reativo (leve) — pós-corrida",
-     "detail": "Pogo hops 4×15 · Bounding 4×20m · SL hop 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo · ~25min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5235,7 +5352,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Salto agachado 4×4 · Depth jump caixa baixa 4×4 · Panturrilha 3×8 · rec 3min · ~35min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5287,9 +5404,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Reativo (pico)",
+     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Reativo (leve) — pós-corrida",
-     "detail": "Pogo hops 4×15 · Bounding 4×20m · SL hop 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo · ~25min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5361,7 +5486,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Salto agachado 4×4 · Depth jump caixa baixa 4×4 · Panturrilha 3×8 · rec 3min · ~35min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5413,9 +5538,17 @@
     },
     {
      "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Reativo (pico)",
+     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
      "key": "hm_forca_b",
-     "label": "💪 Força B — Reativo (leve) — pós-corrida",
-     "detail": "Pogo hops 4×15 · Bounding 4×20m · SL hop 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo · ~25min",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5487,7 +5620,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (manutenção) — pós-corrida",
-     "detail": "Agach. 2×4 @RPE7 · Salto caixa 3×3 · Panturrilha 2×10 · só manter o padrão neural",
+     "detail": "Agach. 2×4 @RPE7 · Panturrilha 2×10 · só manter o padrão neural · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5528,6 +5661,22 @@
      "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Manutenção",
+     "detail": "Pogo hops 2×12 · Salto na caixa 2×3 · ~30 contatos · taper",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 2×8 · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
+     "zone": "força",
+     "color": "#a78bfa"
     }
    ],
    "2026-11-14": [
@@ -5589,7 +5738,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (manutenção) — pós-corrida",
-     "detail": "Agach. 2×4 @RPE7 · Salto caixa 3×3 · Panturrilha 2×10 · só manter o padrão neural",
+     "detail": "Agach. 2×4 @RPE7 · Panturrilha 2×10 · só manter o padrão neural · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5630,6 +5779,22 @@
      "detail": "10km trote leve (opcional)",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria — Manutenção",
+     "detail": "Pogo hops 2×10 · ~20 contatos · só acordar o tornozelo",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 2×8 · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
+     "zone": "força",
+     "color": "#a78bfa"
     }
    ],
    "2026-11-21": [
@@ -9254,6 +9419,7 @@
      }
     ],
     "notas": [
+     "A pliometria saiu daqui: depois de um run de limiar a perna não tem qualidade para saltar. Plio agora é na sexta",
      "⚠️ NUNCA até a falha — se não sobrar 2–3 repetições no tanque, a carga está alta demais",
      "Descanso longo (2–3min) é parte do treino: é o que mantém o estímulo neural e evita fadiga metabólica",
      "Se o run de terça foi ruim, corta uma série — a corrida é a prioridade",
@@ -9262,7 +9428,7 @@
    },
    "hm_forca_b": {
     "title": "Força B — Unilateral e tendão",
-    "subtitle": "Sexta · depois da corrida fácil",
+    "subtitle": "Sexta · depois da pliometria",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
@@ -9304,6 +9470,7 @@
      }
     ],
     "notas": [
+     "A pliometria vem ANTES nesta sessão — nervoso fresco para os saltos, depois a força",
      "Sexta é o dia certo: a corrida do dia é fácil, e sobra 1 dia + a bike de sábado antes do longão",
      "Volume menor que a terça de propósito — não pode comprometer o domingo",
      "Nas fases de potência vira reativo (pogo hops, bounding): converte força em elasticidade"
@@ -9384,6 +9551,60 @@
     "notas": [
      "⚠️ SEM carga de perna na quarta — quinta tem sessão de qualidade",
      "Válvula de escape: FC repouso >60 → vira descanso total"
+    ]
+   },
+   "hm_plio": {
+    "title": "Pliometria",
+    "subtitle": "Sexta · ANTES da Força B · pernas relativamente frescas",
+    "sport": "strength",
+    "color": "#a78bfa",
+    "pills": [
+     "reativo",
+     "progressiva",
+     "contatos contados"
+    ],
+    "objetivo": "Rigidez de tendão e retorno elástico — o que melhora economia de corrida sem custar energia. Progride do 1º ao último bloco do ciclo porque tendão adapta em MESES, não semanas.",
+    "programa": [
+     {
+      "tipo": "str",
+      "nome": "Sem 2–3 · Preparação",
+      "detalhe": "Pogo hops · corda · saltito no lugar · ~45 contatos",
+      "zona": "tornozelo"
+     },
+     {
+      "tipo": "str",
+      "nome": "Sem 4–8 · Introdução",
+      "detalhe": "Salto na caixa baixa (20–30cm) · SL hop no lugar · ~90 contatos",
+      "zona": "plio"
+     },
+     {
+      "tipo": "str",
+      "nome": "Sem 9–13 · Desenvolvimento",
+      "detalhe": "Salto na caixa · bounding · SL hop lateral · ~115 contatos",
+      "zona": "plio"
+     },
+     {
+      "tipo": "str",
+      "nome": "Sem 14–16 · Reativo",
+      "detalhe": "Depth jump 30cm · bounding · salto agachado · ~120 contatos",
+      "zona": "plio"
+     },
+     {
+      "tipo": "str",
+      "nome": "Sem 17–18 · Manutenção",
+      "detalhe": "Pogo hops · salto na caixa · ~40 contatos",
+      "zona": "plio"
+     }
+    ],
+    "notas": [
+     "Progressão antecipada em 2 semanas (fáscia plantar assintomática em 26/07/2026)",
+     "Vem na SEXTA (depois da corrida fácil) e não na terça — plio exige perna fresca; feita cansada perde qualidade e vira risco",
+     "SEMPRE antes da Força B — sistema nervoso descansado",
+     "Aterrissagem SILENCIOSA é o critério de qualidade. Barulho = amortecimento errado = impacto na articulação",
+     "Contato mínimo com o chão: quanto menos tempo no solo, melhor o estímulo elástico",
+     "⚠️ Se a fáscia plantar reclamar, reduz os contatos pela metade — NÃO zera. Tecido conjuntivo precisa de carga para remodelar",
+     "Descarga (sem 6, 9, 13, 17): metade dos contatos",
+     "⚠️ MONITORAR nas sem 7–8 (62 e 68 km): dor nos primeiros passos ao levantar da cama = corta contatos pela metade e segura o volume 1 semana"
     ]
    }
   },
