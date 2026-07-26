@@ -5649,23 +5649,36 @@ function renderCicloTabela(){
     });
     h += '</tr></thead><tbody>';
 
+    const hojeYMD = dateToYMD(new Date());
+    let semAtual = null;
+
     for (let w = 1; w <= nW; w++){
       const ini = new Date(start); ini.setDate(start.getDate() + (w-1)*7);
       const ymd = dateToYMD(ini);
       const f   = fasePorSem[w] || {};
       const bg  = CT_FASE[f.short] || '#1e293b';
       const km  = (plan[ymd] || {}).runVol;
-      h += `<tr style="background:${bg}22">`;
+      // a semana é a atual se hoje cai entre segunda e domingo dela
+      const fim = new Date(ini); fim.setDate(ini.getDate() + 6);
+      const ehSemana = hojeYMD >= ymd && hojeYMD <= dateToYMD(fim);
+      if (ehSemana) semAtual = w;
+      const trBorda = ehSemana ? 'box-shadow:inset 0 0 0 2px #fbbf24;' : '';
+      h += `<tr id="${ehSemana?'ct-semana-atual':''}" style="background:${bg}${ehSemana?'44':'22'};${trBorda}">`;
       h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle;white-space:nowrap">`
-         + `<div style="font-weight:800;color:#e2e8f0;font-size:0.72rem">${w}</div>`
-         + `<div style="color:#64748b;font-size:0.5rem">${fmtDay(ini)}</div></td>`;
+         + `<div style="font-weight:800;color:${ehSemana?'#fbbf24':'#e2e8f0'};font-size:0.72rem">${w}</div>`
+         + `<div style="color:#64748b;font-size:0.5rem">${fmtDay(ini)}</div>`
+         + (ehSemana ? `<div style="color:#fbbf24;font-size:0.42rem;font-weight:800;letter-spacing:0.5px;margin-top:1px">AGORA</div>` : '')
+         + `</td>`;
       h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle">`
          + `<span style="background:${bg};color:#e2e8f0;font-weight:800;font-size:0.5rem;padding:2px 5px;border-radius:5px;white-space:nowrap">${f.icon||''} ${f.short||''}</span></td>`;
       h += `<td style="border:1px solid #1e293b;padding:4px;text-align:center;vertical-align:middle;font-weight:800;color:#e2e8f0;font-size:0.7rem">${km!=null?km:'—'}</td>`;
 
       for (let i = 0; i < 7; i++){
         const d = new Date(ini); d.setDate(ini.getDate() + i);
-        let slots = CAL_OVERRIDES[dateToYMD(d)] || [];
+        const dYMD = dateToYMD(d);
+        const ehHoje = dYMD === hojeYMD;
+        const passou = dYMD < hojeYMD;
+        let slots = CAL_OVERRIDES[dYMD] || [];
         if (CT_FILTRO !== 'todos') slots = slots.filter(s => s.sport === CT_FILTRO);
         let cel = '';
         if (!slots.length){
@@ -5676,16 +5689,28 @@ function renderCicloTabela(){
             const [l,dd] = ctEnxuga(s);
             return `<div style="margin-bottom:3px;line-height:1.35">`
                  + `<span style="color:${sp.cor};font-weight:800;font-size:0.5rem">${sp.nome}</span>`
-                 + `<span style="color:#e2e8f0;font-weight:700"> · ${l}</span>`
-                 + `<div style="color:#94a3b8">${dd}</div></div>`;
+                 + `<span style="color:${ehHoje?'#fff':'#e2e8f0'};font-weight:700"> · ${l}</span>`
+                 + `<div style="color:${ehHoje?'#cbd5e1':'#94a3b8'}">${dd}</div></div>`;
           }).join('');
         }
-        h += `<td style="border:1px solid #1e293b;padding:4px 5px;vertical-align:top;min-width:150px">${cel}</td>`;
+        const est = ehHoje
+          ? 'border:2px solid #fbbf24;background:#fbbf2416;padding:3px 4px;'
+          : `border:1px solid #1e293b;padding:4px 5px;${passou?'opacity:0.42;':''}`;
+        h += `<td id="${ehHoje?'ct-hoje':''}" style="${est}vertical-align:top;min-width:150px;position:relative">`
+           + (ehHoje ? `<div style="position:absolute;top:0;right:0;background:#fbbf24;color:#1a1400;font-size:0.42rem;font-weight:800;padding:1px 4px;border-radius:0 0 0 5px;letter-spacing:0.5px">HOJE</div>` : '')
+           + cel + `</td>`;
       }
       h += '</tr>';
     }
     h += '</tbody></table>';
     wrap.innerHTML = h;
+
+    // centraliza a coluna de hoje na rolagem horizontal
+    const alvo = document.getElementById('ct-hoje') || document.getElementById('ct-semana-atual');
+    if (alvo && wrap.scrollWidth > wrap.clientWidth){
+      const x = alvo.offsetLeft - (wrap.clientWidth / 2) + (alvo.offsetWidth / 2);
+      wrap.scrollLeft = Math.max(0, x);
+    }
 
     const fl = document.getElementById('ct-filtros');
     if (fl && !fl.dataset.ready){
@@ -5694,7 +5719,8 @@ function renderCicloTabela(){
                     ['swim','Natação','#22d3ee'],['strength','Força','#a78bfa']];
       fl.innerHTML = opts.map(([k,n,c]) =>
         `<button onclick="ctFiltrar('${k}')" id="ct-b-${k}" style="background:${k===CT_FILTRO?c+'33':'transparent'};border:1px solid ${k===CT_FILTRO?c:'#334155'};color:${k===CT_FILTRO?c:'#94a3b8'};font-size:0.6rem;font-weight:700;padding:4px 10px;border-radius:6px;cursor:pointer">${n}</button>`
-      ).join('');
+      ).join('')
+      + `<button onclick="ctIrHoje()" style="background:#fbbf2422;border:1px solid #fbbf24;color:#fbbf24;font-size:0.6rem;font-weight:700;padding:4px 10px;border-radius:6px;cursor:pointer;margin-left:4px">📍 Hoje</button>`;
     }
 
     const ref = document.getElementById('ciclo-tabela-ref');
@@ -5724,6 +5750,17 @@ function ctFiltrar(k){
   const fl = document.getElementById('ct-filtros');
   if (fl) fl.dataset.ready = '';
   renderCicloTabela();
+}
+
+function ctIrHoje(){
+  const alvo = document.getElementById('ct-hoje') || document.getElementById('ct-semana-atual');
+  if (!alvo) return;
+  const wrap = document.getElementById('ciclo-tabela-wrap');
+  if (wrap && wrap.scrollWidth > wrap.clientWidth){
+    const x = alvo.offsetLeft - (wrap.clientWidth / 2) + (alvo.offsetWidth / 2);
+    wrap.scrollTo({ left: Math.max(0, x), behavior: 'smooth' });
+  }
+  alvo.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 // ── VOLUME DE QUALIDADE (km no limiar LT2) ────────────
