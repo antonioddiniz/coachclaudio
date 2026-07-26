@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-24",
+ "updated_at": "2026-07-26",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -1948,6 +1948,18 @@
    "hr": 148,
    "kcal": 627,
    "note": "7,75km · 47:40 · rodado fácil Z2 (Sem 1 · volta à rotina) · 6:09/km (9,8 km/h) · FC 148 avg / 160 máx · percurso com +91m (subiu Mangueiral) · EF bruto 1,10 (terreno) · 5K melhor 30:34 · 2 PRs · Strava"
+  },
+  {
+   "id": 159,
+   "date": "2026-07-26",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "1:06:10",
+   "pace": "6:37",
+   "sec": 397,
+   "hr": 131,
+   "kcal": 779,
+   "note": "10,01km \u00b7 1:06:10 \u00b7 rodagem Z1 acompanhando a Brenda (Sem 1 \u00b7 domingo) \u00b7 6:37/km (9,1 km/h) \u00b7 FC 131 avg / 146 m\u00e1x \u00b7 Parque da Cidade \u00b7 +58m \u00b7 RE 26 \u00b7 companhia, n\u00e3o est\u00edmulo \u00b7 EF 1,15 \u00b7 Strava"
   }
  ],
  "weight_data": [
