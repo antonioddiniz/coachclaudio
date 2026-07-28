@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-26",
+ "updated_at": "2026-07-28",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -101,7 +101,8 @@
    "lt2_sub": "195–213W (79–87% do FTP) — a faixa dos blocos do plano (sub-limiar)",
    "ftp": 246,
    "nota": "O plano usa sub-limiar (~79–86% do FTP), não LT2 clássico (90–97%). É o que permite repetir a dose."
-  }
+  },
+  "nota_nutricao": "Sem medicação para perda de peso desde 26/07/2026. Prioridade: 160g de proteína/dia e ritmo de perda de 0,4–0,5 kg/semana para preservar massa magra."
  },
  "workouts": [
   {
@@ -1140,7 +1141,7 @@
     "done": 2,
     "total": 4
    },
-   "note": "4,76km · 30:46 · 5:32/km bloco 1 · 5:44/km bloco 2 · FC 154bpm pico · ⚠️ abortado após 2/4 blocos · fadiga acumulada: 3º dia consecutivo de threshold (Wings for Life D+3) + WBike AM 4/5 blocos + déficit calórico Mounjaro · voltas: V1 1,26km 7:08/km Z1 · V2 1,40km 5:32/km LT2 154bpm · V3 0,53km 7:24/km rec · V4 1,19km 5:44/km LT2 151bpm · V5 0,38km 8:06/km abort · WRun LT2 Duplo Threshold PM · Plano Piloto DF"
+   "note": "4,76km · 30:46 · 5:32/km bloco 1 · 5:44/km bloco 2 · FC 154bpm pico · ⚠️ abortado após 2/4 blocos · fadiga acumulada: 3º dia consecutivo de threshold (Wings for Life D+3) + WBike AM 4/5 blocos + déficit calórico · voltas: V1 1,26km 7:08/km Z1 · V2 1,40km 5:32/km LT2 154bpm · V3 0,53km 7:24/km rec · V4 1,19km 5:44/km LT2 151bpm · V5 0,38km 8:06/km abort · WRun LT2 Duplo Threshold PM · Plano Piloto DF"
   },
   {
    "id": 94,
@@ -1965,6 +1966,30 @@
    "hr": 131,
    "kcal": 779,
    "note": "10,01km · 1:06:10 · rodagem Z1 acompanhando a Brenda (Sem 1 · domingo) · 6:37/km (9,1 km/h) · FC 131 avg / 146 máx · Parque da Cidade · +58m · RE 26 · companhia, não estímulo · EF 1,15 · Strava"
+  },
+  {
+   "id": 160,
+   "date": "2026-07-27",
+   "sport": "strength",
+   "dur": "50:43",
+   "kcal": 279,
+   "note": "50:43 \u00b7 For\u00e7a \u2014 Superior (Sem 2 \u00b7 segunda) \u00b7 supino, remada, desenvolvimento, puxada, face pull \u00b7 fase de adapta\u00e7\u00e3o anat\u00f4mica 3\u00d712 \u00b7 RE 9 \u00b7 Strava"
+  },
+  {
+   "id": 161,
+   "date": "2026-07-28",
+   "sport": "bike",
+   "dist": 28.73,
+   "dur": "1:00:18",
+   "sec": 28.6,
+   "watts": 220,
+   "hr": 133,
+   "kcal": 671,
+   "blocks": {
+    "done": 5,
+    "total": 6
+   },
+   "note": "28,73km \u00b7 1:00:18 \u00b7 Bike LT2 duplo limiar AM (Sem 2 \u00b7 ter\u00e7a) \u00b7 5\u00d78min @220W (prescrito 6\u00d7 @195\u2013213W) \u00b7 rec 2min @180W \u00b7 194W m\u00e9dio geral \u00b7 FC 133 avg / 153 m\u00e1x \u00b7 cad\u00eancia 85 \u00b7 \u26a0\ufe0f watts acima da faixa: FC derivou 134\u2192146 ao longo dos blocos \u00b7 Zwift Jungle Circuit \u00b7 Strava"
   }
  ],
  "weight_data": [
@@ -9119,7 +9144,7 @@
      "Longão máximo do ciclo: 26 km. Para 21,1 km isso satura o estímulo — mais que isso é fadiga sem retorno",
      "A partir da sem. 8 o longão ganha blocos em ritmo de meia — é o treino que decide a meta",
      "Desacoplamento alvo <5% (1ª metade vs 2ª metade) — acima disso, o pace estava alto",
-     "Fueling: gel a cada ~40min acima de 18km. Em déficit com Mounjaro isso NÃO é opcional",
+     "Fueling: gel a cada ~40min acima de 18km. Em déficit calórico isso NÃO é opcional",
      "Hidratar bem — Brasília seca, largada cedo",
      "Se a FC subir acima de 147 no mesmo pace, DIMINUI o pace — não segura a FC na marra"
     ]
@@ -9834,7 +9859,7 @@
    "date": "2026-07-02",
    "area": "quadril D/E (informar lado)",
    "tipo": "dor articular (linha coxofemoral) + glúteo",
-   "desc": "Dor antiga no glúteo agora também na frente; sensação na articulação bacia-fêmur. Pior frio/parado, melhora correndo (padrão tendíneo, mas localização articular = investigar). Contexto: volume subiu 32→60km/sem em 6 semanas (+87%), plio 4×/sem, déficit calórico c/ Mounjaro.",
+   "desc": "Dor antiga no glúteo agora também na frente; sensação na articulação bacia-fêmur. Pior frio/parado, melhora correndo (padrão tendíneo, mas localização articular = investigar). Contexto: volume subiu 32→60km/sem em 6 semanas (+87%), plio 4×/sem, déficit calórico.",
    "conduta": "Sem plio na retomada · isometria quadril/glúteo · aquecimento longo · avaliação médica se não regredir até ~19/07 ou se dor noturna/salto positivo",
    "status": "ativo"
   },

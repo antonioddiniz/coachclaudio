@@ -184,7 +184,7 @@ não só os números crus. A análise deve cobrir:
   quantos completou (done/total), tendência ao longo dos blocos (estável vs derretendo),
   e se houve PR de pace de limiar.
 - **Carga e contexto**: relative effort, volume acumulado da semana, encadeamento com os
-  treinos vizinhos (recuperação suficiente?), e o contexto de déficit/Mounjaro quando
+  treinos vizinhos (recuperação suficiente?), e o contexto de déficit calórico quando
   relevante (fueling, recuperação rebaixada).
 - **Progressão vs prova**: o que o treino sinaliza para a meta da `race` (projeção Riegel,
   pace de prova) e para os objetivos do ciclo.
