@@ -3712,7 +3712,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3766,7 +3766,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Búlgaro 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3838,7 +3838,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3892,7 +3892,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Búlgaro 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -3964,7 +3964,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (adaptação) — pós-corrida",
-     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Afundo caminhando 3×10/perna · Panturrilha excêntrica 3×15 · RPE 6",
+     "detail": "Agach. goblet 3×12 · Leg press 3×15 · RDL 3×12 · Panturrilha excêntrica 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4026,7 +4026,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Búlgaro 3×10/perna · Panturrilha sentado 3×15 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4098,7 +4098,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4160,7 +4160,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4232,7 +4232,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Búlgaro 3×8/perna · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
+     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Leg press 3×10 · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4286,7 +4286,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
+     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4358,7 +4358,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4420,7 +4420,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4492,7 +4492,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Búlgaro 3×8/perna · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
+     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4554,7 +4554,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 4×12 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4626,7 +4626,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Búlgaro 3×8/perna · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
+     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Leg press 3×10 · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4680,7 +4680,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Step-up carregado 3×8/perna · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
+     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4752,7 +4752,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4806,7 +4806,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4878,7 +4878,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -4940,7 +4940,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5012,7 +5012,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Búlgaro 3×6/perna · Panturrilha 4×8 pesada · rec 3min · SEM falha",
+     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5074,7 +5074,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 4×10 · Glúteo médio 3×15",
+     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5146,7 +5146,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 3×4 @RPE8 · Terra trap bar 3×4 · Búlgaro 3×6/perna · Panturrilha 3×8 pesada · rec 3min · SEM falha · DESCARGA: −1 série",
+     "detail": "Agach. livre 3×4 @RPE8 · Terra trap bar 3×4 · Leg press 3×8 · Panturrilha 3×8 pesada · rec 3min · SEM falha · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5208,7 +5208,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 pesada · SL-RDL 3×6/perna · Agach. unilateral 3×6 · Panturrilha sentado 3×10 · Glúteo médio 3×15 · DESCARGA: −1 série",
+     "detail": "Elevação pélvica 3×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 3×10 · Glúteo médio 3×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5280,7 +5280,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5334,7 +5334,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5406,7 +5406,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5468,7 +5468,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5540,7 +5540,7 @@
      "sport": "strength",
      "key": "hm_forca_a",
      "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Búlgaro 3×5/perna · Panturrilha 3×8 · rec 3min",
+     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5602,7 +5602,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
+     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5728,7 +5728,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 2×8 · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
+     "detail": "Elevação pélvica 2×8 · Búlgaro 2×6/perna leve · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -5846,7 +5846,7 @@
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 2×8 · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
+     "detail": "Elevação pélvica 2×8 · Búlgaro 2×6/perna leve · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
      "zone": "força",
      "color": "#a78bfa"
     }
@@ -9489,7 +9489,7 @@
    },
    "hm_forca_a": {
     "title": "Força A — Perna (sessão principal)",
-    "subtitle": "Terça · DEPOIS da corrida de qualidade",
+    "subtitle": "Terça · bilateral pesado · DEPOIS da corrida de qualidade",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
@@ -9497,46 +9497,39 @@
      "sem falha",
      "rec 2–3min"
     ],
-    "objetivo": "A sessão que melhora economia de corrida. Vem DEPOIS do run de terça de propósito: dia duro concentrado, para quarta e quinta ficarem limpas. Carga alta, repetição baixa, longe da falha — estímulo neural, não muscular.",
+    "objetivo": "A sessão que melhora economia de corrida. Só padrões BILATERAIS pesados — o trabalho unilateral fica todo na sexta. Vem depois do run de terça de propósito: dia duro concentrado, para quarta e quinta ficarem limpas. Carga alta, repetição baixa, longe da falha — estímulo neural, não muscular.",
     "programa": [
      {
       "tipo": "str",
       "letter": "A",
       "nome": "Agachamento (goblet ou livre)",
-      "sets": "Desce até coxa paralela · SUBIDA RÁPIDA · goblet nas sem 2–4, barra livre da sem 5 em diante",
+      "sets": "Desce até coxa paralela · SUBIDA RÁPIDA · goblet nas sem 2–4, barra livre da sem 5",
       "tip": "Intenção de velocidade na subida mesmo com carga alta — é o que gera adaptação neural"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "Leg press · sem 2–4",
-      "sets": "Amplitude confortável · NÃO colar o joelho no peito",
-      "tip": "Cuidado com flexão profunda sob carga (histórico de LCA)"
-     },
-     {
-      "tipo": "str",
-      "letter": "C",
       "nome": "Terra romeno (RDL) · sem 2–4",
       "sets": "Barra colada na perna · quadril para trás · sente o posterior alongar",
       "tip": "Padrão de dobradiça de quadril — base para o trap bar"
      },
      {
       "tipo": "str",
-      "letter": "D",
+      "letter": "C",
       "nome": "Terra trap bar · da sem 5",
       "sets": "Quadril baixo no início · coluna neutra · explode na subida",
       "tip": "Mais seguro que o convencional para a coluna"
      },
      {
       "tipo": "str",
-      "letter": "E",
-      "nome": "Afundo caminhando / búlgaro",
-      "sets": "Sem 2–4 afundo caminhando · da sem 5, búlgaro com pé de trás elevado · joelho alinhado ao pé",
-      "tip": "Corrige assimetria entre pernas — chave no teu histórico de LCA"
+      "letter": "D",
+      "nome": "Leg press",
+      "sets": "Amplitude confortável · NÃO colar o joelho no peito",
+      "tip": "Volume de quadríceps sem carga na coluna · cuidado com flexão profunda (LCA)"
      },
      {
       "tipo": "str",
-      "letter": "F",
+      "letter": "E",
       "nome": "Panturrilha em pé",
       "sets": "Amplitude total · pausa de 1s embaixo · nas sem 2–4 é excêntrica, 3s descendo",
       "tip": "Gastrocnêmio · o Aquiles é mola de corrida, precisa de rigidez"
@@ -9554,7 +9547,7 @@
    },
    "hm_forca_b": {
     "title": "Força B — Unilateral e tendão",
-    "subtitle": "Sexta · depois da pliometria",
+    "subtitle": "Sexta · unilateral e tendão · depois da pliometria",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
@@ -9562,12 +9555,12 @@
      "tendão",
      "~35min"
     ],
-    "objetivo": "Complementa a terça pelo lado que a barra não cobre: simetria entre pernas, glúteo médio (estabilidade de quadril) e o complexo panturrilha-fáscia. É aqui que mora a prevenção das tuas duas queixas.",
+    "objetivo": "Complementa a terça pelo lado que a barra não cobre: simetria entre pernas, glúteo médio e o complexo panturrilha–fáscia. Todo o trabalho UNILATERAL do ciclo mora aqui. É onde está a prevenção das tuas duas queixas.",
     "programa": [
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Elevação pélvica",
+      "nome": "Elevação pélvica (hip thrust)",
       "sets": "Barra apoiada no quadril · pausa de 1s em cima · glúteo, não lombar",
       "tip": "Glúteo máximo é o motor da propulsão na corrida"
      },
@@ -9575,37 +9568,37 @@
       "tipo": "str",
       "letter": "B",
       "nome": "SL-RDL (unilateral)",
-      "sets": "Halter na mão oposta · quadril para trás · coluna neutra · controle total",
+      "sets": "Halter na mão oposta · quadril para trás · coluna neutra",
       "tip": "Cadeia posterior unilateral — controle vale mais que carga (LCA)"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Step-up / agach. unilateral",
-      "sets": "Sem impulso da perna de trás · caixa na altura do joelho · amplitude confortável",
-      "tip": "Sem forçar flexão profunda sob fadiga"
+      "nome": "Búlgaro (pé de trás elevado)",
+      "sets": "Banco atrás · joelho da frente alinhado ao pé · tronco ereto · desce controlado",
+      "tip": "O melhor exercício para assimetria entre pernas · amplitude confortável, sem forçar flexão profunda"
      },
      {
       "tipo": "str",
       "letter": "D",
       "nome": "Panturrilha SENTADO",
       "sets": "Joelho dobrado a 90° · amplitude total",
-      "tip": "Isola o SÓLEO — o músculo mais esquecido e o que mais sofre correndo. Ligado direto à fáscia plantar"
+      "tip": "Isola o SÓLEO — o mais esquecido e o que mais sofre correndo. Ligado direto à fáscia plantar"
      },
      {
       "tipo": "str",
       "letter": "E",
       "nome": "Glúteo médio",
-      "sets": "Banda elástica · abdução deitado ou em pé · em todas as fases",
-      "tip": "Estabilidade de quadril — previne a dor que já apareceu no teu histórico"
+      "sets": "Banda elástica · abdução · em todas as fases",
+      "tip": "Estabilidade de quadril — previne a dor do teu histórico"
      }
     ],
     "notas": [
      "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo",
-     "Progressão: sem 2–4 (3×12) → sem 5–9 (4×8–10) → sem 10–13 (4×6 pesada) → sem 14–16 volume baixo, a plio é o foco → sem 17–18 mínimo",
+     "Progressão do búlgaro: 3×10/perna (adaptação) → 3×8 com halteres → 3×6 pesado → 3×5 (potência)",
      "A PLIOMETRIA vem ANTES desta sessão — nervoso fresco para os saltos, depois a força",
      "Volume menor que a terça de propósito: não pode comprometer o longão de domingo",
-     "É aqui que mora a prevenção das tuas duas queixas: fáscia plantar (sóleo) e quadril (glúteo médio)"
+     "Terça é bilateral pesado, sexta é unilateral — sem sobreposição entre as duas"
     ]
    },
    "hm_musc_sup": {
