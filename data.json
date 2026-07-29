@@ -9376,26 +9376,34 @@
       "tipo": "str",
       "letter": "A",
       "nome": "Fáscia plantar",
-      "sets": "Bolinha 2min/pé + panturrilha excêntrica 2×15",
+      "sets": "Bolinha rolando na sola · 2min por pé · pressão firme mas tolerável",
       "tip": "A rotina que segura a fáscia plantar"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "Quadril",
-      "sets": "Flexor 2×45s/lado · posição 90/90",
-      "tip": "Contrapeso das horas sentado"
+      "nome": "Panturrilha excêntrica",
+      "sets": "2×15 · 3 segundos descendo · descalço, no degrau",
+      "tip": "Preventivo com melhor evidência para fáscia e Aquiles"
      },
      {
       "tipo": "str",
       "letter": "C",
+      "nome": "Flexor de quadril",
+      "sets": "2×45s por lado + posição 90/90",
+      "tip": "Contrapeso das horas sentado"
+     },
+     {
+      "tipo": "str",
+      "letter": "D",
       "nome": "Liberação miofascial",
       "sets": "Foam roller em quadríceps, ITB e glúteo · ~8min",
       "tip": "Depois do longão"
      }
     ],
     "notas": [
-     "A rotina que segura a fáscia plantar e a dor de quadril do health_log"
+     "~20min · domingo, depois do longão",
+     "Cuida dos dois pontos frágeis registrados no teu histórico: fáscia plantar e quadril"
     ]
    },
    "hm_teste_10k": {
@@ -9494,38 +9502,54 @@
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Agachamento",
-      "sets": "Sem 2–4: goblet 3×12 @RPE6 · Sem 5–9: livre 4×6 @RPE7–8 · Sem 10–13: 4×4 @RPE8 · Sem 14–16: 3×3 rápido · Sem 17–18: 2×4",
-      "tip": "Subida rápida · 2–3min de descanso nas fases de força"
+      "nome": "Agachamento (goblet ou livre)",
+      "sets": "Desce até coxa paralela · SUBIDA RÁPIDA · goblet nas sem 2–4, barra livre da sem 5 em diante",
+      "tip": "Intenção de velocidade na subida mesmo com carga alta — é o que gera adaptação neural"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "Terra trap bar",
-      "sets": "Sem 5–9: 4×6 · Sem 10–13: 4×4 · Sem 14–16: 3×3",
-      "tip": "Mais seguro que o convencional para a coluna · quadril baixo"
+      "nome": "Leg press · sem 2–4",
+      "sets": "Amplitude confortável · NÃO colar o joelho no peito",
+      "tip": "Cuidado com flexão profunda sob carga (histórico de LCA)"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Búlgaro (pé elevado)",
-      "sets": "Sem 2–4: afundo caminhando 3×10/perna · Sem 5–9: 3×8/perna · Sem 10–13: 3×6/perna",
-      "tip": "O exercício que corrige assimetria entre pernas (histórico de LCA)"
+      "nome": "Terra romeno (RDL) · sem 2–4",
+      "sets": "Barra colada na perna · quadril para trás · sente o posterior alongar",
+      "tip": "Padrão de dobradiça de quadril — base para o trap bar"
      },
      {
       "tipo": "str",
       "letter": "D",
+      "nome": "Terra trap bar · da sem 5",
+      "sets": "Quadril baixo no início · coluna neutra · explode na subida",
+      "tip": "Mais seguro que o convencional para a coluna"
+     },
+     {
+      "tipo": "str",
+      "letter": "E",
+      "nome": "Afundo caminhando / búlgaro",
+      "sets": "Sem 2–4 afundo caminhando · da sem 5, búlgaro com pé de trás elevado · joelho alinhado ao pé",
+      "tip": "Corrige assimetria entre pernas — chave no teu histórico de LCA"
+     },
+     {
+      "tipo": "str",
+      "letter": "F",
       "nome": "Panturrilha em pé",
-      "sets": "Sem 2–4: excêntrica 3×15 (3s descendo) · depois carregada 4×10 → 4×8 pesada",
+      "sets": "Amplitude total · pausa de 1s embaixo · nas sem 2–4 é excêntrica, 3s descendo",
       "tip": "Gastrocnêmio · o Aquiles é mola de corrida, precisa de rigidez"
      }
     ],
     "notas": [
-     "A pliometria saiu daqui: depois de um run de limiar a perna não tem qualidade para saltar. Plio agora é na sexta",
-     "⚠️ NUNCA até a falha — se não sobrar 2–3 repetições no tanque, a carga está alta demais",
-     "Descanso longo (2–3min) é parte do treino: é o que mantém o estímulo neural e evita fadiga metabólica",
-     "Se o run de terça foi ruim, corta uma série — a corrida é a prioridade",
-     "Dor muscular no dia seguinte = passou do ponto. Ajustar carga para baixo"
+     "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo — muda conforme a fase da semana",
+     "Progressão do ciclo: sem 2–4 adaptação (3×12–15 @RPE6) → sem 5–9 força máx I (4×6 @RPE7–8) → sem 10–13 força máx II (4×4 @RPE8) → sem 14–16 potência (3×3 rápido) → sem 17–18 manutenção",
+     "⚠️ NUNCA até a falha — RPE 6 = 4 reps na reserva · RPE 7 = 3 · RPE 8 = 2",
+     "Descanso de 2–3min nas fases de força é PARTE do treino: mantém o estímulo neural e evita fadiga metabólica",
+     "Vem DEPOIS do run de terça de propósito: dia duro concentrado, quarta e quinta ficam limpas",
+     "Dor muscular no dia seguinte = a dose passou. Baixa a carga na próxima",
+     "Da sem 5 em diante a sessão leva ~45min (não 30) por causa do descanso longo"
     ]
    },
    "hm_forca_b": {
@@ -9543,44 +9567,45 @@
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Elevação pélvica (hip thrust)",
-      "sets": "3×12 → 4×8 → 4×6 pesada conforme a fase",
-      "tip": "Glúteo máximo — o motor da propulsão · pausa 1s em cima"
+      "nome": "Elevação pélvica",
+      "sets": "Barra apoiada no quadril · pausa de 1s em cima · glúteo, não lombar",
+      "tip": "Glúteo máximo é o motor da propulsão na corrida"
      },
      {
       "tipo": "str",
       "letter": "B",
       "nome": "SL-RDL (unilateral)",
-      "sets": "3×10/perna → 3×8 → 3×6 com halteres",
-      "tip": "Cadeia posterior unilateral · controle vale mais que carga"
+      "sets": "Halter na mão oposta · quadril para trás · coluna neutra · controle total",
+      "tip": "Cadeia posterior unilateral — controle vale mais que carga (LCA)"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Step-up / agachamento unilateral",
-      "sets": "3×10/perna → 3×8 carregado → 3×6",
-      "tip": "Sem impulso da perna de trás · amplitude confortável"
+      "nome": "Step-up / agach. unilateral",
+      "sets": "Sem impulso da perna de trás · caixa na altura do joelho · amplitude confortável",
+      "tip": "Sem forçar flexão profunda sob fadiga"
      },
      {
       "tipo": "str",
       "letter": "D",
-      "nome": "Panturrilha sentado",
-      "sets": "3×15 → 4×12 → 4×10 pesada",
-      "tip": "SÓLEO — joelho dobrado isola. É o mais esquecido e o que mais sofre correndo"
+      "nome": "Panturrilha SENTADO",
+      "sets": "Joelho dobrado a 90° · amplitude total",
+      "tip": "Isola o SÓLEO — o músculo mais esquecido e o que mais sofre correndo. Ligado direto à fáscia plantar"
      },
      {
       "tipo": "str",
       "letter": "E",
-      "nome": "Glúteo médio (abdução)",
-      "sets": "3×15 com banda · em todas as fases",
-      "tip": "Estabilidade de quadril · previne a dor que já apareceu"
+      "nome": "Glúteo médio",
+      "sets": "Banda elástica · abdução deitado ou em pé · em todas as fases",
+      "tip": "Estabilidade de quadril — previne a dor que já apareceu no teu histórico"
      }
     ],
     "notas": [
-     "A pliometria vem ANTES nesta sessão — nervoso fresco para os saltos, depois a força",
-     "Sexta é o dia certo: a corrida do dia é fácil, e sobra 1 dia + a bike de sábado antes do longão",
-     "Volume menor que a terça de propósito — não pode comprometer o domingo",
-     "Nas fases de potência vira reativo (pogo hops, bounding): converte força em elasticidade"
+     "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo",
+     "Progressão: sem 2–4 (3×12) → sem 5–9 (4×8–10) → sem 10–13 (4×6 pesada) → sem 14–16 volume baixo, a plio é o foco → sem 17–18 mínimo",
+     "A PLIOMETRIA vem ANTES desta sessão — nervoso fresco para os saltos, depois a força",
+     "Volume menor que a terça de propósito: não pode comprometer o longão de domingo",
+     "É aqui que mora a prevenção das tuas duas queixas: fáscia plantar (sóleo) e quadril (glúteo médio)"
     ]
    },
    "hm_musc_sup": {
@@ -9597,42 +9622,36 @@
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Supino",
-      "sets": "3×10 → 4×6 → 4×5 → 3×6 → 2×8 conforme a fase",
-      "tip": "Reto ou halteres"
+      "nome": "Empurrar",
+      "sets": "Supino (reto ou halteres) e desenvolvimento",
+      "tip": "Ombro estável para o balanço dos braços"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "Remada curvada",
-      "sets": "3×12 → 4×8 → 4×6",
+      "nome": "Puxar",
+      "sets": "Remada curvada, puxada ou barra fixa",
       "tip": "Contrapeso da postura de corrida"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Desenvolvimento",
-      "sets": "3×10 → 3×8 → 3×6",
-      "tip": "Ombro estável para o balanço dos braços"
+      "nome": "Face pull",
+      "sets": "3×15 em TODAS as fases, sem exceção",
+      "tip": "Segura o ombro para trás — a postura que colapsa no fim da meia"
      },
      {
       "tipo": "str",
       "letter": "D",
-      "nome": "Barra fixa / puxada",
-      "sets": "Nas fases de força: 3× até \"máximo menos 2\"",
-      "tip": "Puxada vertical"
-     },
-     {
-      "tipo": "str",
-      "letter": "E",
-      "nome": "Face pull",
-      "sets": "3×15 em TODAS as fases",
-      "tip": "Segura o ombro para trás — postura de corrida"
+      "nome": "Core",
+      "sets": "Pallof press e prancha ao final",
+      "tip": "Complemento"
      }
     ],
     "notas": [
-     "Segue a mesma periodização da perna: 3×10 na adaptação → 4×5 na força máxima",
-     "Zero perna aqui — segunda é recuperação do longão"
+     "Séries: ver o bloco \"A SESSÃO DE HOJE\" no topo",
+     "Progressão: 3×10–12 (adaptação) → 4×8 → 4×6 → 3×8 (potência) → 2×10 (taper)",
+     "ZERO perna aqui — segunda é recuperação do longão de domingo"
     ]
    },
    "hm_core": {
@@ -9651,41 +9670,43 @@
       "tipo": "str",
       "letter": "A",
       "nome": "Prancha",
-      "sets": "3×45s",
-      "tip": "Anti-extensão — impede a lombar de ceder"
+      "sets": "Corpo em linha reta · glúteo contraído · sem cair o quadril",
+      "tip": "Anti-extensão — impede a lombar de ceder no fim da prova"
      },
      {
       "tipo": "str",
       "letter": "B",
       "nome": "Prancha lateral",
-      "sets": "3×30s/lado",
+      "sets": "Quadril alto · ombro alinhado ao cotovelo",
       "tip": "Anti-flexão lateral — estabiliza o quadril na passada"
      },
      {
       "tipo": "str",
       "letter": "C",
       "nome": "Pallof press",
-      "sets": "3×12/lado",
+      "sets": "Banda ou polia na lateral · estende os braços sem deixar o tronco girar",
       "tip": "Anti-rotação — o mais específico para corrida"
      },
      {
       "tipo": "str",
       "letter": "D",
       "nome": "Dead bug",
-      "sets": "3×10",
+      "sets": "Lombar colada no chão · movimento lento",
       "tip": "Dissociação tronco–membro"
      },
      {
       "tipo": "str",
       "letter": "E",
       "nome": "Bird dog",
-      "sets": "3×10",
+      "sets": "Braço e perna opostos · sem rodar o quadril",
       "tip": "Coordenação cruzada, igual à corrida"
      }
     ],
     "notas": [
+     "Séries: ver o bloco \"A SESSÃO DE HOJE\" no topo · ~25min",
+     "Core não é estética: é o que impede a pelve de colapsar no fim da meia. Quando o core cede, a passada encurta e o pace cai sem a perna ter acabado",
      "⚠️ SEM carga de perna na quarta — quinta tem sessão de qualidade",
-     "Válvula de escape: FC repouso >60 → vira descanso total"
+     "Válvula de escape: FC de repouso >60 → vira descanso total"
     ]
    },
    "hm_plio": {
@@ -9702,48 +9723,54 @@
     "programa": [
      {
       "tipo": "str",
-      "letter": "1",
-      "nome": "Sem 2–3 · Preparação de tornozelo",
-      "sets": "Pogo hops 3×15 · corda 3×30s · saltito no lugar 3×20 · ~45 contatos",
-      "tip": "Prepara o tendão antes de qualquer salto de verdade"
+      "letter": "A",
+      "nome": "Pogo hops",
+      "sets": "Saltinhos no lugar, só tornozelo · joelho quase reto",
+      "tip": "Contato MÍNIMO com o chão — é o tempo de contato que treina a mola"
      },
      {
       "tipo": "str",
-      "letter": "2",
-      "nome": "Sem 4–8 · Introdução",
-      "sets": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · pogo hops 3×20 · ~90 contatos",
-      "tip": "Aterrissagem silenciosa é o critério — barulho = amortecimento errado"
+      "letter": "B",
+      "nome": "Corda (sem 2–3)",
+      "sets": "3×30s · saltinho baixo e rápido",
+      "tip": "A melhor entrada em pliometria: impacto baixo e frequência alta"
      },
      {
       "tipo": "str",
-      "letter": "3",
-      "nome": "Sem 9–13 · Desenvolvimento",
-      "sets": "Salto na caixa 4×5 · bounding 3×20m · SL hop lateral 3×6/perna · ~115 contatos",
-      "tip": "Bounding: amplitude grande, contato mínimo com o chão"
+      "letter": "C",
+      "nome": "Salto na caixa",
+      "sets": "Sobe saltando, DESCE ANDANDO · caixa de 20 a 30cm",
+      "tip": "Descer saltando dobra o impacto sem benefício"
      },
      {
       "tipo": "str",
-      "letter": "4",
-      "nome": "Sem 14–16 · Reativo (pico)",
-      "sets": "Depth jump caixa 30cm 4×4 · bounding 4×20m · SL hop 3×6/perna · salto agachado 3×4 · ~120 contatos",
-      "tip": "Depth jump: desce da caixa e salta IMEDIATAMENTE"
+      "letter": "D",
+      "nome": "SL hop (unilateral)",
+      "sets": "Salto numa perna só · aterrissagem controlada",
+      "tip": "Simetria e estabilidade — importa no histórico de LCA"
      },
      {
       "tipo": "str",
-      "letter": "5",
-      "nome": "Sem 17–18 · Manutenção",
-      "sets": "Pogo hops 3×12 · salto na caixa 2×3 · ~30 contatos",
-      "tip": "Só manter o padrão neural — zero fadiga"
+      "letter": "E",
+      "nome": "Bounding",
+      "sets": "Passadas saltadas com amplitude grande · 20m",
+      "tip": "Converte força em elasticidade — o mais específico para corrida"
+     },
+     {
+      "tipo": "str",
+      "letter": "F",
+      "nome": "Depth jump (só sem 14–16)",
+      "sets": "Desce da caixa de 30cm e salta IMEDIATAMENTE ao tocar o chão",
+      "tip": "O exercício mais avançado — só entra depois de 12 semanas de base"
      }
     ],
     "notas": [
-     "Progressão antecipada em 2 semanas (fáscia plantar assintomática em 26/07/2026)",
-     "Vem na SEXTA (depois da corrida fácil) e não na terça — plio exige perna fresca; feita cansada perde qualidade e vira risco",
-     "SEMPRE antes da Força B — sistema nervoso descansado",
-     "Aterrissagem SILENCIOSA é o critério de qualidade. Barulho = amortecimento errado = impacto na articulação",
-     "Contato mínimo com o chão: quanto menos tempo no solo, melhor o estímulo elástico",
-     "⚠️ Se a fáscia plantar reclamar, reduz os contatos pela metade — NÃO zera. Tecido conjuntivo precisa de carga para remodelar",
-     "Descarga (sem 6, 9, 13, 17): metade dos contatos",
+     "Exercícios e contatos: ver o bloco \"A SESSÃO DE HOJE\" no topo",
+     "Progressão: sem 2–3 preparação (~45 contatos) → sem 4–8 introdução (~90) → sem 9–13 desenvolvimento (~115) → sem 14–16 reativo (~120) → sem 17–18 mínimo",
+     "⚠️ ATERRISSAGEM SILENCIOSA é o critério de qualidade. Barulho = amortecimento errado = impacto na articulação",
+     "Vem na SEXTA (depois da corrida fácil) e ANTES da Força B — plio exige perna fresca",
+     "Se a fáscia plantar reclamar, reduz os contatos pela metade — NÃO zera. Tecido conjuntivo precisa de carga para remodelar",
+     "Progressão antecipada em 2 semanas (fáscia assintomática em 26/07/2026)",
      "⚠️ MONITORAR nas sem 7–8 (62 e 68 km): dor nos primeiros passos ao levantar da cama = corta contatos pela metade e segura o volume 1 semana"
     ]
    }
