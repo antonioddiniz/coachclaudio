@@ -5694,7 +5694,8 @@ function renderCicloTabela(){
           cel = slots.map(s => {
             const sp = CT_SPORT[s.sport] || { nome:'', cor:'#94a3b8' };
             const [l,dd] = ctEnxuga(s);
-            return `<div style="margin-bottom:3px;line-height:1.35">`
+            const clik = s.key ? ` onclick="openModal('${s.key}','${dYMD}')" style="cursor:pointer;margin-bottom:3px;line-height:1.35" title="Clique para ver como executar"` : ' style="margin-bottom:3px;line-height:1.35"';
+            return `<div${clik}>`
                  + `<span style="color:${sp.cor};font-weight:800;font-size:0.5rem">${sp.nome}</span>`
                  + `<span style="color:${ehHoje?'#fff':'#e2e8f0'};font-weight:700"> · ${l}</span>`
                  + `<div style="color:${ehHoje?'#cbd5e1':'#94a3b8'}">${dd}</div></div>`;
@@ -6967,7 +6968,7 @@ function renderCalendar() {
     const workoutHTML = planned.length
       ? planned.map(w => `
           <div class="cal-workout" style="border-left-color:${w.color}"
-               onclick="openModal('${w.key}')" title="Clique para ver detalhes">
+               onclick="openModal('${w.key}','${dateStr}')" title="Clique para ver detalhes">
             <span class="cw-sport" style="color:${w.color}">${SPNOME[w.sport] || ''}</span>
             <div class="cw-label">${w.label}</div>
             <div class="cw-detail">${w.detail}</div>
@@ -7663,17 +7664,39 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
   window.buildLastSessionCard = buildLastSessionCard;
 })();
 // ── MODAL LOGIC ────────────────────────────────────────────
-function openModal(key) {
+function openModal(key, ds) {
   const w = WORKOUT_DETAILS[key];
   if (!w) return;
 
+  // sessão exata daquele dia (vinda do calendário), quando houver
+  let hoje = null;
+  if (ds) {
+    const slots = CAL_OVERRIDES[ds] || [];
+    hoje = slots.find(s => s.key === key) || null;
+  }
+
   document.getElementById('modal-sport-bar').style.background = w.color;
   document.getElementById('modal-title').textContent = w.title;
-  document.getElementById('modal-subtitle').textContent = w.subtitle;
+  document.getElementById('modal-subtitle').textContent =
+    (ds ? fmtDay(new Date(ds + 'T00:00:00')) + ' · ' : '') + (w.subtitle || '');
   document.getElementById('modal-pills').innerHTML =
     (w.pills || []).map(p => `<span class="modal-pill">${p}</span>`).join('');
 
   let body = '';
+
+  // ── A SESSÃO DESTE DIA (prescrição exata do calendário) ──
+  if (hoje && hoje.detail) {
+    const partes = String(hoje.detail).split(' · ').filter(Boolean);
+    body += `<div class="mblock">
+      <div class="mblock-title">📌 A sessão de hoje</div>
+      <div style="background:${w.color}14;border:1px solid ${w.color}44;border-left:3px solid ${w.color};border-radius:10px;padding:12px 14px">
+        <div style="font-size:0.78rem;font-weight:800;color:#e2e8f0;margin-bottom:8px">${hoje.label || w.title}</div>
+        ${partes.map(p => `<div style="font-size:0.74rem;color:#cbd5e1;line-height:1.6;padding:2px 0 2px 12px;position:relative">
+             <span style="position:absolute;left:0;color:${w.color}">›</span>${p}</div>`).join('')}
+        ${hoje.zone ? `<div style="margin-top:8px;font-size:0.6rem;font-weight:800;color:${w.color};letter-spacing:0.5px">${hoje.zone}</div>` : ''}
+      </div>
+    </div>`;
+  }
 
   // Objetivo
   if (w.objetivo) {

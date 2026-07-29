@@ -2012,7 +2012,7 @@
    "date": "2026-07-28",
    "sport": "strength",
    "dur": "30:00",
-   "note": "~30min \u00b7 For\u00e7a A \u2014 Perna (Sem 2 \u00b7 ter\u00e7a, p\u00f3s-corrida) \u00b7 fase de adapta\u00e7\u00e3o anat\u00f4mica \u00b7 agach. goblet 3\u00d712 \u00b7 leg press 3\u00d715 \u00b7 RDL 3\u00d712 \u00b7 afundo caminhando 3\u00d710/perna \u00b7 panturrilha exc\u00eantrica 3\u00d715 \u00b7 RPE 6 \u00b7 prescrito completo \u00b7 rel\u00f3gio falhou, registro manual"
+   "note": "~30min · Força A — Perna (Sem 2 · terça, pós-corrida) · fase de adaptação anatômica · agach. goblet 3×12 · leg press 3×15 · RDL 3×12 · afundo caminhando 3×10/perna · panturrilha excêntrica 3×15 · RPE 6 · prescrito completo · relógio falhou, registro manual"
   }
  ],
  "weight_data": [
@@ -4350,7 +4350,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:05 (14,7 km/h)) · rec 400m trote · solta ~1,5km · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:05 · 14,7 km/h) · rec 400m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4744,7 +4744,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:02 (14,9 km/h)) · rec 400m trote · solta ~1,5km · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:02 · 14,9 km/h) · rec 400m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -7915,33 +7915,34 @@
     ]
    },
    "mn_descanso": {
-    "title": "Descanso Total — Sexta",
+    "title": "Descanso total",
     "sport": "rest",
     "color": "#334155",
-    "subtitle": "Sexta · Recuperação antes do bike longo de sábado",
+    "subtitle": "Dia livre · recuperação",
     "pills": [
      "sem treino",
      "recuperação",
      "sono prioritário"
     ],
-    "objetivo": "Regeneração total antes do bike longo. O descanso é tão importante quanto o treino.",
+    "objetivo": "Regeneração. O descanso é tão importante quanto o treino — é nele que a adaptação acontece.",
     "programa": [
      {
-      "tipo": "rest",
+      "tipo": "str",
+      "letter": "1",
       "nome": "Nenhum treino estruturado",
-      "detalhe": "Caminhada casual até 20min se desejar. Sem aeróbico ou força.",
-      "zona": "descanso"
+      "sets": "Caminhada casual até 20min se quiser · sem aeróbico nem força"
      },
      {
-      "tipo": "rest",
+      "tipo": "str",
+      "letter": "2",
       "nome": "Opcional: mobilidade passiva",
-      "detalhe": "10–15min: hip flexor, panturrilha, ombro. Não foam roller intenso.",
-      "zona": "leve"
+      "sets": "10–15min: flexor de quadril, panturrilha, ombro",
+      "tip": "Sem foam roller intenso — é dia de soltar, não de trabalhar"
      }
     ],
     "notas": [
-     "Durma cedo — bike sábado começa às 05:36. Organize kit e nutrição na sexta à noite.",
-     "Carboidratos na sexta à noite: arroz, batata, macarrão — carga leve para o longo de sábado."
+     "Dormir cedo é o treino do dia",
+     "Carboidrato à noite se o dia seguinte tiver sessão longa"
     ]
    },
    "mn_bike_longo": {
@@ -8207,7 +8208,7 @@
     "notas": [
      "⚠️ Mínimo 12h após bike AM (04:55 → mínimo 17:00). Não antecipar.",
      "🚨 Abort: FC acima de 172bpm no km 1 → converta em Z1 de 30min sem culpa. Fadiga acumulada é real.",
-     "🌡️ Calor acima de 28°C: adicione 5–8s/km ao pace alvo (5:23–5:28 (11,0–11,1 km/h)). FC é o guia, não o relógio.",
+     "🌡️ Calor acima de 28°C: adicione 5–8s/km ao pace alvo (5:23–5:28 · 11,0–11,1 km/h). FC é o guia, não o relógio.",
      "💧 Beba 500ml de água 45min antes. Se >35min de sessão, leve garrafinha.",
      "👟 Tênis de treino (não os Vaporfly) — preserve o carbono para provas."
     ]
@@ -8996,27 +8997,35 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Aquecimento",
-      "detalhe": "10min Z1 progressivo + 3×30s giro alto",
+      "nome": "1 · Aquecimento",
+      "detalhe": "10min em Z1 progressivo + 3×30s de giro alto (>100rpm) para acordar a perna",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "Blocos",
-      "detalhe": "6×8min @195–213W · rec 2min Z1 · cadência 85–90rpm",
-      "zona": "LT2"
+      "nome": "2 · Blocos",
+      "detalhe": "Ver o bloco acima · 195–213W (79–87% do FTP 246W) · cadência 85–90rpm",
+      "zona": "LT2 · 195–213W"
      },
      {
       "tipo": "run",
-      "nome": "Solta",
-      "detalhe": "5–10min Z1",
+      "nome": "3 · Recuperação",
+      "detalhe": "2min em Z1 solto entre blocos",
+      "zona": "Z1"
+     },
+     {
+      "tipo": "run",
+      "nome": "4 · Solta",
+      "detalhe": "5 a 10min em Z1",
       "zona": "Z1"
      }
     ],
     "notas": [
-     "Mínimo 8–12h de separação até o run PM",
-     "Se a FC derivar acima da faixa nos últimos blocos, corta 1 bloco",
-     "Watts vêm do FTP 246W do banco — refazer o Ramp Test se mudar"
+     "⚠️ ESTA SESSÃO NÃO PODE DOER. É a 1ª de três no dia — se você descer da bike ofegante, a corrida da noite já era",
+     "A faixa é SUB-limiar (79–87% do FTP), não LT2 clássico (90–97%). É o que permite repetir a dose",
+     "Se a FC derivar mais de 8bpm do 1º ao último bloco, o watt está alto: baixe para 205W",
+     "Mínimo 8h de separação até o run PM",
+     "Lição de 28/07: 220W fez a FC subir 12bpm em 5 blocos. A 205W você fecha 6 com a FC estável"
     ]
    },
    "hm_dbl_ter_pm": {
@@ -9033,28 +9042,36 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Aquecimento",
-      "detalhe": "~2,5km Z1 (6:10–6:30 (9,2–9,7 km/h)) + 3 strides ~100m",
-      "zona": "Z1"
+      "nome": "1 · Aquecimento",
+      "detalhe": "~2,5km em Z1 a 6:10–6:30 (9,2–9,7 km/h) · FC<135 · depois 3 strides de ~100m acelerando progressivo",
+      "zona": "Z1 · 9,2–9,7 km/h"
      },
      {
       "tipo": "run",
-      "nome": "Tiros",
-      "detalhe": "1km cada · rec ~200m em trote solto · ver nº do dia",
+      "nome": "2 · Tiros",
+      "detalhe": "Ver o número e o pace no bloco \"sessão de hoje\" acima · na esteira, configure a VELOCIDADE em km/h e deixe a máquina segurar o ritmo",
       "zona": "sub-LT2"
      },
      {
       "tipo": "run",
-      "nome": "Solta",
-      "detalhe": "~1,5km Z1",
+      "nome": "3 · Recuperação entre tiros",
+      "detalhe": "~200m em TROTE SOLTO, nunca parado · a 7:00–7:30 (8,0–8,6 km/h) · o trote mantém o sangue circulando e a próxima repetição sai melhor",
+      "zona": "Z1"
+     },
+     {
+      "tipo": "run",
+      "nome": "4 · Solta",
+      "detalhe": "~1,5km em Z1 a 6:30–7:00 (8,6–9,2 km/h) · não pule — é o que acelera a recuperação para a quarta",
       "zona": "Z1"
      }
     ],
     "notas": [
-     "FC ≤158 nos curtos / ≤161 nos longos · pace é teto, FC é o chefe",
-     "⚠️ SEU VÍCIO: o 1º tiro NÃO pode ser o mais rápido. Se o 1º sair >3s abaixo do alvo, segura no 2º",
+     "Escada do ciclo: 4:38 (12,9 km/h) na sem 2 → 4:28 (13,4) na sem 8 → 4:22 (13,7) na sem 12 → 4:17 (14,0) na sem 15",
+     "FC ≤158 em TODOS os tiros · o pace é teto, a FC é o chefe",
+     "⚠️ SEU VÍCIO: o 1º tiro NÃO pode ser o mais rápido. Se sair >3s abaixo do alvo, segura no 2º",
      "Alvo de consistência: do 1º ao último dentro de 3s de variação",
-     "FC subindo semana a semana no MESMO pace = fadiga acumulando · avisar",
+     "NA ESTEIRA: a máquina demora a chegar na velocidade — o tempo da volta inclui a rampa. Confie na velocidade configurada, não no pace do relógio",
+     "Se a perna estiver pesada do treino da manhã, tira 1 tiro. Melhor 4 bons que 5 forçados",
      "* = pace projetado, recalibrado no 10k-teste de 19/09"
     ]
    },
@@ -9094,29 +9111,35 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Aquecimento",
-      "detalhe": "~2,5km Z1 (6:10–6:30 (9,2–9,7 km/h)) + 3 strides ~100m",
+      "nome": "1 · Aquecimento",
+      "detalhe": "~2,5km em Z1 a 6:10–6:30 (9,2–9,7 km/h) + 3 strides de ~100m",
+      "zona": "Z1 · 9,2–9,7 km/h"
+     },
+     {
+      "tipo": "run",
+      "nome": "2 · Blocos longos",
+      "detalhe": "Ver o bloco \"sessão de hoje\" acima · tiros de 2 a 5km, ou trechos em ritmo de meia (HMP)",
+      "zona": "sub-LT2 / HMP"
+     },
+     {
+      "tipo": "run",
+      "nome": "3 · Recuperação",
+      "detalhe": "~300 a 600m em trote solto, proporcional ao tamanho do bloco",
       "zona": "Z1"
      },
      {
       "tipo": "run",
-      "nome": "Tiros longos",
-      "detalhe": "2km cada · rec ~300m em trote · ver nº do dia",
-      "zona": "sub-LT2"
-     },
-     {
-      "tipo": "run",
-      "nome": "Solta",
-      "detalhe": "~1,5km Z1",
+      "nome": "4 · Solta",
+      "detalhe": "~1,5km em Z1",
       "zona": "Z1"
      }
     ],
     "notas": [
-     "⚠️ Quando o domingo tem bloco grande de HMP, a quinta vira FÁCIL (sem 14). Não faça as duas duras",
-     "FC ≤158 nos curtos / ≤161 nos longos · pace é teto, FC é o chefe",
-     "Se o último tiro cair >5s do primeiro, era 1 tiro a mais do que aguentava",
-     "Bike AM de quinta é OPCIONAL e Z2 puro — se estiver cansado, corta a bike, nunca o run",
-     "Última sessão dura antes do fim de semana de volume"
+     "Escada do ciclo: 4:34 (13,1 km/h) na sem 4 → 4:30 (13,3) na sem 8 → 4:22 (13,7) na sem 12 → 4:15 (14,1) na sem 15",
+     "FC ≤161 — dois batimentos acima da terça, porque o bloco é maior",
+     "Se o último bloco cair mais de 5s do primeiro, era um bloco a mais do que aguentava",
+     "Bike de quinta é OPCIONAL e Z2 puro — se estiver cansado, corta a bike, nunca o run",
+     "Nas semanas em que o domingo tem bloco grande de ritmo (sem 14), esta sessão vira FÁCIL"
     ]
    },
    "hm_run_facil": {
@@ -9133,21 +9156,22 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Rodagem",
-      "detalhe": "ver km do dia · 5:55–6:20 (9,5–10,1 km/h) · FC<140 · conversa possível",
-      "zona": "Z2"
+      "nome": "1 · Rodagem",
+      "detalhe": "Ver a distância acima · 5:50–6:15 (9,6–10,3 km/h) · FC<140 · precisa conseguir falar frases inteiras",
+      "zona": "Z2 · 9,6–10,3 km/h"
      },
      {
       "tipo": "run",
-      "nome": "Strides (quando previsto)",
-      "detalhe": "5×~150m soltos e rápidos no final · rec caminhando · NÃO é tiro",
+      "nome": "2 · Strides (quando previstos)",
+      "detalhe": "4 a 5 × ~100–150m no final · acelera progressivo e solta · caminhando entre eles · NÃO é tiro",
       "zona": "—"
      }
     ],
     "notas": [
-     "Se não consegue segurar FC<140, corre mais devagar — sem exceção",
-     "Strides são ~100–150m. Nunca 250m (lição de 16/07)",
-     "Ao registrar: não usar palavras de treino forte na nota (quebra o gráfico de Eficiência Aeróbica)"
+     "É a corrida mais LENTA da semana. Se virar meio-forte, o longão e os doubles pagam a conta",
+     "Se não conseguir segurar FC<140, corre mais devagar — sem exceção",
+     "Strides são de ~100 a 150m. Nunca 250m (lição de 16/07)",
+     "Nas semanas de pico esta corrida cresce até 18km — continua fácil, só mais longa"
     ]
    },
    "hm_longao": {
@@ -9164,18 +9188,34 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Longão",
-      "detalhe": "ver km do dia · 5:45–6:10 (9,7–10,4 km/h) · FC<147 · começar no lento e estabilizar",
-      "zona": "Z2"
+      "nome": "1 · Primeiros 3km",
+      "detalhe": "Comece LENTO, a 6:10–6:20 (9,5–9,7 km/h) · o longão se ganha nos últimos km, não nos primeiros",
+      "zona": "Z1"
+     },
+     {
+      "tipo": "run",
+      "nome": "2 · Corpo do longão",
+      "detalhe": "Ver a distância no bloco acima · 5:45–6:10 (9,7–10,4 km/h) · FC<147 · conversa possível",
+      "zona": "Z2 · 9,7–10,4 km/h"
+     },
+     {
+      "tipo": "run",
+      "nome": "3 · Blocos em ritmo (só sem 14 e 16)",
+      "detalhe": "Entram no FINAL, com a perna já cansada — é a situação do km 13 ao 21 na prova",
+      "zona": "HMP"
+     },
+     {
+      "tipo": "run",
+      "nome": "4 · Fueling",
+      "detalhe": "Gel ou mel a cada ~40min acima de 18km · água a cada ~20min · Brasília é seca",
+      "zona": "—"
      }
     ],
     "notas": [
-     "Longão máximo do ciclo: 26 km. Para 21,1 km isso satura o estímulo — mais que isso é fadiga sem retorno",
-     "A partir da sem. 8 o longão ganha blocos em ritmo de meia — é o treino que decide a meta",
-     "Desacoplamento alvo <5% (1ª metade vs 2ª metade) — acima disso, o pace estava alto",
-     "Fueling: gel a cada ~40min acima de 18km. Em déficit calórico isso NÃO é opcional",
-     "Hidratar bem — Brasília seca, largada cedo",
-     "Se a FC subir acima de 147 no mesmo pace, DIMINUI o pace — não segura a FC na marra"
+     "Longão máximo do ciclo: 26km. Para 21,1km isso satura o estímulo — mais que isso é fadiga sem retorno",
+     "Desacoplamento alvo <5% (1ª metade vs 2ª) — acima disso, o pace estava alto",
+     "Se a FC passar de 147 no mesmo pace, DIMINUI o pace. Não segure a FC na marra",
+     "Fora dos blocos marcados, o longão é SEMPRE fácil — a qualidade mora na terça e na quinta"
     ]
    },
    "hm_longao_hmp": {
@@ -9227,26 +9267,27 @@
     "programa": [
      {
       "tipo": "run",
-      "nome": "Base",
-      "detalhe": "30min Z2 · giro 85–90rpm",
+      "nome": "1 · Base",
+      "detalhe": "30min em Z2 · cadência 85–90rpm",
       "zona": "Z2"
      },
      {
       "tipo": "run",
-      "nome": "Blocos",
-      "detalhe": "3×15min @195–213W · rec 5min Z2",
-      "zona": "LT2"
+      "nome": "2 · Blocos (semanas de base)",
+      "detalhe": "3×15min a 195–213W · rec 5min em Z2",
+      "zona": "LT2 · 195–213W"
      },
      {
       "tipo": "run",
-      "nome": "Volta",
-      "detalhe": "30min Z2",
+      "nome": "3 · Volta",
+      "detalhe": "30min em Z2",
       "zona": "Z2"
      }
     ],
     "notas": [
-     "Não é para acabar destruído — domingo tem longão",
-     "Semana de descarga/taper: só Z2, sem blocos"
+     "Nas semanas de pico (11–16) vira Z2 puro de 1h30, SEM blocos — para chegar inteiro no longão de domingo",
+     "3º toque de limiar da semana sem impacto — é o que permite volume alto de corrida sem lesionar",
+     "Não é para acabar destruído: domingo tem longão"
     ]
    },
    "hm_swim_leve": {
@@ -9333,21 +9374,24 @@
     "programa": [
      {
       "tipo": "str",
+      "letter": "A",
       "nome": "Fáscia plantar",
-      "detalhe": "bolinha 2min/pé + panturrilha excêntrica 2×15",
-      "zona": "mobil."
+      "sets": "Bolinha 2min/pé + panturrilha excêntrica 2×15",
+      "tip": "A rotina que segura a fáscia plantar"
      },
      {
       "tipo": "str",
+      "letter": "B",
       "nome": "Quadril",
-      "detalhe": "flexor 2×45s/lado · 90/90",
-      "zona": "mobil."
+      "sets": "Flexor 2×45s/lado · posição 90/90",
+      "tip": "Contrapeso das horas sentado"
      },
      {
       "tipo": "str",
-      "nome": "Liberação",
-      "detalhe": "foam roller quadríceps, ITB e glúteo",
-      "zona": "mobil."
+      "letter": "C",
+      "nome": "Liberação miofascial",
+      "sets": "Foam roller em quadríceps, ITB e glúteo · ~8min",
+      "tip": "Depois do longão"
      }
     ],
     "notas": [
@@ -9449,27 +9493,31 @@
     "programa": [
      {
       "tipo": "str",
+      "letter": "A",
       "nome": "Agachamento",
-      "detalhe": "carga e repetições conforme a fase do ciclo · subida rápida",
-      "zona": "força"
+      "sets": "Sem 2–4: goblet 3×12 @RPE6 · Sem 5–9: livre 4×6 @RPE7–8 · Sem 10–13: 4×4 @RPE8 · Sem 14–16: 3×3 rápido · Sem 17–18: 2×4",
+      "tip": "Subida rápida · 2–3min de descanso nas fases de força"
      },
      {
       "tipo": "str",
+      "letter": "B",
       "nome": "Terra trap bar",
-      "detalhe": "padrão de quadril sob carga · coluna neutra",
-      "zona": "força"
+      "sets": "Sem 5–9: 4×6 · Sem 10–13: 4×4 · Sem 14–16: 3×3",
+      "tip": "Mais seguro que o convencional para a coluna · quadril baixo"
      },
      {
       "tipo": "str",
-      "nome": "Búlgaro / unilateral",
-      "detalhe": "controle e simetria (histórico de LCA)",
-      "zona": "força"
+      "letter": "C",
+      "nome": "Búlgaro (pé elevado)",
+      "sets": "Sem 2–4: afundo caminhando 3×10/perna · Sem 5–9: 3×8/perna · Sem 10–13: 3×6/perna",
+      "tip": "O exercício que corrige assimetria entre pernas (histórico de LCA)"
      },
      {
       "tipo": "str",
-      "nome": "Panturrilha",
-      "detalhe": "carregada · o tendão de Aquiles é mola de corrida",
-      "zona": "força"
+      "letter": "D",
+      "nome": "Panturrilha em pé",
+      "sets": "Sem 2–4: excêntrica 3×15 (3s descendo) · depois carregada 4×10 → 4×8 pesada",
+      "tip": "Gastrocnêmio · o Aquiles é mola de corrida, precisa de rigidez"
      }
     ],
     "notas": [
@@ -9494,33 +9542,38 @@
     "programa": [
      {
       "tipo": "str",
-      "nome": "Elevação pélvica",
-      "detalhe": "glúteo máximo sob carga — o motor da propulsão",
-      "zona": "força"
+      "letter": "A",
+      "nome": "Elevação pélvica (hip thrust)",
+      "sets": "3×12 → 4×8 → 4×6 pesada conforme a fase",
+      "tip": "Glúteo máximo — o motor da propulsão · pausa 1s em cima"
      },
      {
       "tipo": "str",
-      "nome": "SL-RDL",
-      "detalhe": "cadeia posterior unilateral · controle (LCA)",
-      "zona": "força"
+      "letter": "B",
+      "nome": "SL-RDL (unilateral)",
+      "sets": "3×10/perna → 3×8 → 3×6 com halteres",
+      "tip": "Cadeia posterior unilateral · controle vale mais que carga"
      },
      {
       "tipo": "str",
-      "nome": "Step-up / agach. unilateral",
-      "detalhe": "força unilateral sob controle",
-      "zona": "força"
+      "letter": "C",
+      "nome": "Step-up / agachamento unilateral",
+      "sets": "3×10/perna → 3×8 carregado → 3×6",
+      "tip": "Sem impulso da perna de trás · amplitude confortável"
      },
      {
       "tipo": "str",
+      "letter": "D",
       "nome": "Panturrilha sentado",
-      "detalhe": "sóleo — o músculo esquecido, e o que mais sofre na corrida",
-      "zona": "força"
+      "sets": "3×15 → 4×12 → 4×10 pesada",
+      "tip": "SÓLEO — joelho dobrado isola. É o mais esquecido e o que mais sofre correndo"
      },
      {
       "tipo": "str",
-      "nome": "Glúteo médio",
-      "detalhe": "banda ou abdução · estabilidade de quadril",
-      "zona": "força"
+      "letter": "E",
+      "nome": "Glúteo médio (abdução)",
+      "sets": "3×15 com banda · em todas as fases",
+      "tip": "Estabilidade de quadril · previne a dor que já apareceu"
      }
     ],
     "notas": [
@@ -9543,21 +9596,38 @@
     "programa": [
      {
       "tipo": "str",
-      "nome": "Empurrar",
-      "detalhe": "supino e desenvolvimento",
-      "zona": "força"
+      "letter": "A",
+      "nome": "Supino",
+      "sets": "3×10 → 4×6 → 4×5 → 3×6 → 2×8 conforme a fase",
+      "tip": "Reto ou halteres"
      },
      {
       "tipo": "str",
-      "nome": "Puxar",
-      "detalhe": "remada, puxada e barra fixa",
-      "zona": "força"
+      "letter": "B",
+      "nome": "Remada curvada",
+      "sets": "3×12 → 4×8 → 4×6",
+      "tip": "Contrapeso da postura de corrida"
      },
      {
       "tipo": "str",
-      "nome": "Ombro/postura",
-      "detalhe": "face pull — contrapeso da postura de corrida",
-      "zona": "força"
+      "letter": "C",
+      "nome": "Desenvolvimento",
+      "sets": "3×10 → 3×8 → 3×6",
+      "tip": "Ombro estável para o balanço dos braços"
+     },
+     {
+      "tipo": "str",
+      "letter": "D",
+      "nome": "Barra fixa / puxada",
+      "sets": "Nas fases de força: 3× até \"máximo menos 2\"",
+      "tip": "Puxada vertical"
+     },
+     {
+      "tipo": "str",
+      "letter": "E",
+      "nome": "Face pull",
+      "sets": "3×15 em TODAS as fases",
+      "tip": "Segura o ombro para trás — postura de corrida"
      }
     ],
     "notas": [
@@ -9579,27 +9649,38 @@
     "programa": [
      {
       "tipo": "str",
-      "nome": "Anti-extensão",
-      "detalhe": "prancha e dead bug",
-      "zona": "core"
+      "letter": "A",
+      "nome": "Prancha",
+      "sets": "3×45s",
+      "tip": "Anti-extensão — impede a lombar de ceder"
      },
      {
       "tipo": "str",
-      "nome": "Anti-rotação",
-      "detalhe": "Pallof press",
-      "zona": "core"
+      "letter": "B",
+      "nome": "Prancha lateral",
+      "sets": "3×30s/lado",
+      "tip": "Anti-flexão lateral — estabiliza o quadril na passada"
      },
      {
       "tipo": "str",
-      "nome": "Anti-flexão lateral",
-      "detalhe": "prancha lateral",
-      "zona": "core"
+      "letter": "C",
+      "nome": "Pallof press",
+      "sets": "3×12/lado",
+      "tip": "Anti-rotação — o mais específico para corrida"
      },
      {
       "tipo": "str",
-      "nome": "Coordenação",
-      "detalhe": "bird dog",
-      "zona": "core"
+      "letter": "D",
+      "nome": "Dead bug",
+      "sets": "3×10",
+      "tip": "Dissociação tronco–membro"
+     },
+     {
+      "tipo": "str",
+      "letter": "E",
+      "nome": "Bird dog",
+      "sets": "3×10",
+      "tip": "Coordenação cruzada, igual à corrida"
      }
     ],
     "notas": [
@@ -9621,33 +9702,38 @@
     "programa": [
      {
       "tipo": "str",
-      "nome": "Sem 2–3 · Preparação",
-      "detalhe": "Pogo hops · corda · saltito no lugar · ~45 contatos",
-      "zona": "tornozelo"
+      "letter": "1",
+      "nome": "Sem 2–3 · Preparação de tornozelo",
+      "sets": "Pogo hops 3×15 · corda 3×30s · saltito no lugar 3×20 · ~45 contatos",
+      "tip": "Prepara o tendão antes de qualquer salto de verdade"
      },
      {
       "tipo": "str",
+      "letter": "2",
       "nome": "Sem 4–8 · Introdução",
-      "detalhe": "Salto na caixa baixa (20–30cm) · SL hop no lugar · ~90 contatos",
-      "zona": "plio"
+      "sets": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · pogo hops 3×20 · ~90 contatos",
+      "tip": "Aterrissagem silenciosa é o critério — barulho = amortecimento errado"
      },
      {
       "tipo": "str",
+      "letter": "3",
       "nome": "Sem 9–13 · Desenvolvimento",
-      "detalhe": "Salto na caixa · bounding · SL hop lateral · ~115 contatos",
-      "zona": "plio"
+      "sets": "Salto na caixa 4×5 · bounding 3×20m · SL hop lateral 3×6/perna · ~115 contatos",
+      "tip": "Bounding: amplitude grande, contato mínimo com o chão"
      },
      {
       "tipo": "str",
-      "nome": "Sem 14–16 · Reativo",
-      "detalhe": "Depth jump 30cm · bounding · salto agachado · ~120 contatos",
-      "zona": "plio"
+      "letter": "4",
+      "nome": "Sem 14–16 · Reativo (pico)",
+      "sets": "Depth jump caixa 30cm 4×4 · bounding 4×20m · SL hop 3×6/perna · salto agachado 3×4 · ~120 contatos",
+      "tip": "Depth jump: desce da caixa e salta IMEDIATAMENTE"
      },
      {
       "tipo": "str",
+      "letter": "5",
       "nome": "Sem 17–18 · Manutenção",
-      "detalhe": "Pogo hops · salto na caixa · ~40 contatos",
-      "zona": "plio"
+      "sets": "Pogo hops 3×12 · salto na caixa 2×3 · ~30 contatos",
+      "tip": "Só manter o padrão neural — zero fadiga"
      }
     ],
     "notas": [
