@@ -1064,16 +1064,10 @@ canvas { max-height: 340px; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .cal-grid {
-    grid-template-columns: repeat(7, minmax(45px, 1fr));
-    gap: 3px;
-  }
-}
-@media (max-width: 360px) {
-  .cal-grid {
-    grid-template-columns: repeat(7, minmax(42px, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(7, minmax(150px, 1fr));
+    gap: 4px;
   }
 }
 .cal-day {
@@ -1081,7 +1075,7 @@ canvas { max-height: 340px; }
   border: 1px solid #1e2230;
   border-radius: 10px;
   padding: 8px 6px;
-  min-height: 150px;
+  min-height: 180px;
   display: flex; flex-direction: column; gap: 5px;
   transition: border-color 0.15s;
 }
@@ -1113,9 +1107,21 @@ canvas { max-height: 340px; }
   padding: 4px 6px;
   flex-shrink: 0;
 }
-.cw-label  { font-size: 0.6rem; font-weight: 700; color: #bbb; line-height: 1.3; }
-.cw-detail { font-size: 0.53rem; color: #888; margin-top: 1px; line-height: 1.4; }
-.cw-zone   { font-size: 0.52rem; font-weight: 700; margin-top: 2px; display: inline-block; opacity: 0.85; }
+.cw-sport  { font-size: 0.5rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; display: block; margin-bottom: 1px; }
+.cw-label  { font-size: 0.6rem; font-weight: 700; color: #ddd; line-height: 1.3; }
+.cw-detail { font-size: 0.56rem; color: #9aa4b8; margin-top: 2px; line-height: 1.45; overflow-wrap: anywhere; }
+.cw-zone   { font-size: 0.52rem; font-weight: 700; margin-top: 3px; display: inline-block; opacity: 0.85; }
+
+/* barra de contexto da semana */
+.cal-week-meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  background: #101a2e; border: 1px solid #1e3a5f; border-radius: 10px;
+  padding: 8px 12px; margin-bottom: 8px;
+}
+.cwm-badge { font-size: 0.58rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+.cwm-item  { font-size: 0.62rem; color: #94a3b8; }
+.cwm-item b { color: #e2e8f0; font-weight: 800; }
+.cwm-desc  { font-size: 0.58rem; color: #64748b; flex-basis: 100%; line-height: 1.4; }
 
 .cal-rest {
   font-size: 0.58rem; color: #222;
@@ -3004,6 +3010,7 @@ canvas { max-height: 340px; }
       <button class="cal-nav-btn" onclick="changeWeek(1)">›</button>
       <button class="cal-today-btn" onclick="goToday()">Hoje</button>
     </div>
+    <div id="cal-week-meta"></div>
     <div class="cal-grid" id="cal-grid"></div>
   </div>
 
@@ -6895,12 +6902,52 @@ function fmtDay(d) {
   return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}`;
 }
 
+// ── barra de contexto: semana do ciclo, fase, volume planejado x realizado ──
+function renderCalWeekMeta(mon, sun) {
+  const el = document.getElementById('cal-week-meta');
+  if (!el) return;
+  try {
+    const start = new Date((CFG.cycle_start || '2026-07-20') + 'T00:00:00');
+    const nW    = (CFG.cycle_weeks) || 18;
+    const semN  = Math.floor((mon - start) / (7 * 864e5)) + 1;
+    if (semN < 1 || semN > nW) { el.innerHTML = ''; return; }
+
+    const fases = (EXT && EXT.plan && EXT.plan.cycle_phases) || [];
+    const f = fases.find(x => (x.weeks || []).includes(semN)) || {};
+    const plan = {};
+    ((EXT && EXT.plan && EXT.plan.planned_weekly) || []).forEach(p => plan[p.week] = p);
+    const alvo = (plan[dateToYMD(mon)] || {}).runVol;
+
+    // km de corrida efetivamente registrados na semana
+    const a = dateToYMD(mon), b = dateToYMD(sun);
+    const feito = (typeof sessions !== 'undefined' ? sessions : [])
+      .filter(s => s.sport === 'run' && s.date >= a && s.date <= b)
+      .reduce((t, s) => t + (s.dist || 0), 0);
+
+    const bg = f.bg || '#1e293b';
+    const cor = f.color || '#94a3b8';
+    const pct = alvo ? Math.round(100 * feito / alvo) : null;
+    const corPct = pct == null ? '#64748b' : pct >= 90 ? '#4ade80' : pct >= 60 ? '#fbbf24' : '#94a3b8';
+
+    el.className = 'cal-week-meta';
+    el.innerHTML =
+      `<span class="cwm-badge" style="background:${bg};color:${cor};border:1px solid ${cor}55">`
+      + `${f.icon || ''} SEM ${semN} · ${f.label || f.short || ''}</span>`
+      + `<span class="cwm-item">Corrida planejada: <b>${alvo != null ? alvo + ' km' : '—'}</b></span>`
+      + `<span class="cwm-item">Realizado: <b style="color:${corPct}">${feito.toFixed(1)} km</b>`
+      + (pct != null ? ` <span style="color:${corPct}">(${pct}%)</span>` : '') + `</span>`
+      + (f.desc ? `<span class="cwm-desc">${f.desc}</span>` : '');
+  } catch (e) { console.warn('renderCalWeekMeta', e); }
+}
+
 function renderCalendar() {
   const mon  = getWeekMonday(calWeekOffset);
   const sun  = new Date(mon); sun.setDate(mon.getDate() + 6);
 
   document.getElementById('cal-week-label').textContent =
     `${fmtDay(mon)} – ${fmtDay(sun)} · ${sun.getFullYear()}`;
+
+  renderCalWeekMeta(mon, sun);
 
   const todayStr = dateToYMD(new Date());
 
@@ -6916,10 +6963,12 @@ function renderCalendar() {
       ? sessions.filter(s => s.date === dateStr)
       : [];
 
+    const SPNOME = { run:'CORRIDA', bike:'BIKE', swim:'NATAÇÃO', strength:'FORÇA', rest:'DESCANSO' };
     const workoutHTML = planned.length
       ? planned.map(w => `
           <div class="cal-workout" style="border-left-color:${w.color}"
                onclick="openModal('${w.key}')" title="Clique para ver detalhes">
+            <span class="cw-sport" style="color:${w.color}">${SPNOME[w.sport] || ''}</span>
             <div class="cw-label">${w.label}</div>
             <div class="cw-detail">${w.detail}</div>
             <span class="cw-zone" style="color:${w.color}">${w.zone}</span>
