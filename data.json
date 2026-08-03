@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-07-29",
+ "updated_at": "2026-08-03",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -2011,8 +2011,75 @@
    "id": 163,
    "date": "2026-07-28",
    "sport": "strength",
-   "dur": "30:00",
-   "note": "~30min · Força A — Perna (Sem 2 · terça, pós-corrida) · fase de adaptação anatômica · agach. goblet 3×12 · leg press 3×15 · RDL 3×12 · afundo caminhando 3×10/perna · panturrilha excêntrica 3×15 · RPE 6 · prescrito completo · relógio falhou, registro manual"
+   "dur": "36:35",
+   "note": "36:35 · Força A — Perna (Sem 2 · terça, pós-corrida) · fase de adaptação anatômica · agach. goblet 3×12 · leg press 3×15 · RDL 3×12 · afundo caminhando 3×10/perna · panturrilha excêntrica 3×15 · RPE 6 · prescrito completo · Strava",
+   "kcal": 233
+  },
+  {
+   "id": 164,
+   "date": "2026-07-29",
+   "sport": "swim",
+   "dist": 1.075,
+   "dur": "36:04",
+   "pace": "3:21",
+   "sec": 201,
+   "kcal": 391,
+   "note": "1.075m · 36:04 · natação recuperação Z1 (Sem 2 · quarta) · ~3:21/100m · dia sem corrida · Strava"
+  },
+  {
+   "id": 165,
+   "date": "2026-07-31",
+   "sport": "run",
+   "dist": 4.1,
+   "dur": "27:33",
+   "pace": "6:43",
+   "sec": 403,
+   "hr": 135,
+   "kcal": 321,
+   "note": "4,10km · 27:33 · fácil Z2 (Sem 2 · sexta) · 6:43/km (8,9 km/h) · FC 135 avg / 147 máx · prescrito 9km · 4,1 na sexta + ~6 no sábado · EF 1,10 · Strava"
+  },
+  {
+   "id": 166,
+   "date": "2026-07-31",
+   "sport": "strength",
+   "dur": "39:11",
+   "kcal": 262,
+   "note": "39:11 · Pliometria + Força B (Sem 2 · sexta) · plio preparação de tornozelo ~45 contatos · elevação pélvica, SL-RDL, búlgaro, panturrilha sentado, glúteo médio · RE 10 · Strava"
+  },
+  {
+   "id": 167,
+   "date": "2026-08-01",
+   "sport": "run",
+   "dist": 6.01,
+   "dur": "37:36",
+   "pace": "6:15",
+   "sec": 375,
+   "hr": 153,
+   "kcal": 453,
+   "note": "6,01km · 37:36 · corrida com 1km forte no meio (Sem 2 · sábado) · 6:15/km médio · 1km forte em 5:19 (11,3 km/h) FC 162 · FC 153 avg / 166 máx · Asa Delta off-road · completa os ~5km que faltaram da sexta (9km prescritos, 4,1 feitos) · relógio dividiu em 2 · Strava"
+  },
+  {
+   "id": 168,
+   "date": "2026-08-01",
+   "sport": "bike",
+   "dist": 30.59,
+   "dur": "1:40:09",
+   "sec": 18.3,
+   "watts": 134,
+   "kcal": 807,
+   "note": "30,59km \u00b7 1:40:09 \u00b7 Bike longa Z2 (Sem 2 \u00b7 s\u00e1bado) \u00b7 134W m\u00e9dio \u00b7 cad\u00eancia 77 \u00b7 +521m \u00b7 RE 20 \u00b7 SEM blocos de LT2 (op\u00e7\u00e3o certa: j\u00e1 tinha corrido de manh\u00e3 e longa no domingo) \u00b7 Zwift Bigger Loop \u00b7 Strava"
+  },
+  {
+   "id": 169,
+   "date": "2026-08-02",
+   "sport": "run",
+   "dist": 12.02,
+   "dur": "1:14:27",
+   "pace": "6:12",
+   "sec": 372,
+   "hr": 142,
+   "kcal": 958,
+   "note": "12,02km \u00b7 1:14:27 \u00b7 long\u00e3o Z1\u2013Z2 (Sem 2 \u00b7 domingo) \u00b7 6:12/km (9,7 km/h) \u00b7 FC 142 avg / 157 m\u00e1x \u00b7 +107m \u00b7 RE 79 \u00b7 Jardim Bot\u00e2nico \u00b7 3 PRs \u00b7 EF 1,14 \u00b7 melhor 10K 1:00:06 \u00b7 Strava"
   }
  ],
  "weight_data": [
@@ -2217,6 +2284,12 @@
    "sport": "run",
    "done": 5.0,
    "planned": 5.0
+  },
+  {
+   "date": "2026-08-01",
+   "sport": "run",
+   "done": 1.0,
+   "planned": 0.0
   }
  ],
  "inbody_exams": [
