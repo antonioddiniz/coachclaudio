@@ -14,26 +14,26 @@
 ══════════════════════════════════════════ */
 :root {
   /* elevação (3 camadas + fundo) */
-  --bg-0: #0f1117;   /* fundo da página */
-  --bg-1: #171a23;   /* card */
-  --bg-2: #1f2330;   /* elemento ativo / hover */
-  --border-1: #232734;
-  --border-2: #2c3142;
+  --bg-0: #1a1a1a;   /* fundo da página */
+  --bg-1: #242424;   /* card */
+  --bg-2: #2e2e2e;   /* elemento ativo / hover */
+  --border-1: #383838;
+  --border-2: #484848;
 
   /* texto */
-  --text-1: #f1f3f7;
-  --text-2: #9aa3b2;
-  --text-3: #5d6573;
+  --text-1: #f2f2f2;
+  --text-2: #a8a8a8;
+  --text-3: #6e6e6e;
 
   /* cores por esporte — únicas em todo o dashboard */
-  --c-run:  #10b981;
-  --c-bike: #f59e0b;
-  --c-swim: #06b6d4;
-  --c-lift: #a78bfa;
+  --c-run:  #f97316;
+  --c-bike: #d97706;
+  --c-swim: #60a5fa;
+  --c-lift: #a3a3a3;
 
   /* semântica — só para melhora/piora */
-  --good: #4ade80;
-  --bad:  #f87171;
+  --good: #f97316;
+  --bad:  #ef4444;
 
   /* tipografia */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -50,7 +50,7 @@
 body {
   font-family: var(--font-sans);
   background: var(--bg-0);
-  color: #e5e5e5;
+  color: #f2f2f2;
   font-variant-numeric: tabular-nums;
   min-height: 100vh;
   padding: 0;
@@ -60,7 +60,7 @@ body {
 
 /* ── HEADER ── */
 header { text-align: center; margin-bottom: 20px; }
-header h1 { font-size: 1.05rem; font-weight: 700; color: #ddd; letter-spacing: 0.3px; }
+header h1 { font-size: 1.05rem; font-weight: 700; color: #f2f2f2; letter-spacing: 0.3px; }
 header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 
 /* ══════════════════════════════════════════
@@ -73,8 +73,8 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 
 /* ── banner top ── */
 .profile-banner {
-  background: linear-gradient(135deg, #0f1a13 0%, #0d1520 50%, #120d1a 100%);
-  border: 1px solid #1e2e1e;
+  background: linear-gradient(135deg, #1a1a1a 0%, #222222 50%, #1a1a1a 100%);
+  border: 1px solid #383838;
   border-radius: 18px;
   padding: 22px 24px;
   display: flex;
@@ -100,7 +100,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .profile-avatar {
   width: 54px; height: 54px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #10b981, #06b6d4);
+  background: linear-gradient(135deg, #f97316, #d97706);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.15rem; font-weight: 900; color: #000;
   flex-shrink: 0;
@@ -118,22 +118,22 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   border-radius: 20px;
   font-weight: 700;
 }
-.st-run  { background: #052e16; color: #4ade80; border: 1px solid #10b98133; }
-.st-bike { background: #1c1407; color: #fbbf24; border: 1px solid #f59e0b33; }
-.st-swim { background: #0c2230; color: #67e8f9; border: 1px solid #06b6d433; }
-.st-lift { background: #1e0a40; color: #c4b5fd; border: 1px solid #a78bfa33; }
+.st-run  { background: #2a1500; color: #fb923c; border: 1px solid #f9731633; }
+.st-bike { background: #1e1600; color: #fcd34d; border: 1px solid #d9770633; }
+.st-swim { background: #0c1a2e; color: #93c5fd; border: 1px solid #60a5fa33; }
+.st-lift { background: #252525; color: #d4d4d4; border: 1px solid #a3a3a333; }
 
 .score-block { text-align: center; flex-shrink: 0; }
 .score-ring {
   width: 70px; height: 70px;
   border-radius: 50%;
-  border: 3px solid #10b981;
+  border: 3px solid #f97316;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  background: #0d1a0f;
+  background: #1a1a1a;
   margin: 0 auto 6px;
 }
-.score-val { font-size: 1.4rem; font-weight: 900; color: #4ade80; line-height: 1; }
+.score-val { font-size: 1.4rem; font-weight: 900; color: #f97316; line-height: 1; }
 .score-of  { font-size: 0.58rem; color: #999; }
 .score-lbl { font-size: 0.62rem; color: #999; letter-spacing: 0.5px; }
 
@@ -145,8 +145,8 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   margin-bottom: 12px;
 }
 .pmc {
-  background: #151824;
-  border: 1px solid #1e2230;
+  background: #222222;
+  border: 1px solid #383838;
   border-radius: 12px;
   padding: 12px 10px;
   text-align: center;
@@ -158,10 +158,10 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   bottom: 0; left: 10%; right: 10%; height: 2px;
   border-radius: 2px;
 }
-.pmc-weight::after   { background: #64748b; }
-.pmc-muscle::after   { background: #10b981; }
-.pmc-fat::after      { background: #f87171; }
-.pmc-bmr::after      { background: #f59e0b; }
+.pmc-weight::after   { background: #6b7280; }
+.pmc-muscle::after   { background: #f97316; }
+.pmc-fat::after      { background: #ef4444; }
+.pmc-bmr::after      { background: #d97706; }
 .pmc-visceral::after { background: #fb923c; }
 .pmc-fcmax::after    { background: #818cf8; }
 
@@ -169,8 +169,8 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .pmc-unit { font-size: 0.6rem; color: #999; }
 .pmc-label { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.6px; color: #888; display: block; margin-top: 4px; }
 .pmc-target { font-size: 0.6rem; margin-top: 4px; display: block; }
-.target-ok   { color: #4ade80; }
-.target-warn { color: #fb923c; }
+.target-ok   { color: #f97316; }
+.target-warn { color: #ef4444; }
 .target-info { color: #999; }
 
 /* ── bottom row: body comp chart + zones ── */
@@ -193,8 +193,8 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   }
 }
 .bc-wrap, .zones-wrap {
-  background: #151824;
-  border: 1px solid #1e2230;
+  background: #222222;
+  border: 1px solid #383838;
   border-radius: 14px;
   padding: 16px;
   width: 100%;
@@ -237,18 +237,18 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .zone-name { font-weight: 700; width: 110px; flex-shrink: 0; }
 .zone-bpm  { width: 80px; flex-shrink: 0; font-variant-numeric: tabular-nums; font-weight: 600; }
 .zone-note { font-size: 0.62rem; color: #888; }
-.z1 { background: #1e2230; color: #888; }
-.z2 { background: #052e1640; color: #4ade80; border: 1px solid #10b98120; }
-.z3 { background: #1c140740; color: #fbbf24; border: 1px solid #f59e0b20; }
+.z1 { background: #2a2a2a; color: #888; }
+.z2 { background: #2a150040; color: #fb923c; border: 1px solid #f9731620; }
+.z3 { background: #1e160040; color: #fcd34d; border: 1px solid #d9770620; }
 .z4 { background: #45141440; color: #f87171; border: 1px solid #ef444420; }
-.z5 { background: #1e0a4040; color: #c4b5fd; border: 1px solid #a78bfa20; }
+.z5 { background: #25252540; color: #d4d4d4; border: 1px solid #a3a3a320; }
 
 .pace-ref-grid {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 5px; margin-top: 6px;
 }
 .pace-ref {
-  background: #171a23;
+  background: #242424;
   border: 1px solid #242a3a;
   border-radius: 8px;
   padding: 6px 8px;
@@ -256,7 +256,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   font-size: 0.68rem;
   color: #666;
 }
-.pace-ref span:last-child { color: #aaa; font-weight: 600; font-variant-numeric: tabular-nums; }
+.pace-ref span:last-child { color: #c0c0c0; font-weight: 600; font-variant-numeric: tabular-nums; }
 
 /* inbody history bar */
 .inbody-history {
@@ -294,12 +294,12 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .inbody-snap-date { color: #888; margin-bottom: 4px; }
 .inbody-snap-val  { color: #ddd; font-weight: 700; font-size: 0.8rem; }
 .inbody-snap-lbl  { color: #666; font-size: 0.58rem; }
-.inbody-snap.latest { border-color: #10b98144; }
+.inbody-snap.latest { border-color: #f9731644; }
 
 /* ── ANÁLISE SEGMENTAR ── */
 .segmentar-hub {
   background: #11151f;
-  border: 1px solid #1e2230;
+  border: 1px solid #383838;
   border-radius: 12px;
   padding: 14px 16px;
   margin-bottom: 14px;
@@ -322,7 +322,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .seg-unit      { font-size: 0.6rem; color: #888; font-weight: 400; margin-left: 1px; }
 .seg-card-delta { color: #888; font-size: 0.56rem; margin-top: 3px; }
 .seg-card-delta.warn { color: #fbbf24; }
-.seg-card-delta.ok   { color: #4ade80; }
+.seg-card-delta.ok   { color: #f97316; }
 @media (max-width: 700px) {
   .seg-detail-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -338,7 +338,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .lsc-carousel-top-bar {
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px 18px 10px;
-  border-bottom: 1px solid #171a23;
+  border-bottom: 1px solid #383838;
 }
 .lsc-carousel-label {
   font-size: 0.62rem; font-weight: 800; color: #666;
@@ -349,7 +349,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 }
 .lsc-nav-btn {
   width: 26px; height: 26px; border-radius: 8px;
-  background: #171a23; border: 1px solid #222;
+  background: #242424; border: 1px solid #222;
   color: #999; font-size: 0.85rem; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: background 0.15s, color 0.15s;
@@ -366,7 +366,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   transition: background 0.2s, transform 0.2s;
 }
 .lsc-dot.active {
-  background: var(--lsc-dot-color, #10b981);
+  background: var(--lsc-dot-color, #f97316);
   transform: scale(1.3);
 }
 .lsc-carousel-counter {
@@ -386,7 +386,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; height: 3px;
-  background: var(--lsc-color, #10b981);
+  background: var(--lsc-color, #f97316);
 }
 .lsc-header {
   display: flex; align-items: center;
@@ -397,16 +397,16 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
 .lsc-icon {
   width: 36px; height: 36px; border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1rem; background: var(--lsc-color-bg, #052e16); flex-shrink: 0;
+  font-size: 1rem; background: var(--lsc-color-bg, #2a1500); flex-shrink: 0;
 }
 .lsc-title { font-size: 0.8rem; font-weight: 700; color: #ccc; }
 .lsc-date  { font-size: 0.65rem; color: #777; margin-top: 2px; }
 .lsc-badge {
   font-size: 0.6rem; font-weight: 800;
   padding: 3px 10px; border-radius: 20px;
-  background: var(--lsc-color-bg, #052e16);
-  color: var(--lsc-color, #10b981);
-  border: 1px solid var(--lsc-color, #10b981)44;
+  background: var(--lsc-color-bg, #2a1500);
+  color: var(--lsc-color, #f97316);
+  border: 1px solid var(--lsc-color, #f97316)44;
   text-transform: uppercase; letter-spacing: 0.5px;
 }
 .lsc-stats {
@@ -414,12 +414,12 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   gap: 8px; margin-bottom: 16px;
 }
 .lsc-stat {
-  background: #171a23; border-radius: 10px;
+  background: #242424; border-radius: 10px;
   padding: 10px 12px; border: 1px solid #1c1c1c;
 }
 .lsc-stat-val {
   font-size: 1.05rem; font-weight: 900;
-  color: var(--lsc-color, #10b981); line-height: 1;
+  color: var(--lsc-color, #f97316); line-height: 1;
 }
 .lsc-stat-lbl { font-size: 0.58rem; color: #777; margin-top: 4px; }
 .lsc-analysis {
@@ -464,7 +464,7 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   margin: 0 auto 24px;
 }
 .card {
-  background: #171a23;
+  background: #242424;
   border-radius: 14px;
   padding: 16px 18px;
   border: 1px solid #222;
@@ -478,9 +478,9 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   height: 3px;
   border-radius: 14px 14px 0 0;
 }
-.card.run::before  { background: #10b981; }
+.card.run::before  { background: #f97316; }
 .card.bike::before { background: #f59e0b; }
-.card.swim::before { background: #06b6d4; }
+.card.swim::before { background: #60a5fa; }
 
 .card-icon { font-size: 1.3rem; margin-bottom: 8px; }
 .card-sport { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; color: #999; }
@@ -495,14 +495,14 @@ header p { font-size: 0.75rem; color: #888; margin-top: 3px; }
   display: inline-block;
 }
 .delta-neutral { background: #1e2230; color: #666; }
-.delta-better  { background: #052e16; color: #4ade80; }
+.delta-better  { background: #2a1500; color: #fb923c; }
 .delta-worse   { background: #450a0a; color: #f87171; }
 
 /* ── CHART CONTAINER ── */
 .chart-wrap {
   max-width: 900px;
   margin: 0 auto 24px;
-  background: #171a23;
+  background: #242424;
   border-radius: 16px;
   border: 1px solid #222;
   padding: 20px;
@@ -580,7 +580,7 @@ canvas { max-height: 340px; }
 .add-section {
   max-width: 900px;
   margin: 0 auto 24px;
-  background: #171a23;
+  background: #242424;
   border-radius: 16px;
   border: 1px solid #222;
   padding: 20px;
@@ -633,7 +633,7 @@ canvas { max-height: 340px; }
   border: 1px solid #2a2a2a;
   border-radius: 8px;
   padding: 8px 10px;
-  color: #e5e5e5;
+  color: #f2f2f2;
   font-size: 0.8rem;
   outline: none;
   transition: border-color 0.2s;
@@ -710,7 +710,7 @@ canvas { max-height: 340px; }
 .history-section {
   max-width: 900px;
   margin: 0 auto;
-  background: #171a23;
+  background: #242424;
   border-radius: 16px;
   border: 1px solid #222;
   padding: 20px;
@@ -769,9 +769,9 @@ canvas { max-height: 340px; }
   font-size: 0.65rem;
   font-weight: 700;
 }
-.badge-run  { background: #052e16; color: #4ade80; }
+.badge-run  { background: #2a1500; color: #fb923c; }
 .badge-bike { background: #1c1407; color: #fbbf24; }
-.badge-swim { background: #0c2230; color: #67e8f9; }
+.badge-swim { background: #0c1a2e; color: #93c5fd; }
 .btn-del {
   background: none;
   border: none;
@@ -816,7 +816,7 @@ canvas { max-height: 340px; }
   padding: 5px 13px;
   border-radius: 20px;
   border: 1px solid #2a2a2a;
-  background: #171a23;
+  background: #242424;
   color: #666;
   font-size: 0.7rem;
   font-weight: 600;
@@ -825,10 +825,10 @@ canvas { max-height: 340px; }
 }
 .pill:hover { border-color: #444; color: #aaa; }
 .pill.active        { background: #2a2a2a; color: #fff; border-color: #3a3a3a; }
-.pill.active-run    { background: #052e1680; border-color: #10b981; color: #4ade80; }
+.pill.active-run    { background: #2a150080; border-color: #f97316; color: #fb923c; }
 .pill.active-bike   { background: #1c140780; border-color: #f59e0b; color: #fbbf24; }
-.pill.active-swim   { background: #0c223080; border-color: #06b6d4; color: #67e8f9; }
-.pill.active-strength { background: #1e0a4080; border-color: #a78bfa; color: #c4b5fd; }
+.pill.active-swim   { background: #0c1a2e80; border-color: #60a5fa; color: #93c5fd; }
+.pill.active-strength { background: #25252580; border-color: #a3a3a3; color: #d4d4d4; }
 
 /* summary stats bar */
 .portal-stats {
@@ -838,7 +838,7 @@ canvas { max-height: 340px; }
   margin-bottom: 16px;
 }
 .pstat {
-  background: #171a23;
+  background: #242424;
   border: 1px solid #242a3a;
   border-radius: 12px;
   padding: 12px 14px;
@@ -873,7 +873,7 @@ canvas { max-height: 340px; }
 
 /* add session form panel */
 .portal-add-form {
-  background: #171a23;
+  background: #242424;
   border: 1px solid #222;
   border-radius: 14px;
   padding: 18px;
@@ -912,7 +912,7 @@ canvas { max-height: 340px; }
   border: 1px solid #2a2a2a;
   border-radius: 8px;
   padding: 7px 9px;
-  color: #e5e5e5;
+  color: #f2f2f2;
   font-size: 0.78rem;
   outline: none;
 }
@@ -948,7 +948,7 @@ canvas { max-height: 340px; }
   padding: 9px 12px;
   border-radius: 10px;
   background: #161a26;
-  border: 1px solid #1e2230;
+  border: 1px solid #383838;
   margin-bottom: 5px;
   transition: border-color 0.15s;
 }
@@ -1006,7 +1006,7 @@ canvas { max-height: 340px; }
    CALENDÁRIO SEMANAL
 ══════════════════════════════════════════ */
 .cal-section {
-  background: #151824;
+  background: #222222;
   border: 1px solid #242a3a;
   border-radius: 16px;
   padding: 18px;
@@ -1072,7 +1072,7 @@ canvas { max-height: 340px; }
 }
 .cal-day {
   background: #161a26;
-  border: 1px solid #1e2230;
+  border: 1px solid #383838;
   border-radius: 10px;
   padding: 8px 6px;
   min-height: 180px;
@@ -1139,14 +1139,14 @@ canvas { max-height: 340px; }
 }
 .cal-logged {
   display: flex; align-items: center; gap: 4px;
-  font-size: 0.57rem; color: #4ade80;
-  background: #052e1650;
+  font-size: 0.57rem; color: #fb923c;
+  background: #2a150050;
   border-radius: 4px; padding: 2px 5px;
   font-weight: 600;
 }
 .cal-logged.bike-logged { color: #fbbf24; background: #1c140750; }
-.cal-logged.swim-logged { color: #67e8f9; background: #0c223050; }
-.cal-logged.strength-logged { color: #c4b5fd; background: #1e0a4050; }
+.cal-logged.swim-logged { color: #93c5fd; background: #0c1a2e50; }
+.cal-logged.strength-logged { color: #d4d4d4; background: #25252550; }
 
 @media (max-width: 700px) {
   .cal-grid { grid-template-columns: repeat(7,1fr); gap: 3px; }
@@ -1241,8 +1241,8 @@ canvas { max-height: 340px; }
 .exo-row {
   display: flex; gap: 10px; align-items: flex-start;
   padding: 9px 12px;
-  background: #151824;
-  border: 1px solid #1e2230;
+  background: #222222;
+  border: 1px solid #383838;
   border-radius: 10px;
   margin-bottom: 5px;
 }
@@ -1267,21 +1267,21 @@ canvas { max-height: 340px; }
 /* swim block */
 .swim-block {
   padding: 9px 12px;
-  background: #151824;
-  border: 1px solid #1e2230;
-  border-left: 3px solid #06b6d4;
+  background: #222222;
+  border: 1px solid #383838;
+  border-left: 3px solid #60a5fa;
   border-radius: 0 10px 10px 0;
   margin-bottom: 5px;
 }
 .swim-block-name { font-size: 0.75rem; font-weight: 700; color: #ddd; }
 .swim-block-detail { font-size: 0.63rem; color: #999; margin-top: 2px; line-height: 1.5; }
-.swim-block-zone { font-size: 0.6rem; font-weight: 700; color: #06b6d4; margin-top: 3px; }
+.swim-block-zone { font-size: 0.6rem; font-weight: 700; color: #60a5fa; margin-top: 3px; }
 
 /* run/bike block */
 .run-block {
   padding: 9px 12px;
-  background: #151824;
-  border-left: 3px solid #10b981;
+  background: #222222;
+  border-left: 3px solid #f97316;
   border-radius: 0 10px 10px 0;
   margin-bottom: 5px;
 }
@@ -1301,7 +1301,7 @@ canvas { max-height: 340px; }
   transition: background 0.15s, transform 0.1s;
 }
 .cal-workout:hover {
-  background: #171a23 !important;
+  background: #242424 !important;
   transform: scale(1.02);
 }
 .cal-workout:active { transform: scale(0.99); }
@@ -1313,7 +1313,7 @@ canvas { max-height: 340px; }
   text-align: center;
   padding: 20px 20px 0;
 }
-.site-header h1 { font-size: 1.05rem; font-weight: 700; color: #ddd; letter-spacing: 0.3px; }
+.site-header h1 { font-size: 1.05rem; font-weight: 700; color: #f2f2f2; letter-spacing: 0.3px; }
 .site-header p  { font-size: 0.75rem; color: #888; margin-top: 3px; }
 
 .tab-bar {
@@ -1353,7 +1353,7 @@ canvas { max-height: 340px; }
   letter-spacing: 0.3px;
 }
 .tab-btn:hover { color: #999; }
-.tab-btn.active { color: #fff; border-bottom-color: #10b981; }
+.tab-btn.active { color: #fff; border-bottom-color: #f97316; }
 .tab-btn .tab-icon { font-size: 0.9rem; }
 
 @media (max-width: 760px) {
@@ -1388,7 +1388,7 @@ canvas { max-height: 340px; }
   margin: 0 auto 24px;
 }
 .diet-card {
-  background: #171a23;
+  background: #242424;
   border: 1px solid #242a3a;
   border-radius: 14px;
   padding: 18px;
@@ -1401,11 +1401,11 @@ canvas { max-height: 340px; }
   top: 0; left: 0; right: 0; height: 3px;
   border-radius: 14px 14px 0 0;
 }
-.diet-card.protein::before { background: #10b981; }
+.diet-card.protein::before { background: #f97316; }
 .diet-card.carbs::before   { background: #f59e0b; }
 .diet-card.fat::before     { background: #f87171; }
 .diet-card.kcal::before    { background: #818cf8; }
-.diet-card.water::before   { background: #06b6d4; }
+.diet-card.water::before   { background: #60a5fa; }
 .diet-card.timing::before  { background: #fb923c; }
 .diet-card-icon  { font-size: 1.3rem; margin-bottom: 8px; }
 .diet-card-lbl   { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 1px; color: #888; }
@@ -1415,7 +1415,7 @@ canvas { max-height: 340px; }
 .diet-section {
   max-width: 900px;
   margin: 0 auto 20px;
-  background: #171a23;
+  background: #242424;
   border: 1px solid #242a3a;
   border-radius: 14px;
   padding: 20px;
@@ -1459,7 +1459,7 @@ canvas { max-height: 340px; }
 .diet-day-row:nth-child(odd) { background: #161a26; }
 .diet-day-lbl  { font-weight: 700; color: #ccc; }
 .diet-day-kcal { color: #818cf8; font-weight: 700; }
-.diet-day-prot { color: #10b981; font-weight: 700; }
+.diet-day-prot { color: #f97316; font-weight: 700; }
 .diet-day-carb { color: #f59e0b; font-weight: 700; }
 
 .meal-timeline {
@@ -1476,7 +1476,7 @@ canvas { max-height: 340px; }
   padding: 10px 12px;
   background: #161a26;
   border-radius: 10px;
-  border: 1px solid #1e2230;
+  border: 1px solid #383838;
   width: 100%;
   box-sizing: border-box;
   min-width: 0;
@@ -1529,7 +1529,7 @@ canvas { max-height: 340px; }
 }
 .supp-item {
   background: #161a26;
-  border: 1px solid #1e2230;
+  border: 1px solid #383838;
   border-radius: 8px;
   padding: 10px 12px;
   font-size: 0.72rem;
@@ -1585,8 +1585,8 @@ canvas { max-height: 340px; }
   .plano-week-grid { grid-template-columns: repeat(3, 1fr); gap: 3px; }
 }
 .plano-day {
-  background: #151824;
-  border: 1px solid #1e2230;
+  background: #222222;
+  border: 1px solid #383838;
   border-radius: 12px;
   padding: 10px 8px;
 }
@@ -1608,10 +1608,10 @@ canvas { max-height: 340px; }
   line-height: 1.4;
 }
 .plano-session.dbl  { border-left: 2px solid #f43f5e; }
-.plano-session.swim { border-left: 2px solid #06b6d4; }
+.plano-session.swim { border-left: 2px solid #60a5fa; }
 .plano-session.bike { border-left: 2px solid #f59e0b; }
-.plano-session.run  { border-left: 2px solid #10b981; }
-.plano-session.str  { border-left: 2px solid #a78bfa; }
+.plano-session.run  { border-left: 2px solid #f97316; }
+.plano-session.str  { border-left: 2px solid #a3a3a3; }
 .plano-session.rest { border-left: 2px solid #333; opacity: 0.4; }
 .plano-sess-title   { font-weight: 700; color: #ddd; }
 .plano-sess-detail  { color: #888; margin-top: 1px; }
@@ -1635,7 +1635,7 @@ canvas { max-height: 340px; }
   .zone-summary { grid-template-columns: 1fr; gap: 6px; }
 }
 .volume-summary {
-  background: #171a23;
+  background: #242424;
   border: 1px solid #242a3a;
   border-radius: 14px;
   padding: 14px;
@@ -1682,8 +1682,8 @@ canvas { max-height: 340px; }
     }
 }
 .zone-card-s {
-  background: #151824;
-  border: 1px solid #1e2230;
+  background: #222222;
+  border: 1px solid #383838;
   border-radius: 12px;
   padding: 14px;
 }
@@ -1785,16 +1785,16 @@ canvas { max-height: 340px; }
 .week-modal-title { font-size: 1.05rem; font-weight: 900; color: #fff; }
 .week-modal-sub   { font-size: 0.68rem; color: #666; margin-top: 3px; }
 .week-modal-vol   { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-bottom: 16px; }
-.week-modal-vol-item { background: #151824; border: 1px solid #1e2230; border-radius: 10px; padding: 10px 8px; text-align: center; }
+.week-modal-vol-item { background: #222222; border: 1px solid #383838; border-radius: 10px; padding: 10px 8px; text-align: center; }
 .week-modal-vol-val  { font-size: 1.0rem; font-weight: 800; }
 .week-modal-vol-lbl  { font-size: 0.58rem; color: #555; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
 .week-modal-sess { display: flex; flex-direction: column; gap: 8px; }
-.week-modal-sess-item { background: #151824; border: 1px solid #1e2230; border-radius: 10px; padding: 10px 12px; }
+.week-modal-sess-item { background: #222222; border: 1px solid #383838; border-radius: 10px; padding: 10px 12px; }
 .week-modal-sess-date { font-size: 0.6rem; color: #555; margin-bottom: 3px; }
 .week-modal-sess-name { font-size: 0.78rem; font-weight: 700; color: #ddd; }
 .week-modal-sess-note { font-size: 0.63rem; color: #666; margin-top: 3px; line-height: 1.4; }
 .week-modal-future { text-align: center; padding: 20px; color: #555; font-size: 0.75rem; }
-.week-modal-qual { background: #0a0f0a; border: 1px solid #1e3a1e; border-radius: 10px; padding: 10px 14px; margin-bottom: 14px; font-size: 0.68rem; color: #4ade80; }
+.week-modal-qual { background: #0a0f0a; border: 1px solid #1e3a1e; border-radius: 10px; padding: 10px 14px; margin-bottom: 14px; font-size: 0.68rem; color: #fb923c; }
 .cycle-cell.current {
   border-color: #fff !important;
   transform: scale(1.04);
@@ -1881,7 +1881,7 @@ canvas { max-height: 340px; }
   margin-bottom: 14px; flex-wrap: wrap; gap: 8px;
 }
 .vo2-evolucao-title {
-  font-size: 0.85rem; font-weight: 800; color: #c4b5fd; letter-spacing: 0.2px;
+  font-size: 0.85rem; font-weight: 800; color: #d4d4d4; letter-spacing: 0.2px;
 }
 .vo2-evolucao-subtitle {
   font-size: 0.68rem; color: #666; margin-top: 2px;
@@ -1897,8 +1897,8 @@ canvas { max-height: 340px; }
   text-align: center;
   border: 1px solid #ffffff0a;
 }
-.vo2-ms.reached { border-color: #22c55e33; background: #052e1620; }
-.vo2-ms.current { border-color: #a78bfa55; background: #4c1d9520; }
+.vo2-ms.reached { border-color: #22c55e33; background: #2a150020; }
+.vo2-ms.current { border-color: #a3a3a355; background: #4c1d9520; }
 .vo2-ms.next    { border-color: #f59e0b33; background: #78350f15; }
 .vo2-ms.future  { border-color: #33333355; background: transparent; }
 .vo2-ms-val { font-size: 1.3rem; font-weight: 900; line-height: 1; }
@@ -2098,7 +2098,7 @@ canvas { max-height: 340px; }
   white-space: nowrap;
   flex-shrink: 0;
 }
-.blocks-full  { background: #052e1680; border: 1px solid #10b98160; color: #4ade80; }
+.blocks-full  { background: #2a150080; border: 1px solid #f9731660; color: #fb923c; }
 .blocks-part  { background: #2d1a0080; border: 1px solid #f59e0b60; color: #fbbf24; }
 .blocks-none  { background: #2d070780; border: 1px solid #f43f5e60; color: #f87171; }
 .session-blocks-wrap {
@@ -2161,7 +2161,7 @@ canvas { max-height: 340px; }
   transition: all .15s;
 }
 .hist-chip:hover { color: var(--text-1); border-color: var(--border-2); }
-.hist-chip.active { background: #10b98122; color: #34d399; border-color: #10b98155; }
+.hist-chip.active { background: #f9731622; color: #34d399; border-color: #f9731655; }
 .hist-more {
   display: block; width: 100%; margin-top: 10px;
   background: var(--bg-2); border: 1px solid var(--border-1);
@@ -2216,7 +2216,7 @@ canvas { max-height: 340px; }
   padding: 2px 7px;
   border-radius: 20px;
 }
-.kpi-delta.up   { color: var(--good); background: #4ade8014; }
+.kpi-delta.up   { color: var(--good); background: #fb923c14; }
 .kpi-delta.down { color: var(--bad);  background: #f8717114; }
 .kpi-delta.flat { color: var(--text-2); background: #9aa3b214; }
 .kpi-spark { display: block; width: 100%; height: 30px; margin-top: 8px; }
@@ -2645,9 +2645,9 @@ canvas { max-height: 340px; }
     </div>
   </div>
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div>Corrida (min/km)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div>Corrida (min/km)</div>
     <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div>Bike (min/km)</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#06b6d4"></div>Natação (min/100m)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#60a5fa"></div>Natação (min/100m)</div>
   </div>
   <canvas id="evolutionChart"></canvas>
 
@@ -2660,7 +2660,7 @@ canvas { max-height: 340px; }
         <span>🏃 Corrida 5:00/km</span>
       </div>
       <div class="goal-legend-item">
-        <svg width="36" height="10"><line x1="0" y1="5" x2="36" y2="5" stroke="#06b6d499" stroke-width="2.5" stroke-dasharray="2,6"/></svg>
+        <svg width="36" height="10"><line x1="0" y1="5" x2="36" y2="5" stroke="#60a5fa99" stroke-width="2.5" stroke-dasharray="2,6"/></svg>
         <span>🏊 Natação 1:50/100m</span>
       </div>
       <div class="goal-legend-item">
@@ -2698,18 +2698,18 @@ canvas { max-height: 340px; }
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:18px;align-items:start;">
 
     <!-- Card 1: Corrida LT2 -->
-    <div style="background:#0d1a0f;border:1px solid #1a3a1a;border-radius:12px;overflow:hidden;text-align:center;">
+    <div style="background:#1a1a1a;border:1px solid #1a3a1a;border-radius:12px;overflow:hidden;text-align:center;">
       <div style="padding:12px 10px 8px;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">🏃 Corrida LT2</div>
-        <div id="qv-run-week" style="font-size:1.15rem;font-weight:800;color:#4ade80">—</div>
+        <div id="qv-run-week" style="font-size:1.15rem;font-weight:800;color:#fb923c">—</div>
         <div style="font-size:0.56rem;color:#444;margin-top:2px">esta semana</div>
       </div>
       <div style="border-top:1px solid #1a3a1a;padding:8px 10px 8px;">
-        <div id="qv-run-week-plan" style="font-size:0.9rem;font-weight:700;color:#4ade8066">—</div>
+        <div id="qv-run-week-plan" style="font-size:0.9rem;font-weight:700;color:#fb923c66">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">planejado semana</div>
       </div>
       <div style="border-top:1px solid #1a3a1a;padding:6px 10px 10px;">
-        <div id="qv-run-total" style="font-size:0.82rem;font-weight:600;color:#4ade8044">—</div>
+        <div id="qv-run-total" style="font-size:0.82rem;font-weight:600;color:#fb923c44">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">tiros no ciclo</div>
       </div>
     </div>
@@ -2752,15 +2752,15 @@ canvas { max-height: 340px; }
     <div style="background:#1a0d1a;border:1px solid #3a1a3a;border-radius:12px;overflow:hidden;text-align:center;">
       <div style="padding:12px 10px 8px;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">Melhor Semana</div>
-        <div id="qv-best-week" style="font-size:1.15rem;font-weight:800;color:#a78bfa">—</div>
+        <div id="qv-best-week" style="font-size:1.15rem;font-weight:800;color:#a3a3a3">—</div>
         <div style="font-size:0.56rem;color:#444;margin-top:2px">pico de qualidade</div>
       </div>
       <div style="border-top:1px solid #3a1a3a;padding:8px 10px 8px;">
-        <div id="qv-total-week-plan" style="font-size:0.9rem;font-weight:700;color:#a78bfa66">—</div>
+        <div id="qv-total-week-plan" style="font-size:0.9rem;font-weight:700;color:#a3a3a366">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">planejado semana</div>
       </div>
       <div style="border-top:1px solid #3a1a3a;padding:6px 10px 10px;">
-        <div id="qv-run-bike-cycle" style="font-size:0.82rem;font-weight:600;color:#a78bfa44">—</div>
+        <div id="qv-run-bike-cycle" style="font-size:0.82rem;font-weight:600;color:#a3a3a344">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">run+bike no ciclo</div>
       </div>
     </div>
@@ -2790,18 +2790,18 @@ canvas { max-height: 340px; }
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:18px;align-items:start;">
 
     <!-- Card 1: Corrida -->
-    <div style="background:#0d1a0f;border:1px solid #1a3a1a;border-radius:12px;overflow:hidden;text-align:center;">
+    <div style="background:#1a1a1a;border:1px solid #1a3a1a;border-radius:12px;overflow:hidden;text-align:center;">
       <div style="padding:12px 10px 8px;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">🏃 Corrida</div>
-        <div id="vt-run-week" style="font-size:1.15rem;font-weight:800;color:#4ade80">—</div>
+        <div id="vt-run-week" style="font-size:1.15rem;font-weight:800;color:#fb923c">—</div>
         <div style="font-size:0.56rem;color:#444;margin-top:2px">esta semana</div>
       </div>
       <div style="border-top:1px solid #1a3a1a;padding:8px 10px 8px;">
-        <div id="vt-run-week-plan" style="font-size:0.9rem;font-weight:700;color:#4ade8066">—</div>
+        <div id="vt-run-week-plan" style="font-size:0.9rem;font-weight:700;color:#fb923c66">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">planejado semana</div>
       </div>
       <div style="border-top:1px solid #1a3a1a;padding:6px 10px 10px;">
-        <div id="vt-run-cycle" style="font-size:0.82rem;font-weight:600;color:#4ade8044">—</div>
+        <div id="vt-run-cycle" style="font-size:0.82rem;font-weight:600;color:#fb923c44">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">no ciclo</div>
       </div>
     </div>
@@ -2824,24 +2824,24 @@ canvas { max-height: 340px; }
     </div>
 
     <!-- Card 3: Natação -->
-    <div style="background:#0c2230;border:1px solid #1a3a50;border-radius:12px;overflow:hidden;text-align:center;">
+    <div style="background:#0c1a2e;border:1px solid #1a3a50;border-radius:12px;overflow:hidden;text-align:center;">
       <div style="padding:12px 10px 8px;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">🏊 Natação</div>
-        <div id="vt-swim-week" style="font-size:1.15rem;font-weight:800;color:#67e8f9">—</div>
+        <div id="vt-swim-week" style="font-size:1.15rem;font-weight:800;color:#93c5fd">—</div>
         <div style="font-size:0.56rem;color:#444;margin-top:2px">esta semana</div>
       </div>
       <div style="border-top:1px solid #1a3a50;padding:8px 10px 8px;">
-        <div id="vt-swim-week-plan" style="font-size:0.9rem;font-weight:700;color:#67e8f966">—</div>
+        <div id="vt-swim-week-plan" style="font-size:0.9rem;font-weight:700;color:#93c5fd66">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">planejado semana</div>
       </div>
       <div style="border-top:1px solid #1a3a50;padding:6px 10px 10px;">
-        <div id="vt-swim-cycle" style="font-size:0.82rem;font-weight:600;color:#67e8f944">—</div>
+        <div id="vt-swim-cycle" style="font-size:0.82rem;font-weight:600;color:#93c5fd44">—</div>
         <div style="font-size:0.56rem;color:#333;margin-top:2px">no ciclo</div>
       </div>
     </div>
 
     <!-- Card 4: Total Semana -->
-    <div style="background:#0d1520;border:1px solid #1a2840;border-radius:12px;overflow:hidden;text-align:center;">
+    <div style="background:#1e1e22;border:1px solid #1a2840;border-radius:12px;overflow:hidden;text-align:center;">
       <div style="padding:12px 10px 8px;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">Total Semana</div>
         <div id="vt-total-week" style="font-size:1.15rem;font-weight:800;color:#e2e8f0">—</div>
@@ -2860,7 +2860,7 @@ canvas { max-height: 340px; }
     <!-- Card 5: Média/sem ciclo -->
     <div style="background:#1a0d1a;border:1px solid #3a1a3a;border-radius:12px;padding:14px 10px;text-align:center;">
       <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Média/sem</div>
-      <div id="vt-avg-week" style="font-size:1.15rem;font-weight:800;color:#a78bfa">—</div>
+      <div id="vt-avg-week" style="font-size:1.15rem;font-weight:800;color:#a3a3a3">—</div>
       <div style="font-size:0.56rem;color:#333;margin-top:3px">ciclo atual</div>
     </div>
 
@@ -3136,7 +3136,7 @@ canvas { max-height: 340px; }
       <canvas id="bodyCompChart" style="max-height:195px"></canvas>
       <div class="bc-legend">
         <span><span class="bc-dot" style="background:#94a3b8"></span>Peso (kg)</span>
-        <span><span class="bc-dot" style="background:#10b981"></span>Músculo (kg)</span>
+        <span><span class="bc-dot" style="background:#f97316"></span>Músculo (kg)</span>
         <span><span class="bc-dot" style="background:#f87171"></span>Gordura (%)</span>
       </div>
       <!-- snapshot mini-cards -->
@@ -3198,7 +3198,7 @@ canvas { max-height: 340px; }
         <div>⚖️ Perder <span style="color:#f87171;font-weight:700">10,1kg de gordura</span></div>
         <div>💪 Reduzir massa muscular (44,4kg → 41,5kg): -2,9kg</div>
         <div>🏋️ Manter força relativa: 48,8% (potência/peso)</div>
-        <div>🎯 Peso-alvo: <span style="color:#4ade80;font-weight:700">85kg a 12% gordura</span></div>
+        <div>🎯 Peso-alvo: <span style="color:#fb923c;font-weight:700">85kg a 12% gordura</span></div>
         <div style="margin-top:6px;padding-top:6px;border-top:1px solid #333;color:#999;font-size:0.63rem">⏱️ Estimativa: ~18 semanas (4,2 meses) a 0,55kg/semana</div>
       </div>
     </div>
@@ -3211,7 +3211,7 @@ canvas { max-height: 340px; }
     <div class="section-title-sm">Massa Magra Segmentar — Evolução por Membro <span style="font-size:0.6rem;color:#666">(5 medições InBody)</span></div>
     <div style="display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 4px;font-size:0.62rem;color:#888">
       <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#f59e0b"></span>Tronco (kg)</span>
-      <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#10b981"></span>Pernas — soma (kg)</span>
+      <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#f97316"></span>Pernas — soma (kg)</span>
       <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#60a5fa"></span>Braços — soma (kg)</span>
     </div>
     <div style="position:relative;width:100%;height:230px"><canvas id="segChart"></canvas></div>
@@ -3239,12 +3239,12 @@ canvas { max-height: 340px; }
       </div>
     </div>
 
-    <div style="font-size:0.66rem;color:#777;line-height:1.7;margin-top:10px;padding:10px 12px;background:#0d1520;border:1px solid #1e3a2e;border-radius:8px">
-      <div style="color:#4ade80;font-weight:700;margin-bottom:4px">📊 Onde foi a perda (pico 10/04 → hoje: −1,5kg músculo)</div>
+    <div style="font-size:0.66rem;color:#777;line-height:1.7;margin-top:10px;padding:10px 12px;background:#1e1e22;border:1px solid #1e3a2e;border-radius:8px">
+      <div style="color:#fb923c;font-weight:700;margin-bottom:4px">📊 Onde foi a perda (pico 10/04 → hoje: −1,5kg músculo)</div>
       <div>• <strong>Tronco −1,2kg</strong> — maior parte; provável que boa fração seja água/glicogênio do déficit, não fibra (reversível ao recarregar carbo).</div>
       <div>• <strong>Pernas −0,34kg</strong> — mínimo; resistiram bem. Quase tudo na esquerda (−0,33) vs direita (−0,01).</div>
       <div>• <strong>Assimetria perna E/D</strong> — esquerda sempre mais fraca relativa; com histórico de LCA, vale fortalecimento unilateral e radar de monitoramento.</div>
-      <div style="margin-top:4px;color:#4ade80">✅ Qualidade da cutada: dos ~11,6kg perdidos desde 02/06, ~94% foi gordura (−10,9kg) e só ~6% massa magra.</div>
+      <div style="margin-top:4px;color:#fb923c">✅ Qualidade da cutada: dos ~11,6kg perdidos desde 02/06, ~94% foi gordura (−10,9kg) e só ~6% massa magra.</div>
     </div>
   </div>
 
@@ -3252,7 +3252,7 @@ canvas { max-height: 340px; }
   <div style="background:#0d1f14;border:1px solid #16a34a44;border-radius:12px;padding:12px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;">
     <div style="font-size:1.1rem">🥗</div>
     <div>
-      <div style="font-size:0.75rem;font-weight:700;color:#4ade80">Protocolo nutricional — ciclo da meia</div>
+      <div style="font-size:0.75rem;font-weight:700;color:#fb923c">Protocolo nutricional — ciclo da meia</div>
       <div style="font-size:0.65rem;color:#888;margin-top:2px">Proteína intocável · Carbo nos dias duros · Alimento natural · Refeições 2h antes dos treinos</div>
     </div>
   </div>
@@ -3440,9 +3440,9 @@ canvas { max-height: 340px; }
     <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px;">
 
       <!-- Segunda -->
-      <div style="background:#0d1a0f;border:1px solid #10b98122;border-radius:10px;padding:14px;">
+      <div style="background:#1a1a1a;border:1px solid #f9731622;border-radius:10px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div style="font-size:0.8rem;font-weight:700;color:#4ade80">⚡ Segunda — Duplo Threshold</div>
+          <div style="font-size:0.8rem;font-weight:700;color:#fb923c">⚡ Segunda — Duplo Threshold</div>
           <div style="font-size:0.65rem;color:#888">2.400 kcal · 210g prot · 180g carb</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.68rem;color:#ccc;">
@@ -3456,9 +3456,9 @@ canvas { max-height: 340px; }
       </div>
 
       <!-- Terça -->
-      <div style="background:#0c1a2a;border:1px solid #06b6d422;border-radius:10px;padding:14px;">
+      <div style="background:#0c1a2a;border:1px solid #60a5fa22;border-radius:10px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div style="font-size:0.8rem;font-weight:700;color:#67e8f9">🏊 Terça — Natação + Força</div>
+          <div style="font-size:0.8rem;font-weight:700;color:#93c5fd">🏊 Terça — Natação + Força</div>
           <div style="font-size:0.65rem;color:#888">2.200 kcal · 210g prot · 150g carb</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.68rem;color:#ccc;">
@@ -3472,9 +3472,9 @@ canvas { max-height: 340px; }
       </div>
 
       <!-- Quarta -->
-      <div style="background:#0d1a0f;border:1px solid #10b98122;border-radius:10px;padding:14px;">
+      <div style="background:#1a1a1a;border:1px solid #f9731622;border-radius:10px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div style="font-size:0.8rem;font-weight:700;color:#4ade80">⚡ Quarta — Duplo Threshold</div>
+          <div style="font-size:0.8rem;font-weight:700;color:#fb923c">⚡ Quarta — Duplo Threshold</div>
           <div style="font-size:0.65rem;color:#888">2.400 kcal · 210g prot · 180g carb</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.68rem;color:#ccc;">
@@ -3488,9 +3488,9 @@ canvas { max-height: 340px; }
       </div>
 
       <!-- Quinta -->
-      <div style="background:#0c1a2a;border:1px solid #06b6d422;border-radius:10px;padding:14px;">
+      <div style="background:#0c1a2a;border:1px solid #60a5fa22;border-radius:10px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div style="font-size:0.8rem;font-weight:700;color:#67e8f9">🏊 Quinta — Natação + Força</div>
+          <div style="font-size:0.8rem;font-weight:700;color:#93c5fd">🏊 Quinta — Natação + Força</div>
           <div style="font-size:0.65rem;color:#888">2.000 kcal · 210g prot · 120g carb</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.68rem;color:#ccc;">
@@ -3536,9 +3536,9 @@ canvas { max-height: 340px; }
       </div>
 
       <!-- Domingo -->
-      <div style="background:#120d1a;border:1px solid #a78bfa22;border-radius:10px;padding:14px;">
+      <div style="background:#1a1a1a;border:1px solid #a3a3a322;border-radius:10px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div style="font-size:0.8rem;font-weight:700;color:#c4b5fd">🏃 Domingo — Corrida / Prova</div>
+          <div style="font-size:0.8rem;font-weight:700;color:#d4d4d4">🏃 Domingo — Corrida / Prova</div>
           <div style="font-size:0.65rem;color:#888">2.200 kcal · 210g prot · 160g carb</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.68rem;color:#ccc;">
@@ -3591,15 +3591,15 @@ canvas { max-height: 340px; }
       <!-- BLOCO: Café da manhã -->
       <div style="display:grid;grid-template-columns:110px 1fr;gap:0;align-items:stretch;">
         <div style="background:#161a26;border:1px solid #242a3a;border-radius:10px 0 0 10px;padding:10px 12px;display:flex;flex-direction:column;justify-content:center;">
-          <div style="font-size:0.6rem;color:#4ade80;font-weight:700;text-transform:uppercase;letter-spacing:0.8px">Café da manhã</div>
+          <div style="font-size:0.6rem;color:#fb923c;font-weight:700;text-transform:uppercase;letter-spacing:0.8px">Café da manhã</div>
         </div>
         <div style="background:#161a26;border:1px solid #242a3a;border-left:none;border-radius:0 10px 10px 0;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-          <div style="background:#0d1a0f;border:1px solid #4ade8033;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
-            <span style="color:#4ade80;font-weight:700">💪 Creatina</span>
+          <div style="background:#1a1a1a;border:1px solid #fb923c33;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
+            <span style="color:#fb923c;font-weight:700">💪 Creatina</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">5g monohidratada</span>
           </div>
-          <div style="background:#160d1a;border:1px solid #a78bfa33;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
-            <span style="color:#a78bfa;font-weight:700">⚡ Beta-alanina</span>
+          <div style="background:#160d1a;border:1px solid #a3a3a333;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
+            <span style="color:#a3a3a3;font-weight:700">⚡ Beta-alanina</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">1.6g (½ dose) · com comida²</span>
           </div>
         </div>
@@ -3613,16 +3613,16 @@ canvas { max-height: 340px; }
           <div style="font-size:0.6rem;color:#fbbf24;font-weight:700;text-transform:uppercase;letter-spacing:0.8px">Almoço</div>
         </div>
         <div style="background:#161a26;border:1px solid #242a3a;border-left:none;border-radius:0 10px 10px 0;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-          <div style="background:#0c1c2a;border:1px solid #67e8f933;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
-            <span style="color:#67e8f9;font-weight:700">🐟 Ômega-3</span>
+          <div style="background:#0c1c2a;border:1px solid #93c5fd33;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
+            <span style="color:#93c5fd;font-weight:700">🐟 Ômega-3</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">2g EPA+DHA · com gordura</span>
           </div>
           <div style="background:#1c1407;border:1px solid #fbbf2433;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
             <span style="color:#fbbf24;font-weight:700">☀️ D3 + K2</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">2.000UI D3 + 100mcg K2 · com gordura</span>
           </div>
-          <div style="background:#160d1a;border:1px solid #a78bfa33;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
-            <span style="color:#a78bfa;font-weight:700">⚡ Beta-alanina</span>
+          <div style="background:#160d1a;border:1px solid #a3a3a333;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
+            <span style="color:#a3a3a3;font-weight:700">⚡ Beta-alanina</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">1.6g (½ dose) · com comida²</span>
           </div>
         </div>
@@ -3677,7 +3677,7 @@ canvas { max-height: 340px; }
           <div style="font-size:0.58rem;color:#444;margin-top:2px">30min antes</div>
         </div>
         <div style="background:#161a26;border:1px solid #242a3a;border-left:none;border-radius:0 10px 10px 0;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-          <div style="background:#120d1a;border:1px solid #818cf833;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
+          <div style="background:#1a1a1a;border:1px solid #818cf833;border-radius:8px;padding:6px 10px;font-size:0.68rem;">
             <span style="color:#818cf8;font-weight:700">🌙 Magnésio Glicinato</span>
             <span style="color:#555;font-size:0.62rem;margin-left:6px">300–400mg · sono + recuperação</span>
           </div>
@@ -3715,7 +3715,7 @@ canvas { max-height: 340px; }
 
   <!-- ── DADOS DO DIA (peso + água) ── -->
   <div style="background:#151824;border:1px solid #242a3a;border-radius:14px;padding:18px;margin-bottom:20px">
-    <div style="font-size:0.82rem;font-weight:700;color:#06b6d4;margin-bottom:14px">📋 Dados do Dia</div>
+    <div style="font-size:0.82rem;font-weight:700;color:#60a5fa;margin-bottom:14px">📋 Dados do Dia</div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;align-items:end">
       <div>
         <div style="font-size:0.6rem;color:#666;margin-bottom:3px;text-transform:uppercase">Data</div>
@@ -3735,8 +3735,8 @@ canvas { max-height: 340px; }
       </div>
     </div>
     <div style="margin-top:10px;display:flex;align-items:center;gap:10px">
-      <button onclick="saveDiaryEntry()" style="background:#06b6d4;border:none;border-radius:7px;padding:8px 18px;color:#000;font-size:0.73rem;font-weight:700;cursor:pointer">Salvar</button>
-      <span id="dd-msg" style="font-size:0.68rem;color:#06b6d4"></span>
+      <button onclick="saveDiaryEntry()" style="background:#60a5fa;border:none;border-radius:7px;padding:8px 18px;color:#000;font-size:0.73rem;font-weight:700;cursor:pointer">Salvar</button>
+      <span id="dd-msg" style="font-size:0.68rem;color:#60a5fa"></span>
     </div>
   </div>
 
@@ -3836,7 +3836,7 @@ function saveMealEntry() {
   if (kcal === 0 && prot === 0 && carb === 0 && fat === 0 && !obs) {
     msg.style.color = '#ef4444';
     msg.textContent = '⚠ informe ao menos as calorias';
-    setTimeout(() => { msg.textContent = ''; msg.style.color = '#10b981'; }, 3000);
+    setTimeout(() => { msg.textContent = ''; msg.style.color = '#f97316'; }, 3000);
     return;
   }
   const meals = getMeals();
@@ -3883,7 +3883,7 @@ function bar(pct, color) {
 }
 function statusColor(val, target) {
   const r = target > 0 ? val / target : 0;
-  if (r >= 0.9 && r <= 1.1) return '#10b981';
+  if (r >= 0.9 && r <= 1.1) return '#f97316';
   if (r >= 0.75 && r <= 1.25) return '#f59e0b';
   return '#ef4444';
 }
@@ -3975,9 +3975,9 @@ function renderDiary() {
     summCards.innerHTML = weekFoodDates.length === 0 ? '' : `
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:10px">
       ${[
-        ['🔥','Déficit Semana', hasFood?(weekDeficit>0?`+${weekDeficit.toLocaleString('pt-BR')} kcal`:`${weekDeficit.toLocaleString('pt-BR')} kcal`):'—', hasFood?(weekDeficit>0?'#10b981':'#ef4444'):'#555', hasFood?(weekDeficit>0?'déficit acumulado':'superávit'):'lance refeições primeiro'],
-        ['📉','Déficit Médio/dia', hasFood?(avgDeficit>0?`+${avgDeficit.toLocaleString('pt-BR')} kcal`:`${avgDeficit.toLocaleString('pt-BR')} kcal`):'—', hasFood?(avgDeficit>0?'#10b981':'#ef4444'):'#555', 'vs TDEE 3.376 kcal'],
-        ['🏋️','Queima Treino', weekTrainKcal>0?`${weekTrainKcal.toLocaleString('pt-BR')} kcal`:'—','#06b6d4','extraído dos treinos'],
+        ['🔥','Déficit Semana', hasFood?(weekDeficit>0?`+${weekDeficit.toLocaleString('pt-BR')} kcal`:`${weekDeficit.toLocaleString('pt-BR')} kcal`):'—', hasFood?(weekDeficit>0?'#f97316':'#ef4444'):'#555', hasFood?(weekDeficit>0?'déficit acumulado':'superávit'):'lance refeições primeiro'],
+        ['📉','Déficit Médio/dia', hasFood?(avgDeficit>0?`+${avgDeficit.toLocaleString('pt-BR')} kcal`:`${avgDeficit.toLocaleString('pt-BR')} kcal`):'—', hasFood?(avgDeficit>0?'#f97316':'#ef4444'):'#555', 'vs TDEE 3.376 kcal'],
+        ['🏋️','Queima Treino', weekTrainKcal>0?`${weekTrainKcal.toLocaleString('pt-BR')} kcal`:'—','#60a5fa','extraído dos treinos'],
         ['⚖️','Média Ingerida', hasFood?`${avgKcal.toLocaleString('pt-BR')} kcal`:'—', hasFood?statusColor(avgKcal, DIET_TARGETS.treino.kcal):'#555', `meta ${DIET_TARGETS.treino.kcal} kcal`],
       ].map(([icon,lbl,val,clr,sub]) => `
         <div style="background:#151824;border:1px solid #242a3a;border-radius:12px;padding:14px;text-align:center">
@@ -3991,10 +3991,10 @@ function renderDiary() {
       <div style="font-size:0.72rem;font-weight:700;color:#fff;margin-bottom:12px">🫀 Projeção de Gordura Perdida <span style="font-size:0.6rem;font-weight:400;color:#555">(1 kg gordura = 7.700 kcal)</span></div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
         ${[
-          ['📆','Esta Semana', weekFatLostG > 0 ? `${weekFatLostG} g` : '—', weekFatLostG>0?'#10b981':'#555', `${weekDeficit > 0 ? '+'+weekDeficit.toLocaleString('pt-BR') : weekDeficit.toLocaleString('pt-BR')} kcal déficit`],
-          ['📅','Média por Dia',  dayFatLostG > 0 ? `${dayFatLostG} g` : '—', dayFatLostG>0?'#10b981':'#555', `${avgDeficit > 0 ? '+'+avgDeficit.toLocaleString('pt-BR') : avgDeficit.toLocaleString('pt-BR')} kcal/dia`],
+          ['📆','Esta Semana', weekFatLostG > 0 ? `${weekFatLostG} g` : '—', weekFatLostG>0?'#f97316':'#555', `${weekDeficit > 0 ? '+'+weekDeficit.toLocaleString('pt-BR') : weekDeficit.toLocaleString('pt-BR')} kcal déficit`],
+          ['📅','Média por Dia',  dayFatLostG > 0 ? `${dayFatLostG} g` : '—', dayFatLostG>0?'#f97316':'#555', `${avgDeficit > 0 ? '+'+avgDeficit.toLocaleString('pt-BR') : avgDeficit.toLocaleString('pt-BR')} kcal/dia`],
           ['📊','Total Acumulado', totalFatLostKg > 0 ? `${totalFatLostKg.toFixed(2).replace('.',',')} kg` : '—', totalFatLostKg>0?'#f59e0b':'#555', `${allDates.filter(d=>getDayTotals(d).kcal>0).length} dias com dados`],
-          ['🏁','Projeção Fim Ciclo', projFatKg > 0 ? `${projFatKg.toFixed(2).replace('.',',')} kg` : '—', '#a78bfa', `${daysLeft} dias restantes`],
+          ['🏁','Projeção Fim Ciclo', projFatKg > 0 ? `${projFatKg.toFixed(2).replace('.',',')} kg` : '—', '#a3a3a3', `${daysLeft} dias restantes`],
         ].map(([icon,lbl,val,clr,sub]) => `
           <div style="background:#161a26;border:1px solid #242a3a;border-radius:10px;padding:12px;text-align:center">
             <div style="font-size:0.6rem;color:#666;margin-bottom:4px">${icon} ${lbl}</div>
@@ -4025,7 +4025,7 @@ function renderDiary() {
             backgroundColor: consumedA.map(v => v===null ? 'transparent' : v < TDEE_KCAL ? 'rgba(16,185,129,0.55)' : 'rgba(239,68,68,0.55)'),
             borderRadius:4, order:2 },
           { type:'line', label:'Déficit líquido', data:deficitA, borderColor:'#f59e0b',
-            borderWidth:2, pointRadius:4, pointBackgroundColor:deficitA.map(v=>v===null?'transparent':v>0?'#10b981':'#ef4444'),
+            borderWidth:2, pointRadius:4, pointBackgroundColor:deficitA.map(v=>v===null?'transparent':v>0?'#f97316':'#ef4444'),
             fill:false, tension:0.3, order:1 },
           { type:'line', label:'TDEE (3.376)', data:Array(labels14.length).fill(TDEE_KCAL),
             borderColor:'rgba(148,163,184,0.3)', borderWidth:1, borderDash:[6,4], pointRadius:0, fill:false, order:4 },
@@ -4061,7 +4061,7 @@ function renderDiary() {
         ['💧','Água',avgAgua,tgt.agua,'ml'],
         ['🥑','Gordura',avgFat,tgt.fat,'g'],
       ].map(([icon,lbl,val,t,unit]) => `
-        <div style="background:#171a23;border-radius:10px;padding:12px;text-align:center">
+        <div style="background:#242424;border-radius:10px;padding:12px;text-align:center">
           <div style="font-size:0.65rem;color:#666">${icon} ${lbl}</div>
           <div style="font-size:1.1rem;font-weight:700;color:${statusColor(val,t)};margin:4px 0">${(val||0).toLocaleString('pt-BR')}</div>
           <div style="font-size:0.6rem;color:#555">meta ${t.toLocaleString('pt-BR')}${unit}</div>
@@ -4209,9 +4209,9 @@ function renderDiary() {
       type: 'line',
       data: { labels: labW, datasets: [
         { label: 'Peso real (kg)', data: realW,
-          borderColor:'#06b6d4', backgroundColor:'rgba(6,182,212,0.15)',
+          borderColor:'#60a5fa', backgroundColor:'rgba(6,182,212,0.15)',
           borderWidth:2.5, pointRadius: realW.map(v => v !== null ? 5 : 0),
-          pointBackgroundColor:'#06b6d4', fill:false, tension:0.3, spanGaps:false },
+          pointBackgroundColor:'#60a5fa', fill:false, tension:0.3, spanGaps:false },
         { label: 'Projeção (tendência)', data: projW,
           borderColor:'rgba(6,182,212,0.4)', borderWidth:1.5,
           borderDash:[6,4], pointRadius:0, fill:false, tension:0.3, spanGaps:false },
@@ -4273,7 +4273,7 @@ function renderDiary() {
       (totals.prot>0?Math.min(1,totals.prot/tgt2.prot):0) +
       (dayData.agua>0?Math.min(1,dayData.agua/tgt2.agua):0)
     ) / 3 * 100);
-    const adColor = adherePct>=80?'#10b981':adherePct>=60?'#f59e0b':'#ef4444';
+    const adColor = adherePct>=80?'#f97316':adherePct>=60?'#f59e0b':'#ef4444';
     return `
     <div style="background:#151824;border:1px solid #242a3a;border-radius:12px;overflow:hidden">
       <!-- cabeçalho do dia -->
@@ -4281,24 +4281,24 @@ function renderDiary() {
         <div style="display:flex;align-items:center;gap:10px">
           <div style="font-size:0.8rem;font-weight:700;color:#ddd">${label}</div>
           ${dayData.peso?`<span style="font-size:0.65rem;color:#888">${dayData.peso}kg</span>`:''}
-          ${dayData.agua?`<span style="font-size:0.65rem;color:#06b6d4">💧 ${(dayData.agua/1000).toFixed(1)}L</span>`:''}
+          ${dayData.agua?`<span style="font-size:0.65rem;color:#60a5fa">💧 ${(dayData.agua/1000).toFixed(1)}L</span>`:''}
         </div>
         <div style="display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end">
-          ${trnKcal>0?`<span style="font-size:0.62rem;color:#06b6d4;background:#06b6d415;padding:2px 7px;border-radius:99px">🏋️ ${trnKcal} kcal</span>`:''}
-          ${netDef!==null?`<span style="font-size:0.62rem;font-weight:700;color:${netDef>0?'#10b981':'#ef4444'};background:${netDef>0?'#10b98115':'#ef444415'};padding:2px 7px;border-radius:99px">${netDef>0?'▼':'▲'} ${Math.abs(netDef).toLocaleString('pt-BR')} kcal</span>`:''}
+          ${trnKcal>0?`<span style="font-size:0.62rem;color:#60a5fa;background:#60a5fa15;padding:2px 7px;border-radius:99px">🏋️ ${trnKcal} kcal</span>`:''}
+          ${netDef!==null?`<span style="font-size:0.62rem;font-weight:700;color:${netDef>0?'#f97316':'#ef4444'};background:${netDef>0?'#f9731615':'#ef444415'};padding:2px 7px;border-radius:99px">${netDef>0?'▼':'▲'} ${Math.abs(netDef).toLocaleString('pt-BR')} kcal</span>`:''}
           <span style="font-size:0.62rem;font-weight:700;color:${adColor};background:${adColor}15;padding:2px 7px;border-radius:99px">${adherePct}% aderência</span>
         </div>
       </div>
       <!-- totais do dia -->
       ${totals.count>0?`
-      <div style="padding:10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;border-bottom:1px solid #171a23">
+      <div style="padding:10px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;border-bottom:1px solid #242424">
         ${[
           ['⚡',totals.kcal,'kcal',tgt2.kcal],
           ['🥩',totals.prot,'g prot',tgt2.prot],
           ['🍚',totals.carb,'g carbs',tgt2.carb],
           ['🥑',totals.fat,'g gord',tgt2.fat],
         ].map(([icon,val,unit,t]) => `
-          <div style="text-align:center;background:#171a23;border-radius:7px;padding:7px">
+          <div style="text-align:center;background:#242424;border-radius:7px;padding:7px">
             <div style="font-size:0.75rem;font-weight:700;color:${statusColor(val,t)}">${icon} ${val.toLocaleString('pt-BR')}</div>
             <div style="font-size:0.56rem;color:#555">${unit}</div>
             ${bar(val/t*100, statusColor(val,t))}
@@ -4308,17 +4308,17 @@ function renderDiary() {
       ${dayMeals.length>0?`
       <div style="padding:10px 14px;display:flex;flex-direction:column;gap:6px">
         ${dayMeals.map(m => `
-          <div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:#171a23;border-radius:8px;font-size:0.7rem">
+          <div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:#242424;border-radius:8px;font-size:0.7rem">
             <span style="color:#888;min-width:34px;font-size:0.65rem">${m.time||'—'}</span>
             <span style="color:#aaa;min-width:90px">${MEAL_LABELS[m.type]||m.type}</span>
-            <span style="color:#10b981;font-weight:600;min-width:54px">${m.kcal?m.kcal+' kcal':'—'}</span>
+            <span style="color:#f97316;font-weight:600;min-width:54px">${m.kcal?m.kcal+' kcal':'—'}</span>
             <span style="color:#888;font-size:0.65rem">${[m.prot?m.prot+'g P':'',m.carb?m.carb+'g C':'',m.fat?m.fat+'g G':''].filter(Boolean).join(' · ')||''}</span>
             ${m.obs?`<span style="color:#555;font-size:0.63rem;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${m.obs}</span>`:'<span style="flex:1"></span>'}
             <button onclick="deleteMealEntry(${m.id})" style="background:none;border:none;color:#333;cursor:pointer;font-size:0.65rem;padding:0 2px;flex-shrink:0">✕</button>
           </div>`).join('')}
       </div>`:
       (totals.count===0?`<div style="padding:10px 14px;font-size:0.65rem;color:#444">Nenhuma refeição — apenas dados do dia registrados.</div>`:'')}
-      ${dayData.obs?`<div style="padding:8px 14px;font-size:0.65rem;color:#666;border-top:1px solid #171a23">${dayData.obs}</div>`:''}
+      ${dayData.obs?`<div style="padding:8px 14px;font-size:0.65rem;color:#666;border-top:1px solid #242424">${dayData.obs}</div>`:''}
     </div>`;
   }).join('')}
   </div>`;
@@ -4588,10 +4588,10 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="plano-section">
 
     <!-- CICLO + PROVA -->
-    <div style="background:linear-gradient(135deg,#0d1a0f,#0d1520);border:1px solid #1e3a1e;border-radius:14px;padding:16px 20px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <div style="background:linear-gradient(135deg,#1a1a1a,#1e1e22);border:1px solid #1e3a1e;border-radius:14px;padding:16px 20px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
       <div>
         <div style="font-size:0.62rem;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Ciclo Atual — <span id="pc-cycle-weeks">18</span> Semanas</div>
-        <div style="font-size:0.95rem;font-weight:800;color:#4ade80">20 abr → 19 jul 2026</div>
+        <div style="font-size:0.95rem;font-weight:800;color:#fb923c">20 abr → 19 jul 2026</div>
         <div style="font-size:0.65rem;color:#555;margin-top:3px">S1–8 Build · S9 Viagem · S10 Rebuild · S11 Build · S12 Pico · S13 Taper · S14 Prova</div>
       </div>
       <div style="text-align:right">
@@ -4641,7 +4641,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#06b6d4">🏊 TER</div>
+        <div class="plano-day-name" style="color:#60a5fa">🏊 TER</div>
         <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação LT1/LT2</div><div class="plano-sess-detail">~1.300–1.500m · 4×200m LT1 + 6×50m LT2 + técnica</div><div class="plano-sess-time">06:00 · ~40min</div></div>
         <div class="plano-session str"><div class="plano-sess-title">💪 Musc. B</div><div class="plano-sess-detail">Superiores: Pulldown + Supino + Remada + Desenvolvimento + Pallof + Rot. Externa · 38min · poupa perna p/ quarta</div><div class="plano-sess-time">tarde</div></div>
       </div>
@@ -4653,13 +4653,13 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#06b6d4">🏊 QUI</div>
+        <div class="plano-day-name" style="color:#60a5fa">🏊 QUI</div>
         <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação Z1/LT1</div><div class="plano-sess-detail">~1.000–1.200m · 8×50m LT1 + 400m técnica · recuperação ativa</div><div class="plano-sess-time">06:00 · ~35min</div></div>
         <div class="plano-session str"><div class="plano-sess-title">💪 Musc. A</div><div class="plano-sess-detail">Plio (Box Jump · Broad · Depth · Single-leg) + Inferiores + Nordic Curl · 45min · dano cai p/ sex regen + sáb Z2</div><div class="plano-sess-time">tarde</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#4ade80">🏃 SEX</div>
+        <div class="plano-day-name" style="color:#fb923c">🏃 SEX</div>
         <div class="plano-session run"><div class="plano-sess-title">🏃 Run Z1 — Regenerativo</div><div class="plano-sess-detail">10km @6:30–7:00/km · FC&lt;145bpm · São Sebastião ou percurso plano</div><div class="plano-sess-time">06:00 · ~65min</div></div>
         <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação opcional</div><div class="plano-sess-detail">~1.200–1.500m se disponível · Z1/Z2 suave</div><div class="plano-sess-time">tarde</div></div>
       </div>
@@ -4671,7 +4671,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#10b981">🏃 DOM</div>
+        <div class="plano-day-name" style="color:#f97316">🏃 DOM</div>
         <div class="plano-session run"><div class="plano-sess-title">🏃 Longão Z1–Z2</div><div class="plano-sess-detail">S7–12: 18km @6:15–6:30/km · FC&lt;150bpm · São Sebastião</div><div class="plano-sess-time">07:00 · ~1h50–2h00</div></div>
         <div class="plano-session str"><div class="plano-sess-title">💪 Musc. D</div><div class="plano-sess-detail">Hip flexor · Excêntrica panturrilha · Pombo · Foam roller · Respiração · 20min</div><div class="plano-sess-time">após corrida</div></div>
       </div>
@@ -4679,8 +4679,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- TAPER -->
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#06b6d4;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper + Prova (13–19 jul)</div>
-    <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#67e8f9;line-height:1.8;margin-bottom:12px;">
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#60a5fa;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper + Prova (13–19 jul)</div>
+    <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#93c5fd;line-height:1.8;margin-bottom:12px;">
       <strong>Seg:</strong> Bike 4×8min LT2 + Run 4×1km @4:50–5:00/km &nbsp;·&nbsp;
       <strong>Qua:</strong> Bike 3×10min LT2 + Run 5km Z1 + strides &nbsp;·&nbsp;
       <strong>Sex:</strong> Descanso &nbsp;·&nbsp;
@@ -4698,19 +4698,19 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- VOLUME SUMMARY -->
     <div class="volume-summary">
       <div style="text-align:center"><div id="pc-ftp" style="font-size:1.1rem;font-weight:900;color:#f43f5e">FTP 243W</div><div id="pc-ftp-sub" style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">2,70 W/kg · LT2: 220–235W</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#4ade80">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Corrida/sem S7–8</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fb923c">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Corrida/sem S7–8</div></div>
       <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fbbf24">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Bike/sem S7–8</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#06b6d4">2–3×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Natação/sem</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#a78bfa">4×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Musculação/sem</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#60a5fa">2–3×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Natação/sem</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#a3a3a3">4×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Musculação/sem</div></div>
     </div>
 
     <!-- REGRAS -->
     <div style="background:#0a0f0a;border:1px solid #1e3a1e;border-radius:12px;padding:16px 18px;font-size:0.71rem;color:#888;line-height:1.8;max-width:900px;margin:0 auto;">
       <div style="margin-bottom:6px"><strong style="color:#f43f5e">⚡ Regra #1 — Intervalo mínimo:</strong> mínimo 12h entre bike AM e run PM. Não comprimir nunca.</div>
       <div style="margin-bottom:6px"><strong style="color:#fbbf24">🍌 Regra #2 — Fueling:</strong> banana + mel 40min antes dos blocos LT2. Maltodextrina intra. Comprovado em treino.</div>
-      <div style="margin-bottom:6px"><strong style="color:#4ade80">🎯 Regra #3 — Pace LT2:</strong> corrida 4:50–5:00/km · FC 155–165bpm. Bike <strong style="color:#fbbf24">220–235W · FTP 243W</strong> (2,70 W/kg · Ramp Test 06/06 · peso 89,9kg em 12/06).</div>
-      <div style="margin-bottom:6px"><strong style="color:#06b6d4">🏊 Regra #4 — Natação:</strong> pace Strava de esteira/piscina pode divergir do display. Usar display do relógio/esteira como referência.</div>
-      <div style="margin-bottom:6px"><strong style="color:#a78bfa">💪 Regra #5 — Pliometria:</strong> SEMPRE antes da força, com sistema nervoso fresco. Joelho: aterrissagem alinhada, parar se colapsar em valgo.</div>
+      <div style="margin-bottom:6px"><strong style="color:#fb923c">🎯 Regra #3 — Pace LT2:</strong> corrida 4:50–5:00/km · FC 155–165bpm. Bike <strong style="color:#fbbf24">220–235W · FTP 243W</strong> (2,70 W/kg · Ramp Test 06/06 · peso 89,9kg em 12/06).</div>
+      <div style="margin-bottom:6px"><strong style="color:#60a5fa">🏊 Regra #4 — Natação:</strong> pace Strava de esteira/piscina pode divergir do display. Usar display do relógio/esteira como referência.</div>
+      <div style="margin-bottom:6px"><strong style="color:#a3a3a3">💪 Regra #5 — Pliometria:</strong> SEMPRE antes da força, com sistema nervoso fresco. Joelho: aterrissagem alinhada, parar se colapsar em valgo.</div>
       <div><strong style="color:#f87171">🦵 Regra #6 — LCA/Menisco:</strong> Nordic curl é obrigatório. Isquiotibial forte substitui função do LCA. Dor articular no joelho → parar pliometria.</div>
     </div>
 
@@ -4718,7 +4718,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div style="background:var(--bg-1);border:1px solid var(--border-1);border-radius:14px;padding:18px 20px;max-width:900px;margin:16px auto 0;">
       <div style="font-size:0.88rem;font-weight:800;color:#f1f3f7;margin-bottom:4px">⚡ Pliometria — Protocolo até a prova</div>
       <div style="font-size:0.65rem;color:#9aa3b2;margin-bottom:14px;line-height:1.6">
-        2 doses/semana, integradas à força: <strong style="color:#a78bfa">terça (Musc. A)</strong> dose completa + <strong style="color:#a78bfa">sábado (Musc. C)</strong> dose leve — 96h entre elas.
+        2 doses/semana, integradas à força: <strong style="color:#a3a3a3">terça (Musc. A)</strong> dose completa + <strong style="color:#a3a3a3">sábado (Musc. C)</strong> dose leve — 96h entre elas.
         6+ semanas de pliometria 2×/sem melhoram economia de corrida: mesmo pace, FC menor. É o complemento neural perfeito do volume norueguês.
       </div>
       <div style="overflow-x:auto">
@@ -4731,8 +4731,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <th style="padding:6px 8px;border-bottom:1px solid var(--border-1)">Contatos/sem</th>
         </tr></thead>
         <tbody style="line-height:1.55">
-          <tr style="background:#a78bfa10"><td style="padding:8px;font-weight:700;color:#a78bfa">8–9 ← atual</td><td style="padding:8px">N1 · Fundação</td><td style="padding:8px">Box 40–50cm 4×5 · Broad 4×4 · Depth drop 40cm 3×6 · SL hop 20cm 3×5/perna</td><td style="padding:8px">Box 40cm 3×4 · SL hop 20cm 3×4/perna</td><td style="padding:8px;font-family:var(--font-mono)">~120</td></tr>
-          <tr><td style="padding:8px;font-weight:700;color:#10b981">10–11</td><td style="padding:8px">N2 · Progressão</td><td style="padding:8px">Box 50–60cm 4×5 · Broad 3×4 · Depth drop 40cm c/ aterrissagem unipodal alternada 3×5 · SL hop 25cm 3×5</td><td style="padding:8px">Box 45cm 3×4 · SL hop 25cm 3×4</td><td style="padding:8px;font-family:var(--font-mono)">~110</td></tr>
+          <tr style="background:#a3a3a310"><td style="padding:8px;font-weight:700;color:#a3a3a3">8–9 ← atual</td><td style="padding:8px">N1 · Fundação</td><td style="padding:8px">Box 40–50cm 4×5 · Broad 4×4 · Depth drop 40cm 3×6 · SL hop 20cm 3×5/perna</td><td style="padding:8px">Box 40cm 3×4 · SL hop 20cm 3×4/perna</td><td style="padding:8px;font-family:var(--font-mono)">~120</td></tr>
+          <tr><td style="padding:8px;font-weight:700;color:#f97316">10–11</td><td style="padding:8px">N2 · Progressão</td><td style="padding:8px">Box 50–60cm 4×5 · Broad 3×4 · Depth drop 40cm c/ aterrissagem unipodal alternada 3×5 · SL hop 25cm 3×5</td><td style="padding:8px">Box 45cm 3×4 · SL hop 25cm 3×4</td><td style="padding:8px;font-family:var(--font-mono)">~110</td></tr>
           <tr><td style="padding:8px;font-weight:700;color:#f43f5e">12</td><td style="padding:8px">N3 · Contraste</td><td style="padding:8px">4 rounds: Agacho pesado 3 reps → 30s → Box jump 5 reps · Bounding 2×15m</td><td style="padding:8px">Só Box 45cm 3×3 (sem SL pós-bike)</td><td style="padding:8px;font-family:var(--font-mono)">~85</td></tr>
           <tr><td style="padding:8px;font-weight:700;color:#fbbf24">13 · Taper</td><td style="padding:8px">Manutenção neural</td><td style="padding:8px">Pogo hops 2×10 · Box 40cm 3×3</td><td style="padding:8px">—</td><td style="padding:8px;font-family:var(--font-mono)">~30</td></tr>
           <tr><td style="padding:8px;font-weight:700;color:#f87171">14 · Prova</td><td style="padding:8px">Afiar e parar</td><td style="padding:8px">Box baixo 2×3 + pogo 2×8 — última dose até T−5 dias, depois zero</td><td style="padding:8px">—</td><td style="padding:8px;font-family:var(--font-mono)">~20</td></tr>
@@ -4811,7 +4811,7 @@ const GOAL_TARGET   = CFG.goal_target || { run: 300, bike: 3.0, swim: 110 };  //
 const GOAL_BASELINE = CFG.goal_baseline || { run: 540, bike: 1.0, swim: 330 };  // baseline conservador — captura todos os treinos relevantes  // bike baseline = 1.0 W/kg (98W/97.9kg)
 const SPORT_LABELS = { run: 'Corrida', bike: 'Bike', swim: 'Natação' };
 const SPORT_UNITS  = { run: '/km', bike: 'W/kg', swim: '/100m' };
-const SPORT_COLORS = { run: '#10b981', bike: '#f59e0b', swim: '#06b6d4' };
+const SPORT_COLORS = { run: '#f97316', bike: '#f59e0b', swim: '#60a5fa' };
 Chart.defaults.font.family = "'Inter', -apple-system, sans-serif";
 
 let workouts = [];      // fonte única — ver seedWorkoutsArray()
@@ -5112,7 +5112,7 @@ function updateChart() {
       backgroundColor: SPORT_COLORS[sport] + '18',
       // LT2/prova: ponto cheio e grande · base/fácil: ponto pequeno esmaecido
       pointBackgroundColor: extDates.map((d, i) => isQ[i] ? SPORT_COLORS[sport] : SPORT_COLORS[sport] + '55'),
-      pointBorderColor: '#0f1117',
+      pointBorderColor: '#1a1a1a',
       pointBorderWidth: extDates.map((d, i) => isQ[i] ? 1.5 : 0),
       pointRadius: extDates.map((d, i) => data[i] == null ? 0 : (isQ[i] ? 5 : 2.6)),
       pointHoverRadius: extDates.map((d, i) => isQ[i] ? 8 : 5),
@@ -5216,7 +5216,7 @@ function updateChart() {
   if (currentView === 'absolute') {
     const goalLines = [
       { val: 300, axis: 'y',  color: '#22c55e88', label: 'Meta Run 5:00 · amador forte',      dash: [14, 5],       width: 2 },
-      { val: 110, axis: 'y',  color: '#06b6d488', label: 'Meta Swim 1:50 · amador forte',     dash: [2, 6],        width: 2.5 },
+      { val: 110, axis: 'y',  color: '#60a5fa88', label: 'Meta Swim 1:50 · amador forte',     dash: [2, 6],        width: 2.5 },
       { val: 3.0, axis: 'y2', color: '#f59e0b88', label: 'Meta Bike 3.0 W/kg · amador forte', dash: [10, 4, 2, 4], width: 2 },
     ];
     goalLines.forEach(g => {
@@ -5618,7 +5618,7 @@ const CT_SPORT = {
   run:      { nome:'CORRIDA',  cor:'#60a5fa' },
   bike:     { nome:'BIKE',     cor:'#fbbf24' },
   swim:     { nome:'NATAÇÃO',  cor:'#22d3ee' },
-  strength: { nome:'FORÇA',    cor:'#a78bfa' },
+  strength: { nome:'FORÇA',    cor:'#a3a3a3' },
   rest:     { nome:'DESCANSO', cor:'#64748b' }
 };
 const CT_FASE = {
@@ -5724,7 +5724,7 @@ function renderCicloTabela(){
     if (fl && !fl.dataset.ready){
       fl.dataset.ready = '1';
       const opts = [['todos','Tudo','#94a3b8'],['run','Corrida','#60a5fa'],['bike','Bike','#fbbf24'],
-                    ['swim','Natação','#22d3ee'],['strength','Força','#a78bfa']];
+                    ['swim','Natação','#22d3ee'],['strength','Força','#a3a3a3']];
       fl.innerHTML = opts.map(([k,n,c]) =>
         `<button onclick="ctFiltrar('${k}')" id="ct-b-${k}" style="background:${k===CT_FILTRO?c+'33':'transparent'};border:1px solid ${k===CT_FILTRO?c:'#334155'};color:${k===CT_FILTRO?c:'#94a3b8'};font-size:0.6rem;font-weight:700;padding:4px 10px;border-radius:6px;cursor:pointer">${n}</button>`
       ).join('')
@@ -5736,7 +5736,7 @@ function renderCicloTabela(){
     const bz  = (CFG.bike_zonas) || {};
     if (ref) ref.innerHTML =
       '<div style="background:#12101f;border:1px solid #2e2a45;border-radius:10px;padding:12px 14px">'
-      + '<div style="font-size:0.6rem;font-weight:800;color:#a78bfa;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">Fases da musculação</div>'
+      + '<div style="font-size:0.6rem;font-weight:800;color:#a3a3a3;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">Fases da musculação</div>'
       + '<div style="color:#94a3b8;font-size:0.58rem;line-height:1.6;margin-bottom:10px">'
       + '<b style="color:#e2e8f0">Sem 2–4</b> adaptação anatômica (3×12–15 · RPE 6) &nbsp;·&nbsp; '
       + '<b style="color:#e2e8f0">Sem 5–9</b> força máxima I (4×6 · RPE 7–8) &nbsp;·&nbsp; '
@@ -5917,7 +5917,7 @@ function buildPRCard() {
   if (!el) return;
 
   // gradiente de cor por distância (curto=verde-vivo → longo=verde-musgo)
-  const colors = ['#4ade80','#34d399','#22c55e','#16a34a','#15803d','#166534'];
+  const colors = ['#fb923c','#34d399','#22c55e','#16a34a','#15803d','#166534'];
 
   el.innerHTML = `
   <div style="font-size:0.88rem;font-weight:700;color:#bbb;margin-bottom:14px;padding-left:4px;letter-spacing:0.3px">
@@ -5925,7 +5925,7 @@ function buildPRCard() {
   </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;">
     ${PR_RUN.map((pr, i) => {
-      const c = colors[i] || '#4ade80';
+      const c = colors[i] || '#fb923c';
       const elevStr = pr.elev !== null
         ? `<span style="color:${pr.elev < 0 ? '#f87171' : '#888'};font-size:0.55rem;margin-left:4px">${pr.elev > 0 ? '+' : ''}${pr.elev}m</span>`
         : '';
@@ -5933,7 +5933,7 @@ function buildPRCard() {
         ? `<div style="font-size:0.56rem;color:#444;margin-top:3px">❤️ ${pr.bpm} bpm</div>`
         : '';
       return `
-      <div style="background:#0d1a0f;border:1px solid ${c}22;border-top:2px solid ${c};border-radius:12px;padding:13px 12px;text-align:center;">
+      <div style="background:#1a1a1a;border:1px solid ${c}22;border-top:2px solid ${c};border-radius:12px;padding:13px 12px;text-align:center;">
         <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">${pr.dist}</div>
         <div style="font-size:1.1rem;font-weight:800;color:${c};letter-spacing:-0.5px">${pr.time}</div>
         <div style="font-size:0.65rem;color:#666;margin-top:3px">${pr.pace}${elevStr}</div>
@@ -6100,7 +6100,7 @@ function buildVO2MaxCard() {
 
   let badgeColor, badgeBg, badgeText, statusNote;
   if (latest.v >= VO2_GOAL_AMATEUR) {
-    badgeColor = '#a78bfa'; badgeBg = '#4c1d9530';
+    badgeColor = '#a3a3a3'; badgeBg = '#4c1d9530';
     badgeText = '🏆 Meta atingida!';
     statusNote = `VO2 máx ${latest.v} — nível amador forte Ironman alcançado!`;
   } else if (latest.v >= 46) {
@@ -6112,7 +6112,7 @@ function buildVO2MaxCard() {
     badgeText = '📈 Em progressão';
     statusNote = `Evolução consistente — mantenha o volume e a intensidade.`;
   } else {
-    badgeColor = '#06b6d4'; badgeBg = '#0e7490301';
+    badgeColor = '#60a5fa'; badgeBg = '#0e7490301';
     badgeText = '🔵 Construindo base';
     statusNote = `Fase inicial — o VO2 máx sobe com consistência de treino.`;
   }
@@ -6138,7 +6138,7 @@ function buildVO2MaxCard() {
       <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#22c55e">+${gain}</div>desde nov/25</div>
       <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#22c55e">+${gainMonth}</div>último mês</div>
       <div class="hr-rest-stat"><div class="hr-rest-stat-val">${pctMeta}%</div>da meta ${VO2_GOAL_AMATEUR}</div>
-      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#a78bfa">${VO2_GOAL_AMATEUR}</div>meta amador forte</div>
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#a3a3a3">${VO2_GOAL_AMATEUR}</div>meta amador forte</div>
     </div>
     <canvas id="vo2Chart" style="max-height:80px"></canvas>
     <div class="hr-rest-alert-note">${statusNote}</div>
@@ -6160,7 +6160,7 @@ function buildVO2MaxCard() {
           data: display.map(d => d.v),
           borderColor: badgeColor,
           backgroundColor: badgeColor + '18',
-          pointBackgroundColor: display.map(d => d.v >= VO2_GOAL_AMATEUR ? '#a78bfa' : badgeColor),
+          pointBackgroundColor: display.map(d => d.v >= VO2_GOAL_AMATEUR ? '#a3a3a3' : badgeColor),
           pointRadius: 4,
           pointHoverRadius: 6,
           borderWidth: 2,
@@ -6171,7 +6171,7 @@ function buildVO2MaxCard() {
         {
           label: 'Meta',
           data: display.map(() => VO2_GOAL_AMATEUR),
-          borderColor: '#a78bfa55',
+          borderColor: '#a3a3a355',
           borderDash: [5, 4],
           borderWidth: 1.5,
           pointRadius: 0,
@@ -6263,8 +6263,8 @@ function buildVO2EvolucaoChart() {
         <div class="vo2-evolucao-subtitle">Histórico mensal real + metas mês a mês até Nov/26</div>
       </div>
       <div style="font-size:0.63rem;color:#555;text-align:right;line-height:1.8">
-        <span style="display:inline-block;width:20px;height:2px;background:#a78bfa;vertical-align:middle;margin-right:4px"></span>Real &nbsp;
-        <span style="display:inline-block;width:20px;height:2px;background:#67e8f9;border-top:2px dashed #67e8f9;vertical-align:middle;margin-right:4px"></span>Projeção &nbsp;
+        <span style="display:inline-block;width:20px;height:2px;background:#a3a3a3;vertical-align:middle;margin-right:4px"></span>Real &nbsp;
+        <span style="display:inline-block;width:20px;height:2px;background:#93c5fd;border-top:2px dashed #93c5fd;vertical-align:middle;margin-right:4px"></span>Projeção &nbsp;
         <span style="display:inline-block;width:20px;height:2px;background:#555;border-top:2px dashed #555;vertical-align:middle;margin-right:4px"></span>Treino normal
       </div>
     </div>
@@ -6285,11 +6285,11 @@ function buildVO2EvolucaoChart() {
       const isAhead = delta >= 0;
       const color = Math.abs(delta) < 0.3 ? '#888' : isAhead ? '#22c55e' : '#f87171';
       const arrow = Math.abs(delta) < 0.3 ? '≈' : isAhead ? '▲' : '▼';
-      const bgColor = Math.abs(delta) < 0.3 ? '#ffffff08' : isAhead ? '#052e1620' : '#450a0a20';
+      const bgColor = Math.abs(delta) < 0.3 ? '#ffffff08' : isAhead ? '#2a150020' : '#450a0a20';
       const borderColor = Math.abs(delta) < 0.3 ? '#333' : isAhead ? '#22c55e33' : '#f8717133';
       return `<div style="flex:1;min-width:80px;background:${bgColor};border:1px solid ${borderColor};border-radius:10px;padding:8px 6px;text-align:center;">
         <div style="font-size:0.6rem;color:#666;font-weight:700;margin-bottom:4px">${d.month}</div>
-        <div style="font-size:1.1rem;font-weight:900;color:#c4b5fd;line-height:1">${d.v}</div>
+        <div style="font-size:1.1rem;font-weight:900;color:#d4d4d4;line-height:1">${d.v}</div>
         <div style="font-size:0.58rem;color:#555;margin:2px 0">esp: ${d.proj}</div>
         <div style="font-size:0.65rem;font-weight:800;color:${color}">${arrow} ${Math.abs(delta) < 0.3 ? 'no alvo' : (isAhead ? '+' : '') + delta}</div>
       </div>`;
@@ -6312,7 +6312,7 @@ function buildVO2EvolucaoChart() {
     row.innerHTML = milestones.map(m => {
       const cls = m.reached ? 'reached' : m.current ? 'current' : m.next ? 'next' : 'future';
       const icon = m.reached ? '✅' : m.current ? '📍' : m.next ? '🎯' : '○';
-      const color = m.reached ? '#22c55e' : m.current ? '#a78bfa' : m.next ? '#fbbf24' : '#444';
+      const color = m.reached ? '#22c55e' : m.current ? '#a3a3a3' : m.next ? '#fbbf24' : '#444';
       return `<div class="vo2-ms ${cls}">
         <div class="vo2-ms-val" style="color:${color}">${icon} ${m.v}</div>
         <div class="vo2-ms-label">${m.label}</div>
@@ -6382,9 +6382,9 @@ function buildVO2EvolucaoChart() {
         {
           label: 'VO₂ Real',
           data: histData,
-          borderColor: '#a78bfa',
-          backgroundColor: '#a78bfa15',
-          pointBackgroundColor: '#a78bfa',
+          borderColor: '#a3a3a3',
+          backgroundColor: '#a3a3a315',
+          pointBackgroundColor: '#a3a3a3',
           pointRadius: 5,
           pointHoverRadius: 7,
           borderWidth: 2.5,
@@ -6396,9 +6396,9 @@ function buildVO2EvolucaoChart() {
         {
           label: 'Projeção',
           data: projData,
-          borderColor: '#67e8f9',
-          backgroundColor: '#67e8f908',
-          pointBackgroundColor: '#67e8f9',
+          borderColor: '#93c5fd',
+          backgroundColor: '#93c5fd08',
+          pointBackgroundColor: '#93c5fd',
           pointRadius: 4,
           pointHoverRadius: 6,
           borderWidth: 2,
@@ -6624,12 +6624,12 @@ function buildRaceProjectionCard() {
       <div class="hr-rest-stat"><div class="hr-rest-stat-val">${fmt(shape)}</div>forma atual (10K-eq)</div>
       <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#22c55e">${fmt(optim)}</div>cenário otimista</div>
       <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#f87171">${fmt(pess)}</div>cenário cauteloso</div>
-      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#a78bfa">${R.target_time}</div>meta (${R.target_pace}/km)</div>
+      <div class="hr-rest-stat"><div class="hr-rest-stat-val" style="color:#a3a3a3">${R.target_time}</div>meta (${R.target_pace}/km)</div>
     </div>
     <div style="position:relative;height:30px;margin:10px 2px 4px">
       <div style="position:absolute;top:13px;left:0;right:0;height:5px;border-radius:3px;background:linear-gradient(90deg,#22c55e,#f59e0b,#f87171)"></div>
       <div title="projeção central" style="position:absolute;top:7px;left:${cen}%;transform:translateX(-50%);width:3px;height:17px;background:#60a5fa;border-radius:2px"></div>
-      <div title="meta" style="position:absolute;top:2px;left:${pin}%;transform:translateX(-50%);font-size:0.7rem;color:#a78bfa">🎯</div>
+      <div title="meta" style="position:absolute;top:2px;left:${pin}%;transform:translateX(-50%);font-size:0.7rem;color:#a3a3a3">🎯</div>
     </div>
     <div style="display:flex;justify-content:space-between;font-size:0.6rem;color:#666;margin-bottom:10px">
       <span>${fmt(optim)} (otimista)</span><span style="color:#60a5fa">▲ central ${fmt(central)}</span><span>${fmt(pess)} (cauteloso)</span>
@@ -6709,7 +6709,7 @@ function buildGoalsCard() {
     },
   ];
 
-  const SPORT_GOAL_COLORS = { run: '#22c55e', bike: '#f59e0b', swim: '#06b6d4' };
+  const SPORT_GOAL_COLORS = { run: '#22c55e', bike: '#f59e0b', swim: '#60a5fa' };
 
   const rows = GOALS.map(g => {
     const cur = g.getCurrent();
@@ -6928,7 +6928,7 @@ function renderCalWeekMeta(mon, sun) {
     const bg = f.bg || '#1e293b';
     const cor = f.color || '#94a3b8';
     const pct = alvo ? Math.round(100 * feito / alvo) : null;
-    const corPct = pct == null ? '#64748b' : pct >= 90 ? '#4ade80' : pct >= 60 ? '#fbbf24' : '#94a3b8';
+    const corPct = pct == null ? '#64748b' : pct >= 90 ? '#fb923c' : pct >= 60 ? '#fbbf24' : '#94a3b8';
 
     el.className = 'cal-week-meta';
     el.innerHTML =
@@ -6993,7 +6993,7 @@ function renderCalendar() {
           const blocksFraction = hasBlocks ? ` ${bDone}/${bTotal}` : '';
           const calPips = hasBlocks ? `<div class="cal-logged-blocks">${
             Array.from({length: bTotal}, (_,i) => {
-              const color = i < bDone ? (bFull ? '#10b981' : '#f59e0b') : '#2a2a2a';
+              const color = i < bDone ? (bFull ? '#f97316' : '#f59e0b') : '#2a2a2a';
               return `<div class="cal-pip" style="background:${color}"></div>`;
             }).join('')
           }</div>` : '';
@@ -7040,10 +7040,10 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
 
   // ── Meta por esporte ──────────────────────────────────
   const META = {
-    run:      { icon: '🏃', label: 'Corrida',   color: '#10b981', bg: '#052e16', unit: '/km',   paceLabel: 'pace' },
+    run:      { icon: '🏃', label: 'Corrida',   color: '#f97316', bg: '#2a1500', unit: '/km',   paceLabel: 'pace' },
     bike:     { icon: '🚴', label: 'Bike',       color: '#f59e0b', bg: '#1c1407', unit: '/km',   paceLabel: 'pace' },
-    swim:     { icon: '🏊', label: 'Natação',    color: '#06b6d4', bg: '#0c2230', unit: '/100m', paceLabel: 'pace' },
-    strength: { icon: '💪', label: 'Musculação', color: '#a78bfa', bg: '#1e0a40', unit: '',      paceLabel: '' },
+    swim:     { icon: '🏊', label: 'Natação',    color: '#60a5fa', bg: '#0c1a2e', unit: '/100m', paceLabel: 'pace' },
+    strength: { icon: '💪', label: 'Musculação', color: '#a3a3a3', bg: '#252525', unit: '',      paceLabel: '' },
   };
 
   function paceToSec(p) {
@@ -7232,7 +7232,7 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
                      : hrAvg < 148 ? 'Z3 — aeróbico moderado'
                      : hrAvg < 162 ? 'Z4 — limiar anaeróbico'
                      : 'Z5 — VO₂max';
-        const zColor = hrAvg < 130 ? '#10b981' : hrAvg < 148 ? '#f59e0b' : hrAvg < 162 ? '#ef4444' : '#a855f7';
+        const zColor = hrAvg < 130 ? '#f97316' : hrAvg < 148 ? '#f59e0b' : hrAvg < 162 ? '#ef4444' : '#a855f7';
         items.push({ icon: '❤️', text: `FC média <strong style="color:${zColor}">${hrAvg}bpm — ${zone}</strong>${hrMax ? ` · pico ${hrMax}bpm` : ''}. ${hrAvg < 130 ? 'Zona ideal para construção aeróbica de longo prazo.' : hrAvg < 148 ? 'Zona moderada — boa para economia de corrida.' : 'Alta intensidade — exige recuperação completa nas 24–48h seguintes.'}` });
       }
 
@@ -7332,7 +7332,7 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
                      : hrAvg < 130 ? 'Z2 — aeróbico base'
                      : hrAvg < 148 ? 'Z3 — moderado'
                      : 'Z4+ — intenso';
-        const zColor = hrAvg < 130 ? '#10b981' : hrAvg < 148 ? '#f59e0b' : '#ef4444';
+        const zColor = hrAvg < 130 ? '#f97316' : hrAvg < 148 ? '#f59e0b' : '#ef4444';
         items.push({ icon: '❤️', text: `FC média <strong style="color:${zColor}">${hrAvg}bpm — ${zone}</strong>${hrMax ? ` · pico ${hrMax}bpm` : ''}. ${hrAvg < 130 ? 'Pedalada bem dosada para construção aeróbica.' : 'Alta intensidade — priorize recuperação nas próximas 24h.'}` });
       }
 
@@ -7453,7 +7453,7 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
                      : hrAvg < 125 ? 'Z2 — aeróbico base'
                      : hrAvg < 140 ? 'Z3 — moderado'
                      : 'Z4+ — intenso';
-        const zColor = hrAvg < 125 ? '#10b981' : hrAvg < 140 ? '#f59e0b' : '#ef4444';
+        const zColor = hrAvg < 125 ? '#f97316' : hrAvg < 140 ? '#f59e0b' : '#ef4444';
         items.push({ icon: '❤️', text: `FC média <strong style="color:${zColor}">${hrAvg}bpm — ${zone}</strong>${hrMax ? ` · pico ${hrMax}bpm` : ''}. ${hrAvg < 125 ? 'Zona ideal para construção aeróbica e economia de nado.' : 'Intensidade moderada a alta — sessão eficaz para desenvolver ritmo de prova.'}` });
       }
 
@@ -7509,7 +7509,7 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
       }
 
       if (hrAvg && effortLevel) {
-        const zColor = hrAvg < 95 ? '#10b981' : hrAvg < 110 ? '#f59e0b' : '#ef4444';
+        const zColor = hrAvg < 95 ? '#f97316' : hrAvg < 110 ? '#f59e0b' : '#ef4444';
         const advice = hrAvg < 100 ? 'Zona de hipertrofia — ótima para ganho muscular com baixo estresse cardiovascular.'
                      : hrAvg < 115 ? 'Zona de força-resistência — adaptações mistas de força e condicionamento.'
                      : 'Alta intensidade cardiovascular — sessão metabólica eficiente.';
@@ -7582,7 +7582,7 @@ const WORKOUT_DETAILS = (EXT && EXT.plan && EXT.plan.workout_details) || {};
 
     // Update dot color CSS var on wrap to match current slide sport color
     if (slide) {
-      const color = slide.dataset.color || '#10b981';
+      const color = slide.dataset.color || '#f97316';
       wrap.style.setProperty('--lsc-dot-color', color);
     }
   }
@@ -7795,9 +7795,9 @@ function buildBodyCompChart() {
         {
           label: 'Músculo (kg)',
           data: muscles,
-          borderColor: '#10b981',
-          backgroundColor: '#10b98115',
-          pointBackgroundColor: '#10b981',
+          borderColor: '#f97316',
+          backgroundColor: '#f9731615',
+          pointBackgroundColor: '#f97316',
           pointRadius: 6, pointHoverRadius: 8,
           borderWidth: 2.5, tension: 0.3,
           yAxisID: 'yKg'
@@ -7911,7 +7911,7 @@ function applyExternalProfile() {
   const tagline = document.querySelector('.site-header p');
   if (tagline && EXT.updated_at) {
     const badge = document.createElement('span');
-    badge.style.cssText = 'margin-left:8px;font-size:0.62rem;color:#4ade80;background:#0d1f15;border:1px solid #1e3a2e;border-radius:6px;padding:1px 7px;vertical-align:middle';
+    badge.style.cssText = 'margin-left:8px;font-size:0.62rem;color:#fb923c;background:#0d1f15;border:1px solid #1e3a2e;border-radius:6px;padding:1px 7px;vertical-align:middle';
     badge.textContent = '⛁ dados: ' + EXT.updated_at;
     tagline.appendChild(badge);
   }
@@ -7932,7 +7932,7 @@ function buildSegChart() {
       datasets: [
         { label: 'Tronco', data: tronco, borderColor: '#f59e0b', backgroundColor: '#f59e0b',
           pointRadius: 5, borderWidth: 2, tension: 0.3, yAxisID: 'yT' },
-        { label: 'Pernas', data: pernas, borderColor: '#10b981', backgroundColor: '#10b981',
+        { label: 'Pernas', data: pernas, borderColor: '#f97316', backgroundColor: '#f97316',
           pointRadius: 5, borderWidth: 2.5, tension: 0.3, yAxisID: 'yLimb' },
         { label: 'Braços', data: bracos, borderColor: '#60a5fa', backgroundColor: '#60a5fa',
           pointRadius: 5, borderWidth: 2, borderDash: [5, 3], tension: 0.3, yAxisID: 'yLimb' }
@@ -7967,10 +7967,10 @@ let portalFilter = 'all';
 let nextSessionId = 1; // derivado em deriveViews()
 
 const SPORT_META = {
-  run:      { icon: '🏃', label: 'Corrida',  color: '#10b981', badge: 'badge-run',      dot: '#10b981' },
+  run:      { icon: '🏃', label: 'Corrida',  color: '#f97316', badge: 'badge-run',      dot: '#f97316' },
   bike:     { icon: '🚴', label: 'Bike',     color: '#f59e0b', badge: 'badge-bike',     dot: '#f59e0b' },
-  swim:     { icon: '🏊', label: 'Natação',  color: '#06b6d4', badge: 'badge-swim',     dot: '#06b6d4' },
-  strength: { icon: '💪', label: 'Força',    color: '#a78bfa', badge: 'badge-strength', dot: '#a78bfa' },
+  swim:     { icon: '🏊', label: 'Natação',  color: '#60a5fa', badge: 'badge-swim',     dot: '#60a5fa' },
+  strength: { icon: '💪', label: 'Força',    color: '#a3a3a3', badge: 'badge-strength', dot: '#a3a3a3' },
 };
 
 const MONTH_NAMES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
@@ -8086,7 +8086,7 @@ function blocksHTML(sess) {
   const cls  = full ? 'blocks-full' : none ? 'blocks-none' : 'blocks-part';
   const icon = full ? '✅' : none ? '✗' : '⚠️';
   const pips = Array.from({length: total}, (_,i) => {
-    const color = i < done ? (full ? '#10b981' : '#f59e0b') : '#2a2a2a';
+    const color = i < done ? (full ? '#f97316' : '#f59e0b') : '#2a2a2a';
     return `<div class="block-pip" style="background:${color};border:1px solid ${color}80"></div>`;
   }).join('');
   return `<span class="blocks-badge ${cls}">${icon} ${done}/${total} blocos</span>
@@ -8152,11 +8152,11 @@ function renderPortal() {
         const { done, total } = s.blocks;
         const full = done === total;
         const none = done === 0;
-        const fracColor = full ? '#4ade80' : none ? '#f87171' : '#fbbf24';
+        const fracColor = full ? '#fb923c' : none ? '#f87171' : '#fbbf24';
         const fracLabel = full ? 'completo' : none ? 'não feito' : 'parcial';
         const pips = Array.from({length: total}, (_,i) => {
-          const bg = i < done ? (full ? '#10b981' : '#f59e0b') : '#222';
-          const border = i < done ? (full ? '#10b98160' : '#f59e0b60') : '#2a2a2a';
+          const bg = i < done ? (full ? '#f97316' : '#f59e0b') : '#222';
+          const border = i < done ? (full ? '#f9731660' : '#f59e0b60') : '#2a2a2a';
           return `<div class="sb-pip" style="background:${bg};border:1px solid ${border}"></div>`;
         }).join('');
         blocksColHTML = `<div class="session-blocks-col">
@@ -8307,7 +8307,7 @@ function buildReport() {
     <div style="border-radius:20px;overflow:hidden;margin-bottom:12px;border:1px solid #1e2230">
 
       <!-- top strip: identidade + ciclo -->
-      <div style="background:#0f1117;padding:22px 24px 18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div style="background:#1a1a1a;padding:22px 24px 18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
         <div>
           <div style="font-size:0.58rem;color:#333;text-transform:uppercase;letter-spacing:3px;margin-bottom:6px">Relatório de Evolução · Triathlon</div>
           <div style="font-size:2rem;font-weight:900;letter-spacing:-1px;line-height:1">Antonio Diniz</div>
@@ -8324,9 +8324,9 @@ function buildReport() {
       <div style="background:#0f0f0f;padding:28px 24px;display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:0;border-top:1px solid #191d29">
         <div style="padding:0 20px 0 0;text-align:center">
           <div style="font-size:0.58rem;color:#555;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">VO₂ Máx</div>
-          <div style="font-size:3.5rem;font-weight:900;color:#a78bfa;line-height:1;letter-spacing:-2px">${vo2Now||'—'}</div>
+          <div style="font-size:3.5rem;font-weight:900;color:#a3a3a3;line-height:1;letter-spacing:-2px">${vo2Now||'—'}</div>
           <div style="font-size:0.65rem;color:#555;margin-top:4px">mL/kg/min</div>
-          <div style="display:inline-block;margin-top:10px;background:#a78bfa15;border:1px solid #a78bfa30;border-radius:99px;padding:3px 12px;font-size:0.65rem;color:#a78bfa;font-weight:700">+${vo2Gain} em 5 meses</div>
+          <div style="display:inline-block;margin-top:10px;background:#a3a3a315;border:1px solid #a3a3a330;border-radius:99px;padding:3px 12px;font-size:0.65rem;color:#a3a3a3;font-weight:700">+${vo2Gain} em 5 meses</div>
         </div>
         <div style="background:#1e2230"></div>
         <div style="padding:0 20px;text-align:center">
@@ -8351,14 +8351,14 @@ function buildReport() {
           <span style="font-size:0.58rem;color:#333">${cyclePct}% · ${daysLeft} dias restantes</span>
         </div>
         <div style="background:#161a26;border-radius:99px;height:3px;overflow:hidden">
-          <div style="width:${cyclePct}%;background:${phase?.color||'#10b981'};height:100%;border-radius:99px"></div>
+          <div style="width:${cyclePct}%;background:${phase?.color||'#f97316'};height:100%;border-radius:99px"></div>
         </div>
       </div>
     </div>
 
     <!-- ESPORTES: 3 cards -->
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px">
-      ${sportCard('Corrida','#10b981',
+      ${sportCard('Corrida','#f97316',
         bestRun ? secToPace(bestRun)+'/km' : '—', 'melhor pace registrado',
         runGainSec > 0 ? '-'+secToPace(Math.round(runGainSec))+'/km' : '—', 'vs. início',
         runPct,
@@ -8372,7 +8372,7 @@ function buildReport() {
         wBikeKm > 0 ? wBikeKm.toFixed(1)+'km' : '0km', wBike.length+' sess.',
         totalBikeKm.toFixed(0)+'km', 'acumulado'
       )}
-      ${sportCard('Natação','#06b6d4',
+      ${sportCard('Natação','#60a5fa',
         bestSwim ? secToPace(bestSwim)+'/100m' : '—', 'melhor pace registrado',
         firstSwim && bestSwim && firstSwim>bestSwim ? '-'+secToPace(Math.round(firstSwim-bestSwim))+'/100m' : '—', 'vs. início',
         swimPct,
@@ -8390,10 +8390,10 @@ function buildReport() {
         <div style="display:flex;flex-direction:column;gap:14px">
           <div>
             <div style="display:flex;justify-content:space-between;margin-bottom:5px">
-              <span style="font-size:0.7rem;color:#10b981;font-weight:700">Corrida · ${bestRun ? secToPace(bestRun)+'/km' : '—'}</span>
-              <span style="font-size:0.65rem;color:#333">meta 5:00/km · <span style="color:#10b981">${runPct}%</span></span>
+              <span style="font-size:0.7rem;color:#f97316;font-weight:700">Corrida · ${bestRun ? secToPace(bestRun)+'/km' : '—'}</span>
+              <span style="font-size:0.65rem;color:#333">meta 5:00/km · <span style="color:#f97316">${runPct}%</span></span>
             </div>
-            ${bar(runPct,'#10b981')}
+            ${bar(runPct,'#f97316')}
           </div>
           <div>
             <div style="display:flex;justify-content:space-between;margin-bottom:5px">
@@ -8404,17 +8404,17 @@ function buildReport() {
           </div>
           <div>
             <div style="display:flex;justify-content:space-between;margin-bottom:5px">
-              <span style="font-size:0.7rem;color:#06b6d4;font-weight:700">Natação · ${bestSwim ? secToPace(bestSwim)+'/100m' : '—'}</span>
-              <span style="font-size:0.65rem;color:#333">meta 1:50/100m · <span style="color:#06b6d4">${swimPct}%</span></span>
+              <span style="font-size:0.7rem;color:#60a5fa;font-weight:700">Natação · ${bestSwim ? secToPace(bestSwim)+'/100m' : '—'}</span>
+              <span style="font-size:0.65rem;color:#333">meta 1:50/100m · <span style="color:#60a5fa">${swimPct}%</span></span>
             </div>
-            ${bar(swimPct,'#06b6d4')}
+            ${bar(swimPct,'#60a5fa')}
           </div>
           <div>
             <div style="display:flex;justify-content:space-between;margin-bottom:5px">
-              <span style="font-size:0.7rem;color:#a78bfa;font-weight:700">VO₂ Máx · ${vo2Now||'—'}</span>
-              <span style="font-size:0.65rem;color:#333">meta ${VO2_GOAL_AMATEUR} · <span style="color:#a78bfa">${vo2Pct}%</span></span>
+              <span style="font-size:0.7rem;color:#a3a3a3;font-weight:700">VO₂ Máx · ${vo2Now||'—'}</span>
+              <span style="font-size:0.65rem;color:#333">meta ${VO2_GOAL_AMATEUR} · <span style="color:#a3a3a3">${vo2Pct}%</span></span>
             </div>
-            ${bar(vo2Pct,'#a78bfa')}
+            ${bar(vo2Pct,'#a3a3a3')}
           </div>
         </div>
       </div>
@@ -8444,7 +8444,7 @@ function buildReport() {
           </div>
           <div>
             <div style="font-size:0.55rem;color:#333;text-transform:uppercase">Gorд. Visceral</div>
-            <div style="font-size:0.95rem;font-weight:800;color:#a78bfa">nível 9</div>
+            <div style="font-size:0.95rem;font-weight:800;color:#a3a3a3">nível 9</div>
             <div style="font-size:0.55rem;color:#444">meta: &lt;5</div>
           </div>
           <div>
@@ -8594,7 +8594,7 @@ function buildVolumeChart() {
           label: '🏊 Natação (km)',
           data: swimKm,
           backgroundColor: 'rgba(103,232,249,0.72)',
-          borderColor: '#67e8f9',
+          borderColor: '#93c5fd',
           borderWidth: 1,
           stack: 'vol',
           borderRadius: 4,
@@ -8625,7 +8625,7 @@ function buildVolumeChart() {
           borderWidth: 1,
           titleColor: '#ccc',
           bodyColor: '#aaa',
-          footerColor: '#a78bfa',
+          footerColor: '#a3a3a3',
           callbacks: {
             title: (items) => {
               const wi = items[0].dataIndex;
@@ -8807,7 +8807,7 @@ function buildQualityChart() {
           borderWidth: 1,
           titleColor: '#ccc',
           bodyColor: '#aaa',
-          footerColor: '#4ade80',
+          footerColor: '#fb923c',
           callbacks: {
             footer: (items) => {
               const barItems = items.filter(i => i.dataset.type !== 'line' && !i.dataset.yAxisID);
@@ -8952,11 +8952,11 @@ function showWeekSummary(weekNum, ci) {
 
   // Narrativa
   const narr = (_ci === 0 ? WEEK_NARRATIVES[weekNum] : null) || {};
-  const gradeColor = {'A+':'#22c55e','A':'#4ade80','B+':'#86efac','B':'#bbf7d0','C+':'#fbbf24','C':'#fde68a','—':'#555'}[narr.grade]||'#555';
+  const gradeColor = {'A+':'#22c55e','A':'#fb923c','B+':'#86efac','B':'#bbf7d0','C+':'#fbbf24','C':'#fde68a','—':'#555'}[narr.grade]||'#555';
 
   // Ícone por esporte
   const sIcon  = {run:'🏃',bike:'🚴',swim:'🏊',strength:'💪'};
-  const sColor = {run:'#4ade80',bike:'#fbbf24',swim:'#67e8f9',strength:'#a78bfa'};
+  const sColor = {run:'#fb923c',bike:'#fbbf24',swim:'#93c5fd',strength:'#a3a3a3'};
 
   function fmtShort(d) {
     const dt=new Date(d+'T12:00:00');
@@ -8970,7 +8970,7 @@ function showWeekSummary(weekNum, ci) {
         const ic  = sIcon[s.sport]||'📋';
         const distStr = s.dist>0 ? (s.sport==='swim'?(s.dist*1000).toFixed(0)+'m':s.dist.toFixed(1)+'km') : '';
         const paceStr = s.pace ? ' · '+s.pace+(s.sport==='swim'?'/100m':'/km') : '';
-        const blkStr  = s.blocks&&s.blocks.total>0 ? ` <span style="color:${s.blocks.done===s.blocks.total?'#4ade80':'#fbbf24'}">${s.blocks.done}/${s.blocks.total} blocos</span>` : '';
+        const blkStr  = s.blocks&&s.blocks.total>0 ? ` <span style="color:${s.blocks.done===s.blocks.total?'#fb923c':'#fbbf24'}">${s.blocks.done}/${s.blocks.total} blocos</span>` : '';
         const prCount = (s.note||'').match(/🏆/g)||[];
         const prBadge = prCount.length>0 ? `<span style="color:#fbbf24;margin-left:6px">🏆×${prCount.length}</span>` : '';
         // Extrai métricas chave da nota
@@ -9013,7 +9013,7 @@ function showWeekSummary(weekNum, ci) {
     <!-- Volume grid -->
     ${totalKm>0 ? `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px">
       <div class="week-modal-vol-item">
-        <div class="week-modal-vol-val" style="color:#4ade80">${runKm>0?runKm.toFixed(1)+'km':'—'}</div>
+        <div class="week-modal-vol-val" style="color:#fb923c">${runKm>0?runKm.toFixed(1)+'km':'—'}</div>
         <div class="week-modal-vol-lbl">🏃 Run</div>
       </div>
       <div class="week-modal-vol-item">
@@ -9021,7 +9021,7 @@ function showWeekSummary(weekNum, ci) {
         <div class="week-modal-vol-lbl">🚴 Bike</div>
       </div>
       <div class="week-modal-vol-item">
-        <div class="week-modal-vol-val" style="color:#67e8f9">${swimM>0?swimM.toFixed(0)+'m':'—'}</div>
+        <div class="week-modal-vol-val" style="color:#93c5fd">${swimM>0?swimM.toFixed(0)+'m':'—'}</div>
         <div class="week-modal-vol-lbl">🏊 Swim</div>
       </div>
       <div class="week-modal-vol-item">
@@ -9032,12 +9032,12 @@ function showWeekSummary(weekNum, ci) {
 
     <!-- Qualidade LT2 -->
     ${(qRunDone+qBikeDone)>0 ? `<div style="background:#0a0f0a;border:1px solid #1e3a1e;border-radius:10px;padding:10px 14px;margin-bottom:14px;display:flex;gap:16px;flex-wrap:wrap;align-items:center">
-      <div style="font-size:0.62rem;color:#4ade80;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">⚡ LT2</div>
+      <div style="font-size:0.62rem;color:#fb923c;font-weight:700;text-transform:uppercase;letter-spacing:0.5px">⚡ LT2</div>
       ${qRunDone>0?`<div style="font-size:0.7rem;color:#aaa">🏃 ${qRunDone.toFixed(1)} <span style="color:#555">/ ${qRunPlan.toFixed(1)}km</span></div>`:''}
       ${qBikeDone>0?`<div style="font-size:0.7rem;color:#aaa">🚴 ${qBikeDone.toFixed(1)} <span style="color:#555">/ ${qBikePlan.toFixed(1)}km</span></div>`:''}
-      ${conclusaoLT2!==null?`<div style="margin-left:auto;font-size:0.8rem;font-weight:800;color:${conclusaoLT2>=90?'#4ade80':conclusaoLT2>=70?'#fbbf24':'#f87171'}">${conclusaoLT2}%</div>`:''}
+      ${conclusaoLT2!==null?`<div style="margin-left:auto;font-size:0.8rem;font-weight:800;color:${conclusaoLT2>=90?'#fb923c':conclusaoLT2>=70?'#fbbf24':'#f87171'}">${conclusaoLT2}%</div>`:''}
       ${totalBlocoTotal>0?`<div style="font-size:0.65rem;color:#555;width:100%">Blocos: ${totalBlocoDone}/${totalBlocoTotal} completados</div>`:''}
-      ${bestLTPace?`<div style="font-size:0.65rem;color:#555">Melhor pace LT2: <strong style="color:#4ade80">${bestLTPace}/km</strong></div>`:''}
+      ${bestLTPace?`<div style="font-size:0.65rem;color:#555">Melhor pace LT2: <strong style="color:#fb923c">${bestLTPace}/km</strong></div>`:''}
       ${ftpVal?`<div style="font-size:0.65rem;color:#fbbf24;font-weight:700">FTP: ${ftpVal}W</div>`:''}
       ${prs>0?`<div style="font-size:0.65rem;color:#fbbf24">🏆 ${prs} PRs / RPs na semana</div>`:''}
     </div>` : prs>0||ftpVal ? `<div style="background:#0a0f0a;border:1px solid #1e3a1e;border-radius:10px;padding:10px 14px;margin-bottom:14px;display:flex;gap:12px;flex-wrap:wrap">
@@ -9114,7 +9114,7 @@ function buildHomeHero() {
   const qRuns = allRuns.filter(e => /lt2|limiar|threshold/i.test(e.note || ''));
   const runs = qRuns.length >= 2 ? qRuns : allRuns;
   const rCur = runs[runs.length - 1], rPrev = runs[runs.length - 2];
-  const runSpark = heroSpark(runs.slice(-8).map(e => -e.sec), '#10b981'); // invertido: subir = melhorar
+  const runSpark = heroSpark(runs.slice(-8).map(e => -e.sec), '#f97316'); // invertido: subir = melhorar
 
   // ── KPI 2: W/kg (bike) — só treinos de qualidade ───────
   const allBikes = entries.filter(e => e.sport === 'bike' && e.watts).sort((a, b) => a.date.localeCompare(b.date));
@@ -9291,10 +9291,10 @@ function buildEFChart() {
       datasets: [{
         label: 'EF',
         data: pts.map(p => p.ef),
-        borderColor: '#10b981',
-        backgroundColor: '#10b98122',
-        pointBackgroundColor: pts.map((p, i) => i === pts.length - 1 ? '#34d399' : '#10b981'),
-        pointBorderColor: '#0f1117',
+        borderColor: '#f97316',
+        backgroundColor: '#f9731622',
+        pointBackgroundColor: pts.map((p, i) => i === pts.length - 1 ? '#34d399' : '#f97316'),
+        pointBorderColor: '#1a1a1a',
         pointBorderWidth: 1.5,
         pointRadius: 5,
         pointHoverRadius: 8,
