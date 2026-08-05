@@ -28,7 +28,7 @@
    "hoje": {
     "k10": "4:30 (13,3 km/h)",
     "lt2": "4:37 (13,0 km/h)",
-    "sub_lt2": "4:43 (12,7 km/h)",
+    "sub_lt2": "4:45 (12,6 km/h)",
     "hmp": "4:42 (12,8 km/h)",
     "z2": "5:50–6:15 (9,6–10,3 km/h)"
    },
@@ -53,7 +53,7 @@
     "Sem 15 · 4×400m"
    ],
    "nota_esteira": "Velocidade de esteira em km/h = 3600 ÷ pace em segundos. Sempre exibida junto do pace.",
-   "revisao": "Revisado em 24/07: pico de 70km mantido, mas qualidade limitada a ≤25% do volume, longão a 26km, descarga a cada 2 semanas de build, e bike de sábado só Z2 nas semanas de pico."
+   "revisao": "Revisado em 05/08: a escada de sub-LT2 começava NO limiar (4:36–4:38) em vez de abaixo dele. Corrigida para 4:45 nas sem 2–3, convergindo para 4:15 na sem 17. FC nos tiros confirmou o erro: 160–162 bpm (88% da máx) quando sub-limiar vive em 82–87%."
   },
   "cycle_weeks": 18,
   "cycle_prev": {
@@ -3834,7 +3834,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1km @4:38 (12,9 km/h) · rec ~200m trote · solta ~1,5km · ~9km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1km @4:45 (12,6 km/h) · rec ~200m trote · solta ~1,5km · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -3960,7 +3960,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:36 (13,0 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:45 (12,6 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4086,7 +4086,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1,5km @4:34 (13,1 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1,5km @4:43 (12,7 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4220,7 +4220,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:32 (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:43 (12,7 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4264,7 +4264,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:32 (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:43 (12,7 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4354,7 +4354,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:32 (13,2 km/h) · descarga · manter toque, cortar volume · solta ~1,5km · ~8km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:43 (12,7 km/h) · descarga · manter toque, cortar volume · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4524,7 +4524,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:30 (13,3 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:40 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4614,7 +4614,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:28 (13,4 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:40 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -4658,7 +4658,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run HMP — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:30 (13,3 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:42 (12,8 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -4748,7 +4748,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:26 (13,5 km/h) · afiar para o teste · curto · solta ~1,5km · ~8km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:38 (12,9 km/h) · afiar para o teste · curto · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5000,7 +5000,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:24* (13,6 km/h) · rec ~300m trote · solta ~1,5km · ~13km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:34* (13,1 km/h) · rec ~300m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5044,7 +5044,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run HMP — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:22* (13,7 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:38* (12,9 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5134,7 +5134,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:22* (13,7 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:32* (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5178,7 +5178,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:22* (13,7 km/h) · rec ~400m trote · solta ~1,5km · ~14km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:32* (13,2 km/h) · rec ~400m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     }
@@ -5268,7 +5268,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:22* (13,7 km/h) · descarga · solta ~1,5km · ~8km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:30* (13,3 km/h) · descarga · solta ~1,5km · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5402,7 +5402,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:20* (13,8 km/h) · rec ~200m trote · solta ~1,5km · ~12km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:26* (13,5 km/h) · rec ~200m trote · solta ~1,5km · ~12km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5528,7 +5528,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:17* (14,0 km/h) + 4×400m VO2 forte · rec 400m · solta ~1,5km · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:22* (13,7 km/h) + 4×400m VO2 forte · rec 400m · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5662,7 +5662,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:17* (14,0 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
+     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:19* (13,9 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5996,7 +5996,7 @@
      "sport": "run",
      "key": "hm_prova_meia",
      "label": "🏁 PROVA — Meia Monumental · 05:00",
-     "detail": "21,1km @4:15* (14,1 km/h) · alvo 1:29:59 · negative split: 10k @4:18 (14,0 km/h) → desce · Vaporfly",
+     "detail": "21,1km @4:15* (14,1 km/h) · alvo 1:29:59 · negative split: 10k @4:15* (14,1 km/h) → desce · Vaporfly",
      "zone": "PROVA",
      "color": "#f43f5e"
     },
@@ -9164,11 +9164,11 @@
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
-     "sub-LT2 / VO2",
-     "FC ≤158",
-     "4:38 (12,9 km/h) → 4:15 (14,1 km/h)"
+     "sub-LT2",
+     "FC 150–157",
+     "4:45 (12,6) → 4:15 (14,1)"
     ],
-    "objetivo": "Tiros de 1km ABAIXO do limiar (2,0–3,0 mmol). A regra norueguesa: terminar sentindo que faria mais 2 tiros. Se acabou destruído, foi rápido demais.",
+    "objetivo": "Tiros ABAIXO do limiar (2,0–3,0 mmol) — não NO limiar. Esta é a diferença que faz o método norueguês funcionar: a dose precisa ser repetível três vezes na semana. Se doer como prova, virou outro treino.",
     "programa": [
      {
       "tipo": "run",
@@ -9196,12 +9196,12 @@
      }
     ],
     "notas": [
-     "Escada do ciclo: 4:38 (12,9 km/h) na sem 2 → 4:28 (13,4) na sem 8 → 4:22 (13,7) na sem 12 → 4:17 (14,0) na sem 15",
-     "FC ≤158 em TODOS os tiros · o pace é teto, a FC é o chefe",
-     "⚠️ SEU VÍCIO: o 1º tiro NÃO pode ser o mais rápido. Se sair >3s abaixo do alvo, segura no 2º",
-     "Alvo de consistência: do 1º ao último dentro de 3s de variação",
-     "NA ESTEIRA: a máquina demora a chegar na velocidade — o tempo da volta inclui a rampa. Confie na velocidade configurada, não no pace do relógio",
-     "Se a perna estiver pesada do treino da manhã, tira 1 tiro. Melhor 4 bons que 5 forçados",
+     "Escada corrigida: 4:45 (12,6 km/h) nas sem 2–3 → 4:43 (12,7) sem 4–6 → 4:40 (12,9) sem 7–8 → recalibra no teste → 4:32 (13,2) sem 12 → 4:15 (14,1) sem 17",
+     "⚠️ FC ALVO: 150–157. Teto absoluto 158 (86% da máx). Se passar de 160, o pace está alto — BAIXE A VELOCIDADE, não force",
+     "A regra que vale mais que o número: terminar sentindo que faria mais 2 tiros. Se acabou destruído, a dose estava errada",
+     "SEU VÍCIO: o 1º tiro não pode ser o mais rápido. Alvo: 3s de variação do 1º ao último",
+     "NA ESTEIRA: confie na velocidade configurada, não no pace do relógio (o acelerômetro erra até 5% e a rampa distorce o início)",
+     "Registre o TÊNIS — comparação de FC entre sessões só vale com o mesmo calçado",
      "* = pace projetado, recalibrado no 10k-teste de 19/09"
     ]
    },
@@ -9234,8 +9234,8 @@
     "color": "#f43f5e",
     "pills": [
      "sub-LT2 / HMP",
-     "FC ≤161",
-     "4:34 (13,1 km/h) → 4:15 (14,1 km/h)"
+     "FC ≤160",
+     "4:43 (12,7) → 4:15 (14,1)"
     ],
     "objetivo": "Tiros de 2km — mesma intensidade da terça, mas blocos maiores. É aqui que a resistência de limiar (o que sustenta uma meia) se constrói.",
     "programa": [
@@ -9265,7 +9265,7 @@
      }
     ],
     "notas": [
-     "Escada do ciclo: 4:34 (13,1 km/h) na sem 4 → 4:30 (13,3) na sem 8 → 4:22 (13,7) na sem 12 → 4:15 (14,1) na sem 15",
+     "Escada corrigida: 4:43 (12,7 km/h) na sem 5 → 4:40 (12,9) sem 7 → recalibra no teste → 4:32 (13,2) sem 12 → 4:15 (14,1) sem 15",
      "FC ≤161 — dois batimentos acima da terça, porque o bloco é maior",
      "Se o último bloco cair mais de 5s do primeiro, era um bloco a mais do que aguentava",
      "Bike de quinta é OPCIONAL e Z2 puro — se estiver cansado, corta a bike, nunca o run",
