@@ -1,10 +1,10 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-05",
+ "updated_at": "2026-08-17",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
-  "cycle_start": "2026-07-20",
+  "cycle_start": "2026-08-17",
   "ftp": 246,
   "ftp_ref": "FTP atual informado pelo atleta em 24/07/2026 (era 243 — Ramp Test 06/06/2026)",
   "fcmax": 183,
@@ -24,76 +24,73 @@
    "swim": 330
   },
   "pace_anchors": {
-   "ref": "10K 19/07/2026 — 43:50 no relógio, ~45:00 equivalente plano (GAP) · ~85–86kg",
+   "ref": "Reinício em 17/08/2026 após 3 semanas comprometidas por fáscia plantar (3º episódio) e irritação de menisco",
    "hoje": {
-    "k10": "4:30 (13,3 km/h)",
-    "lt2": "4:37 (13,0 km/h)",
-    "sub_lt2": "4:45 (12,6 km/h)",
-    "hmp": "4:42 (12,8 km/h)",
-    "z2": "5:50–6:15 (9,6–10,3 km/h)"
+    "k10": "4:35 (13,1 km/h)",
+    "lt2": "4:42 (12,8 km/h)",
+    "sub_lt2": "4:50 (12,4 km/h)",
+    "hmp": "4:50 (12,4 km/h)",
+    "z2": "5:55–6:15 (9,6–10,1 km/h)"
    },
    "alvo_22_11": {
-    "k10": "4:04 (14,8 km/h)",
-    "lt2": "4:11 (14,3 km/h)",
-    "sub_lt2": "4:17 (14,0 km/h)",
-    "hmp": "4:15 (14,1 km/h)",
-    "z2": "5:30–5:50 (10,3–10,9 km/h)"
+    "k10": "4:25 (13,6 km/h)",
+    "lt2": "4:32 (13,2 km/h)",
+    "sub_lt2": "4:39 (12,9 km/h)",
+    "hmp": "4:39 (12,9 km/h)",
+    "z2": "5:45–6:05 (9,9–10,4 km/h)"
    },
-   "meta": "Meia 1:29:59 (4:15/km) · exige 10K plano ~40:38",
-   "peso_alvo": "82 kg até 22/11 (de ~85,5)",
+   "meta": "Meia 1:38:00 (4:39/km · 12,9 km/h) · esticado 1:35 se o 10K-teste de 04/10 vier ≤44:00",
+   "filosofia": "Consistência acima de volume. Pico de 52km (era 70). Descarga a cada 3 semanas. Longão máx 22km.",
+   "restricoes": [
+    "MENISCO: agachamento só até 90°, leg press amplitude parcial, step-up no lugar de búlgaro — sem flexão profunda sob carga",
+    "FÁSCIA (3º episódio): protocolo Rathleff com toalha, 3-2-3, carga progressiva · pliometria só a partir da sem 5, do zero",
+    "PLIOMETRIA sempre DEPOIS da corrida, nunca antes"
+   ],
    "checkpoints": [
-    "Sem 9 · 19/09 · 10k-teste — ≤42:30 mantém 1:30 · 43:00–44:00 → 1:32–1:33 · >44:30 → 1:35",
-    "Sem 13 · 18/10 · longão 28km c/ 10km @4:18 — o teste de verdade",
-    "Sem 16 · 08/11 · 20km c/ 8km @4:15 — define o pace do dia"
-   ],
-   "vo2_sessoes": [
-    "Sem 7 · 6×800m",
-    "Sem 10 · 6×800m",
-    "Sem 13 · 5×1000m",
-    "Sem 15 · 4×400m"
-   ],
-   "nota_esteira": "Velocidade de esteira em km/h = 3600 ÷ pace em segundos. Sempre exibida junto do pace.",
-   "revisao": "Revisado em 05/08: a escada de sub-LT2 começava NO limiar (4:36–4:38) em vez de abaixo dele. Corrigida para 4:45 nas sem 2–3, convergindo para 4:15 na sem 17. FC nos tiros confirmou o erro: 160–162 bpm (88% da máx) quando sub-limiar vive em 82–87%."
+    "Sem 7 · dom 04/10 · 10K-teste — recalibra as sem 8–14",
+    "Sem 11 · dom 01/11 · 22km com 8km @4:39 — sessão-rainha",
+    "Sem 12 · dom 08/11 · 18km com 6km @4:39 — ensaio final"
+   ]
   },
-  "cycle_weeks": 18,
+  "cycle_weeks": 14,
   "cycle_prev": {
-   "start": "2026-04-20",
-   "weeks": 14
+   "start": "2026-07-20",
+   "weeks": 18
   },
   "forca_fases": [
    {
     "semanas": "2–4",
     "fase": "Adaptação anatômica",
     "formato": "3×12–15 · RPE 6",
-    "plio": "Sem 2–3 preparação de tornozelo · ~45 contatos",
+    "plio": "Sem 2–6 preparação de tornozelo · ~35 contatos · SEM caixa",
     "foco": "tolerância do tecido"
    },
    {
     "semanas": "5–9",
     "fase": "Força máxima I",
     "formato": "4×6 · RPE 7–8",
-    "plio": "Sem 4–8 introdução · caixa baixa · ~90 contatos",
+    "plio": "Sem 7–11 introdução · caixa baixa · ~70 contatos",
     "foco": "economia de corrida"
    },
    {
     "semanas": "10–13",
     "fase": "Força máxima II",
     "formato": "4×4 · RPE 8",
-    "plio": "Sem 9–13 desenvolvimento · bounding · ~115 contatos",
+    "plio": "Sem 12–14 desenvolvimento · bounding · ~90 contatos",
     "foco": "pico de força"
    },
    {
     "semanas": "14–16",
     "fase": "Potência / reativo",
     "formato": "3×3 rápido",
-    "plio": "Sem 14–16 reativo · depth jump · ~120 contatos",
+    "plio": "Sem 15–16 reativo · depth jump · ~100 contatos",
     "foco": "converter força em elasticidade"
    },
    {
     "semanas": "17–18",
     "fase": "Manutenção",
     "formato": "2×4 leve",
-    "plio": "mínima · ~40 contatos",
+    "plio": "mínima · ~30 contatos",
     "foco": "padrão neural sem fadiga"
    }
   ],
@@ -2131,6 +2128,77 @@
    "dur": "32:43",
    "kcal": 242,
    "note": "32:43 · Força A — Perna (Sem 3 · terça, pós-corrida) · fase de adaptação · agach. goblet, leg press, RDL, panturrilha excêntrica · RPE 6 · RE 7 · Strava"
+  },
+  {
+   "id": 174,
+   "date": "2026-08-06",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "1:00:04",
+   "pace": "6:00",
+   "sec": 360,
+   "hr": 142,
+   "kcal": 807,
+   "note": "10,01km · 1:00:04 · fácil Z2 + 3 strides (Sem 3 · quinta) · 6:00/km (10,0 km/h) · FC 142 avg / 158 máx · +102m · RE 67 · Parque Mangueiral · 3 PRs ouro · EF 1,17 · Vomero Plus · Strava"
+  },
+  {
+   "id": 175,
+   "date": "2026-08-07",
+   "sport": "strength",
+   "dur": "45:53",
+   "kcal": 265,
+   "note": "45:53 · Pliometria + Força B (Sem 3 · sexta, manhã) · plio preparação de tornozelo ~45 contatos · elevação pélvica, SL-RDL, búlgaro, panturrilha sentado, glúteo médio · RE 9 · Strava"
+  },
+  {
+   "id": 176,
+   "date": "2026-08-07",
+   "sport": "run",
+   "dist": 3.41,
+   "dur": "20:51",
+   "pace": "6:07",
+   "sec": 367,
+   "hr": 135,
+   "kcal": 259,
+   "note": "3,41km · 20:51 · fácil Z2 (Sem 3 · sexta) · 6:07/km (9,8 km/h) · FC 135 avg / 147 máx · ⚠️ DOR NA FÁSCIA PLANTAR — abortou aos 3,4km dos 10 prescritos e trocou por elíptico · decisão correta · Strava"
+  },
+  {
+   "id": 177,
+   "date": "2026-08-07",
+   "sport": "bike",
+   "dur": "30:00",
+   "note": "30min · ELÍPTICO (Sem 3 · sexta) · substituição dos ~6,5km de corrida que faltaram por dor na fáscia plantar · aeróbico sem impacto · registro manual"
+  },
+  {
+   "id": 178,
+   "date": "2026-08-11",
+   "sport": "run",
+   "dist": 7.57,
+   "dur": "36:56",
+   "pace": "4:53",
+   "sec": 293,
+   "hr": 0,
+   "kcal": 588,
+   "note": "7,57km · 36:56 · corrida no Ibirapuera (viagem SP) · 4:53/km (12,3 km/h) · +54m · RE 69 · 26 PRs de segmento · sem FC registrada · Strava"
+  },
+  {
+   "id": 179,
+   "date": "2026-08-13",
+   "sport": "strength",
+   "dur": "36:04",
+   "kcal": 171,
+   "note": "36:04 · musculação leve · RE 4 · período de gestão de lesão (fáscia + joelho) · Strava"
+  },
+  {
+   "id": 180,
+   "date": "2026-08-16",
+   "sport": "run",
+   "dist": 8.0,
+   "dur": "49:05",
+   "pace": "6:08",
+   "sec": 368,
+   "hr": 147,
+   "kcal": 624,
+   "note": "8,00km · 49:05 · volta à corrida pós-lesões · 6:08/km (9,8 km/h) · FC 147 avg / 161 máx · +23m · RE 67 · Parque da Península/Asa Delta · 6 PRs · EF 1,11 · Strava"
   }
  ],
  "weight_data": [
@@ -4032,27 +4100,35 @@
      "sport": "bike",
      "key": "hm_bike_longo",
      "label": "🚴 Bike Longo Estruturado",
-     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
      "zone": "LT2",
-     "color": "#f59e0b"
+     "color": "#f59e0b",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15 · ZERO impacto — dia ideal com a fáscia sensível"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Cuidado da fáscia",
+     "zone": "mobil.",
+     "color": "#a78bfa",
+     "detail": "Bolinha na sola 2min/pé (2× no dia) · panturrilha excêntrica 3×15 no degrau · alongamento de panturrilha e sóleo · gelo 10min se latejar"
     }
    ],
    "2026-08-09": [
     {
      "sport": "run",
      "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "16km Z1–Z2 a 5:50–6:10 (9,7–10,3 km/h) · FC<147",
+     "label": "🏃 Longão REDUZIDO — por sensação",
      "zone": "Z2",
-     "color": "#10b981"
+     "color": "#10b981",
+     "detail": "⚠️ TESTE ESCALONADO (fáscia melhorando): comece 3km a 6:20–6:40 (9,0–9,5 km/h) e AVALIE · pé limpo → segue até 10–12km a 6:00–6:20 (9,5–10,0 km/h) · FC<147 · qualquer desconforto → PARA e completa com 30–40min de elíptico · NÃO fazer os 16km originais"
     },
     {
      "sport": "strength",
      "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
+     "label": "💪 Mobilidade + fáscia",
      "zone": "mobil.",
-     "color": "#a78bfa"
+     "color": "#a78bfa",
+     "detail": "Bolinha na fáscia 2min/pé · panturrilha excêntrica 2×15 · flexor de quadril 2×45s/lado · foam roller"
     }
    ],
    "2026-08-10": [
@@ -4147,8 +4223,8 @@
     {
      "sport": "strength",
      "key": "hm_plio",
-     "label": "🦘 Pliometria — Introdução",
-     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
+     "label": "🦘 Pliometria — Preparação de tornozelo (DEPOIS da corrida)",
+     "detail": "Pogo hops 3×12 · Corda 3×30s · Saltito no lugar 3×15 · ~35 contatos · SEM saltos de caixa",
      "zone": "plio",
      "color": "#a78bfa"
     },
@@ -4187,1846 +4263,6 @@
      "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
      "zone": "mobil.",
      "color": "#a78bfa"
-    }
-   ],
-   "2026-08-17": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve (opcional)",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×6 · Remada curvada 4×8 · Desenv. 3×8 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-18": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "6×8min @195–213W · rec 2min · ~55min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:43 (12,7 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-19": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica · dia sem corrida",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-20": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:43 (12,7 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-08-21": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Introdução",
-     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-22": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Longo Estruturado",
-     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
-     "zone": "LT2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-08-23": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "24km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60min",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-24": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 2×8 · Remada 2×10 · Face pull 2×15 · leve · ~20min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-25": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–213W · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:43 (12,7 km/h) · descarga · manter toque, cortar volume · solta ~1,5km · ~8km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Leg press 3×10 · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-26": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-27": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-08-28": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "10km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Introdução",
-     "detail": "Salto na caixa baixa (20–30cm) 2×5 · SL hop no lugar 2×6/perna · Pogo hops 2×15 · ~45 contatos · DESCARGA",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-29": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2",
-     "detail": "~1h30 Z2 · sem blocos",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-08-30": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "20km Z1–Z2 · FC<147",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-08-31": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×6 · Remada curvada 4×8 · Desenv. 3×8 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-01": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×10min @195–213W · rec 2min · ~60min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:05 · 14,7 km/h) · rec 400m trote · solta ~1,5km · ~11km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-02": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-03": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:40 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-09-04": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Introdução",
-     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-05": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Longo Estruturado",
-     "detail": "30min Z2 · 3×15min LT2 (195–213W) · 30min Z2 · ~2h15",
-     "zone": "LT2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-09-06": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z1–Z2 · FC<147 · o longão mais longo do bloco",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-07": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×6 · Remada curvada 4×8 · Desenv. 3×8 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-08": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×10min @195–213W · rec 2min · ~60min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:40 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 4×6 @RPE7 · Terra trap bar 4×6 · Leg press 3×10 · Panturrilha carregada 4×10 · rec 2–3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-09": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-10": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:42 (12,8 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-09-11": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "16km Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Introdução",
-     "detail": "Salto na caixa baixa (20–30cm) 3×5 · SL hop no lugar 3×6/perna · Pogo hops 3×20 · ~90 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 4×12 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-12": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Longo Estruturado",
-     "detail": "30min Z2 · 3×15min LT2 (195–213W) · 30min Z2 · ~2h15",
-     "zone": "LT2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-09-13": [
-    {
-     "sport": "run",
-     "key": "hm_longao_hmp",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z1–Z2 · FC<147 · sem blocos (a quinta já deu o ritmo)",
-     "zone": "HMP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-14": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 2×8 · Remada 2×10 · Face pull 2×15 · leve · ~20min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-15": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×6min @193–200W · leve · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:38 (12,9 km/h) · afiar para o teste · curto · solta ~1,5km · ~8km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx I) — pós-corrida",
-     "detail": "Agach. livre 3×6 @RPE7 · Terra trap bar 3×6 · Leg press 3×10 · Panturrilha carregada 3×10 · rec 2–3min · SEM falha · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-16": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-17": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 + 4 strides",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-09-18": [
-    {
-     "sport": "rest",
-     "key": "mn_descanso",
-     "label": "😴 Descanso pré-teste",
-     "detail": "Folga total · véspera do 10k-teste",
-     "zone": "descanso",
-     "color": "#475569"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Desenvolvimento",
-     "detail": "Salto na caixa 2×5 · Bounding 2×20m · SL hop lateral 2×6/perna · ~55 contatos · DESCARGA",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×8 pesada · SL-RDL 3×8/perna · Búlgaro 3×8/perna com halteres · Panturrilha sentado 3×12 · Glúteo médio 3×15 · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-19": [
-    {
-     "sport": "run",
-     "key": "hm_teste_10k",
-     "label": "🏁 10k-TESTE",
-     "detail": "10km forte · aquec ~2,5km + 4 strides · recalibra TODOS os paces das sem 10–18",
-     "zone": "TESTE",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-09-20": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "16km Z1 regenerativo pós-teste",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-21": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×5 · Remada 4×6 · Desenv. 3×6 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-22": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–213W · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · VO2: 6×800m forte (~4:02 · 14,9 km/h) · rec 400m trote · solta ~1,5km · ~10km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-23": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-24": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "12km fácil Z2 · FC<140 + 5 strides",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-09-25": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "14km Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Desenvolvimento",
-     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-26": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2",
-     "detail": "~1h30 Z2 · sem blocos",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-09-27": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "22km Z1–Z2 · FC<147",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-28": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×5 · Remada 4×6 · Desenv. 3×6 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-29": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×12min @195–213W · rec 2min · ~70min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:34* (13,1 km/h) · rec ~300m trote · solta ~1,5km · ~13km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-09-30": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-01": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×4km @4:38* (12,9 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-10-02": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "15km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Desenvolvimento",
-     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-03": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-10-04": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "24km Z1–Z2 · FC<147 · sem blocos (a quinta já deu o ritmo)",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-05": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×5 · Remada 4×6 · Desenv. 3×6 · Barra fixa 3×máx-2 · Face pull 3×15 · ~40min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-06": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×12min @195–213W · rec 2min · ~70min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 5×1,5km @4:32* (13,2 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 4×4 @RPE8 · Terra trap bar 4×4 · Leg press 3×8 · Panturrilha 4×8 pesada · rec 3min · SEM falha",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-07": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-08": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×3km @4:32* (13,2 km/h) · rec ~400m trote · solta ~1,5km · ~14km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-10-09": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "18km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Desenvolvimento",
-     "detail": "Salto na caixa 4×5 · Bounding 3×20m · SL hop lateral 3×6/perna · Pogo hops 3×20 · ~115 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 4×10 · Glúteo médio 3×15",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-10": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-10-11": [
-    {
-     "sport": "run",
-     "key": "hm_longao_hmp",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "26km Z1–Z2 · FC<147 · sem blocos",
-     "zone": "HMP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-12": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 2×8 · Remada 2×10 · Face pull 2×15 · leve · ~20min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-13": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×12min @195–213W · rec 2min · ~70min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1,5km @4:30* (13,3 km/h) · descarga · solta ~1,5km · ~8km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (força máx II) — pós-corrida",
-     "detail": "Agach. livre 3×4 @RPE8 · Terra trap bar 3×4 · Leg press 3×8 · Panturrilha 3×8 pesada · rec 3min · SEM falha · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-14": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-15": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 · FC<140",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-10-16": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Desenvolvimento",
-     "detail": "Salto na caixa 2×5 · Bounding 2×20m · SL hop lateral 2×6/perna · ~55 contatos · DESCARGA",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 pesada · SL-RDL 3×6/perna · Búlgaro 3×6/perna pesado · Panturrilha sentado 3×10 · Glúteo médio 3×15 · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-17": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-10-18": [
-    {
-     "sport": "run",
-     "key": "hm_longao_hmp",
-     "label": "🏃 Longão c/ HMP",
-     "detail": "24km Z1–Z2 · FC<147",
-     "zone": "HMP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-19": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 3×6 · Remada 3×8 · Desenv. 3×8 · Face pull 3×15 · ~30min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-20": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–213W · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 6×1km @4:26* (13,5 km/h) · rec ~200m trote · solta ~1,5km · ~12km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-21": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-22": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "14km fácil Z2 · FC<140 + 5 strides · LEVE (domingo é a sessão-rainha)",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-10-23": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "18km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Reativo (pico)",
-     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-24": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-10-25": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão c/ HMP",
-     "detail": "26km c/ 10km @4:18* (14,0 km/h) (HMP) no final · SESSÃO-RAINHA",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-26": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 3×6 · Remada 3×8 · Desenv. 3×8 · Face pull 3×15 · ~30min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-27": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×8min @195–213W · ~50min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run VO2 + Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×1km @4:22* (13,7 km/h) + 4×400m VO2 forte · rec 400m · solta ~1,5km · ~10km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-28": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-29": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×5km @4:15* (14,1 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-10-30": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "16km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Reativo (pico)",
-     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-10-31": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-11-01": [
-    {
-     "sport": "run",
-     "key": "hm_longao",
-     "label": "🏃 Longão Z1–Z2",
-     "detail": "24km Z1–Z2 · FC<147 · sem blocos",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-02": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 3×6 · Remada 3×8 · Desenv. 3×8 · Face pull 3×15 · ~30min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-03": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–213W · ~45min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:19* (13,9 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (potência) — pós-corrida",
-     "detail": "Agach. 3×3 @RPE8 rápido na subida · Terra trap bar 3×3 · Panturrilha 3×8 · rec 3min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-04": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-05": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 + 4 strides",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    }
-   ],
-   "2026-11-06": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 a 5:50–6:05 (9,9–10,3 km/h) · FC<140",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Reativo (pico)",
-     "detail": "Depth jump caixa 30cm 4×4 · Bounding 4×20m · SL hop 3×6/perna · Salto agachado 3×4 · ~120 contatos",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 3×6 · SL-RDL 3×6/perna · Búlgaro 3×5/perna · Panturrilha excêntrica 3×12 · volume baixo (a plio é o foco)",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-07": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2 — recuperação ativa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos (poupar p/ o domingo)",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-11-08": [
-    {
-     "sport": "run",
-     "key": "hm_longao_hmp",
-     "label": "🏃 Longão c/ HMP",
-     "detail": "24km c/ 8km @4:15* (14,1 km/h) (RP) · ENSAIO FINAL",
-     "zone": "HMP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-09": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 2×8 · Remada 2×10 · Face pull 2×15 · leve · ~20min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-10": [
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "Z2 leve ~45min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 2×2km @4:15* (14,1 km/h) (RP) · solta ~1,5km · afiar · ~8km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (manutenção) — pós-corrida",
-     "detail": "Agach. 2×4 @RPE7 · Panturrilha 2×10 · só manter o padrão neural · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-11": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-12": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "6km fácil + 4 strides",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-11-13": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z1 a 6:05–6:25 (9,4–9,9 km/h) · FC<138",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Manutenção",
-     "detail": "Pogo hops 2×12 · Salto na caixa 2×3 · ~30 contatos · taper",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 2×8 · Búlgaro 2×6/perna leve · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-14": [
-    {
-     "sport": "bike",
-     "key": "hm_bike_longo",
-     "label": "🚴 Bike Z2",
-     "detail": "~1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    }
-   ],
-   "2026-11-15": [
-    {
-     "sport": "run",
-     "key": "hm_longao_hmp",
-     "label": "🏃 Longão c/ HMP",
-     "detail": "16km c/ 3km @4:15* (14,1 km/h) (RP)",
-     "zone": "HMP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-16": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_leve",
-     "label": "🏊 Natação leve",
-     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 2×8 · Remada 2×10 · Face pull 2×15 · leve · ~20min",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-17": [
-    {
-     "sport": "run",
-     "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×1km @4:15* (14,1 km/h) (RP) · solta ~1,5km · soltar · ~7km",
-     "zone": "RP",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (manutenção) — pós-corrida",
-     "detail": "Agach. 2×4 @RPE7 · Panturrilha 2×10 · só manter o padrão neural · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-18": [
-    {
-     "sport": "swim",
-     "key": "hm_swim_rec",
-     "label": "🏊 Natação recuperação",
-     "detail": "~1.000m Z1 + técnica",
-     "zone": "Z1",
-     "color": "#06b6d4"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · ~25min · SEM carga de perna (dia de recuperação)",
-     "zone": "core",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-19": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "5km trote + 4 strides",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "2026-11-20": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "10km trote leve (opcional)",
-     "zone": "Z2",
-     "color": "#10b981"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_plio",
-     "label": "🦘 Pliometria — Manutenção",
-     "detail": "Pogo hops 2×10 · ~20 contatos · só acordar o tornozelo",
-     "zone": "plio",
-     "color": "#a78bfa"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_b",
-     "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 2×8 · Búlgaro 2×6/perna leve · Panturrilha 2×12 · Glúteo médio 2×15 · DESCARGA: −1 série",
-     "zone": "força",
-     "color": "#a78bfa"
-    }
-   ],
-   "2026-11-21": [
-    {
-     "sport": "rest",
-     "key": "mn_descanso",
-     "label": "😴 Descanso absoluto",
-     "detail": "Véspera da prova · largada 5h · dormir cedo · carbo",
-     "zone": "descanso",
-     "color": "#475569"
-    }
-   ],
-   "2026-11-22": [
-    {
-     "sport": "run",
-     "key": "hm_prova_meia",
-     "label": "🏁 PROVA — Meia Monumental · 05:00",
-     "detail": "21,1km @4:15* (14,1 km/h) · alvo 1:29:59 · negative split: 10k @4:15* (14,1 km/h) → desce · Vaporfly",
-     "zone": "PROVA",
-     "color": "#f43f5e"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Fáscia plantar (bolinha 2min/pé) · Panturrilha excêntrica 2×15 · Flexor de quadril 2×45s · 90/90 · Foam roller quadríceps e ITB · ~20min",
-     "zone": "mobil.",
-     "color": "#a78bfa"
-    }
-   ],
-   "8km fácil Z2 a 5:55–6:10 · FC<140 + 5 strides ~150m no final": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km fácil Z2 a 5:55–6:10 (9,7–10,1 km/h) · FC<140 + 5 strides ~150m no final",
-     "zone": "Z2",
-     "color": "#10b981"
-    }
-   ],
-   "8km Z2 a 6:00–6:15 · FC<140 · a corrida mais LENTA da semana": [
-    {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 a 6:00–6:15 (9,6–10,0 km/h) · FC<140 · a corrida mais LENTA da semana",
-     "zone": "Z2",
-     "color": "#10b981"
     }
    ],
    "16km Z1–Z2 a 5:50–6:10 · FC<147 · últimos 3km um pouco mais firmes": [
@@ -6075,74 +4311,1718 @@
      "color": "#a78bfa"
     }
    ],
-   "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:42 · rec ~300m trote · solta ~1,5km · FC ≤159 · ~11km": [
+   "2026-08-17": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-18": [
     {
      "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto · giro alto · NÃO forçar (o run PM é a sessão do dia)",
-     "zone": "Z2",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×6min @195–205W · rec 2min · ~45min",
+     "zone": "DUPLO LIMIAR",
      "color": "#f59e0b"
     },
     {
      "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 3×2km @4:42 (12,8 km/h) · rec ~300m trote · solta ~1,5km · FC ≤159 · ~11km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Corrida fácil",
+     "detail": "8km fácil Z2 · 5:55–6:15 (9,6–10,1 km/h) · FC<140 · SEM tiros (retomada)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
+     "zone": "força",
+     "color": "#a78bfa"
     }
    ],
-   "20km Z1–Z2 a 5:45–6:05 · FC<147 · gel aos 60min": [
+   "2026-08-19": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-20": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "8km fácil Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-08-21": [
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up caixa BAIXA 3×10/perna · Glúteo médio 3×15 · RATHLEFF (fáscia): elevação de panturrilha UNILATERAL com toalha sob os dedos · 3×12 · 3s sobe · 2s pausa · 3s desce · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-22": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-08-23": [
     {
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "20km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60min",
+     "detail": "10km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<145",
      "zone": "Z2",
      "color": "#10b981"
     },
     {
      "sport": "strength",
      "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Hip flexor · panturrilha excêntrica (fáscia) · foam roller · 20min",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
      "zone": "mobil.",
      "color": "#a78bfa"
     }
    ],
-   "aquec. ~2,5km Z1 + 3 strides · 4×2km @4:41 · rec ~300m trote · solta ~1,5km · FC ≤159 · ~13km": [
+   "2026-08-24": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-25": [
     {
      "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (opcional)",
-     "detail": "~45min–1h Z2 solto · giro alto · NÃO forçar (o run PM é a sessão do dia)",
-     "zone": "Z2",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×8min @195–205W · rec 2min · ~50min",
+     "zone": "DUPLO LIMIAR",
      "color": "#f59e0b"
     },
     {
      "sport": "run",
-     "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
-     "detail": "aquec. ~2,5km Z1 + 3 strides · 4×2km @4:41 (12,8 km/h) · rec ~300m trote · solta ~1,5km · FC ≤159 · ~13km",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f43f5e"
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Corrida fácil",
+     "detail": "aquec ~2km + 3 strides · 6×400m soltos · rec ~200m · solta ~1km · ~8km",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
+     "zone": "força",
+     "color": "#a78bfa"
     }
    ],
-   "22km Z1–Z2 a 5:45–6:05 · FC<147 · gel aos 60 e 100min · o longão mais longo do bloco": [
+   "2026-08-26": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-27": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "9km fácil Z2 · 5:55–6:15 (9,6–10,1 km/h) + 4 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-08-28": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "9km Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up caixa BAIXA 3×10/perna · Glúteo médio 3×15 · RATHLEFF (fáscia): elevação de panturrilha UNILATERAL com toalha sob os dedos · 3×12 · 3s sobe · 2s pausa · 3s desce · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-29": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-08-30": [
     {
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "22km Z1–Z2 a 5:45–6:05 (9,9–10,4 km/h) · FC<147 · gel aos 60 e 100min · o longão mais longo do bloco",
+     "detail": "12km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h)",
      "zone": "Z2",
      "color": "#10b981"
     },
     {
      "sport": "strength",
      "key": "hm_mob",
-     "label": "💪 Mobilidade",
-     "detail": "Hip flexor · panturrilha excêntrica (fáscia) · foam roller · 20min",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-08-31": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-01": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "6×8min @195–210W · rec 2min · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 4×1km @4:50 (12,4 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-02": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-03": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "10km fácil Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-09-04": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up caixa BAIXA 3×10/perna · Glúteo médio 3×15 · RATHLEFF (fáscia): elevação de panturrilha UNILATERAL com toalha sob os dedos · 3×12 · 3s sobe · 2s pausa · 3s desce · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-05": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
+     "zone": "LT2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-09-06": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "14km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<147",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-07": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-08": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "4×8min @195–205W · descarga · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2km + 3 strides · 3×1km @4:50 (12,4 km/h) · descarga · ~8km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-09": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-10": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "8km fácil Z2 · 6:15–6:35 (9,1–9,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-09-11": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "8km Z1 · 6:15–6:35 (9,1–9,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up caixa BAIXA 3×10/perna · Glúteo médio 3×15 · RATHLEFF (fáscia): elevação de panturrilha UNILATERAL com toalha sob os dedos · 3×12 · 3s sobe · 2s pausa · 3s desce · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-12": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-09-13": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "12km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-14": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-15": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "6×8min @195–213W · rec 2min · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 5×1km @4:48 (12,5 km/h) · rec ~200m trote · solta ~1,5km · ~11km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-16": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-17": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "11km fácil Z2 · 5:55–6:15 (9,6–10,1 km/h) + 4 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-09-18": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 2×12 · corda 2×30s · ~25 contatos · REINÍCIO do zero",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila (carga leve)",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-19": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
+     "zone": "LT2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-09-20": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "16km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<147",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-21": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-22": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×10min @195–213W · rec 2min · ~60min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 4×1,5km @4:46 (12,6 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-23": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-24": [
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "2×3km @4:48 (12,5 km/h) · rec ~500m trote · ~12km",
+     "zone": "sub-LT2",
+     "color": "#f43f5e"
+    }
+   ],
+   "2026-09-25": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z2 · 5:55–6:15 (9,6–10,1 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 3×12 · corda 3×30s · ~35 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila (carga leve)",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-26": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
+     "zone": "LT2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-09-27": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "18km Z1–Z2 · 5:50–6:10 (9,7–10,3 km/h) · gel aos 60min",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-28": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-29": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "4×8min @195–205W · leve (semana do teste) · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2km + 3 strides · 4×1km @4:44 (12,7 km/h) · afiar p/ o teste · ~8km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-09-30": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-01": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "6km fácil Z2 + 4 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-10-02": [
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 3×12 · corda 2×30s · ~30 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila (carga leve)",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-03": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-10-04": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🎯 10K-TESTE",
+     "detail": "🎯 10K-TESTE (dom 04/10) · aquec ~2,5km + 4 strides · 10km forte · recalibra as sem 8–14",
+     "zone": "Z2",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-05": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-06": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×10min @195–213W · ~60min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 5×1,5km @4:44 (12,7 km/h)* · rec ~300m trote · solta ~1,5km · ~13km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-07": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-08": [
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run HMP — PM",
+     "detail": "2×4km @4:46 (12,6 km/h)* (HMP) · rec ~600m trote · ~14km",
+     "zone": "HMP",
+     "color": "#f43f5e"
+    }
+   ],
+   "2026-10-09": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z2 · 5:45–6:05 (9,9–10,4 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Salto na caixa BAIXA (20cm) 3×5 · pogo hops 3×15 · ~60 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila (carga leve)",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-10": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
+     "zone": "LT2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-10-11": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "20km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-12": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-13": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×12min @195–213W · ~70min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 4×2km @4:42 (12,8 km/h)* · rec ~400m trote · solta ~1,5km · ~14km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-14": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-15": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "12km fácil Z2 · 5:45–6:05 (9,9–10,4 km/h) + 5 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-10-16": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "12km Z2 · 5:45–6:05 (9,9–10,4 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Salto na caixa 3×5 · pogo hops 3×15 · SL hop 2×5/perna · ~70 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila (carga leve)",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-17": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "30min Z2 · 3×15min @195–213W · rec 5min · 30min Z2 · ~2h15",
+     "zone": "LT2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-10-18": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "👑 Longão c/ HMP",
+     "detail": "22km c/ 5km @4:42 (12,8 km/h)* (HMP) no final",
+     "zone": "HMP",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-19": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×6 · Remada 4×6 · Desenv. 3×6 · Puxada 4×6 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-20": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "4×8min @195–205W · descarga · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2km + 3 strides · 3×1,5km @4:42 (12,8 km/h)* · descarga · ~9km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-21": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-22": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "8km fácil Z2 · 6:15–6:35 (9,1–9,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-10-23": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z1 · 6:15–6:35 (9,1–9,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 2×12 · ~25 contatos · descarga",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×6/perna · Step-up carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 5×8 · 3-2-3 · carga progressiva",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-24": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-10-25": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "16km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-26": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×6 · Remada 4×6 · Desenv. 3×6 · Puxada 4×6 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-27": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "5×12min @195–213W · ~70min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 5×2km @4:40 (12,9 km/h)* · rec ~400m trote · solta ~1,5km · ~16km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-28": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-29": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "12km fácil Z2 · 5:45–6:05 (9,9–10,4 km/h) · LEVE (domingo é a sessão-rainha)",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-10-30": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "12km Z2 · 5:45–6:05 (9,9–10,4 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Salto na caixa 3×5 · bounding 3×20m · ~80 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×6/perna · Step-up carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 5×8 · 3-2-3 · carga progressiva",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-10-31": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-11-01": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "👑 Longão c/ HMP",
+     "detail": "👑 22km c/ 8km @4:39 (12,9 km/h)* (HMP) no final · SESSÃO-RAINHA",
+     "zone": "HMP",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-02": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 4×6 · Remada 4×6 · Desenv. 3×6 · Puxada 4×6 · Face pull 3×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-03": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "4×10min @195–213W · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:39 (12,9 km/h)* (RP) · rec ~400m trote · ~11km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-04": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-05": [
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run HMP — PM",
+     "detail": "2×5km @4:39 (12,9 km/h)* (HMP) · rec ~600m trote · ~14km",
+     "zone": "HMP",
+     "color": "#f43f5e"
+    }
+   ],
+   "2026-11-06": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "10km Z2 · 5:45–6:05 (9,9–10,4 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Salto na caixa 3×5 · bounding 3×20m · ~80 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 4×8 pesada · SL-RDL 3×6/perna · Step-up carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 5×8 · 3-2-3 · carga progressiva",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-07": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-11-08": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "👑 Longão c/ HMP",
+     "detail": "18km c/ 6km @4:39 (12,9 km/h)* (RP) · ENSAIO FINAL",
+     "zone": "HMP",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-09": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 2×10 · Remada 2×10 · Face pull 2×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-10": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "Z2 ~45min solto",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~2km + 3 strides · 2×2km @4:39 (12,9 km/h)* (RP) · afiar · ~9km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 2×8 @RPE6 · Panturrilha 2×12 · só manter o padrão",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-11": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-12": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "8km fácil Z2 + 4 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-11-13": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "8km Z1 · 6:15–6:35 (9,1–9,6 km/h)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 2×12 · ~25 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 2×8 · Glúteo médio 2×15 · RATHLEFF: panturrilha unilateral com toalha · 3×12 · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-14": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-11-15": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "👑 Longão c/ HMP",
+     "detail": "14km c/ 3km @4:39 (12,9 km/h)* (RP)",
+     "zone": "HMP",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
+     "zone": "mobil.",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-16": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_leve",
+     "label": "🏊 Natação leve",
+     "detail": "~1.500m Z1 · recuperação ativa pós-longão",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_musc_sup",
+     "label": "💪 Força — Superior",
+     "detail": "Supino 2×10 · Remada 2×10 · Face pull 2×15",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-17": [
+    {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — AM",
+     "detail": "Z2 ~30min solto",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_ter_pm",
+     "label": "🏃 Run Sub-LT2 — PM",
+     "detail": "aquec ~1,5km + 3 strides · 3×1km @4:39 (12,9 km/h)* (RP) · soltar · ~7km",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "detail": "Agach. até 90° 2×8 @RPE6 · Panturrilha 2×12 · só manter o padrão",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-18": [
+    {
+     "sport": "swim",
+     "key": "hm_swim_rec",
+     "label": "🏊 Natação recuperação",
+     "detail": "~1.000m Z1 + técnica · dia sem corrida",
+     "zone": "Z1",
+     "color": "#06b6d4"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
+     "zone": "core",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-19": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2",
+     "detail": "5km trote + 4 strides",
+     "zone": "Z2",
+     "color": "#10b981"
+    }
+   ],
+   "2026-11-20": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "4km trote muito leve (véspera)",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_plio",
+     "label": "🦘 Pliometria (DEPOIS da corrida)",
+     "detail": "Pogo hops 2×10 · ~20 contatos",
+     "zone": "plio",
+     "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_forca_b",
+     "label": "💪 Força B — Unilateral e tendão",
+     "detail": "Elevação pélvica 2×8 · Glúteo médio 2×15 · RATHLEFF: panturrilha unilateral com toalha · 3×12 · peso corporal",
+     "zone": "força",
+     "color": "#a78bfa"
+    }
+   ],
+   "2026-11-21": [
+    {
+     "sport": "bike",
+     "key": "hm_bike_longo",
+     "label": "🚴 Bike Longa",
+     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    }
+   ],
+   "2026-11-22": [
+    {
+     "sport": "run",
+     "key": "hm_longao",
+     "label": "🏁 PROVA",
+     "detail": "🏁 PROVA — Meia Monumental · 05:00 · 21,1km @4:39 (12,9 km/h) · alvo 1:38:00",
+     "zone": "PROVA",
+     "color": "#f43f5e"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_mob",
+     "label": "💪 Mobilidade + fáscia",
+     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
      "zone": "mobil.",
      "color": "#a78bfa"
     }
@@ -6151,21 +6031,7 @@
   "cycle_phases": [
    {
     "weeks": [
-     1
-    ],
-    "label": "Recuperação",
-    "short": "RECUP",
-    "color": "#64748b",
-    "bg": "#64748b20",
-    "icon": "😴",
-    "desc": "Recuperação pós-10K de 19/07. Só fácil, por sensação.",
-    "focus": [
-     "descanso",
-     "trotes leves"
-    ]
-   },
-   {
-    "weeks": [
+     1,
      2
     ],
     "label": "Retomada",
@@ -6173,195 +6039,160 @@
     "color": "#10b981",
     "bg": "#10b98120",
     "icon": "🌱",
-    "desc": "Reconstruir rotina com rampa suave (38km). 1ª qualidade leve na terça.",
+    "desc": "Voltar a correr sem dor. Zero qualidade na sem 1; só strides na sem 2.",
     "focus": [
-     "38km",
-     "5×1km @4:38"
+     "26→30km",
+     "sem tiros",
+     "fáscia e joelho em observação"
     ]
    },
    {
     "weeks": [
-     3,
-     4,
-     5
+     3
     ],
     "label": "Base",
     "short": "BASE",
     "color": "#10b981",
     "bg": "#10b98120",
     "icon": "🏗️",
-    "desc": "Volume sobe 46→58km. Doubles ter/qui assentam. Sub-limiar controlado.",
+    "desc": "Primeira sessão de tiros do novo ciclo, bem leve.",
     "focus": [
-     "46→58km",
-     "longão 16→24km",
-     "qualidade ≤20%"
+     "34km",
+     "4×1km @4:50 (12,4 km/h)"
     ]
    },
    {
     "weeks": [
-     6
+     4
     ],
     "label": "Descarga",
     "short": "DELOAD",
     "color": "#f59e0b",
     "bg": "#f59e0b20",
     "icon": "🔽",
-    "desc": "−21% volume. Manter o toque, cortar o volume.",
+    "desc": "−24%. Descarga a cada 3 semanas, não 4.",
     "focus": [
-     "46km",
-     "3×1,5km"
+     "26km"
     ]
    },
    {
     "weeks": [
-     7,
-     8
+     5,
+     6
     ],
-    "label": "Base+",
+    "label": "Base",
     "short": "BASE+",
     "color": "#10b981",
     "bg": "#10b98120",
     "icon": "📈",
-    "desc": "62→68km. VO2 estreia na sem 7 e o HMP entra na quinta da sem 8.",
+    "desc": "38→42km. Pliometria reinicia do zero na sem 5.",
     "focus": [
-     "62→68km",
-     "VO2 6×800m",
-     "2×4km @HMP"
+     "38→42km",
+     "plio ~25 contatos"
     ]
    },
    {
     "weeks": [
-     9
+     7
     ],
     "label": "10K-TESTE",
     "short": "TESTE",
     "color": "#f43f5e",
     "bg": "#f43f5e20",
     "icon": "🎯",
-    "desc": "Sáb 19/09: 10k-teste recalibra todos os paces das sem 10–18.",
+    "desc": "Dom 04/10: o teste recalibra todos os paces das sem 8–14.",
     "focus": [
-     "46km",
+     "32km",
      "10K forte"
     ]
    },
    {
     "weeks": [
-     10
-    ],
-    "label": "Retomada pós-teste",
-    "short": "RETOM",
-    "color": "#10b981",
-    "bg": "#10b98120",
-    "icon": "🔄",
-    "desc": "58km. Paces novos entram. VO2 de novo na terça.",
-    "focus": [
-     "58km",
-     "VO2 6×800m"
-    ]
-   },
-   {
-    "weeks": [
-     11,
-     12
+     8,
+     9
     ],
     "label": "Build",
     "short": "BUILD",
     "color": "#3b82f6",
     "bg": "#3b82f620",
     "icon": "🚀",
-    "desc": "66→70km — o pico de volume. HMP na quinta da sem 11; sem 12 é volume puro.",
+    "desc": "44→48km. HMP entra na quinta da sem 8.",
     "focus": [
-     "66→70km",
+     "44→48km",
      "2×4km @HMP",
-     "longão 24–26km"
+     "longão 20→22km"
     ]
    },
    {
     "weeks": [
-     13
+     10
     ],
     "label": "Descarga",
     "short": "DELOAD",
     "color": "#f59e0b",
     "bg": "#f59e0b20",
     "icon": "🔽",
-    "desc": "−26%. Absorver o bloco antes da sessão-rainha.",
+    "desc": "−25% antes da sessão-rainha.",
     "focus": [
-     "52km"
+     "36km"
     ]
    },
    {
     "weeks": [
-     14
+     11
     ],
-    "label": "Sessão-rainha",
-    "short": "RAINHA",
+    "label": "Pico + rainha",
+    "short": "PICO",
     "color": "#a855f7",
     "bg": "#a855f720",
     "icon": "👑",
-    "desc": "Domingo 18/10: 26km com 10km @4:18 no final. A sessão que valida a meta.",
+    "desc": "52km — o pico do ciclo. Domingo 01/11: 22km com 8km em ritmo de prova.",
     "focus": [
-     "70km",
-     "26km c/ 10km @HMP",
-     "quinta LEVE"
+     "52km",
+     "22km c/ 8km @4:39"
     ]
    },
    {
     "weeks": [
-     15
+     12
     ],
     "label": "Específico",
     "short": "ESPEC",
     "color": "#3b82f6",
     "bg": "#3b82f620",
     "icon": "🎯",
-    "desc": "64km. 2×5km @4:15 na quinta — o ritmo de prova em dose cheia.",
+    "desc": "Ensaio final: 18km com 6km em ritmo de prova define o pace do dia.",
     "focus": [
-     "64km",
-     "2×5km @RP"
+     "46km",
+     "ensaio 08/11"
     ]
    },
    {
     "weeks": [
-     16
-    ],
-    "label": "Sharpen",
-    "short": "SHARP",
-    "color": "#8b5cf6",
-    "bg": "#8b5cf620",
-    "icon": "⚡",
-    "desc": "Ensaio 08/11: 22km com 8km @4:15 define o pace final.",
-    "focus": [
-     "54km",
-     "ensaio 22km"
-    ]
-   },
-   {
-    "weeks": [
-     17
+     13
     ],
     "label": "Taper",
     "short": "TAPER",
     "color": "#f59e0b",
     "bg": "#f59e0b20",
     "icon": "🪂",
-    "desc": "−40% volume, intensidade curta @RP. Bike só Z2.",
+    "desc": "−26%. Intensidade curta em ritmo de prova, volume baixo.",
     "focus": [
-     "42km"
+     "34km"
     ]
    },
    {
     "weeks": [
-     18
+     14
     ],
-    "label": "Taper + PROVA",
+    "label": "PROVA",
     "short": "PROVA",
     "color": "#f43f5e",
     "bg": "#f43f5e20",
     "icon": "🏁",
-    "desc": "Trotes + strides. DOM 22/11 05:00 — Meia Monumental · alvo 1:29:59.",
+    "desc": "DOM 22/11 05:00 — Meia Monumental · alvo 1:38:00 (4:39/km · 12,9 km/h).",
     "focus": [
-     "43km",
+     "26km",
      "PROVA"
     ]
    }
@@ -6481,7 +6312,7 @@
    },
    {
     "week": "2026-08-03",
-    "runVol": 46,
+    "runVol": 36,
     "bikeVol": 50,
     "swimVol": 0,
     "runQual": 5,
@@ -6497,114 +6328,114 @@
    },
    {
     "week": "2026-08-17",
-    "runVol": 58,
-    "bikeVol": 50,
-    "swimVol": 0,
-    "runQual": 14,
-    "bikeQual": 43.2
+    "runVol": 26,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-08-24",
-    "runVol": 46,
-    "bikeVol": 35,
-    "swimVol": 0,
-    "runQual": 4.5,
-    "bikeQual": 17
+    "runVol": 30,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-08-31",
-    "runVol": 62,
-    "bikeVol": 50,
-    "swimVol": 0,
-    "runQual": 18,
-    "bikeQual": 43.2
+    "runVol": 34,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-09-07",
-    "runVol": 68,
-    "bikeVol": 50,
-    "swimVol": 0,
-    "runQual": 22,
-    "bikeQual": 43.2
+    "runVol": 26,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-09-14",
-    "runVol": 46,
-    "bikeVol": 20,
-    "swimVol": 0,
-    "runQual": 14,
-    "bikeQual": 10
+    "runVol": 38,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-09-21",
-    "runVol": 58,
-    "bikeVol": 35,
-    "swimVol": 0,
-    "runQual": 4,
-    "bikeQual": 17
+    "runVol": 42,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-09-28",
-    "runVol": 66,
-    "bikeVol": 55,
-    "swimVol": 0,
-    "runQual": 20,
-    "bikeQual": 45
+    "runVol": 32,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-10-05",
-    "runVol": 70,
-    "bikeVol": 55,
-    "swimVol": 0,
-    "runQual": 27,
-    "bikeQual": 45
+    "runVol": 44,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-10-12",
-    "runVol": 52,
-    "bikeVol": 55,
-    "swimVol": 0,
-    "runQual": 28,
-    "bikeQual": 45
+    "runVol": 48,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-10-19",
-    "runVol": 70,
-    "bikeVol": 35,
-    "swimVol": 0,
-    "runQual": 4.5,
-    "bikeQual": 17
+    "runVol": 36,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-10-26",
-    "runVol": 64,
-    "bikeVol": 50,
-    "swimVol": 0,
-    "runQual": 20,
-    "bikeQual": 43.2
+    "runVol": 52,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-11-02",
-    "runVol": 56,
-    "bikeVol": 45,
-    "swimVol": 0,
-    "runQual": 15,
-    "bikeQual": 35
+    "runVol": 46,
+    "bikeVol": 40,
+    "swimVol": 2.5,
+    "runQual": 0,
+    "bikeQual": 0
    },
    {
     "week": "2026-11-09",
-    "runVol": 42,
-    "bikeVol": 25,
-    "swimVol": 0,
-    "runQual": 7,
+    "runVol": 34,
+    "bikeVol": 20,
+    "swimVol": 2.5,
+    "runQual": 0,
     "bikeQual": 0
    },
    {
     "week": "2026-11-16",
-    "runVol": 43,
-    "bikeVol": 5,
-    "swimVol": 0,
-    "runQual": 24,
+    "runVol": 26,
+    "bikeVol": 20,
+    "swimVol": 2.5,
+    "runQual": 0,
     "bikeQual": 0
    }
   ],
@@ -9618,117 +9449,108 @@
     ]
    },
    "hm_forca_a": {
-    "title": "Força A — Perna (sessão principal)",
-    "subtitle": "Terça · bilateral pesado · DEPOIS da corrida de qualidade",
+    "title": "Força A — Perna (menisco-safe)",
+    "subtitle": "Terça · sem flexão profunda · DEPOIS da corrida",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
-     "perna pesada",
-     "sem falha",
-     "rec 2–3min"
+     "bilateral",
+     "até 90°",
+     "sem falha"
     ],
-    "objetivo": "A sessão que melhora economia de corrida. Só padrões BILATERAIS pesados — o trabalho unilateral fica todo na sexta. Vem depois do run de terça de propósito: dia duro concentrado, para quarta e quinta ficarem limpas. Carga alta, repetição baixa, longe da falha — estímulo neural, não muscular.",
+    "objetivo": "Força de perna respeitando a roto de menisco: NENHUM exercício passa de 90° de flexão de joelho sob carga. É a flexão profunda com carga que agride o menisco — não a carga em si.",
     "programa": [
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Agachamento (goblet ou livre)",
-      "sets": "Desce até coxa paralela · SUBIDA RÁPIDA · goblet nas sem 2–4, barra livre da sem 5",
-      "tip": "Intenção de velocidade na subida mesmo com carga alta — é o que gera adaptação neural"
+      "nome": "Agachamento — PARA EM 90°",
+      "sets": "Goblet nas sem 1–4, barra depois · desce até a coxa ficar paralela e NÃO passa disso",
+      "tip": "⚠️ MENISCO: flexão além de 90° sob carga é o que agride. Use um banco atrás como referência"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "Terra romeno (RDL) · sem 2–4",
-      "sets": "Barra colada na perna · quadril para trás · sente o posterior alongar",
-      "tip": "Padrão de dobradiça de quadril — base para o trap bar"
+      "nome": "Leg press — amplitude PARCIAL",
+      "sets": "Não deixe o joelho vir ao peito · pare bem antes da flexão máxima",
+      "tip": "Mesmo princípio: metade do curso é suficiente para o estímulo"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Terra trap bar · da sem 5",
-      "sets": "Quadril baixo no início · coluna neutra · explode na subida",
-      "tip": "Mais seguro que o convencional para a coluna"
+      "nome": "Terra romeno / trap bar",
+      "sets": "Dominante de quadril, joelho quase estendido · SEGURO para menisco",
+      "tip": "É o exercício que mais rende sem risco nenhum para você"
      },
      {
       "tipo": "str",
       "letter": "D",
-      "nome": "Leg press",
-      "sets": "Amplitude confortável · NÃO colar o joelho no peito",
-      "tip": "Volume de quadríceps sem carga na coluna · cuidado com flexão profunda (LCA)"
-     },
-     {
-      "tipo": "str",
-      "letter": "E",
       "nome": "Panturrilha em pé",
-      "sets": "Amplitude total · pausa de 1s embaixo · nas sem 2–4 é excêntrica, 3s descendo",
-      "tip": "Gastrocnêmio · o Aquiles é mola de corrida, precisa de rigidez"
+      "sets": "Amplitude total · pausa de 1s embaixo",
+      "tip": "Zero envolvimento do menisco"
      }
     ],
     "notas": [
-     "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo — muda conforme a fase da semana",
-     "Progressão do ciclo: sem 2–4 adaptação (3×12–15 @RPE6) → sem 5–9 força máx I (4×6 @RPE7–8) → sem 10–13 força máx II (4×4 @RPE8) → sem 14–16 potência (3×3 rápido) → sem 17–18 manutenção",
-     "⚠️ NUNCA até a falha — RPE 6 = 4 reps na reserva · RPE 7 = 3 · RPE 8 = 2",
-     "Descanso de 2–3min nas fases de força é PARTE do treino: mantém o estímulo neural e evita fadiga metabólica",
-     "Vem DEPOIS do run de terça de propósito: dia duro concentrado, quarta e quinta ficam limpas",
-     "Dor muscular no dia seguinte = a dose passou. Baixa a carga na próxima",
-     "Da sem 5 em diante a sessão leva ~45min (não 30) por causa do descanso longo"
+     "⚠️ RESTRIÇÃO PERMANENTE (roto de menisco): nada abaixo de 90° de flexão sob carga",
+     "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo",
+     "Se algum movimento doer no joelho, PARA esse exercício — não existe \"empurrar através\"",
+     "Nunca até a falha — RPE 6 = 4 reps na reserva · RPE 7 = 3 · RPE 8 = 2",
+     "Terra romeno e trap bar são os mais seguros: use-os como base se o agachamento incomodar"
     ]
    },
    "hm_forca_b": {
-    "title": "Força B — Unilateral e tendão",
-    "subtitle": "Sexta · unilateral e tendão · depois da pliometria",
+    "title": "Força B — Unilateral, tendão e fáscia",
+    "subtitle": "Sexta · depois da corrida e da pliometria",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
      "unilateral",
-     "tendão",
-     "~35min"
+     "protocolo Rathleff",
+     "step-up (não búlgaro)"
     ],
-    "objetivo": "Complementa a terça pelo lado que a barra não cobre: simetria entre pernas, glúteo médio e o complexo panturrilha–fáscia. Todo o trabalho UNILATERAL do ciclo mora aqui. É onde está a prevenção das tuas duas queixas.",
+    "objetivo": "Unilateral sem flexão profunda (menisco) + o protocolo Rathleff de alta carga para a fáscia plantar — que é o tratamento com melhor evidência para fascite recorrente.",
     "programa": [
      {
       "tipo": "str",
       "letter": "A",
-      "nome": "Elevação pélvica (hip thrust)",
-      "sets": "Barra apoiada no quadril · pausa de 1s em cima · glúteo, não lombar",
-      "tip": "Glúteo máximo é o motor da propulsão na corrida"
+      "nome": "Elevação pélvica",
+      "sets": "Barra no quadril · pausa de 1s em cima",
+      "tip": "Glúteo máximo · seguro para o menisco"
      },
      {
       "tipo": "str",
       "letter": "B",
-      "nome": "SL-RDL (unilateral)",
-      "sets": "Halter na mão oposta · quadril para trás · coluna neutra",
-      "tip": "Cadeia posterior unilateral — controle vale mais que carga (LCA)"
+      "nome": "SL-RDL unilateral",
+      "sets": "Halter na mão oposta · joelho quase estendido",
+      "tip": "Cadeia posterior · seguro para o menisco"
      },
      {
       "tipo": "str",
       "letter": "C",
-      "nome": "Búlgaro (pé de trás elevado)",
-      "sets": "Banco atrás · joelho da frente alinhado ao pé · tronco ereto · desce controlado",
-      "tip": "O melhor exercício para assimetria entre pernas · amplitude confortável, sem forçar flexão profunda"
+      "nome": "Step-up — caixa BAIXA",
+      "sets": "Caixa abaixo da altura do joelho · sobe sem impulso da perna de trás",
+      "tip": "⚠️ Substituiu o búlgaro: flexão controlada, sem passar de 90°"
      },
      {
       "tipo": "str",
       "letter": "D",
-      "nome": "Panturrilha SENTADO",
-      "sets": "Joelho dobrado a 90° · amplitude total",
-      "tip": "Isola o SÓLEO — o mais esquecido e o que mais sofre correndo. Ligado direto à fáscia plantar"
+      "nome": "RATHLEFF — panturrilha com TOALHA",
+      "sets": "Unilateral · toalha enrolada sob os dedos · 3s sobe · 2s pausa · 3s desce · 3×12 → 5×8 com carga",
+      "tip": "A toalha põe a fáscia em tensão — é o que faz o exercício ser SOBRE ela. Sem toalha vira só panturrilha"
      },
      {
       "tipo": "str",
       "letter": "E",
       "nome": "Glúteo médio",
-      "sets": "Banda elástica · abdução · em todas as fases",
-      "tip": "Estabilidade de quadril — previne a dor do teu histórico"
+      "sets": "Banda · abdução · todas as semanas",
+      "tip": "Estabilidade de quadril"
      }
     ],
     "notas": [
-     "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo",
-     "Progressão do búlgaro: 3×10/perna (adaptação) → 3×8 com halteres → 3×6 pesado → 3×5 (potência)",
-     "A PLIOMETRIA vem ANTES desta sessão — nervoso fresco para os saltos, depois a força",
-     "Volume menor que a terça de propósito: não pode comprometer o longão de domingo",
-     "Terça é bilateral pesado, sexta é unilateral — sem sobreposição entre as duas"
+     "⚠️ O protocolo Rathleff é o item mais importante desta sessão — é o tratamento de melhor evidência para fascite recorrente (3º episódio)",
+     "Toalha sob os dedos · ritmo 3-2-3 · progressão 3×12 (peso corporal) → 4×10 (mochila) → 5×8 (carga)",
+     "Dia sim, dia não, se possível — não só na sexta",
+     "Step-up substituiu o búlgaro por causa do menisco: caixa baixa, sem flexão profunda",
+     "A pliometria vem ANTES desta sessão, e sempre DEPOIS da corrida"
     ]
    },
    "hm_musc_sup": {
@@ -9888,51 +9710,76 @@
      }
     ],
     "notas": [
-     "Exercícios e contatos: ver o bloco \"A SESSÃO DE HOJE\" no topo",
-     "Progressão: sem 2–3 preparação (~45 contatos) → sem 4–8 introdução (~90) → sem 9–13 desenvolvimento (~115) → sem 14–16 reativo (~120) → sem 17–18 mínimo",
-     "⚠️ ATERRISSAGEM SILENCIOSA é o critério de qualidade. Barulho = amortecimento errado = impacto na articulação",
-     "Vem na SEXTA (depois da corrida fácil) e ANTES da Força B — plio exige perna fresca",
-     "Se a fáscia plantar reclamar, reduz os contatos pela metade — NÃO zera. Tecido conjuntivo precisa de carga para remodelar",
-     "Progressão antecipada em 2 semanas (fáscia assintomática em 26/07/2026)",
-     "⚠️ MONITORAR nas sem 7–8 (62 e 68 km): dor nos primeiros passos ao levantar da cama = corta contatos pela metade e segura o volume 1 semana"
+     "⚠️ REINICIADO DO ZERO na sem 5 após o 3º episódio de fascite (07/08)",
+     "Progressão: sem 5–7 pogo hops e corda (~25–35 contatos, SEM caixa) → sem 8–9 caixa baixa (~60–70) → sem 11–12 bounding (~80)",
+     "⚠️ SEMPRE depois da corrida, NUNCA antes — a inversão em 07/08 (plio 6h, corrida 12h) causou a última crise",
+     "Aterrissagem SILENCIOSA é o critério de qualidade",
+     "Qualquer sinal na fáscia: corta os contatos pela metade e mantém só pogo hops"
     ]
    }
   },
   "cycle_phases_prev": [
    {
     "weeks": [
-     1,
-     2,
-     3,
-     4
+     1
     ],
-    "label": "Consolidação",
-    "short": "CONSOL",
-    "color": "#3b82f6",
-    "bg": "#0d1f3c",
-    "icon": "🔒",
-    "desc": "Absorver o padrão sem alterar carga. Mesmos watts, mesmo pace, mesma estrutura.",
+    "label": "Recuperação",
+    "short": "RECUP",
+    "color": "#64748b",
+    "bg": "#64748b20",
+    "icon": "😴",
+    "desc": "Recuperação pós-10K de 19/07. Só fácil, por sensação.",
     "focus": [
-     "⚡ Bike: 6×8min + 5×10min @193–210W",
-     "🏃 Run: 5×1km + 4×1,5km @5:15–5:25/km",
-     "🎯 Completar os 4 treinos de threshold sem sacrificar o último bloco"
+     "descanso",
+     "trotes leves"
     ]
    },
    {
     "weeks": [
-     5,
+     2
+    ],
+    "label": "Retomada",
+    "short": "RETOM",
+    "color": "#10b981",
+    "bg": "#10b98120",
+    "icon": "🌱",
+    "desc": "Reconstruir rotina com rampa suave (38km). 1ª qualidade leve na terça.",
+    "focus": [
+     "38km",
+     "5×1km @4:38"
+    ]
+   },
+   {
+    "weeks": [
+     3,
+     4,
+     5
+    ],
+    "label": "Base",
+    "short": "BASE",
+    "color": "#10b981",
+    "bg": "#10b98120",
+    "icon": "🏗️",
+    "desc": "Volume sobe 46→58km. Doubles ter/qui assentam. Sub-limiar controlado.",
+    "focus": [
+     "46→58km",
+     "longão 16→24km",
+     "qualidade ≤20%"
+    ]
+   },
+   {
+    "weeks": [
      6
     ],
-    "label": "+Volume",
-    "short": "+VOL",
-    "color": "#10b981",
-    "bg": "#0b2618",
-    "icon": "📈",
-    "desc": "Adicionar 1–2 blocos por sessão. Watts e pace inalterados.",
+    "label": "Descarga",
+    "short": "DELOAD",
+    "color": "#f59e0b",
+    "bg": "#f59e0b20",
+    "icon": "🔽",
+    "desc": "−21% volume. Manter o toque, cortar o volume.",
     "focus": [
-     "⚡ Bike seg: 6×8min → 6×10min @193–210W",
-     "⚡ Bike qua: 5×10min → 6×10min @193–210W",
-     "🏃 Run seg: 5×1km → 6×1km · Run qua: 4×1,5km → 5×1,5km"
+     "46km",
+     "3×1,5km"
     ]
    },
    {
@@ -9940,112 +9787,152 @@
      7,
      8
     ],
-    "label": "Consolidar Volume",
-    "short": "CONSOL",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "🔒",
-    "desc": "Consolidar o novo volume. Adaptação mitocondrial ocorre durante a consolidação.",
+    "label": "Base+",
+    "short": "BASE+",
+    "color": "#10b981",
+    "bg": "#10b98120",
+    "icon": "📈",
+    "desc": "62→68km. VO2 estreia na sem 7 e o HMP entra na quinta da sem 8.",
     "focus": [
-     "⚡ Bike: 6×10min @193–210W em ambos os dias",
-     "🏃 Run: 6×1km (seg) · 5×1,5km (qua)",
-     "📊 Longão Z2 fácil de verdade (FC<150) — a base barata do ciclo"
+     "62→68km",
+     "VO2 6×800m",
+     "2×4km @HMP"
     ]
    },
    {
     "weeks": [
      9
     ],
-    "label": "Viagem / Manutenção",
-    "short": "VIAGEM",
-    "color": "#0ea5e9",
-    "bg": "#07263a",
-    "icon": "✈️",
-    "desc": "Semana de viagem: estrutura adaptada, só 1 LT2 de corrida + 1 LT2 de bike. Funciona como deload parcial de intensidade.",
+    "label": "10K-TESTE",
+    "short": "TESTE",
+    "color": "#f43f5e",
+    "bg": "#f43f5e20",
+    "icon": "🎯",
+    "desc": "Sáb 19/09: 10k-teste recalibra todos os paces das sem 10–18.",
     "focus": [
-     "🏃 55km de corrida — ~11km qualidade + ~44km fáceis (80/20)",
-     "🎯 2 qualidades: Run LT2 (ter) + Bike LT2 (qui) · resto fácil de verdade",
-     "💪 Força sup (seg) + inf (sex) · 2 longos no fds"
+     "46km",
+     "10K forte"
     ]
    },
    {
     "weeks": [
      10
     ],
-    "label": "Rebuild + Específico",
-    "short": "+ESPEC",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "📈",
-    "desc": "Volta ao duplo threshold cheio e entra o 1º toque de ritmo de prova.",
+    "label": "Retomada pós-teste",
+    "short": "RETOM",
+    "color": "#10b981",
+    "bg": "#10b98120",
+    "icon": "🔄",
+    "desc": "58km. Paces novos entram. VO2 de novo na terça.",
     "focus": [
-     "⚡ Duplo threshold (seg + qua) · bike 220–235W",
-     "🏃 Qua: LT2 + 2×1km @4:45–4:50/km (VO2máx)",
-     "🏃 Longão 18km Z2 fácil e abastecido"
+     "58km",
+     "VO2 6×800m"
     ]
    },
    {
     "weeks": [
-     11
-    ],
-    "label": "Build + VO2",
-    "short": "+VO2",
-    "color": "#6366f1",
-    "bg": "#141230",
-    "icon": "📈",
-    "desc": "2ª semana de carga cheia — a viagem (sem 9) já serviu de unload, sem deload aqui. Duplo threshold + VO2.",
-    "focus": [
-     "⚡ Duplo threshold (seg + qua) · VO2 nos dois dias",
-     "🏃 Seg: +2×500m @4:45 · Qua: +2×1km @4:45–4:50",
-     "🏃 Longão 20km Z2 fácil · volume sobe vs sem 10"
-    ]
-   },
-   {
-    "weeks": [
+     11,
      12
     ],
-    "label": "Pico Específico",
-    "short": "+PROVA",
-    "color": "#f43f5e",
-    "bg": "#2d0714",
+    "label": "Build",
+    "short": "BUILD",
+    "color": "#3b82f6",
+    "bg": "#3b82f620",
     "icon": "🚀",
-    "desc": "A semana mais específica de prova. Ritmo de 10k é a sessão-chave.",
+    "desc": "66→70km — o pico de volume. HMP na quinta da sem 11; sem 12 é volume puro.",
     "focus": [
-     "🏃 Qua: 5–6×1km @4:54/km (pace 10k) · rec.90s — sessão-chave",
-     "⚡ Seg duplo threshold mantém o motor",
-     "🏃 Longão 16km · última semana forte antes do taper"
+     "66→70km",
+     "2×4km @HMP",
+     "longão 24–26km"
     ]
    },
    {
     "weeks": [
      13
     ],
-    "label": "Taper + Prova",
-    "short": "TAPER",
-    "color": "#06b6d4",
-    "bg": "#051820",
-    "icon": "📉",
-    "desc": "Afunilamento e PROVA no domingo 19/07 (06:30). Volume baixo, intensidade só em toques.",
+    "label": "Descarga",
+    "short": "DELOAD",
+    "color": "#f59e0b",
+    "bg": "#f59e0b20",
+    "icon": "🔽",
+    "desc": "−26%. Absorver o bloco antes da sessão-rainha.",
     "focus": [
-     "🏃 Seg: Run LT2 curto · Qua: Z1 + strides",
-     "😴 Qui/Sex descanso · Sáb: shakeout ~2,5km + strides",
-     "🏁 Domingo 19/07 06:30 — PROVA 10k BSB (Vaporfly 3)"
+     "52km"
     ]
    },
    {
     "weeks": [
      14
     ],
-    "label": "Recuperação",
-    "short": "RECUP",
-    "color": "#fbbf24",
-    "bg": "#1a1200",
-    "icon": "🏁",
-    "desc": "Recuperação pós-prova: trotes leves, natação e bike solto.",
+    "label": "Sessão-rainha",
+    "short": "RAINHA",
+    "color": "#a855f7",
+    "bg": "#a855f720",
+    "icon": "👑",
+    "desc": "Domingo 18/10: 26km com 10km @4:18 no final. A sessão que valida a meta.",
     "focus": [
-     "😴 Descanso/caminhada nos primeiros dias",
-     "🏊 Natação leve · 🚴 bike solto",
-     "🏃 Volta gradual à corrida fácil no fim da semana"
+     "70km",
+     "26km c/ 10km @HMP",
+     "quinta LEVE"
+    ]
+   },
+   {
+    "weeks": [
+     15
+    ],
+    "label": "Específico",
+    "short": "ESPEC",
+    "color": "#3b82f6",
+    "bg": "#3b82f620",
+    "icon": "🎯",
+    "desc": "64km. 2×5km @4:15 na quinta — o ritmo de prova em dose cheia.",
+    "focus": [
+     "64km",
+     "2×5km @RP"
+    ]
+   },
+   {
+    "weeks": [
+     16
+    ],
+    "label": "Sharpen",
+    "short": "SHARP",
+    "color": "#8b5cf6",
+    "bg": "#8b5cf620",
+    "icon": "⚡",
+    "desc": "Ensaio 08/11: 22km com 8km @4:15 define o pace final.",
+    "focus": [
+     "54km",
+     "ensaio 22km"
+    ]
+   },
+   {
+    "weeks": [
+     17
+    ],
+    "label": "Taper",
+    "short": "TAPER",
+    "color": "#f59e0b",
+    "bg": "#f59e0b20",
+    "icon": "🪂",
+    "desc": "−40% volume, intensidade curta @RP. Bike só Z2.",
+    "focus": [
+     "42km"
+    ]
+   },
+   {
+    "weeks": [
+     18
+    ],
+    "label": "Taper + PROVA",
+    "short": "PROVA",
+    "color": "#f43f5e",
+    "bg": "#f43f5e20",
+    "icon": "🏁",
+    "desc": "Trotes + strides. DOM 22/11 05:00 — Meia Monumental · alvo 1:29:59.",
+    "focus": [
+     "43km",
+     "PROVA"
     ]
    }
   ]
@@ -10056,8 +9943,8 @@
   "start_time": "05:00",
   "location": "Eixo Monumental, Brasília/DF",
   "distance_km": 21.1,
-  "target_time": "1:29:59",
-  "target_pace": "4:15 (14,1 km/h)",
+  "target_time": "1:38:00",
+  "target_pace": "4:39 (12,9 km/h)",
   "course": {
    "summary": "⚠️ ALTIMETRIA A CONFIRMAR. O organizador anuncia \"percurso plano, altimetria mínima\" — mas é material de marketing. Largada/chegada no Museu da República (ponta baixa da Esplanada), e o Eixo Monumental tem desnível real: no 10K de 19/07, no mesmo eixo, foram ~93m de queda líquida com rampas de até -2,9%. Se a prova sai da Esplanada e volta, a SUBIDA cai na volta. Relato do atleta: \"bem agressiva na volta\".",
    "ascent_m": null,
@@ -10135,6 +10022,21 @@
    "desc": "Incômodo no aquiles, simultâneo ao quadril — 2º tendão reclamando = bandeira de carga sistêmica/recuperação em déficit.",
    "conduta": "Teste rigidez matinal · força lenta pesada de panturrilha (sem saltos) · evitar subidas fortes na volta · monitorar",
    "status": "ativo"
+  },
+  {
+   "date": "2026-08-07",
+   "area": "fáscia plantar",
+   "tipo": "dor durante corrida fácil",
+   "desc": "Dor na fáscia do pé durante a corrida de sexta. Abortou aos 3,41km dos 10 prescritos e substituiu por 30min de elíptico. Contexto: semana 3 do ciclo, volume ainda baixo (~24km na semana), pliometria em fase de preparação de tornozelo (~45 contatos, o menor volume do ciclo). Fáscia estava assintomática em 26/07 — e por isso a progressão da plio foi antecipada em 2 semanas.",
+   "conduta": "Cortar contatos da plio pela metade · manter panturrilha excêntrica (é o tratamento, não a causa) · longão de domingo por sensação, abortar se doer · elíptico como substituto sem impacto · reavaliar antecipação da pliometria",
+   "evolucao": "08/08: amanheceu melhor em 24h — padrão de irritação aguda, não de fascite instalada. Causa provável: plio feita ANTES da corrida na sexta (06:18 vs 12:46)."
+  },
+  {
+   "date": "2026-08-17",
+   "area": "replanejamento do ciclo",
+   "tipo": "reinício após lesões",
+   "desc": "3 semanas comprometidas: fáscia plantar (3º episódio, 07/08) e irritação de menisco (09/08, subindo batente). Volume real das 4 primeiras semanas: 22, 31, 24, 16km — nunca passou de 31 contra 46 previstos. Ciclo refeito em 14 semanas com pico de 52km (era 70), descarga a cada 3 semanas e longão máx 22km.",
+   "conduta": "Consistência acima de volume · força menisco-safe · protocolo Rathleff para a fáscia · plio reinicia na sem 5"
   }
  ],
  "race_prev": {
