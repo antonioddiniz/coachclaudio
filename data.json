@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-25",
+ "updated_at": "2026-08-29",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -57,7 +57,8 @@
     "Sem 7 · dom 11/10 · 10K-teste — recalibra as sem 8–13",
     "Sem 11 · dom 08/11 · 22km com 8km @4:39 — sessão-rainha",
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
-   ]
+   ],
+   "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA bike LT2 AM + run tiros CURTOS PM · QUINTA bike Z2 AM + run tiros LONGOS PM. Três toques de limiar por semana com só dois de impacto."
   },
   "cycle_weeks": 13,
   "cycle_prev": {
@@ -2261,6 +2262,54 @@
     "total": 5
    },
    "note": "10,01km · 52:38 · 5×1km FORTE (Sem 2 · terça) · tiros 4:23·4:24·4:33·4:21·4:27 · média 4:26 (13,5 km/h) · rec ~400m · FC nos tiros 164·165·167·168·167 (média 166 = 91% da máx) · FC 153 avg / 173 máx · RE 113 · 25 PRs · Parque da Cidade · ⚠️ PRESCRITO era 6×400m SOLTOS — sessão muito acima do plano na sem 2 de retomada · Strava"
+  },
+  {
+   "id": 186,
+   "date": "2026-08-25",
+   "sport": "strength",
+   "dur": "42:31",
+   "kcal": 202,
+   "note": "42:31 \u00b7 For\u00e7a A \u2014 Perna menisco-safe (Sem 1 \u00b7 ter\u00e7a, p\u00f3s-corrida) \u00b7 agach. at\u00e9 90\u00b0, leg press parcial, terra romeno, panturrilha \u00b7 RPE 6 \u00b7 RE 5 \u00b7 Strava"
+  },
+  {
+   "id": 187,
+   "date": "2026-08-26",
+   "sport": "strength",
+   "dur": "33:01",
+   "kcal": 157,
+   "note": "33:01 \u00b7 musculação (Sem 1 \u00b7 quarta, manh\u00e3) \u00b7 RE 4 \u00b7 Strava"
+  },
+  {
+   "id": 188,
+   "date": "2026-08-26",
+   "sport": "bike",
+   "dur": "20:20",
+   "kcal": 168,
+   "note": "20:20 \u00b7 REMO (Sem 1 \u00b7 quarta) \u00b7 aer\u00f3bico sem impacto \u00b7 RE 6 \u00b7 Strava"
+  },
+  {
+   "id": 189,
+   "date": "2026-08-27",
+   "sport": "run",
+   "dist": 10.02,
+   "dur": "1:01:01",
+   "pace": "6:05",
+   "sec": 365,
+   "hr": 145,
+   "kcal": 783,
+   "note": "10,02km \u00b7 1:01:01 \u00b7 f\u00e1cil Z2 (Sem 1 \u00b7 quinta) \u00b7 6:05/km (9,9 km/h) \u00b7 FC 145 avg / 168 m\u00e1x \u00b7 +56m \u00b7 RE 86 \u00b7 Parque da Cidade \u00b7 26 PRs \u00b7 \u26a0\ufe0f prescrito 9km com FC<140 \u00b7 EF 1,13 \u00b7 Vomero Plus \u00b7 Strava"
+  },
+  {
+   "id": 190,
+   "date": "2026-08-29",
+   "sport": "run",
+   "dist": 7.26,
+   "dur": "52:24",
+   "pace": "7:13",
+   "sec": 433,
+   "hr": 125,
+   "kcal": 574,
+   "note": "7,26km \u00b7 52:24 \u00b7 regenerativo Z1 (Sem 1 \u00b7 s\u00e1bado) \u00b7 7:13/km (8,3 km/h) \u00b7 FC 125 avg / 137 m\u00e1x \u00b7 +96m \u00b7 RE 14 \u00b7 Parque Mangueiral \u00b7 a corrida mais leve do ciclo \u00b7 EF 1,11 \u00b7 Vomero Plus \u00b7 Strava"
   }
  ],
  "weight_data": [
@@ -4566,7 +4615,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "9km Z2 · 5:50–6:10 (9,7–10,3 km/h)",
+     "detail": "9km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4671,12 +4720,20 @@
    ],
    "2026-09-03": [
     {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "10km fácil Z2 · 5:50–6:10 (9,7–10,3 km/h)",
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min Z2 solto",
      "zone": "Z2",
-     "color": "#10b981"
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:44 (12,7 km/h) · rec ~400m trote · solta ~1,5km · ~11km",
+     "zone": "sub-LT2",
+     "color": "#f43f5e"
     }
    ],
    "2026-09-04": [
@@ -4684,7 +4741,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "11km Z2 · 5:50–6:10 (9,7–10,3 km/h)",
+     "detail": "8km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4789,10 +4846,18 @@
    ],
    "2026-09-10": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "2×3km @4:42 (12,8 km/h) · rec ~500m trote · ~12km",
+     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "detail": "aquec ~2,5km + 3 strides · 2×3km @4:42 (12,8 km/h) · rec ~500m trote · solta ~1,5km · ~12km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
     }
@@ -4802,7 +4867,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "11km Z2 · 5:50–6:10 (9,7–10,3 km/h)",
+     "detail": "8km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4915,10 +4980,18 @@
    ],
    "2026-09-17": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "8km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h)",
+     "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h) · descarga",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -4928,7 +5001,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "9km Z1 · 6:10–6:30 (9,2–9,7 km/h)",
+     "detail": "6km Z2 · 6:10–6:30 (9,2–9,7 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5041,11 +5114,19 @@
    ],
    "2026-09-24": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min–1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
-     "detail": "2×4km @4:40 (12,9 km/h) (HMP) · rec ~600m trote · ~14km",
-     "zone": "HMP",
+     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:40 (12,9 km/h) · rec ~400m trote · solta ~1,5km · ~12km",
+     "zone": "sub-LT2",
      "color": "#f43f5e"
     }
    ],
@@ -5054,7 +5135,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "11km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "7km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5167,12 +5248,20 @@
    ],
    "2026-10-01": [
     {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "12km fácil Z2 · 5:40–6:00 (10,0–10,6 km/h) + 5 strides",
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min–1h Z2 solto",
      "zone": "Z2",
-     "color": "#10b981"
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run HMP — PM",
+     "detail": "aquec ~2,5km + 3 strides · 2×4km @4:40 (12,9 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
+     "zone": "HMP",
+     "color": "#f43f5e"
     }
    ],
    "2026-10-02": [
@@ -5180,7 +5269,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "6km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5293,15 +5382,31 @@
    ],
    "2026-10-08": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "7km fácil Z2 + 4 strides",
+     "detail": "7km fácil Z2 + 4 strides · semana do teste",
      "zone": "Z2",
      "color": "#10b981"
     }
    ],
    "2026-10-09": [
+    {
+     "sport": "run",
+     "key": "hm_run_facil",
+     "label": "🏃 Fácil Z2 + strides",
+     "detail": "7km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140",
+     "zone": "Z2",
+     "color": "#10b981"
+    },
     {
      "sport": "strength",
      "key": "hm_plio",
@@ -5378,7 +5483,7 @@
      "sport": "run",
      "key": "hm_dbl_ter_pm",
      "label": "🏃 Run Sub-LT2 — PM",
-     "detail": "aquec ~2,5km + 3 strides · 5×2km @4:34 (13,1 km/h)* · rec ~400m trote · solta ~1,5km · ~16km",
+     "detail": "aquec ~2,5km + 3 strides · 4×2km @4:34 (13,1 km/h)* · rec ~400m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
@@ -5411,11 +5516,19 @@
    ],
    "2026-10-15": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
-     "detail": "2×5km @4:38 (12,9 km/h)* (HMP) · rec ~600m trote · ~15km",
-     "zone": "HMP",
+     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "detail": "aquec ~2,5km + 3 strides · 3×3km @4:36 (13,0 km/h)* · rec ~500m trote · solta ~1,5km · ~14km",
+     "zone": "sub-LT2",
      "color": "#f43f5e"
     }
    ],
@@ -5424,7 +5537,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "8km Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5537,12 +5650,20 @@
    ],
    "2026-10-22": [
     {
-     "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
-     "detail": "12km fácil Z2 · 5:40–6:00 (10,0–10,6 km/h) + 5 strides",
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~1h Z2 solto",
      "zone": "Z2",
-     "color": "#10b981"
+     "color": "#f59e0b"
+    },
+    {
+     "sport": "run",
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run HMP — PM",
+     "detail": "aquec ~2,5km + 3 strides · 2×4km @4:38 (12,9 km/h)* (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
+     "zone": "HMP",
+     "color": "#f43f5e"
     }
    ],
    "2026-10-23": [
@@ -5550,7 +5671,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "13km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "8km Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5585,10 +5706,10 @@
     {
      "sport": "run",
      "key": "hm_longao",
-     "label": "🏃 Longão c/ HMP",
-     "detail": "22km c/ 6km @4:36 (13,0 km/h)* (HMP) no final",
-     "zone": "HMP",
-     "color": "#f43f5e"
+     "label": "🏃 Longão Z1–Z2",
+     "detail": "22km Z1–Z2 · 5:35–5:55 (10,1–10,7 km/h) · FC<147 · sem blocos (a quinta já deu o ritmo)",
+     "zone": "Z2",
+     "color": "#10b981"
     },
     {
      "sport": "strength",
@@ -5663,10 +5784,18 @@
    ],
    "2026-10-29": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h)",
+     "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h) · descarga",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -5676,7 +5805,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "10km Z1 · 6:10–6:30 (9,2–9,7 km/h)",
+     "detail": "10km Z2 · 6:10–6:30 (9,2–9,7 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5789,6 +5918,14 @@
    ],
    "2026-11-05": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
@@ -5802,7 +5939,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "12km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "6km Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -5915,10 +6052,18 @@
    ],
    "2026-11-12": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run HMP — PM",
-     "detail": "2×4km @4:39 (12,9 km/h)* (RP) · rec ~600m trote · ~13km",
+     "detail": "aquec ~2,5km + 3 strides · 2×3km @4:39 (12,9 km/h)* (RP) · rec ~500m trote · solta ~1,5km · ~11km",
      "zone": "HMP",
      "color": "#f43f5e"
     }
@@ -5928,7 +6073,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "8km Z2 · 5:40–6:00 (10,0–10,6 km/h)",
+     "detail": "6km Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<140",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -6041,10 +6186,18 @@
    ],
    "2026-11-19": [
     {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — AM (2º duplo)",
+     "detail": "~30min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2",
-     "detail": "6km fácil + 4 strides",
+     "detail": "6km fácil Z2 + 4 strides",
      "zone": "Z2",
      "color": "#10b981"
     }
@@ -6053,9 +6206,9 @@
     {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 + strides",
-     "detail": "4km trote muito leve (véspera)",
-     "zone": "Z2",
+     "label": "🏃 Trote leve (véspera)",
+     "detail": "4km trote muito leve · véspera da prova",
+     "zone": "Z1",
      "color": "#10b981"
     },
     {
@@ -6433,7 +6586,7 @@
    },
    {
     "week": "2026-10-05",
-    "runVol": 42,
+    "runVol": 36,
     "bikeVol": 45,
     "swimVol": 2.5,
     "runQual": 0,
@@ -6449,7 +6602,7 @@
    },
    {
     "week": "2026-10-19",
-    "runVol": 60,
+    "runVol": 59,
     "bikeVol": 45,
     "swimVol": 2.5,
     "runQual": 0,
@@ -6473,7 +6626,7 @@
    },
    {
     "week": "2026-11-09",
-    "runVol": 42,
+    "runVol": 46,
     "bikeVol": 20,
     "swimVol": 2.5,
     "runQual": 0,
@@ -6481,7 +6634,7 @@
    },
    {
     "week": "2026-11-16",
-    "runVol": 30,
+    "runVol": 39,
     "bikeVol": 20,
     "swimVol": 2.5,
     "runQual": 0,
@@ -9086,70 +9239,73 @@
     ]
    },
    "hm_dbl_qui_am": {
-    "title": "Bike Z2 — Quinta AM (opcional)",
-    "subtitle": "Double 2 · manhã",
+    "title": "Bike Z2 — Quinta AM",
+    "subtitle": "Double 2 · a metade sem impacto",
     "sport": "bike",
     "color": "#f59e0b",
     "pills": [
      "Z2",
-     "45–60min"
+     "sem impacto",
+     "~45min–1h"
     ],
-    "objetivo": "Volume aeróbico sem impacto. Opcional — corta sem culpa em semana pesada.",
+    "objetivo": "Primeira dose do 2º duplo limiar da semana. Z2 puro — o estímulo forte fica para o run da noite.",
     "programa": [
      {
       "tipo": "run",
-      "nome": "Rodagem",
-      "detalhe": "45min–1h Z2 constante",
+      "nome": "Z2 solto",
+      "detalhe": "Cadência 85–90rpm · sem blocos · conversa possível",
       "zona": "Z2"
      }
     ],
     "notas": [
-     "Café da manhã normal antes"
+     "É OPCIONAL: se estiver cansado, corta a bike — nunca o run da noite",
+     "Mínimo 8h de separação até o run PM",
+     "Diferente da terça: aqui a bike é só Z2, sem blocos de limiar"
     ]
    },
    "hm_dbl_qui_pm": {
     "title": "Run Sub-LT2 — Quinta PM (tiros longos)",
-    "subtitle": "Double 2 · a sessão mais específica da semana",
+    "subtitle": "Double 2 · a 2ª sessão-chave da semana",
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
-     "sub-LT2 / HMP",
-     "FC ≤160",
-     "4:43 (12,7) → 4:15 (14,1)"
+     "tiros longos",
+     "FC ≤162",
+     "4:44 (12,7) → 4:39 (12,9)"
     ],
-    "objetivo": "Tiros de 2km — mesma intensidade da terça, mas blocos maiores. É aqui que a resistência de limiar (o que sustenta uma meia) se constrói.",
+    "objetivo": "Tiros LONGOS — mesma intensidade da terça, blocos maiores. É aqui que a resistência de limiar se constrói, e é o que sustenta uma meia. Junto com a terça, forma os dois duplos limiares da semana.",
     "programa": [
      {
       "tipo": "run",
       "nome": "1 · Aquecimento",
-      "detalhe": "~2,5km em Z1 a 6:10–6:30 (9,2–9,7 km/h) + 3 strides de ~100m",
-      "zona": "Z1 · 9,2–9,7 km/h"
+      "detalhe": "~2,5km Z1 a 6:10–6:30 (9,2–9,7 km/h) + 3 strides de ~100m",
+      "zona": "Z1"
      },
      {
       "tipo": "run",
       "nome": "2 · Blocos longos",
-      "detalhe": "Ver o bloco \"sessão de hoje\" acima · tiros de 2 a 5km, ou trechos em ritmo de meia (HMP)",
+      "detalhe": "Ver o bloco \"sessão de hoje\" acima · 2 a 3km cada, ou blocos em ritmo de meia",
       "zona": "sub-LT2 / HMP"
      },
      {
       "tipo": "run",
       "nome": "3 · Recuperação",
-      "detalhe": "~300 a 600m em trote solto, proporcional ao tamanho do bloco",
+      "detalhe": "~400 a 600m em trote solto, proporcional ao tamanho do bloco",
       "zona": "Z1"
      },
      {
       "tipo": "run",
       "nome": "4 · Solta",
-      "detalhe": "~1,5km em Z1",
+      "detalhe": "~1,5km Z1",
       "zona": "Z1"
      }
     ],
     "notas": [
-     "Escada corrigida: 4:43 (12,7 km/h) na sem 5 → 4:40 (12,9) sem 7 → recalibra no teste → 4:32 (13,2) sem 12 → 4:15 (14,1) sem 15",
-     "FC ≤161 — dois batimentos acima da terça, porque o bloco é maior",
+     "Escada: 3×2km @4:44 (12,7 km/h) sem 2 → 2×4km @4:40 (12,9) sem 6 → recalibra no teste → 2×3km @4:39 (12,9) RP na sem 12",
+     "⚠️ FC ≤162 — dois batimentos acima da terça, porque o bloco é maior",
      "Se o último bloco cair mais de 5s do primeiro, era um bloco a mais do que aguentava",
-     "Bike de quinta é OPCIONAL e Z2 puro — se estiver cansado, corta a bike, nunca o run",
-     "Nas semanas em que o domingo tem bloco grande de ritmo (sem 14), esta sessão vira FÁCIL"
+     "A bike da manhã é OPCIONAL e Z2 puro. Se estiver cansado, corta a bike — nunca o run",
+     "Nas semanas 11 (rainha) e 7 (teste), esta sessão vira FÁCIL — o domingo é que é a sessão dura"
     ]
    },
    "hm_run_facil": {
