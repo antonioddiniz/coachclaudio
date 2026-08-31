@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-29",
+ "updated_at": "2026-08-31",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -2310,6 +2310,34 @@
    "hr": 125,
    "kcal": 574,
    "note": "7,26km \u00b7 52:24 \u00b7 regenerativo Z1 (Sem 1 \u00b7 s\u00e1bado) \u00b7 7:13/km (8,3 km/h) \u00b7 FC 125 avg / 137 m\u00e1x \u00b7 +96m \u00b7 RE 14 \u00b7 Parque Mangueiral \u00b7 a corrida mais leve do ciclo \u00b7 EF 1,11 \u00b7 Vomero Plus \u00b7 Strava"
+  },
+  {
+   "id": 191,
+   "date": "2026-08-30",
+   "sport": "run",
+   "dist": 11.01,
+   "dur": "59:43",
+   "pace": "5:26",
+   "sec": 326,
+   "hr": 153,
+   "kcal": 892,
+   "note": "11,01km \u00b7 59:43 \u00b7 long\u00e3o (Sem 1 \u00b7 domingo) \u00b7 5:26/km (11,0 km/h) \u00b7 FC 153 avg / 166 m\u00e1x \u00b7 +81m \u00b7 RE 108 \u00b7 Parque da Cidade \u00b7 22 PRs ouro \u00b7 melhor 5K 25:33 e 10K 55:10 \u00b7 \u26a0\ufe0f prescrito 12km a 5:45\u20136:05 com FC<147 \u2014 saiu ~20s/km mais r\u00e1pido e FC 6 acima \u00b7 EF 1,20 \u00b7 Vomero Plus \u00b7 Strava"
+  },
+  {
+   "id": 192,
+   "date": "2026-08-31",
+   "sport": "strength",
+   "dur": "29:09",
+   "kcal": 157,
+   "note": "29:09 \u00b7 For\u00e7a \u2014 Superior (Sem 2 \u00b7 segunda) \u00b7 RE 5 \u00b7 Strava"
+  },
+  {
+   "id": 193,
+   "date": "2026-08-31",
+   "sport": "bike",
+   "dur": "13:10",
+   "kcal": 91,
+   "note": "13:10 \u00b7 REMO (Sem 2 \u00b7 segunda) \u00b7 aer\u00f3bico sem impacto \u00b7 RE 3 \u00b7 Strava"
   }
  ],
  "weight_data": [
