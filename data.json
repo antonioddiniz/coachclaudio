@@ -58,7 +58,7 @@
     "Sem 11 · dom 08/11 · 22km com 8km @4:39 — sessão-rainha",
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
    ],
-   "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA bike LT2 AM + run tiros CURTOS PM · QUINTA bike Z2 AM + run tiros LONGOS PM. Três toques de limiar por semana com só dois de impacto."
+   "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA corrida tiros CURTOS AM + bike LT2 PM · QUINTA corrida tiros LONGOS AM + bike Z2 PM. A corrida vem primeiro porque é a sessão específica — merece perna fresca. A bike carrega o estímulo aeróbico extra sem impacto, e roda bem em perna cansada."
   },
   "cycle_weeks": 13,
   "cycle_prev": {
@@ -2269,7 +2269,7 @@
    "sport": "strength",
    "dur": "42:31",
    "kcal": 202,
-   "note": "42:31 \u00b7 For\u00e7a A \u2014 Perna menisco-safe (Sem 1 \u00b7 ter\u00e7a, p\u00f3s-corrida) \u00b7 agach. at\u00e9 90\u00b0, leg press parcial, terra romeno, panturrilha \u00b7 RPE 6 \u00b7 RE 5 \u00b7 Strava"
+   "note": "42:31 · Força A — Perna menisco-safe (Sem 1 · terça, pós-corrida) · agach. até 90°, leg press parcial, terra romeno, panturrilha · RPE 6 · RE 5 · Strava"
   },
   {
    "id": 187,
@@ -2277,7 +2277,7 @@
    "sport": "strength",
    "dur": "33:01",
    "kcal": 157,
-   "note": "33:01 \u00b7 musculação (Sem 1 \u00b7 quarta, manh\u00e3) \u00b7 RE 4 \u00b7 Strava"
+   "note": "33:01 · musculação (Sem 1 · quarta, manhã) · RE 4 · Strava"
   },
   {
    "id": 188,
@@ -2285,7 +2285,7 @@
    "sport": "bike",
    "dur": "20:20",
    "kcal": 168,
-   "note": "20:20 \u00b7 REMO (Sem 1 \u00b7 quarta) \u00b7 aer\u00f3bico sem impacto \u00b7 RE 6 \u00b7 Strava"
+   "note": "20:20 · REMO (Sem 1 · quarta) · aeróbico sem impacto · RE 6 · Strava"
   },
   {
    "id": 189,
@@ -2297,7 +2297,7 @@
    "sec": 365,
    "hr": 145,
    "kcal": 783,
-   "note": "10,02km \u00b7 1:01:01 \u00b7 f\u00e1cil Z2 (Sem 1 \u00b7 quinta) \u00b7 6:05/km (9,9 km/h) \u00b7 FC 145 avg / 168 m\u00e1x \u00b7 +56m \u00b7 RE 86 \u00b7 Parque da Cidade \u00b7 26 PRs \u00b7 \u26a0\ufe0f prescrito 9km com FC<140 \u00b7 EF 1,13 \u00b7 Vomero Plus \u00b7 Strava"
+   "note": "10,02km · 1:01:01 · fácil Z2 (Sem 1 · quinta) · 6:05/km (9,9 km/h) · FC 145 avg / 168 máx · +56m · RE 86 · Parque da Cidade · 26 PRs · ⚠️ prescrito 9km com FC<140 · EF 1,13 · Vomero Plus · Strava"
   },
   {
    "id": 190,
@@ -2309,7 +2309,7 @@
    "sec": 433,
    "hr": 125,
    "kcal": 574,
-   "note": "7,26km \u00b7 52:24 \u00b7 regenerativo Z1 (Sem 1 \u00b7 s\u00e1bado) \u00b7 7:13/km (8,3 km/h) \u00b7 FC 125 avg / 137 m\u00e1x \u00b7 +96m \u00b7 RE 14 \u00b7 Parque Mangueiral \u00b7 a corrida mais leve do ciclo \u00b7 EF 1,11 \u00b7 Vomero Plus \u00b7 Strava"
+   "note": "7,26km · 52:24 · regenerativo Z1 (Sem 1 · sábado) · 7:13/km (8,3 km/h) · FC 125 avg / 137 máx · +96m · RE 14 · Parque Mangueiral · a corrida mais leve do ciclo · EF 1,11 · Vomero Plus · Strava"
   },
   {
    "id": 191,
@@ -2321,7 +2321,7 @@
    "sec": 326,
    "hr": 153,
    "kcal": 892,
-   "note": "11,01km \u00b7 59:43 \u00b7 long\u00e3o (Sem 1 \u00b7 domingo) \u00b7 5:26/km (11,0 km/h) \u00b7 FC 153 avg / 166 m\u00e1x \u00b7 +81m \u00b7 RE 108 \u00b7 Parque da Cidade \u00b7 22 PRs ouro \u00b7 melhor 5K 25:33 e 10K 55:10 \u00b7 \u26a0\ufe0f prescrito 12km a 5:45\u20136:05 com FC<147 \u2014 saiu ~20s/km mais r\u00e1pido e FC 6 acima \u00b7 EF 1,20 \u00b7 Vomero Plus \u00b7 Strava"
+   "note": "11,01km · 59:43 · longão (Sem 1 · domingo) · 5:26/km (11,0 km/h) · FC 153 avg / 166 máx · +81m · RE 108 · Parque da Cidade · 22 PRs ouro · melhor 5K 25:33 e 10K 55:10 · ⚠️ prescrito 12km a 5:45–6:05 com FC<147 — saiu ~20s/km mais rápido e FC 6 acima · EF 1,20 · Vomero Plus · Strava"
   },
   {
    "id": 192,
@@ -2329,7 +2329,7 @@
    "sport": "strength",
    "dur": "29:09",
    "kcal": 157,
-   "note": "29:09 \u00b7 For\u00e7a \u2014 Superior (Sem 2 \u00b7 segunda) \u00b7 RE 5 \u00b7 Strava"
+   "note": "29:09 · Força — Superior (Sem 2 · segunda) · RE 5 · Strava"
   },
   {
    "id": 193,
@@ -2337,7 +2337,7 @@
    "sport": "bike",
    "dur": "13:10",
    "kcal": 91,
-   "note": "13:10 \u00b7 REMO (Sem 2 \u00b7 segunda) \u00b7 aer\u00f3bico sem impacto \u00b7 RE 3 \u00b7 Strava"
+   "note": "13:10 · REMO (Sem 2 · segunda) · aeróbico sem impacto · RE 3 · Strava"
   }
  ],
  "weight_data": [
@@ -4586,25 +4586,25 @@
    ],
    "2026-08-25": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×8min @195–205W · rec 2min · ~50min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "✅ FEITO: 5×1km forte (10km) · a partir daqui, tiros no pace prescrito",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×8min @195–205W · rec 2min · ~50min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
@@ -4632,7 +4632,7 @@
     {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "9km fácil Z2 · 5:50–6:10 (9,7–10,3 km/h) + 4 strides",
      "zone": "Z2",
      "color": "#10b981"
@@ -4704,25 +4704,25 @@
    ],
    "2026-09-01": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "6×8min @195–210W · rec 2min · ~55min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 5×1km @4:42 (12,8 km/h) · rec ~200m trote · solta ~1,5km · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "6×8min @195–210W · rec 2min · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
@@ -4748,20 +4748,20 @@
    ],
    "2026-09-03": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
      "detail": "aquec ~2,5km + 3 strides · 3×2km @4:44 (12,7 km/h) · rec ~400m trote · solta ~1,5km · ~11km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-09-04": [
@@ -4830,25 +4830,25 @@
    ],
    "2026-09-08": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×10min @195–213W · ~60min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 4×1,5km @4:40 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~12km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×10min @195–213W · ~60min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha 3×15 · RPE 6",
      "zone": "força",
      "color": "#a78bfa"
@@ -4874,20 +4874,20 @@
    ],
    "2026-09-10": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
      "detail": "aquec ~2,5km + 3 strides · 2×3km @4:42 (12,8 km/h) · rec ~500m trote · solta ~1,5km · ~12km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-09-11": [
@@ -4964,25 +4964,25 @@
    ],
    "2026-09-15": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–205W · descarga · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2km + 3 strides · 3×1,5km @4:40 (12,9 km/h) · descarga · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "4×8min @195–205W · descarga · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5008,20 +5008,20 @@
    ],
    "2026-09-17": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~40min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h) · descarga",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-09-18": [
@@ -5098,25 +5098,25 @@
    ],
    "2026-09-22": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "6×8min @195–213W · ~55min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 5×1,5km @4:38 (12,9 km/h) · rec ~300m trote · solta ~1,5km · ~13km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "6×8min @195–213W · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5142,20 +5142,20 @@
    ],
    "2026-09-24": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
      "detail": "aquec ~2,5km + 3 strides · 3×2km @4:40 (12,9 km/h) · rec ~400m trote · solta ~1,5km · ~12km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min–1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-09-25": [
@@ -5232,25 +5232,25 @@
    ],
    "2026-09-29": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×10min @195–213W · ~60min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 4×2km @4:36 (13,0 km/h) · rec ~400m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×10min @195–213W · ~60min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5276,20 +5276,20 @@
    ],
    "2026-10-01": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min–1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
+     "label": "🏃 Run HMP — AM",
      "detail": "aquec ~2,5km + 3 strides · 2×4km @4:40 (12,9 km/h) (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "HMP",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min–1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-10-02": [
@@ -5366,25 +5366,25 @@
    ],
    "2026-10-06": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–205W · leve (semana do teste) · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2km + 3 strides · 4×1km @4:34 (13,1 km/h) · afiar p/ o teste · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "4×8min @195–205W · leve (semana do teste) · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5410,20 +5410,20 @@
    ],
    "2026-10-08": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~40min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "7km fácil Z2 + 4 strides · semana do teste",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-10-09": [
@@ -5500,25 +5500,25 @@
    ],
    "2026-10-13": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×12min @195–213W · ~70min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 4×2km @4:34 (13,1 km/h)* · rec ~400m trote · solta ~1,5km · ~14km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×12min @195–213W · ~70min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5544,20 +5544,20 @@
    ],
    "2026-10-15": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run Sub-LT2 — PM (tiros longos)",
+     "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
      "detail": "aquec ~2,5km + 3 strides · 3×3km @4:36 (13,0 km/h)* · rec ~500m trote · solta ~1,5km · ~14km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-10-16": [
@@ -5634,25 +5634,25 @@
    ],
    "2026-10-20": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×12min @195–213W · ~70min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 6×1,5km @4:32 (13,2 km/h)* · rec ~300m trote · solta ~1,5km · ~15km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×12min @195–213W · ~70min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5678,20 +5678,20 @@
    ],
    "2026-10-22": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~1h Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
+     "label": "🏃 Run HMP — AM",
      "detail": "aquec ~2,5km + 3 strides · 2×4km @4:38 (12,9 km/h)* (HMP) · rec ~600m trote · solta ~1,5km · ~14km",
      "zone": "HMP",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~1h Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-10-23": [
@@ -5768,25 +5768,25 @@
    ],
    "2026-10-27": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×8min @195–205W · descarga · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2km + 3 strides · 3×1,5km @4:32 (13,2 km/h)* · descarga · ~9km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "4×8min @195–205W · descarga · ~40min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5812,20 +5812,20 @@
    ],
    "2026-10-29": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~40min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h) · descarga",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~40min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-10-30": [
@@ -5902,25 +5902,25 @@
    ],
    "2026-11-03": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "5×10min @195–213W · ~60min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 5×2km @4:30 (13,3 km/h)* · rec ~400m trote · solta ~1,5km · ~16km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "5×10min @195–213W · ~60min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 4×6 @RPE7–8 · Terra trap bar 4×6 · Leg press parcial 3×8 · Panturrilha 4×10 · rec 2–3min",
      "zone": "força",
      "color": "#a78bfa"
@@ -5946,20 +5946,20 @@
    ],
    "2026-11-05": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "12km fácil Z2 · 5:40–6:00 (10,0–10,6 km/h) · LEVE (domingo é a sessão-rainha)",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-11-06": [
@@ -6036,25 +6036,25 @@
    ],
    "2026-11-10": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "4×10min @195–213W · ~55min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2,5km + 3 strides · 3×2km @4:39 (12,9 km/h)* (RP) · rec ~400m trote · ~11km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "4×10min @195–213W · ~55min",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 2×8 @RPE6 · Panturrilha 2×12 · só manter o padrão",
      "zone": "força",
      "color": "#a78bfa"
@@ -6080,20 +6080,20 @@
    ],
    "2026-11-12": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~45min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_qui_pm",
-     "label": "🏃 Run HMP — PM",
+     "label": "🏃 Run HMP — AM",
      "detail": "aquec ~2,5km + 3 strides · 2×3km @4:39 (12,9 km/h)* (RP) · rec ~500m trote · solta ~1,5km · ~11km",
      "zone": "HMP",
      "color": "#f43f5e"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~45min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-11-13": [
@@ -6170,25 +6170,25 @@
    ],
    "2026-11-17": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — AM",
-     "detail": "Z2 ~30min solto",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — PM",
+     "label": "🏃 Run Sub-LT2 — AM",
      "detail": "aquec ~2km + 3 strides · 3×1km @4:39 (12,9 km/h)* (RP) · soltar · ~8km",
      "zone": "DUPLO LIMIAR",
      "color": "#f43f5e"
     },
     {
+     "sport": "bike",
+     "key": "hm_dbl_ter_am",
+     "label": "⚡ Bike LT2 — PM",
+     "detail": "Z2 ~30min solto",
+     "zone": "DUPLO LIMIAR",
+     "color": "#f59e0b"
+    },
+    {
      "sport": "strength",
      "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — pós-corrida",
+     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
      "detail": "Agach. até 90° 2×8 @RPE6 · Panturrilha 2×12 · só manter o padrão",
      "zone": "força",
      "color": "#a78bfa"
@@ -6214,20 +6214,20 @@
    ],
    "2026-11-19": [
     {
-     "sport": "bike",
-     "key": "hm_dbl_qui_am",
-     "label": "🚴 Bike Z2 — AM (2º duplo)",
-     "detail": "~30min Z2 solto",
-     "zone": "Z2",
-     "color": "#f59e0b"
-    },
-    {
      "sport": "run",
      "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2",
+     "label": "🏃 Fácil Z2 — AM",
      "detail": "6km fácil Z2 + 4 strides",
      "zone": "Z2",
      "color": "#10b981"
+    },
+    {
+     "sport": "bike",
+     "key": "hm_dbl_qui_am",
+     "label": "🚴 Bike Z2 — PM (2º duplo)",
+     "detail": "~30min Z2 solto",
+     "zone": "Z2",
+     "color": "#f59e0b"
     }
    ],
    "2026-11-20": [
@@ -9175,8 +9175,8 @@
     ]
    },
    "hm_dbl_ter_am": {
-    "title": "Bike LT2 — Terça AM",
-    "subtitle": "Double 1 · limiar sem impacto",
+    "title": "Bike LT2 — Terça PM",
+    "subtitle": "Double 1 · a 2ª dose do dia · sem impacto",
     "sport": "bike",
     "color": "#f59e0b",
     "pills": [
@@ -9184,7 +9184,7 @@
      "195–213W",
      "6×8min"
     ],
-    "objetivo": "1º toque de limiar do dia sem castigar a perna. É o que te permite 3 doses de limiar por semana sem lesionar.",
+    "objetivo": "2º toque de limiar do dia, sem impacto. Roda bem em perna cansada da corrida da manhã — é justamente por isso que ela vem depois. É o que permite três doses de limiar por semana com só duas de impacto.",
     "programa": [
      {
       "tipo": "run",
@@ -9212,16 +9212,16 @@
      }
     ],
     "notas": [
-     "⚠️ ESTA SESSÃO NÃO PODE DOER. É a 1ª de três no dia — se você descer da bike ofegante, a corrida da noite já era",
-     "A faixa é SUB-limiar (79–87% do FTP), não LT2 clássico (90–97%). É o que permite repetir a dose",
+     "⚠️ NÃO PODE DOER. É a segunda dose do dia — se virar sessão heroica, a quinta paga a conta",
+     "A faixa é SUB-limiar (79–87% do FTP 246W), não LT2 clássico (90–97%)",
      "Se a FC derivar mais de 8bpm do 1º ao último bloco, o watt está alto: baixe para 205W",
-     "Mínimo 8h de separação até o run PM",
+     "Mínimo 8h de separação da corrida da manhã",
      "Lição de 28/07: 220W fez a FC subir 12bpm em 5 blocos. A 205W você fecha 6 com a FC estável"
     ]
    },
    "hm_dbl_ter_pm": {
-    "title": "Run Sub-LT2 — Terça PM (tiros curtos)",
-    "subtitle": "Double 1 · a 2ª dose do dia",
+    "title": "Run Sub-LT2 — Terça AM (tiros curtos)",
+    "subtitle": "Double 1 · a 1ª dose do dia · perna fresca",
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
@@ -9229,7 +9229,7 @@
      "FC 150–160",
      "4:42 (12,8) → 4:30 (13,3)"
     ],
-    "objetivo": "Tiros ABAIXO do limiar (2,0–3,0 mmol) — não NO limiar. Esta é a diferença que faz o método norueguês funcionar: a dose precisa ser repetível três vezes na semana. Se doer como prova, virou outro treino.",
+    "objetivo": "Tiros ABAIXO do limiar (2,0–3,0 mmol). Vem de MANHÃ porque é a sessão específica — merece perna descansada. A bike da noite carrega o estímulo aeróbico extra sem impacto.",
     "programa": [
      {
       "tipo": "run",
@@ -9257,17 +9257,17 @@
      }
     ],
     "notas": [
+     "⚠️ COMA ANTES: 1 colher de mel + banana ao acordar. Tiros em jejum não alcançam a faixa de estímulo — lição de 04/08",
      "Escada: 4:42 (12,8 km/h) sem 2 → 4:38 (12,9) sem 5 → 4:34 (13,1) sem 8 → 4:30 (13,3) sem 11 → 4:39 RP nas sem 12–13",
-     "⚠️ FC ALVO 150–160 · TETO 162. Em 25/08 os tiros saíram a 166 (91% da máx) — isso é ritmo de prova, não sub-limiar",
-     "Se a FC passar de 162, BAIXE A VELOCIDADE. O pace é limite, a FC é o chefe",
-     "A regra: terminar sentindo que faria mais 2 tiros. Se acabou destruído, a dose estava errada",
+     "⚠️ FC ALVO 150–160 · TETO 162. Se passar, BAIXE A VELOCIDADE — o pace é limite, a FC é o chefe",
+     "A regra: terminar sentindo que faria mais 2 tiros",
+     "SEU VÍCIO: o 1º tiro não pode ser o mais rápido. Alvo: 3s de variação",
      "NA ESTEIRA: confie na velocidade configurada, não no pace do relógio",
-     "Registre o tênis — comparação de FC entre sessões só vale com o mesmo calçado",
      "* = pace projetado, recalibrado no 10k-teste de 11/10"
     ]
    },
    "hm_dbl_qui_am": {
-    "title": "Bike Z2 — Quinta AM",
+    "title": "Bike Z2 — Quinta PM",
     "subtitle": "Double 2 · a metade sem impacto",
     "sport": "bike",
     "color": "#f59e0b",
@@ -9286,14 +9286,14 @@
      }
     ],
     "notas": [
-     "É OPCIONAL: se estiver cansado, corta a bike — nunca o run da noite",
-     "Mínimo 8h de separação até o run PM",
+     "É OPCIONAL: se estiver cansado, corta a bike — nunca a corrida da manhã",
+     "Mínimo 8h de separação da corrida",
      "Diferente da terça: aqui a bike é só Z2, sem blocos de limiar"
     ]
    },
    "hm_dbl_qui_pm": {
-    "title": "Run Sub-LT2 — Quinta PM (tiros longos)",
-    "subtitle": "Double 2 · a 2ª sessão-chave da semana",
+    "title": "Run Sub-LT2 — Quinta AM (tiros longos)",
+    "subtitle": "Double 2 · a 2ª sessão-chave da semana · perna fresca",
     "sport": "run",
     "color": "#f43f5e",
     "pills": [
@@ -9683,7 +9683,7 @@
    },
    "hm_forca_a": {
     "title": "Força A — Perna (menisco-safe)",
-    "subtitle": "Terça · sem flexão profunda · DEPOIS da corrida",
+    "subtitle": "Terça à noite · junto com a bike · sem flexão profunda",
     "sport": "strength",
     "color": "#a78bfa",
     "pills": [
@@ -9727,7 +9727,7 @@
      "Séries e carga: ver o bloco \"A SESSÃO DE HOJE\" no topo",
      "Se algum movimento doer no joelho, PARA esse exercício — não existe \"empurrar através\"",
      "Nunca até a falha — RPE 6 = 4 reps na reserva · RPE 7 = 3 · RPE 8 = 2",
-     "Terra romeno e trap bar são os mais seguros: use-os como base se o agachamento incomodar"
+     "Vem à NOITE, junto com a bike: dia duro concentrado, para quarta e quinta ficarem limpas"
     ]
    },
    "hm_forca_b": {
