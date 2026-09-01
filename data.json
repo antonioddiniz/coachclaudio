@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-31",
+ "updated_at": "2026-09-01",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -58,7 +58,8 @@
     "Sem 11 · dom 08/11 · 22km com 8km @4:39 — sessão-rainha",
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
    ],
-   "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA corrida tiros CURTOS AM + bike LT2 PM · QUINTA corrida tiros LONGOS AM + bike Z2 PM. A corrida vem primeiro porque é a sessão específica — merece perna fresca. A bike carrega o estímulo aeróbico extra sem impacto, e roda bem em perna cansada."
+   "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA corrida tiros CURTOS AM + bike LT2 PM · QUINTA corrida tiros LONGOS AM + bike Z2 PM. A corrida vem primeiro porque é a sessão específica — merece perna fresca. A bike carrega o estímulo aeróbico extra sem impacto, e roda bem em perna cansada.",
+   "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2."
   },
   "cycle_weeks": 13,
   "cycle_prev": {
@@ -2338,6 +2339,22 @@
    "dur": "13:10",
    "kcal": 91,
    "note": "13:10 · REMO (Sem 2 · segunda) · aeróbico sem impacto · RE 3 · Strava"
+  },
+  {
+   "id": 194,
+   "date": "2026-09-01",
+   "sport": "run",
+   "dist": 10.0,
+   "dur": "51:07",
+   "pace": "4:31",
+   "sec": 271,
+   "hr": 159,
+   "kcal": 808,
+   "blocks": {
+    "done": 5,
+    "total": 5
+   },
+   "note": "10,00km · 51:07 · 5×1km duplo limiar AM (Sem 2 · terça) · tiros 4:13·4:25·4:32·4:44·4:38 · média 4:30 (13,3 km/h) · rec ~200m · GAP idêntico ao relógio (4:30) — Parque da Cidade plano, variação de −0,44% a +0,50% por tiro · FC nos tiros 167·170·167·166·167 (média 167 = 91% da máx) · FC 159 avg / 173 máx · RE 127 (o mais alto do ciclo) · 29 PRs · Vaporfly 3 · ⚠️ prescrito 5×1km @4:42 (12,8 km/h) com FC 150–160 · ⚠️ 31s de variação do 1º ao 4º tiro (alvo 3s) — largou acima do sustentável e caiu 34s/km em GAP com a FC travada em 167 · limiar real sugerido: ~4:30–4:35 · Strava"
   }
  ],
  "weight_data": [
@@ -2560,6 +2577,12 @@
    "sport": "run",
    "done": 5.0,
    "planned": 2.4
+  },
+  {
+   "date": "2026-09-01",
+   "sport": "run",
+   "done": 5.0,
+   "planned": 5.0
   }
  ],
  "inbody_exams": [
