@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-01",
+ "updated_at": "2026-09-03",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
@@ -59,7 +59,8 @@
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
    ],
    "estrutura": "Duplo limiar DUAS vezes por semana (método norueguês): TERÇA corrida tiros CURTOS AM + bike LT2 PM · QUINTA corrida tiros LONGOS AM + bike Z2 PM. A corrida vem primeiro porque é a sessão específica — merece perna fresca. A bike carrega o estímulo aeróbico extra sem impacto, e roda bem em perna cansada.",
-   "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2."
+   "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2.",
+   "sub_lt2": "4:36–4:40 (12,9–13,0 km/h) · FC alvo 155–162 · ajustado em 03/09 após 3×2km com apenas 6s de variação"
   },
   "cycle_weeks": 13,
   "cycle_prev": {
@@ -2355,6 +2356,22 @@
     "total": 5
    },
    "note": "10,00km · 51:07 · 5×1km duplo limiar AM (Sem 2 · terça) · tiros 4:13·4:25·4:32·4:44·4:38 · média 4:30 (13,3 km/h) · rec ~200m · GAP idêntico ao relógio (4:30) — Parque da Cidade plano, variação de −0,44% a +0,50% por tiro · FC nos tiros 167·170·167·166·167 (média 167 = 91% da máx) · FC 159 avg / 173 máx · RE 127 (o mais alto do ciclo) · 29 PRs · Vaporfly 3 · ⚠️ prescrito 5×1km @4:42 (12,8 km/h) com FC 150–160 · ⚠️ 31s de variação do 1º ao 4º tiro (alvo 3s) — largou acima do sustentável e caiu 34s/km em GAP com a FC travada em 167 · limiar real sugerido: ~4:30–4:35 · Strava"
+  },
+  {
+   "id": 195,
+   "date": "2026-09-03",
+   "sport": "run",
+   "dist": 12.02,
+   "dur": "1:06:08",
+   "pace": "4:33",
+   "sec": 273,
+   "hr": 151,
+   "kcal": 962,
+   "blocks": {
+    "done": 3,
+    "total": 3
+   },
+   "note": "12,02km · 1:06:08 · 3×2km duplo limiar AM (Sem 2 · quinta) · tiros 4:29 (13,4 km/h) · 4:34 (13,1) · 4:35 (13,1) · média 4:33 (13,2 km/h) · ✅ apenas 6s de variação entre os tiros (contra 31s na terça) — largou no pace de chegada, exatamente o pedido · rec ~400m trote · aquec 2,48km @6:52 FC 124 · solta 2,3km · FC nos tiros 163·167·166 (média 166) · FC 151 avg / 171 máx · RE 118 (menor que os 127 de terça com 2km a mais) · 34 PRs · Adidas Evo SL (super-trainer · guardou o Vaporfly ✅) · Parque da Cidade · ⚠️ prescrito 3×2km @4:44 com FC 150–160 — fez 11s/km mais rápido e 6bpm acima do teto"
   }
  ],
  "weight_data": [
@@ -2583,6 +2600,12 @@
    "sport": "run",
    "done": 5.0,
    "planned": 5.0
+  },
+  {
+   "date": "2026-09-03",
+   "sport": "run",
+   "done": 6.0,
+   "planned": 6.0
   }
  ],
  "inbody_exams": [
@@ -4900,7 +4923,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
-     "detail": "aquec ~2,5km + 3 strides · 2×3km @4:42 (12,8 km/h) · rec ~500m trote · solta ~1,5km · ~12km",
+     "detail": "aquec ~2,5km + 3 strides · 2×3km @4:36–4:40 (12,9–13,0 km/h) · rec ~500m trote · solta ~1,5km · ~12km",
      "zone": "sub-LT2",
      "color": "#f43f5e"
     },
