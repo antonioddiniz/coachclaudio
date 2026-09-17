@@ -1,10 +1,10 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-15",
+ "updated_at": "2026-09-17",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
-  "cycle_start": "2026-09-21",
+  "cycle_start": "2026-09-14",
   "ftp": 246,
   "ftp_ref": "FTP atual informado pelo atleta em 24/07/2026 (era 243 — Ramp Test 06/06/2026)",
   "fcmax": 183,
@@ -58,12 +58,13 @@
     "Sem 11 · dom 08/11 · 22km com 8km @4:39 — sessão-rainha",
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
    ],
-   "estrutura": "4 corridas/semana (ter duplo limiar AM + bike PM · qui tiros longos AM + bike Z2 PM · sex fácil + pliometria DEPOIS + Força B · dom longão). Sem natação. Segunda: descanso + Força Superior. Quarta: core. Sábado: bike longa.",
+   "estrutura": "Ciclo de 10 semanas: 14/09 (semana em curso, retomada) → 22/11 (prova). 4 corridas/semana: ter duplo limiar AM + bike PM + Força A · qui tiros longos AM + bike Z2 PM · sex fácil + pliometria DEPOIS + Força B · dom longão. Sem natação. Segunda: descanso de corrida + Força Superior. Quarta: core. Sábado: bike longa.",
    "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2.",
    "sub_lt2": "4:40–4:44 (12,7–12,9 km/h) · FC 152–160 · recalibra no teste de 11/10",
-   "status_15_09": "Semanas realizadas vs planejadas: S1 (24-30/08), S2 22/44km, S3 12/48km (semana perdida — atleta não consultou o plano, sem lesão), S4 em curso. Plano precisa ser recalibrado a partir de 21/09 com base real, não com base nas semanas planejadas."
+   "status_15_09": "Semanas realizadas vs planejadas: S1 (24-30/08), S2 22/44km, S3 12/48km (semana perdida — atleta não consultou o plano, sem lesão), S4 em curso. Plano precisa ser recalibrado a partir de 21/09 com base real, não com base nas semanas planejadas.",
+   "longao": "Longões de domingo partem de 16km (pedido do atleta em 15/09): 16 · 16 · 18 · [teste 10K] · 16 · 18 · 20 · 21 · 16 · [prova]. Todos em FC<147, pace livre. Os das semanas 8 e 9 levam 4km finais a ritmo de prova."
   },
-  "cycle_weeks": 9,
+  "cycle_weeks": 10,
   "cycle_prev": {
    "start": "2026-07-20",
    "weeks": 18
@@ -2432,6 +2433,18 @@
     "total": 3
    },
    "note": "8,21km · 49:08 · blocos de 1km PM (Sem 4 · descarga) · Jardim Botânico · ⚠️ laps marcados errado no relógio — estrutura reconstruída com o atleta · B1 4:24 (13,6 km/h) FC 145 · B2 4:29 (13,4) FC 156 · B3 4:54 (12,2) FC 161 · rec ~200m entre blocos · depois 423m @4:39 + caminhada 590m + 815m @4:14 (13º km fragmentado) · média dos 3 blocos limpos 4:36 (13,1 km/h) — exatamente o prescrito · FC 140 avg / 173 máx · RE 56 · melhor 1K 4:24 · Adidas Evo SL · ⚠️ 3º bloco caiu 30s/km e virou caminhada — padrão de largada quente de novo · Strava · semana 3 perdida por não consultar o plano (não foi lesão)"
+  },
+  {
+   "id": 201,
+   "date": "2026-09-17",
+   "sport": "run",
+   "dist": 9.51,
+   "dur": "52:58",
+   "pace": "5:34",
+   "sec": 334,
+   "hr": 145,
+   "kcal": 748,
+   "note": "9,51km · 52:58 · rodagem matinal contínua Z2 · 5:34 (10,8 km/h) · FC 145 média / 156 máx (a máx mais baixa do ciclo) · elev +70m · RE 81 · 18 PRs · Vomero Plus · Parque da Cidade · EF 1,239 — o mais alto do banco em 29 sessões contínuas · na mesma faixa de FC (142–148), 26 a 31 s/km mais rápido que em agosto · trocou a sessão com blocos do dia por corrida contínua"
   }
  ],
  "weight_data": [
@@ -2678,6 +2691,12 @@
    "sport": "run",
    "done": 3.0,
    "planned": 4.5
+  },
+  {
+   "date": "2026-09-17",
+   "sport": "run",
+   "done": 0.0,
+   "planned": 4.0
   }
  ],
  "inbody_exams": [
@@ -4868,11 +4887,11 @@
    ],
    "2026-09-14": [
     {
-     "sport": "strength",
-     "key": "hm_musc_sup",
-     "label": "💪 Força — Superior",
-     "detail": "Supino 4×8 · Remada curvada 4×8 · Desenv. 3×8 · Puxada 4×8 · Face pull 3×15",
-     "zone": "força",
+     "sport": "rest",
+     "key": "mn_descanso",
+     "label": "✅ Realizado — Força",
+     "detail": "Musculação 32min · RE 3 · retomada após 6 dias parado",
+     "zone": "—",
      "color": "#a78bfa"
     }
    ],
@@ -4880,26 +4899,10 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
-     "detail": "aquec ~2km + 3 strides · 3×1,5km @4:40 (12,9 km/h) · descarga · ~9km",
-     "zone": "DUPLO LIMIAR",
+     "label": "✅ Realizado — Blocos de 1km",
+     "detail": "8,21km · 4:24 · 4:29 · 4:54 (13,6 · 13,4 · 12,2 km/h) · média 4:36 (13,1 km/h) · FC 140 · Jardim Botânico",
+     "zone": "sub-LT2",
      "color": "#f43f5e"
-    },
-    {
-     "sport": "bike",
-     "key": "hm_dbl_ter_am",
-     "label": "⚡ Bike LT2 — PM",
-     "detail": "4×8min @195–205W · descarga · ~40min",
-     "zone": "DUPLO LIMIAR",
-     "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM (junto com a bike)",
-     "detail": "Agach. até 90° 4×8 @RPE7 · Terra trap bar 4×8 · Leg press parcial 3×10 · Panturrilha carregada 4×12 · rec 2min",
-     "zone": "força",
-     "color": "#a78bfa"
     }
    ],
    "2026-09-16": [
@@ -4907,25 +4910,25 @@
      "sport": "strength",
      "key": "hm_core",
      "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10 · Bird dog 3×10 · SEM carga de perna",
-     "zone": "core",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
      "color": "#a78bfa"
     }
    ],
    "2026-09-17": [
     {
      "sport": "run",
-     "key": "hm_run_facil",
-     "label": "🏃 Fácil Z2 — AM",
-     "detail": "9km fácil Z2 · 6:10–6:30 (9,2–9,7 km/h) · descarga",
-     "zone": "Z2",
-     "color": "#10b981"
+     "key": "hm_dbl_qui_pm",
+     "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
+     "detail": "aquec ~2km + 3 strides · 2×2km @4:44 (12,7 km/h) · rec ~400m trote · solta ~1,5km · ~8km",
+     "zone": "sub-LT2 · FC 152–160",
+     "color": "#f43f5e"
     },
     {
      "sport": "bike",
      "key": "hm_dbl_qui_am",
      "label": "🚴 Bike Z2 — PM (2º duplo)",
-     "detail": "~40min Z2 solto",
+     "detail": "~40min Z2 solto · giro leve",
      "zone": "Z2",
      "color": "#f59e0b"
     }
@@ -4935,7 +4938,7 @@
      "sport": "run",
      "key": "hm_run_facil",
      "label": "🏃 Fácil Z2 + strides",
-     "detail": "6km Z2 · 6:10–6:30 (9,2–9,7 km/h) · FC<140",
+     "detail": "5km Z2 · 5:50–6:10 (9,7–10,3 km/h) · FC<140 · 4 strides ao fim",
      "zone": "Z2",
      "color": "#10b981"
     },
@@ -4943,16 +4946,16 @@
      "sport": "strength",
      "key": "hm_plio",
      "label": "🦘 Pliometria (DEPOIS da corrida)",
-     "detail": "Pogo hops 2×12 · ~20 contatos · descarga",
-     "zone": "plio",
+     "detail": "Pogo hops 2×10 · corda 2×30s · ~30 contatos · retomada leve",
+     "zone": "—",
      "color": "#a78bfa"
     },
     {
      "sport": "strength",
      "key": "hm_forca_b",
      "label": "💪 Força B — Unilateral e tendão",
-     "detail": "Elevação pélvica 4×10 · SL-RDL 3×8/perna · Step-up caixa baixa carregado 3×8/perna · Glúteo médio 3×15 · RATHLEFF: panturrilha unilateral com toalha · 4×10 · 3-2-3 · com mochila",
-     "zone": "força",
+     "detail": "Elevação pélvica 3×12 · SL-RDL 3×10/perna · Step-up caixa BAIXA 3×10/perna · Glúteo médio 3×15 · Panturrilha Rathleff 3×12/perna · RPE 7",
+     "zone": "—",
      "color": "#a78bfa"
     }
    ],
@@ -4961,7 +4964,7 @@
      "sport": "bike",
      "key": "hm_bike_longo",
      "label": "🚴 Bike Longa",
-     "detail": "~1h30 Z2 solto · giro alto · SEM blocos",
+     "detail": "~1h15 Z2 · 20min Z2 · 2×10min @195–210W · 20min Z2",
      "zone": "Z2",
      "color": "#f59e0b"
     }
@@ -4971,16 +4974,16 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "12km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h)",
-     "zone": "Z2",
+     "detail": "16km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
     {
      "sport": "strength",
      "key": "hm_mob",
      "label": "💪 Mobilidade + fáscia",
-     "detail": "Bolinha na fáscia 2min/pé · alongamento de panturrilha e sóleo · flexor de quadril 2×45s/lado · foam roller",
-     "zone": "mobil.",
+     "detail": "Bolinha na fáscia 2min/pé · panturrilha e sóleo 3×30s · flexor de quadril 2×30s/lado",
+     "zone": "—",
      "color": "#a78bfa"
     }
    ],
@@ -5097,7 +5100,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "10km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "detail": "16km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5223,7 +5226,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "12km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "detail": "18km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5475,7 +5478,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "10km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "detail": "16km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5601,7 +5604,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "14km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
+     "detail": "18km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5727,7 +5730,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "16km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
+     "detail": "20km Z1–Z2 · 5:40–6:00 (10,0–10,6 km/h) · FC<147",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5853,7 +5856,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km · 14km Z2 + 4km finais @RP* · FC<155",
+     "detail": "21km · 17km Z2 + 4km finais @RP* · FC<155 · ensaio de distância de prova",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -5979,7 +5982,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "14km · 10km Z2 + 4km @RP* · FC<155",
+     "detail": "16km · 12km Z2 + 4km @RP* · FC<155",
      "zone": "Z1–Z2 · FC<147",
      "color": "#10b981"
     },
@@ -6122,8 +6125,24 @@
   "cycle_phases": [
    {
     "weeks": [
-     1,
-     2
+     1
+    ],
+    "label": "Retomada",
+    "short": "RETOMA",
+    "color": "#94a3b8",
+    "bg": "rgba(148,163,184,.12)",
+    "icon": "🔄",
+    "desc": "Semana em curso. Voltar a encadear dias depois de 6 dias parado.",
+    "focus": [
+     "volume baixo",
+     "1 qualidade leve",
+     "longão curto"
+    ]
+   },
+   {
+    "weeks": [
+     2,
+     3
     ],
     "label": "Reconstrução de base",
     "short": "BASE",
@@ -6139,7 +6158,7 @@
    },
    {
     "weeks": [
-     3
+     4
     ],
     "label": "Teste de 10K",
     "short": "TESTE",
@@ -6149,12 +6168,12 @@
     "desc": "Mede a forma real e recalibra todos os paces com *.",
     "focus": [
      "10K no domingo 11/10",
-     "recalibragem de LT2, sub-LT2 e RP"
+     "recalibragem de sub-LT2 e ritmo de prova"
     ]
    },
    {
     "weeks": [
-     4
+     5
     ],
     "label": "Descarga",
     "short": "DELOAD",
@@ -6169,9 +6188,9 @@
    },
    {
     "weeks": [
-     5,
      6,
-     7
+     7,
+     8
     ],
     "label": "Construção e pico",
     "short": "PICO",
@@ -6182,12 +6201,12 @@
     "focus": [
      "pico 53km",
      "longão 18km",
-     "blocos de ritmo de prova"
+     "blocos a ritmo de prova"
     ]
    },
    {
     "weeks": [
-     8
+     9
     ],
     "label": "Transição para prova",
     "short": "ESPEC",
@@ -6202,7 +6221,7 @@
    },
    {
     "weeks": [
-     9
+     10
     ],
     "label": "Polimento e prova",
     "short": "PROVA",
@@ -6218,8 +6237,16 @@
   ],
   "planned_weekly": [
    {
+    "week": "2026-09-14",
+    "runVol": 37,
+    "bikeVol": 0,
+    "swimVol": 0,
+    "runQual": 0,
+    "bikeQual": 0
+   },
+   {
     "week": "2026-09-21",
-    "runVol": 34,
+    "runVol": 40,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6227,7 +6254,7 @@
    },
    {
     "week": "2026-09-28",
-    "runVol": 40,
+    "runVol": 46,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6243,7 +6270,7 @@
    },
    {
     "week": "2026-10-12",
-    "runVol": 34,
+    "runVol": 40,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6251,7 +6278,7 @@
    },
    {
     "week": "2026-10-19",
-    "runVol": 46,
+    "runVol": 50,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6259,7 +6286,7 @@
    },
    {
     "week": "2026-10-26",
-    "runVol": 51,
+    "runVol": 55,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6267,7 +6294,7 @@
    },
    {
     "week": "2026-11-02",
-    "runVol": 53,
+    "runVol": 56,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6275,7 +6302,7 @@
    },
    {
     "week": "2026-11-09",
-    "runVol": 42,
+    "runVol": 44,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6283,7 +6310,7 @@
    },
    {
     "week": "2026-11-16",
-    "runVol": 26,
+    "runVol": 20,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,

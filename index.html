@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230d1520%22%2F%3E%3Cpath%20d%3D%22M8%2050h48%22%20stroke%3D%22%231e3a5f%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M11%2044%2024%2032%2035%2038%2052%2015%22%20fill%3D%22none%22%20stroke%3D%22%2310b981%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2252%22%20cy%3D%2215%22%20r%3D%227.5%22%20fill%3D%22%234ade80%22%2F%3E%3C%2Fsvg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230d1520%22%2F%3E%3Cpath%20d%3D%22M8%2050h48%22%20stroke%3D%22%231e3a5f%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M11%2044%2024%2032%2035%2038%2052%2015%22%20fill%3D%22none%22%20stroke%3D%22%2310b981%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2252%22%20cy%3D%2215%22%20r%3D%227.5%22%20fill%3D%22%234ade80%22%2F%3E%3C%2Fsvg%3E">
 <meta name="theme-color" content="#0d1520">
-<meta name="description" content="Dashboard de evolução de treino — corrida, bike, natação e força. Ciclo da Meia Monumental 2026.">
+<meta name="description" content="Dashboard de evolução de treino — corrida, bike e força. Ciclo da Meia Monumental de Brasília 2026.">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2879,7 +2879,7 @@ canvas { max-height: 340px; }
     </div>
     <canvas id="volumeChart" height="200"></canvas>
     <div class="pace-hint" style="margin-top:10px;">
-      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (20/07) · 18 semanas · Prova 22/11
+      💡 Natação em km (ex: 1,9km = 1.900m) &nbsp;·&nbsp; Semanas a partir do início do ciclo (14/09) · 10 semanas · Prova 22/11
     </div>
   </div>
 </div>
@@ -4634,89 +4634,91 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- SEMANA TIPO -->
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">📅 Semana Tipo — Build (referência)</div>
-    <div style="background:#07263a;border:1px solid #0e3a50;border-radius:10px;padding:9px 12px;font-size:0.66rem;color:#7dd3fc;line-height:1.6;margin-bottom:12px;">✈️ <strong>Semana 9 (15–21/jun)</strong> é semana de viagem — estrutura adaptada (55km corrida · 2 qualidades · força sup+inf). O plano dia a dia atualizado de cada semana está no calendário acima e na aba Plano.</div>
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px;">📅 Semana Tipo — Ciclo Meia Monumental (referência)</div>
+    <div style="background:#07263a;border:1px solid #0e3a50;border-radius:10px;padding:9px 12px;font-size:0.66rem;color:#7dd3fc;line-height:1.6;margin-bottom:12px;">🔁 <strong>Ciclo replanejado em 15/09</strong> — 10 semanas (14/09 a 22/11, começando na semana em curso), 4 corridas por semana, <strong>sem natação</strong>. O plano dia a dia de cada semana está no calendário acima e na tabela do ciclo.</div>
     <div class="plano-week-grid">
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#f43f5e">⚡ SEG</div>
-        <div class="plano-session dbl"><div class="plano-sess-title">🚴 Bike LT2 — AM</div><div class="plano-sess-detail">6×8min @195–210W · rec.2min · ~55min</div><div class="plano-sess-time">04:55</div></div>
-        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run LT2 — PM</div><div class="plano-sess-detail">S7–8: 6×1km @5:10 · S10/S12: 6×1km @4:50–5:00 (duplo threshold puro)</div><div class="plano-sess-time">17:00 · ~55min</div></div>
+        <div class="plano-day-name" style="color:#94a3b8">😴 SEG</div>
+        <div class="plano-session str"><div class="plano-sess-title">😴 Descanso de corrida</div><div class="plano-sess-detail">Dia de absorver a carga do longão de domingo</div><div class="plano-sess-time">—</div></div>
+        <div class="plano-session str"><div class="plano-sess-title">💪 Força — Superior</div><div class="plano-sess-detail">Supino · Remada · Desenvolvimento · Puxada · Face pull · 3×12 · RPE 7 · poupa perna p/ terça</div><div class="plano-sess-time">tarde · ~35min</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#60a5fa">🏊 TER</div>
-        <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação LT1/LT2</div><div class="plano-sess-detail">~1.300–1.500m · 4×200m LT1 + 6×50m LT2 + técnica</div><div class="plano-sess-time">06:00 · ~40min</div></div>
-        <div class="plano-session str"><div class="plano-sess-title">💪 Musc. B</div><div class="plano-sess-detail">Superiores: Pulldown + Supino + Remada + Desenvolvimento + Pallof + Rot. Externa · 38min · poupa perna p/ quarta</div><div class="plano-sess-time">tarde</div></div>
+        <div class="plano-day-name" style="color:#f43f5e">⚡ TER</div>
+        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run Sub-LT2 — AM</div><div class="plano-sess-detail">Blocos de 1–2km @4:40–4:44 (12,7–12,9 km/h) · rec ~200–400m trote · FC 152–160</div><div class="plano-sess-time">manhã · ~9–14km</div></div>
+        <div class="plano-session dbl"><div class="plano-sess-title">⚡ Bike LT2 — PM</div><div class="plano-sess-detail">4–5×8–10min @195–215W · rec 2min · ~60min · 2º toque do duplo limiar</div><div class="plano-sess-time">noite</div></div>
+        <div class="plano-session str"><div class="plano-sess-title">💪 Força A — Perna</div><div class="plano-sess-detail">Agach. até 90° (goblet) · Leg press parcial · Terra romeno · Panturrilha Rathleff · menisco-safe</div><div class="plano-sess-time">junto com a bike</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#f43f5e">⚡ QUA</div>
-        <div class="plano-session dbl"><div class="plano-sess-title">🚴 Bike LT2 — AM</div><div class="plano-sess-detail">5×10min @195–210W · rec.2min · ~60min</div><div class="plano-sess-time">05:30</div></div>
-        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run LT2 — PM</div><div class="plano-sess-detail">S7–8: 5×1,5km @5:10 · S10: 4×1,5km + 2×1km @4:45–4:50 (VO2máx) · S12: 5–6×1km @4:54 (ritmo prova · sessão-chave)</div><div class="plano-sess-time">17:00 · ~60min</div></div>
+        <div class="plano-day-name" style="color:#a78bfa">🧘 QUA</div>
+        <div class="plano-session str"><div class="plano-sess-title">💪 Core + mobilidade</div><div class="plano-sess-detail">Prancha · Prancha lateral · Pallof press · Dead bug · mobilidade de quadril · dia sem corrida</div><div class="plano-sess-time">~25min</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#60a5fa">🏊 QUI</div>
-        <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação Z1/LT1</div><div class="plano-sess-detail">~1.000–1.200m · 8×50m LT1 + 400m técnica · recuperação ativa</div><div class="plano-sess-time">06:00 · ~35min</div></div>
-        <div class="plano-session str"><div class="plano-sess-title">💪 Musc. A</div><div class="plano-sess-detail">Plio (Box Jump · Broad · Depth · Single-leg) + Inferiores + Nordic Curl · 45min · dano cai p/ sex regen + sáb Z2</div><div class="plano-sess-time">tarde</div></div>
+        <div class="plano-day-name" style="color:#f43f5e">⚡ QUI</div>
+        <div class="plano-session dbl"><div class="plano-sess-title">🏃 Run Sub-LT2 — AM (tiros longos)</div><div class="plano-sess-detail">Blocos de 2–4km @4:42–4:44 (12,7–12,8 km/h) · rec ~400–600m trote · FC 152–160</div><div class="plano-sess-time">manhã · ~9–14km</div></div>
+        <div class="plano-session dbl"><div class="plano-sess-title">🚴 Bike Z2 — PM</div><div class="plano-sess-detail">~45min Z2 solto · giro leve · 2º duplo da semana</div><div class="plano-sess-time">noite</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#fb923c">🏃 SEX</div>
-        <div class="plano-session run"><div class="plano-sess-title">🏃 Run Z1 — Regenerativo</div><div class="plano-sess-detail">10km @6:30–7:00/km · FC&lt;145bpm · São Sebastião ou percurso plano</div><div class="plano-sess-time">06:00 · ~65min</div></div>
-        <div class="plano-session swim"><div class="plano-sess-title">🏊 Natação opcional</div><div class="plano-sess-detail">~1.200–1.500m se disponível · Z1/Z2 suave</div><div class="plano-sess-time">tarde</div></div>
+        <div class="plano-day-name" style="color:#10b981">🏃 SEX</div>
+        <div class="plano-session run"><div class="plano-sess-title">🏃 Fácil Z2 + strides</div><div class="plano-sess-detail">5–7km · 5:50–6:10 (9,7–10,3 km/h) · <strong>FC&lt;140</strong> · 4 strides ao fim</div><div class="plano-sess-time">manhã</div></div>
+        <div class="plano-session str"><div class="plano-sess-title">🦘 Pliometria (DEPOIS da corrida)</div><div class="plano-sess-detail">Pogo hops · corda · degrau baixo · ~40 contatos · <strong>nunca antes de correr</strong></div><div class="plano-sess-time">após a corrida</div></div>
+        <div class="plano-session str"><div class="plano-sess-title">💪 Força B — Unilateral e tendão</div><div class="plano-sess-detail">Elevação pélvica · SL-RDL · Step-up caixa baixa · Glúteo médio · Panturrilha Rathleff</div><div class="plano-sess-time">tarde</div></div>
       </div>
 
       <div class="plano-day">
         <div class="plano-day-name" style="color:#f59e0b">🚴 SÁB</div>
-        <div class="plano-session bike"><div class="plano-sess-title">🚴 Bike Longo Z2</div><div class="plano-sess-detail">~40–50km outdoor ou 2h Zwift · FC&lt;150bpm · outdoor preferido</div><div class="plano-sess-time">05:30 · ~1h45–2h15</div></div>
-        <div class="plano-session str"><div class="plano-sess-title">💪 Musc. C</div><div class="plano-sess-detail">Plio leve mantida (Box 2×4 caixa baixa) + RDL + Afundo + Hip Thrust + Nordic · 38min · 48h da plio de quinta</div><div class="plano-sess-time">após bike</div></div>
+        <div class="plano-session bike"><div class="plano-sess-title">🚴 Bike Longa</div><div class="plano-sess-detail">1h30–2h15 · blocos de 10–15min @195–215W no miolo · FC&lt;150 · volume aeróbico sem impacto</div><div class="plano-sess-time">manhã</div></div>
       </div>
 
       <div class="plano-day">
-        <div class="plano-day-name" style="color:#f97316">🏃 DOM</div>
-        <div class="plano-session run"><div class="plano-sess-title">🏃 Longão Z1–Z2</div><div class="plano-sess-detail">S7–12: 18km @6:15–6:30/km · FC&lt;150bpm · São Sebastião</div><div class="plano-sess-time">07:00 · ~1h50–2h00</div></div>
-        <div class="plano-session str"><div class="plano-sess-title">💪 Musc. D</div><div class="plano-sess-detail">Hip flexor · Excêntrica panturrilha · Pombo · Foam roller · Respiração · 20min</div><div class="plano-sess-time">após corrida</div></div>
+        <div class="plano-day-name" style="color:#10b981">🏃 DOM</div>
+        <div class="plano-session run"><div class="plano-sess-title">🏃 Longão Z1–Z2</div><div class="plano-sess-detail">10 → 18km ao longo do ciclo · 5:40–6:05 (9,9–10,6 km/h) · <strong>FC&lt;147</strong> · nas semanas 7–8 com final a ritmo de prova</div><div class="plano-sess-time">manhã</div></div>
+        <div class="plano-session str"><div class="plano-sess-title">💪 Mobilidade + fáscia</div><div class="plano-sess-detail">Bolinha na fáscia 2min/pé · panturrilha e sóleo · flexor de quadril</div><div class="plano-sess-time">após a corrida</div></div>
       </div>
 
     </div>
 
-    <!-- TAPER -->
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#60a5fa;margin-bottom:10px;margin-top:4px;">📅 Semana 13 — Taper + Prova (13–19 jul)</div>
-    <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#93c5fd;line-height:1.8;margin-bottom:12px;">
-      <strong>Seg:</strong> Bike 4×8min LT2 + Run 4×1km @4:50–5:00/km &nbsp;·&nbsp;
-      <strong>Qua:</strong> Bike 3×10min LT2 + Run 5km Z1 + strides &nbsp;·&nbsp;
-      <strong>Sex:</strong> Descanso &nbsp;·&nbsp;
-      <strong>Dom:</strong> 12km Z1 @6:30–7:00/km · Volume −30% · Intensidade mantida
+    <!-- CHECKPOINT -->
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#fbbf24;margin-bottom:10px;margin-top:4px;">🎯 Semana 4 — Teste de 10K (domingo 11/10)</div>
+    <div style="background:#1a1200;border:1px solid #3a2800;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#fbbf24;line-height:1.8;margin-bottom:12px;">
+      Aquecimento ~2,5km · <strong>10km no melhor esforço controlado</strong> · solta ~1,5km &nbsp;·&nbsp;
+      É o teste que <strong>recalibra todos os paces marcados com *</strong> das semanas 5 a 10 &nbsp;·&nbsp;
+      Único treino do ciclo em que o <strong>Vaporfly 3</strong> sai da caixa antes da prova.
     </div>
 
-    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#fbbf24;margin-bottom:10px;">🏁 Semana 14 — Recuperação (20–26 jul)</div>
-    <div style="background:#1a1200;border:1px solid #3a2800;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#fbbf24;line-height:1.8;margin-bottom:18px;">
-      <strong>Seg:</strong> 20min fácil + 4 strides &nbsp;·&nbsp;
-      <strong>Qua:</strong> 15min fácil + 3 strides &nbsp;·&nbsp;
-      <strong>Qui/Sex:</strong> Descanso total &nbsp;·&nbsp;
-      <strong>Dom 19/07:</strong> 🏁 PROVA — BSB Half Marathon · Brasília · 06:30 (manhã) · ativação + 4 strides · pace alvo 4:54/km (sub-49) · de Vaporfly 3
+    <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;color:#10b981;margin-bottom:10px;">🏁 Semana 10 — Polimento + Prova (16–22 nov)</div>
+    <div style="background:#051820;border:1px solid #0e3a50;border-radius:12px;padding:14px 16px;font-size:0.7rem;color:#93c5fd;line-height:1.8;margin-bottom:18px;">
+      <strong>Ter:</strong> 3×1km a ritmo de prova &nbsp;·&nbsp;
+      <strong>Qui:</strong> 2×1km a ritmo de prova + soltar &nbsp;·&nbsp;
+      <strong>Sex:</strong> 5km fácil + 4 strides &nbsp;·&nbsp;
+      <strong>Sáb:</strong> pernas soltas &nbsp;·&nbsp;
+      <strong>Dom 22/11 · 05:00:</strong> 🏁 <strong>Meia Monumental</strong> — Eixo Monumental · de Vaporfly 3 · volume −50%
     </div>
 
     <!-- VOLUME SUMMARY -->
     <div class="volume-summary">
-      <div style="text-align:center"><div id="pc-ftp" style="font-size:1.1rem;font-weight:900;color:#f43f5e">FTP 243W</div><div id="pc-ftp-sub" style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">2,70 W/kg · LT2: 220–235W</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fb923c">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Corrida/sem S7–8</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fbbf24">~49km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Bike/sem S7–8</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#60a5fa">2–3×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Natação/sem</div></div>
-      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#a3a3a3">4×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Musculação/sem</div></div>
+      <div style="text-align:center"><div id="pc-ftp" style="font-size:1.1rem;font-weight:900;color:#f43f5e">FTP 246W</div><div id="pc-ftp-sub" style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">LT2: 195–215W</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fb923c">53km</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Pico de corrida (S8)</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#10b981">4×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Corridas/sem</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#fbbf24">2×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Duplos limiar/sem</div></div>
+      <div style="text-align:center"><div style="font-size:1.1rem;font-weight:900;color:#a78bfa">3×</div><div style="font-size:0.6rem;color:#888;text-transform:uppercase;letter-spacing:0.7px;margin-top:3px">Musculação/sem</div></div>
     </div>
 
     <!-- REGRAS -->
     <div style="background:#0a0f0a;border:1px solid #1e3a1e;border-radius:12px;padding:16px 18px;font-size:0.71rem;color:#888;line-height:1.8;max-width:900px;margin:0 auto;">
-      <div style="margin-bottom:6px"><strong style="color:#f43f5e">⚡ Regra #1 — Intervalo mínimo:</strong> mínimo 12h entre bike AM e run PM. Não comprimir nunca.</div>
-      <div style="margin-bottom:6px"><strong style="color:#fbbf24">🍌 Regra #2 — Fueling:</strong> banana + mel 40min antes dos blocos LT2. Maltodextrina intra. Comprovado em treino.</div>
-      <div style="margin-bottom:6px"><strong style="color:#fb923c">🎯 Regra #3 — Pace LT2:</strong> corrida 4:50–5:00/km · FC 155–165bpm. Bike <strong style="color:#fbbf24">220–235W · FTP 243W</strong> (2,70 W/kg · Ramp Test 06/06 · peso 89,9kg em 12/06).</div>
-      <div style="margin-bottom:6px"><strong style="color:#60a5fa">🏊 Regra #4 — Natação:</strong> pace Strava de esteira/piscina pode divergir do display. Usar display do relógio/esteira como referência.</div>
-      <div style="margin-bottom:6px"><strong style="color:#a3a3a3">💪 Regra #5 — Pliometria:</strong> SEMPRE antes da força, com sistema nervoso fresco. Joelho: aterrissagem alinhada, parar se colapsar em valgo.</div>
-      <div><strong style="color:#f87171">🦵 Regra #6 — LCA/Menisco:</strong> Nordic curl é obrigatório. Isquiotibial forte substitui função do LCA. Dor articular no joelho → parar pliometria.</div>
+      <div style="margin-bottom:6px"><strong style="color:#f43f5e">🎯 Regra #1 — Largar no pace de chegada:</strong> o primeiro bloco no MESMO ritmo do último. Variação alvo entre tiros: <strong>até 5s/km</strong>. Sair rápido e derreter é o vício recorrente — custa a sessão inteira.</div>
+      <div style="margin-bottom:6px"><strong style="color:#fb923c">⚡ Regra #2 — Sub-LT2 não é LT2:</strong> o plano pede <strong>FC 152–160</strong> (sub-limiar, 2–3 mmol). LT2 é 161–168 e quase não aparece no ciclo. Terminar sentindo que faria mais dois tiros.</div>
+      <div style="margin-bottom:6px"><strong style="color:#10b981">💚 Regra #3 — Fácil é fácil:</strong> sexta <strong>FC&lt;140</strong> · longão <strong>FC&lt;147</strong>. Pace é livre, FC é o limite. É o que permite repetir a qualidade duas vezes por semana.</div>
+      <div style="margin-bottom:6px"><strong style="color:#fbbf24">🍌 Regra #4 — Fueling:</strong> mel com banana antes dos blocos de qualidade. Cuscuz, ovos, iogurte e fruta no pós-treino.</div>
+      <div style="margin-bottom:6px"><strong style="color:#a78bfa">🦘 Regra #5 — Pliometria:</strong> <strong>SEMPRE depois da corrida</strong>, nunca antes — inverter isso já causou uma crise de fáscia em 07/08. Aterrissagem alinhada; parar se o joelho colapsar em valgo.</div>
+      <div style="margin-bottom:6px"><strong style="color:#f87171">🦵 Regra #6 — Menisco:</strong> joelho <strong>nunca passa de 90°</strong> sob carga. Sem flexão profunda. Nunca até a falha (RPE 7–8, 2–3 reps na reserva).</div>
+      <div><strong style="color:#38bdf8">👟 Regra #7 — Super tênis:</strong> Vaporfly 3 só no teste de 10K (11/10) e na prova (22/11). Treino é de Evo SL ou Vomero Plus — a espuma tem vida útil e precisa de descanso.</div>
     </div>
+
 
     <!-- ⚡ PROTOCOLO DE PLIOMETRIA ATÉ A PROVA -->
     <div style="background:var(--bg-1);border:1px solid var(--border-1);border-radius:14px;padding:18px 20px;max-width:900px;margin:16px auto 0;">
