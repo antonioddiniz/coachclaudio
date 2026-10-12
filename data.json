@@ -58,7 +58,7 @@
     "Sem 11 · dom 08/11 · 22km com 8km @4:39 — sessão-rainha",
     "Sem 12 · dom 15/11 · 18km com 6km @4:39 — ensaio final"
    ],
-   "estrutura": "Ciclo de 10 semanas: 14/09 (semana em curso, retomada) → 22/11 (prova). 4 corridas/semana: ter duplo limiar AM + bike PM + Força A · qui tiros longos AM + bike Z2 PM · sex fácil + pliometria DEPOIS + Força B · dom longão. Sem natação. Segunda: descanso de corrida + Força Superior. Quarta: core. Sábado: bike longa.",
+   "estrutura": "Semana tipo (máx 2 sessões por dia): SEG descanso de corrida + Força Superior + core · TER corrida sub-limiar AM + bike LT2 PM · QUA Força A perna de MANHÃ (sem corrida, 24h até quinta) · QUI corrida sub-limiar AM + bike Z2 PM · SEX fácil + pliometria DEPOIS + Força B · SÁB bike longa · DOM longão. Sem natação.",
    "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2.",
    "sub_lt2": "4:45–4:50 (12,4–12,6 km/h) · FC 155–162 · ritmo de prova 5:00 (12,0 km/h)",
    "status_15_09": "Semanas realizadas vs planejadas: S1 (24-30/08), S2 22/44km, S3 12/48km (semana perdida — atleta não consultou o plano, sem lesão), S4 em curso. Plano precisa ser recalibrado a partir de 21/09 com base real, não com base nas semanas planejadas.",
@@ -5456,6 +5456,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-10-13": [
@@ -5474,22 +5482,14 @@
      "detail": "4×8min @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-10-14": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
@@ -5582,6 +5582,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-10-20": [
@@ -5600,22 +5608,14 @@
      "detail": "5×8min @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-10-21": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
@@ -5708,6 +5708,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-10-27": [
@@ -5726,22 +5734,14 @@
      "detail": "5×10min @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-10-28": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
@@ -5834,6 +5834,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-11-03": [
@@ -5852,22 +5860,14 @@
      "detail": "5×10min @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-11-04": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
@@ -5960,6 +5960,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-11-10": [
@@ -5978,22 +5986,14 @@
      "detail": "4×8min @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-11-11": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
@@ -6086,6 +6086,14 @@
      "detail": "Supino 3×12 · Remada 3×12 · Desenv. 3×12 · Puxada 3×12 · Face pull 3×15 · RPE 7",
      "zone": "—",
      "color": "#a78bfa"
+    },
+    {
+     "sport": "strength",
+     "key": "hm_core",
+     "label": "💪 Core + mobilidade",
+     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "zone": "—",
+     "color": "#a78bfa"
     }
    ],
    "2026-11-17": [
@@ -6104,22 +6112,14 @@
      "detail": "3×6min leve @195–215W · ~55min",
      "zone": "LT2",
      "color": "#f59e0b"
-    },
-    {
-     "sport": "strength",
-     "key": "hm_forca_a",
-     "label": "💪 Força A — Perna (menisco-safe) — PM",
-     "detail": "Agach. até 90° (goblet) 3×12 · Leg press parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna · RPE 7",
-     "zone": "—",
-     "color": "#a78bfa"
     }
    ],
    "2026-11-18": [
     {
      "sport": "strength",
-     "key": "hm_core",
-     "label": "💪 Core + mobilidade",
-     "detail": "Prancha 3×45s · Prancha lateral 3×30s/lado · Pallof press 3×12/lado · Dead bug 3×10",
+     "key": "hm_forca_a",
+     "label": "💪 Força A — Perna (menisco-safe) — MANHÃ",
+     "detail": "Agach. até 90° (goblet) 3×12 · Leg press amplitude parcial 3×15 · Terra romeno 3×12 · Panturrilha Rathleff 3×12/perna (toalha sob os dedos) · RPE 7 · dia sem corrida — 24h até o treino de quinta",
      "zone": "—",
      "color": "#a78bfa"
     }
