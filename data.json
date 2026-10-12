@@ -1,10 +1,10 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-05",
+ "updated_at": "2026-10-12",
  "schema_note": "vo2max/vo2_goal/race migrados do index.html em 2026-06-13; race.course (altimetria/largada 18h) adicionado em 2026-06-13",
  "description": "Dados do Triathlon Dashboard — Antonio Diniz. index.html carrega este arquivo via fetch; se falhar (file://), usa fallback embutido.",
  "config": {
-  "cycle_start": "2026-10-05",
+  "cycle_start": "2026-10-12",
   "ftp": 246,
   "ftp_ref": "FTP atual informado pelo atleta em 24/07/2026 (era 243 — Ramp Test 06/06/2026)",
   "fcmax": 183,
@@ -39,7 +39,7 @@
     "hmp": "4:39 (12,9 km/h)",
     "z2": "5:35–5:55 (10,1–10,7 km/h)"
    },
-   "meta": "Meia Monumental 22/11 · meta 1:45:00 (4:58/km · 12,1 km/h). Rebaixada de 1:40 em 05/10: 2 semanas de férias (16km no total) + 6 dias sem correr, base real ~20km/sem, peso 93kg. Restam 7 semanas, pico 46km, longão máximo 18km. Upside 1:42 (4:50 · 12,4 km/h) se o longão de 25/10 com 5km finais a 4:58 vier confortável.",
+   "meta": "Meia Monumental 22/11 · meta 1:45:30 · ritmo de prova 5:00/km (12,0 km/h) — escolhido pelo atleta em 12/10. Parciais: 5km 25:00 · 10km 50:00 · 15km 1:15:00 · 21,1km 1:45:29. 6 semanas, pico 47km, longão máximo 19km. Confirmação no longão de 25/10 com 5km finais a 5:00.",
    "filosofia": "Base de 40km, pico de 60km (= máximo histórico). Descarga a cada 3 semanas. Longão máx 22km.",
    "restricoes": [
     "MENISCO: agachamento só até 90°, leg press parcial, step-up no lugar de búlgaro",
@@ -60,11 +60,11 @@
    ],
    "estrutura": "Ciclo de 10 semanas: 14/09 (semana em curso, retomada) → 22/11 (prova). 4 corridas/semana: ter duplo limiar AM + bike PM + Força A · qui tiros longos AM + bike Z2 PM · sex fácil + pliometria DEPOIS + Força B · dom longão. Sem natação. Segunda: descanso de corrida + Força Superior. Quarta: core. Sábado: bike longa.",
    "licao_01_09": "Sessão de 01/09: GAP confirmou que a queda de 4:13→4:44 não foi terreno (Parque da Cidade é plano). FC travada em 167 com pace caindo = largada acima do sustentável. Limiar real estimado em ~4:30–4:35 (13,1–13,3 km/h). Zonas com FCmáx 183: Z2 <140 · sub-LT2 150–160 · LT2 161–168 · VO2 169+. O plano prescreve SUB-LT2 (150–160), não LT2.",
-   "sub_lt2": "4:45–4:50 (12,4–12,6 km/h) · FC 155–162 · ritmo de prova 4:58 (12,1 km/h)",
+   "sub_lt2": "4:45–4:50 (12,4–12,6 km/h) · FC 155–162 · ritmo de prova 5:00 (12,0 km/h)",
    "status_15_09": "Semanas realizadas vs planejadas: S1 (24-30/08), S2 22/44km, S3 12/48km (semana perdida — atleta não consultou o plano, sem lesão), S4 em curso. Plano precisa ser recalibrado a partir de 21/09 com base real, não com base nas semanas planejadas.",
    "longao": "Longões de domingo partem de 16km (pedido do atleta em 15/09): 16 · 16 · 18 · [teste 10K] · 16 · 18 · 20 · 21 · 16 · [prova]. Todos em FC<147, pace livre. Os das semanas 8 e 9 levam 4km finais a ritmo de prova."
   },
-  "cycle_weeks": 7,
+  "cycle_weeks": 6,
   "cycle_prev": {
    "start": "2026-07-20",
    "weeks": 18
@@ -2496,6 +2496,18 @@
    "sec": 410,
    "kcal": 351,
    "note": "4,71km · 32:10 · rodagem leve Z1 nas férias · Paraty · 6:50 (8,8 km/h) · RE 9 · Vomero Plus"
+  },
+  {
+   "id": 206,
+   "date": "2026-10-10",
+   "sport": "run",
+   "dist": 10.01,
+   "dur": "58:04",
+   "pace": "5:48",
+   "sec": 348,
+   "hr": 162,
+   "kcal": 797,
+   "note": "10,01km · 58:04 · rodagem Z2 forte · Lago Sul/Península · 5:48 (10,3 km/h) · FC 162 média / 173 máx · elev +62m · RE 163 · Vomero Plus · ⚠️ FC 162 numa rodagem com alvo FC<140 — correu em zona de limiar, não Z2 · 1º treino depois de 11 dias parado"
   }
  ],
  "weight_data": [
@@ -5450,8 +5462,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
-     "detail": "aquec ~2km + 3 strides · 4×1km @4:45 (12,6 km/h) · rec ~200m trote · solta ~1,5km · ~9km",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
+     "detail": "aquec ~2km + 3 strides · 4×1km @4:48 (12,5 km/h) · rec ~200m trote · solta ~1,5km · ~9km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -5487,7 +5499,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
-     "detail": "aquec ~2km + 3 strides · 2×2km @4:48 (12,5 km/h) · rec ~400m trote · solta ~1,5km · ~8km",
+     "detail": "aquec ~2km + 3 strides · 2×2km @4:50 (12,4 km/h) · rec ~400m trote · solta ~1,5km · ~8km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -5541,7 +5553,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "12km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "detail": "13km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
      "zone": "Z1–Z2",
      "color": "#10b981"
     },
@@ -5576,8 +5588,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
-     "detail": "aquec ~2,5km + 3 strides · 5×1km @4:45 (12,6 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
+     "detail": "aquec ~2,5km + 3 strides · 5×1km @4:48 (12,5 km/h) · rec ~200m trote · solta ~1,5km · ~10km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -5613,7 +5625,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
-     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:48 (12,5 km/h) · rec ~400m trote · solta ~1,5km · ~10km",
+     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:50 (12,4 km/h) · rec ~400m trote · solta ~1,5km · ~10km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -5667,7 +5679,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "14km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
+     "detail": "15km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<147",
      "zone": "Z1–Z2",
      "color": "#10b981"
     },
@@ -5702,7 +5714,7 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
      "detail": "aquec ~2,5km + 3 strides · 4×1,5km @4:45 (12,6 km/h) · rec ~300m trote · solta ~1,5km · ~10km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
@@ -5793,7 +5805,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "🎯 16km — 11km Z2 + 5km finais @4:58 (12,1 km/h) · é o teste de ritmo de prova",
+     "detail": "🎯 17km — 12km Z2 + 5km finais @5:00 (12,0 km/h) · TESTE DE RITMO DE PROVA",
      "zone": "Z1–Z2",
      "color": "#10b981"
     },
@@ -5828,7 +5840,7 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
      "detail": "aquec ~2,5km + 3 strides · 5×1,5km @4:45 (12,6 km/h) · rec ~300m trote · solta ~1,5km · ~11km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
@@ -5919,7 +5931,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "18km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<150 · o longão mais longo do ciclo",
+     "detail": "19km Z1–Z2 · 5:45–6:05 (9,9–10,4 km/h) · FC<150 · o longão mais longo do ciclo",
      "zone": "Z1–Z2",
      "color": "#10b981"
     },
@@ -5954,8 +5966,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
-     "detail": "aquec ~2,5km + 3 strides · 3×2km @4:58 (12,1 km/h) (ritmo de prova) · rec ~400m trote · solta ~1,5km · ~9km",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
+     "detail": "aquec ~2,5km + 3 strides · 3×2km @5:00 (12,0 km/h) ritmo de prova · rec ~400m trote · solta ~1,5km · ~9km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -5991,7 +6003,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
-     "detail": "aquec ~2km + 3 strides · 2×2km @4:58 (12,1 km/h) (RP) · rec ~400m trote · solta ~1,5km · ~9km",
+     "detail": "aquec ~2km + 3 strides · 2×2km @5:00 (12,0 km/h) RP · rec ~400m trote · solta ~1,5km · ~9km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -6045,7 +6057,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏃 Longão Z1–Z2",
-     "detail": "14km — 9km Z2 + 5km finais @4:58 (12,1 km/h) · último ensaio",
+     "detail": "14km — 9km Z2 + 5km finais @5:00 (12,0 km/h) · último ensaio",
      "zone": "Z1–Z2",
      "color": "#10b981"
     },
@@ -6080,8 +6092,8 @@
     {
      "sport": "run",
      "key": "hm_dbl_ter_pm",
-     "label": "🏃 Run Sub-LT2 — AM",
-     "detail": "aquec ~2km + 4 strides · 3×1km @4:58 (12,1 km/h) (RP) · rec ~300m trote · ~7km",
+     "label": "🏃 Run Sub-LT2 — AM (duplo limiar)",
+     "detail": "aquec ~2km + 4 strides · 3×1km @5:00 (12,0 km/h) RP · rec ~300m trote · ~7km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -6117,7 +6129,7 @@
      "sport": "run",
      "key": "hm_dbl_qui_pm",
      "label": "🏃 Run Sub-LT2 — AM (tiros longos)",
-     "detail": "aquec ~2km + 4 strides · 2×1km @4:58 (12,1 km/h) (RP) · soltar · ~6km",
+     "detail": "aquec ~2km + 4 strides · 2×1km @5:00 (12,0 km/h) RP · soltar · ~6km",
      "zone": "sub-LT2 · FC 155–162",
      "color": "#f43f5e"
     },
@@ -6171,7 +6183,7 @@
      "sport": "run",
      "key": "hm_longao",
      "label": "🏁 PROVA",
-     "detail": "🏁 PROVA — Meia Monumental · 05:00 · Eixo Monumental · 4:58 (12,1 km/h) · de Vaporfly 3",
+     "detail": "🏁 PROVA — Meia Monumental · 05:00 · Eixo Monumental · 5:00 (12,0 km/h) · meta 1:45:30 · Vaporfly 3",
      "zone": "prova",
      "color": "#f43f5e"
     },
@@ -6188,109 +6200,83 @@
   "cycle_phases": [
    {
     "weeks": [
-     1
-    ],
-    "label": "Volta aos treinos",
-    "short": "VOLTA",
-    "color": "#94a3b8",
-    "bg": "rgba(148,163,184,.12)",
-    "icon": "🔄",
-    "desc": "Pós-férias. Tudo fácil, nenhum tiro. Religar o hábito.",
-    "focus": [
-     "4 corridas Z2",
-     "FC<140",
-     "longão 10km"
-    ]
-   },
-   {
-    "weeks": [
-     2,
-     3
+     1,
+     2
     ],
     "label": "Reconstrução",
     "short": "BASE",
     "color": "#38bdf8",
     "bg": "rgba(56,189,248,.12)",
     "icon": "🧱",
-    "desc": "Voltam os blocos sub-limiar. Longão cresce 2km por semana.",
+    "desc": "Religar o volume e os blocos sub-limiar.",
     "focus": [
-     "2 qualidades/semana",
-     "longão 12→14km"
+     "2 qualidades/sem",
+     "longão 13→15km"
     ]
    },
    {
     "weeks": [
-     4
+     3
     ],
     "label": "Teste de ritmo",
     "short": "TESTE",
     "color": "#fbbf24",
     "bg": "rgba(251,191,36,.12)",
     "icon": "🎯",
-    "desc": "Longão de 16km com 5km finais a ritmo de prova. É aqui que a meta se confirma.",
+    "desc": "Longão de 17km com 5km finais a 5:00. Confirma ou ajusta a meta.",
     "focus": [
-     "16km com final a 4:58",
-     "sem teste de 10K isolado"
+     "17km com final a 5:00"
     ]
    },
    {
     "weeks": [
-     5
+     4
     ],
     "label": "Pico",
     "short": "PICO",
     "color": "#f43f5e",
     "bg": "rgba(244,63,94,.12)",
     "icon": "🔺",
-    "desc": "Maior volume e o longão de 18km.",
+    "desc": "Maior volume e o longão de 19km.",
     "focus": [
-     "46km",
-     "longão 18km"
+     "47km",
+     "longão 19km"
     ]
    },
    {
     "weeks": [
-     6
+     5
     ],
     "label": "Transição",
     "short": "ESPEC",
     "color": "#a78bfa",
     "bg": "rgba(167,139,250,.12)",
     "icon": "🎽",
-    "desc": "Tudo a ritmo de prova. Volume cai.",
+    "desc": "Tudo a ritmo de prova.",
     "focus": [
-     "blocos a 4:58",
+     "blocos a 5:00",
      "longão 14km com final forte"
     ]
    },
    {
     "weeks": [
-     7
+     6
     ],
     "label": "Polimento e prova",
     "short": "PROVA",
     "color": "#10b981",
     "bg": "rgba(16,185,129,.12)",
     "icon": "🏁",
-    "desc": "Frescor. Manter o toque, tirar a fadiga.",
+    "desc": "Frescor. Meia Monumental 22/11.",
     "focus": [
-     "-55% de volume",
-     "Meia Monumental 22/11"
+     "-60% de volume"
     ]
    }
   ],
   "planned_weekly": [
    {
-    "week": "2026-10-05",
-    "runVol": 27,
-    "bikeVol": 0,
-    "swimVol": 0,
-    "runQual": 0,
-    "bikeQual": 0
-   },
-   {
     "week": "2026-10-12",
-    "runVol": 34,
+    "runVol": 35,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6298,7 +6284,7 @@
    },
    {
     "week": "2026-10-19",
-    "runVol": 40,
+    "runVol": 41,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6306,7 +6292,7 @@
    },
    {
     "week": "2026-10-26",
-    "runVol": 42,
+    "runVol": 43,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -6314,7 +6300,7 @@
    },
    {
     "week": "2026-11-02",
-    "runVol": 46,
+    "runVol": 47,
     "bikeVol": 0,
     "swimVol": 0,
     "runQual": 0,
@@ -9844,8 +9830,8 @@
   "start_time": "05:00",
   "location": "Eixo Monumental, Brasília/DF",
   "distance_km": 21.1,
-  "target_time": "1:45:00",
-  "target_pace": "4:58 (12,1 km/h)",
+  "target_time": "1:45:30",
+  "target_pace": "5:00 (12,0 km/h)",
   "course": {
    "summary": "⚠️ ALTIMETRIA A CONFIRMAR. O organizador anuncia \"percurso plano, altimetria mínima\" — mas é material de marketing. Largada/chegada no Museu da República (ponta baixa da Esplanada), e o Eixo Monumental tem desnível real: no 10K de 19/07, no mesmo eixo, foram ~93m de queda líquida com rampas de até -2,9%. Se a prova sai da Esplanada e volta, a SUBIDA cai na volta. Relato do atleta: \"bem agressiva na volta\".",
    "ascent_m": null,
